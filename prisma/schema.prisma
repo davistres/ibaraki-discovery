@@ -1,0 +1,90 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// Model for all categories, tags, regions, etc.
+model Category {
+  id    Int     @id @default(autoincrement())
+  group String
+  nom   String
+
+  // One-to-many relations back to Place/Festival
+  placesAsRegion       Place[]    @relation("PlaceRegion")
+  placesAsVille        Place[]    @relation("PlaceVille")
+  placesAsAccessibilite Place[]    @relation("PlaceAccessibilite")
+  festivalsAsRegion    Festival[] @relation("FestivalRegion")
+  festivalsAsVille     Festival[] @relation("FestivalVille")
+
+  // Many-to-many relations back to Place/Festival
+  places    Place[]
+  festivals Festival[]
+}
+
+model Place {
+  id                String  @id @unique
+  nom               String
+  nomJaponais       String
+  description       String
+  descriptionLongue String
+  imagePrincipale   String
+  images            String // Storing as a comma-separated string of URLs
+  adresse           String
+  lat               Float
+  lng               Float
+  horaires          String
+  tarif             String
+  dureeVisite       String
+  acces             String
+  siteWeb           String
+  googleMaps        String
+
+  // --- RELATIONS ---
+
+  // One-to-many: A Place has one Region
+  region    Category @relation("PlaceRegion", fields: [region_id], references: [id])
+  region_id Int
+
+  // One-to-many: A Place has one Ville
+  ville     Category @relation("PlaceVille", fields: [ville_id], references: [id])
+  ville_id  Int
+
+  // One-to-many: A Place has one Accessibilite
+  accessibilite    Category @relation("PlaceAccessibilite", fields: [accessibilite_id], references: [id])
+  accessibilite_id Int
+
+  // Many-to-many: A Place can have many other categories (Activities, Tags)
+  categories Category[]
+}
+
+model Festival {
+  id          String @id @unique
+  nom         String
+  nomJaponais String
+  description String
+  lieu        String
+  periode     String
+  mois        String // Storing as a comma-separated string
+  activites   String // Storing as a comma-separated string
+  image       String
+
+  // --- RELATIONS ---
+
+  // One-to-many: A Festival has one Region
+  region    Category @relation("FestivalRegion", fields: [region_id], references: [id])
+  region_id Int
+
+  // One-to-many: A Festival has one Ville
+  ville     Category @relation("FestivalVille", fields: [ville_id], references: [id])
+  ville_id  Int
+
+  // Many-to-many: A Festival can have many other categories (Types, Tags)
+  categories Category[]
+}
