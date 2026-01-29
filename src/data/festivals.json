@@ -6,12 +6,30 @@
     "description": "L'un des plus grands festivals de pruniers du Japon, célébrant la floraison des quelque 3 000 pruniers (environ 100 variétés) du Jardin Kairaku-en. L'événement est accompagné de spectacles traditionnels, de cérémonies du thé, de marchés d'artisanat, de stands de nourriture, et d'illuminations nocturnes certains soirs. Des événements ont également lieu à l'École Kodokan. Attire un grand nombre de visiteurs.",
     "lieu": "Jardin Kairaku-en et École Kodokan, Mito",
     "periode": "Mi-février à fin mars",
-    "mois": ["Février", "Mars"],
-    "activites": ["Spectacles traditionnels", "Cérémonie du thé", "Marchés d'artisanat", "Illuminations nocturnes", "Stands de nourriture"],
+    "mois": [
+      "Février",
+      "Mars"
+    ],
+    "activites": [
+      "Spectacles traditionnels",
+      "Cérémonie du thé",
+      "Marchés d'artisanat",
+      "Illuminations nocturnes",
+      "Stands de nourriture"
+    ],
     "image": "b1789b66aea6b878a7fc2a939ae73708.jpg",
     "ville_id": 20,
     "region_id": 2,
-    "category_ids": [10, 70, 100, 51]
+    "category_ids": [
+      10,
+      70,
+      100,
+      51
+    ],
+    "coordonnees": {
+      "lat": 36.3702,
+      "lng": 140.4702
+    }
   },
   {
     "id": "itako-iris-festival",
@@ -20,12 +38,28 @@
     "description": "Ce festival célèbre la floraison de plus d'un million de plants d'iris (ayame) de 500 variétés, créant un tapis floral magnifique dans le cadre des canaux d'Itako. L'un des points forts est la reconstitution du \"Yomeiri-bune\", une procession de bateaux où des jeunes femmes en costume de mariée traditionnel naviguent sur les canaux. Des promenades en bateau sappa-bune sont également populaires.",
     "lieu": "Parc des Iris de Suigo Itako (Ayame-en), Itako",
     "periode": "Fin mai à fin juin",
-    "mois": ["Mai", "Juin"],
-    "activites": ["Yomeiri-bune (bateaux de mariées)", "Promenades en bateau sappa-bune", "Spectacles"],
+    "mois": [
+      "Mai",
+      "Juin"
+    ],
+    "activites": [
+      "Yomeiri-bune (bateaux de mariées)",
+      "Promenades en bateau sappa-bune",
+      "Spectacles"
+    ],
     "image": "places-to-visit-in-Ibaraki-1200x800.jpg",
     "ville_id": 29,
     "region_id": 3,
-    "category_ids": [10, 70, 104, 107]
+    "category_ids": [
+      10,
+      70,
+      104,
+      107
+    ],
+    "coordonnees": {
+      "lat": 35.936,
+      "lng": 140.5527
+    }
   },
   {
     "id": "rock-in-japan",
@@ -34,12 +68,27 @@
     "description": "L'un des plus grands festivals de musique rock et J-Pop en plein air du Japon, attirant de nombreux artistes japonais majeurs et des centaines de milliers de spectateurs.",
     "lieu": "Hitachi Seaside Park, Hitachinaka (lieu variable, vérifier le lieu officiel chaque année)",
     "periode": "Août (plusieurs jours/week-ends)",
-    "mois": ["Août"],
-    "activites": ["Concerts", "Artistes japonais majeurs", "Camping"],
+    "mois": [
+      "Août"
+    ],
+    "activites": [
+      "Concerts",
+      "Artistes japonais majeurs",
+      "Camping"
+    ],
     "image": "hitachi-seaside-park-kochia-ibaraki-1024x819.jpg",
     "ville_id": 21,
     "region_id": 4,
-    "category_ids": [11, 71, 108, 109]
+    "category_ids": [
+      11,
+      71,
+      108,
+      109
+    ],
+    "coordonnees": {
+      "lat": 36.3929,
+      "lng": 140.5304
+    }
   },
   {
     "id": "oarai-anko-festival",
@@ -48,12 +97,30 @@
     "description": "Célébration culinaire dédiée à l'ankō (baudroie). Le festival principal peut inclure des démonstrations de découpe de la baudroie (tsurushi-giri), des dégustations, des ventes de produits locaux. Pendant toute la saison, les restaurants d'Oarai proposent des menus spéciaux.",
     "lieu": "Port d'Oarai et divers lieux à Oarai",
     "periode": "Novembre (saison: novembre à mars)",
-    "mois": ["Novembre", "Décembre", "Janvier", "Février", "Mars"],
-    "activites": ["Démonstrations de découpe (tsurushi-giri)", "Dégustations", "Vente de produits locaux"],
+    "mois": [
+      "Novembre",
+      "Décembre",
+      "Janvier",
+      "Février",
+      "Mars"
+    ],
+    "activites": [
+      "Démonstrations de découpe (tsurushi-giri)",
+      "Dégustations",
+      "Vente de produits locaux"
+    ],
     "image": "5bd66afb49109d73801bfa9cdaf42a27.jpg",
     "ville_id": 27,
     "region_id": 4,
-    "category_ids": [13, 72, 104]
+    "category_ids": [
+      13,
+      72,
+      104
+    ],
+    "coordonnees": {
+      "lat": 36.3171,
+      "lng": 140.5837
+    }
   },
   {
     "id": "kasama-chrysanthemum-festival",
@@ -62,12 +129,28 @@
     "description": "L'un des plus anciens et des plus grands festivals de chrysanthèmes du Japon. Des milliers de chrysanthèmes magnifiquement cultivés, dans des formes et des arrangements variés (y compris des poupées en chrysanthèmes – kiku ningyō), sont exposés dans l'enceinte du sanctuaire.",
     "lieu": "Sanctuaire Kasama Inari, Kasama",
     "periode": "Mi-octobre à fin novembre",
-    "mois": ["Octobre", "Novembre"],
-    "activites": ["Exposition de chrysanthèmes", "Poupées en chrysanthèmes (kiku ningyō)", "Artisanat"],
+    "mois": [
+      "Octobre",
+      "Novembre"
+    ],
+    "activites": [
+      "Exposition de chrysanthèmes",
+      "Poupées en chrysanthèmes (kiku ningyō)",
+      "Artisanat"
+    ],
     "image": "a272faa7516ca8501b62cda7a5a0f887-560x384.jpg",
     "ville_id": 26,
     "region_id": 2,
-    "category_ids": [12, 70, 107, 58]
+    "category_ids": [
+      12,
+      70,
+      107,
+      58
+    ],
+    "coordonnees": {
+      "lat": 36.3876,
+      "lng": 140.271
+    }
   },
   {
     "id": "tsuchiura-fireworks",
@@ -76,12 +159,27 @@
     "description": "L'une des trois plus grandes et plus prestigieuses compétitions de feux d'artifice du Japon, attirant des artificiers de tout le pays et une foule immense.",
     "lieu": "Rives de la rivière Sakura, Tsuchiura",
     "periode": "Premier samedi de novembre (historiquement en octobre, la date a changé)",
-    "mois": ["Novembre"],
-    "activites": ["Feux d'artifice", "Compétition d'artificiers", "Stands de nourriture"],
+    "mois": [
+      "Novembre"
+    ],
+    "activites": [
+      "Feux d'artifice",
+      "Compétition d'artificiers",
+      "Stands de nourriture"
+    ],
     "image": "Ibaraki_t_id394_1.jpg",
     "ville_id": 28,
     "region_id": 3,
-    "category_ids": [12, 73, 100, 110]
+    "category_ids": [
+      12,
+      73,
+      100,
+      110
+    ],
+    "coordonnees": {
+      "lat": 36.0784,
+      "lng": 140.1951
+    }
   },
   {
     "id": "koga-peach-blossom-festival",
@@ -90,12 +188,28 @@
     "description": "Koga Sōgō Kōen est célèbre pour ses magnifiques pêchers en fleurs (environ 1 500 arbres de plusieurs variétés), ce qui en fait l'un des meilleurs endroits pour le \"Hanamomo Matsuri\". C'est une célébration familiale de la floraison avec hanami (pique-nique sous les fleurs), stands de nourriture, et parfois des spectacles.",
     "lieu": "Parc de Koga (Koga Sōgō Kōen), Koga",
     "periode": "Mi-mars à début avril",
-    "mois": ["Mars", "Avril"],
-    "activites": ["Hanami (pique-nique sous les fleurs)", "Stands de nourriture", "Spectacles"],
+    "mois": [
+      "Mars",
+      "Avril"
+    ],
+    "activites": [
+      "Hanami (pique-nique sous les fleurs)",
+      "Stands de nourriture",
+      "Spectacles"
+    ],
     "image": "places-to-visit-in-Ibaraki-1200x800.jpg",
     "ville_id": 30,
     "region_id": 3,
-    "category_ids": [10, 70, 55, 111]
+    "category_ids": [
+      10,
+      70,
+      55,
+      111
+    ],
+    "coordonnees": {
+      "lat": 36.1797,
+      "lng": 139.6964
+    }
   },
   {
     "id": "tsukuba-festival",
@@ -104,12 +218,28 @@
     "description": "Le plus grand festival de Tsukuba, avec des parades (incluant des chars Nebuta), des spectacles de danse, des stands de nourriture, et des feux d'artifice.",
     "lieu": "Autour de la gare de Tsukuba et du centre-ville de Tsukuba",
     "periode": "Fin août",
-    "mois": ["Août"],
-    "activites": ["Parades Nebuta", "Spectacles de danse", "Stands de nourriture", "Feux d'artifice"],
+    "mois": [
+      "Août"
+    ],
+    "activites": [
+      "Parades Nebuta",
+      "Spectacles de danse",
+      "Stands de nourriture",
+      "Feux d'artifice"
+    ],
     "image": "d3a35b87aeb8bf1c00d85b7c26048d58.jpg",
     "ville_id": 22,
     "region_id": 2,
-    "category_ids": [11, 51, 55, 73]
+    "category_ids": [
+      11,
+      51,
+      55,
+      73
+    ],
+    "coordonnees": {
+      "lat": 36.0811,
+      "lng": 140.0811
+    }
   },
   {
     "id": "makabe-cherry-blossom-festival",
@@ -118,12 +248,32 @@
     "description": "Célébration des cerisiers en fleur dans le quartier historique de Makabe, avec des illuminations nocturnes.",
     "lieu": "Quartier historique de Makabe, Sakuragawa",
     "periode": "Fin mars à début avril",
-    "mois": ["Mars", "Avril"],
-    "activites": ["Hanami", "Illuminations nocturnes", "Promenades dans le quartier historique"],
+    "mois": [
+      "Mars",
+      "Avril"
+    ],
+    "activites": [
+      "Hanami",
+      "Illuminations nocturnes",
+      "Promenades dans le quartier historique"
+    ],
     "image": "makabe-sakura.jpg",
     "ville_id": 37,
     "region_id": 2,
-    "category_ids": [10, 70, 51, 56, 54, 111, 110, 102]
+    "category_ids": [
+      10,
+      70,
+      51,
+      56,
+      54,
+      111,
+      110,
+      102
+    ],
+    "coordonnees": {
+      "lat": 36.3199,
+      "lng": 140.1032
+    }
   },
   {
     "id": "kasama-lantern-illumination-festival",
@@ -132,11 +282,31 @@
     "description": "Des lanternes artisanales et des illuminations décorent les rues de Kasama, créant une atmosphère magique en soirée, souvent en lien avec le Festival des Chrysanthèmes. Des événements spécifiques peuvent inclure des ateliers, des spectacles et des stands de nourriture.",
     "lieu": "Centre-ville de Kasama, notamment autour du Sanctuaire Kasama Inari",
     "periode": "Automne (octobre-novembre)",
-    "mois": ["Octobre", "Novembre"],
-    "activites": ["Illuminations", "Lanternes artisanales", "Ateliers", "Spectacles", "Stands de nourriture"],
+    "mois": [
+      "Octobre",
+      "Novembre"
+    ],
+    "activites": [
+      "Illuminations",
+      "Lanternes artisanales",
+      "Ateliers",
+      "Spectacles",
+      "Stands de nourriture"
+    ],
     "image": "kasama-lanterns.jpg",
     "ville_id": 26,
     "region_id": 2,
-    "category_ids": [12, 73, 110, 107, 51, 58]
+    "category_ids": [
+      12,
+      73,
+      110,
+      107,
+      51,
+      58
+    ],
+    "coordonnees": {
+      "lat": 36.3796,
+      "lng": 140.263
+    }
   }
 ]

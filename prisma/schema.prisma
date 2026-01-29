@@ -35,7 +35,7 @@ model Place {
   description       String
   descriptionLongue String
   imagePrincipale   String
-  images            String // Storing as a comma-separated string of URLs
+  images            String
   adresse           String
   lat               Float
   lng               Float
@@ -46,22 +46,19 @@ model Place {
   siteWeb           String
   googleMaps        String
 
-  // --- RELATIONS ---
-
-  // One-to-many: A Place has one Region
   region    Category @relation("PlaceRegion", fields: [region_id], references: [id])
   region_id Int
 
-  // One-to-many: A Place has one Ville
   ville     Category @relation("PlaceVille", fields: [ville_id], references: [id])
   ville_id  Int
 
-  // One-to-many: A Place has one Accessibilite
   accessibilite    Category @relation("PlaceAccessibilite", fields: [accessibilite_id], references: [id])
   accessibilite_id Int
 
-  // Many-to-many: A Place can have many other categories (Activities, Tags)
   categories Category[]
+
+  distancesFrom Distance[] @relation("DistanceFrom")
+  distancesTo   Distance[] @relation("DistanceTo")
 }
 
 model Festival {
@@ -71,20 +68,43 @@ model Festival {
   description String
   lieu        String
   periode     String
-  mois        String // Storing as a comma-separated string
-  activites   String // Storing as a comma-separated string
+  mois        String
+  activites   String
   image       String
+  lat         Float  @default(0)
+  lng         Float  @default(0)
 
-  // --- RELATIONS ---
-
-  // One-to-many: A Festival has one Region
   region    Category @relation("FestivalRegion", fields: [region_id], references: [id])
   region_id Int
 
-  // One-to-many: A Festival has one Ville
   ville     Category @relation("FestivalVille", fields: [ville_id], references: [id])
   ville_id  Int
 
-  // Many-to-many: A Festival can have many other categories (Types, Tags)
   categories Category[]
+
+  distancesFrom Distance[] @relation("DistanceFrom")
+  distancesTo   Distance[] @relation("DistanceTo")
+}
+
+model Distance {
+  id Int @id @default(autoincrement())
+
+  fromType String
+  fromId   String
+  toType   String
+  toId     String
+
+  distanceKm      Float
+  durationMinutes Int
+
+  placeFrom    Place?    @relation("DistanceFrom", fields: [placeFromId], references: [id])
+  placeFromId  String?
+  placeTo      Place?    @relation("DistanceTo", fields: [placeToId], references: [id])
+  placeToId    String?
+  festivalFrom Festival? @relation("DistanceFrom", fields: [festivalFromId], references: [id])
+  festivalFromId String?
+  festivalTo   Festival? @relation("DistanceTo", fields: [festivalToId], references: [id])
+  festivalToId String?
+
+  @@unique([fromType, fromId, toType, toId])
 }

@@ -6,6 +6,7 @@ import PlaceDetail from './pages/PlaceDetail'
 import Festivals from './pages/Festivals'
 import Itinerary from './pages/Itinerary'
 import About from './pages/About'
+import DistanceDemo from './pages/DistanceDemo'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/festivals" element={<Festivals />} />
           <Route path="/itineraire" element={<Itinerary />} />
           <Route path="/a-propos" element={<About />} />
+          <Route path="/demo-distances" element={<DistanceDemo />} />
         </Routes>
       </Layout>
     </Router>

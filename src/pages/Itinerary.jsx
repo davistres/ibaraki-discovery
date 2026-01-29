@@ -1,26 +1,63 @@
 import { useState } from 'react'
-import { Sparkles, Calendar, DollarSign, Users, Heart, Mountain, Flower2, UtensilsCrossed, Camera, ArrowRight, Download, Share2 } from 'lucide-react'
+import { Sparkles, Calendar, DollarSign, Mountain, Flower2, UtensilsCrossed, Camera, ArrowRight, Download, Share2, Waves, Palette, Bike, Baby } from 'lucide-react'
 import placesData from '../data/places.json'
 import festivalsData from '../data/festivals.json'
+import categoriesData from '../data/categories.json'
+
+const getCategoryId = (name, group) => {
+  const category = categoriesData.find(cat => cat.nom === name && cat.group === group)
+  return category ? category.id : null
+}
+
+const getActivityCategoryIds = (activityNames) => {
+  return activityNames.map(name => getCategoryId(name, 'Activités')).filter(id => id !== null)
+}
+
+const getTagCategoryIds = (tagNames) => {
+  return tagNames.map(name => getCategoryId(name, 'Tags')).filter(id => id !== null)
+}
+
+const calculateActivitiesCount = (jours, nuits) => {
+  const joursNum = Number.parseInt(jours)
+  const nuitsNum = Number.parseInt(nuits)
+
+  if (joursNum === 1 && nuitsNum === 2) {
+    return 5
+  }
+
+  if (joursNum === 1 && (nuitsNum === 0 || nuitsNum === 1)) {
+    return 3
+  }
+
+  if (joursNum === 2 && nuitsNum === 2) {
+    return 8
+  }
+
+  return joursNum * 5
+}
 
 const Itinerary = () => {
   const [step, setStep] = useState(1)
   const [preferences, setPreferences] = useState({
-    duree: '',
+    jours: '',
+    nuits: '',
     budget: '',
     interets: [],
     saison: '',
-    accessibilite: '',
-    voyageurs: ''
+    accessibilite: []
   })
   const [generatedItinerary, setGeneratedItinerary] = useState(null)
 
   const interetsOptions = [
     { id: 'nature', label: 'Nature & Aventure', icon: Mountain, activites: ['Nature', 'Randonnée', 'Cyclisme'] },
     { id: 'culture', label: 'Culture & Histoire', icon: Flower2, activites: ['Culture', 'Spiritualité', 'Histoire'] },
-    { id: 'gastronomie', label: 'Gastronomie', icon: UtensilsCrossed, activites: ['Gastronomie'] },
+    { id: 'gastronomie', label: 'Gastronomie', icon: UtensilsCrossed, activites: ['Gastronomie', 'Ateliers culinaires'] },
     { id: 'photo', label: 'Photographie', icon: Camera, activites: ['Photo'] },
-    { id: 'famille', label: 'Famille', icon: Users, activites: ['Famille'] }
+    { id: 'famille', label: 'Famille', icon: Baby, activites: ['Famille'] },
+    { id: 'detente', label: 'Détente & Bien-être', icon: Waves, activites: ['Détente'] },
+    { id: 'art', label: 'Art & Artisanat', icon: Palette, activites: ['Art', 'Artisanat'] },
+    { id: 'sport', label: 'Sport & Activités', icon: Bike, activites: ['Sport', 'Sports nautiques'] },
+    { id: 'jardins', label: 'Jardins & Parcs', icon: Flower2, activites: ['Jardins'] }
   ]
 
   const toggleInteret = (interet) => {
@@ -37,57 +74,120 @@ const Itinerary = () => {
     }
   }
 
+  const handleAccessibiliteClick = (niveau) => {
+    const niveaux = ['Facile', 'Modéré', 'Difficile']
+    const currentSelection = preferences.accessibilite
+
+    if (currentSelection.includes(niveau)) {
+      setPreferences({
+        ...preferences,
+        accessibilite: currentSelection.filter(n => n !== niveau)
+      })
+    } else {
+      const niveauIndex = niveaux.indexOf(niveau)
+      const newSelection = [...currentSelection]
+
+      for (let i = 0; i <= niveauIndex; i++) {
+        if (!newSelection.includes(niveaux[i])) {
+          newSelection.push(niveaux[i])
+        }
+      }
+
+      setPreferences({
+        ...preferences,
+        accessibilite: newSelection
+      })
+    }
+  }
+
+  const calculateActivitiesCount = (jours, nuits) => {
+    const joursNum = Number.parseInt(jours)
+    const nuitsNum = Number.parseInt(nuits)
+
+    if (joursNum === 1 && nuitsNum === 2) {
+      return 5
+    }
+
+    if (joursNum === 1 && (nuitsNum === 0 || nuitsNum === 1)) {
+      return 3
+    }
+
+    if (joursNum === 2 && nuitsNum === 2) {
+      return 8
+    }
+
+    return joursNum * 5
+  }
+
+  const getMinimumInterets = (jours) => {
+    const joursNum = Number.parseInt(jours)
+    if (joursNum === 1) return 0
+    if (joursNum >= 2 && joursNum <= 3) return 2
+    if (joursNum >= 4 && joursNum <= 5) return 3
+    if (joursNum >= 6 && joursNum <= 7) return 4
+    return 0
+  }
+
   const generateItinerary = () => {
-    // Logique de génération d'itinéraire basée sur les préférences
     let recommendedPlaces = [...placesData]
 
-    // Filtrer par saison
     if (preferences.saison) {
-      recommendedPlaces = recommendedPlaces.filter(place =>
-        place.saisons.includes(preferences.saison)
-      )
+      const saisonId = getCategoryId(preferences.saison, 'Saisons')
+      if (saisonId) {
+        recommendedPlaces = recommendedPlaces.filter(place =>
+          place.category_ids && place.category_ids.includes(saisonId)
+        )
+      }
     }
 
-    // Filtrer par accessibilité
-    if (preferences.accessibilite) {
-      recommendedPlaces = recommendedPlaces.filter(place =>
-        place.accessibilite === preferences.accessibilite
-      )
+    if (preferences.accessibilite.length > 0) {
+      const accessibiliteIds = preferences.accessibilite.map(acc =>
+        getCategoryId(acc, 'Accessibilité')
+      ).filter(Boolean)
+
+      if (accessibiliteIds.length > 0) {
+        recommendedPlaces = recommendedPlaces.filter(place =>
+          accessibiliteIds.includes(place.accessibilite_id)
+        )
+      }
     }
 
-    // Filtrer par intérêts
     if (preferences.interets.length > 0) {
-      const selectedActivites = interetsOptions
+      const selectedActiviteNames = interetsOptions
         .filter(opt => preferences.interets.includes(opt.id))
         .flatMap(opt => opt.activites)
-      
+
+      const selectedActiviteIds = getActivityCategoryIds(selectedActiviteNames)
+
       recommendedPlaces = recommendedPlaces.filter(place =>
-        place.activites.some(act => selectedActivites.includes(act))
+        place.category_ids && selectedActiviteIds.some(id => place.category_ids.includes(id))
       )
     }
 
-    // Prioriser les lieux incontournables
+    const incontournableId = getCategoryId('Incontournable', 'Tags')
+    const saisonId = getCategoryId(preferences.saison, 'Saisons')
+
     recommendedPlaces.sort((a, b) => {
-      const aScore = (a.tags?.includes('Incontournable') ? 10 : 0) +
-                     (a.meilleuresSaisons?.includes(preferences.saison) ? 5 : 0)
-      const bScore = (b.tags?.includes('Incontournable') ? 10 : 0) +
-                     (b.meilleuresSaisons?.includes(preferences.saison) ? 5 : 0)
+      const aScore = (incontournableId && a.category_ids?.includes(incontournableId) ? 10 : 0) +
+                     (saisonId && a.category_ids?.includes(saisonId) ? 5 : 0)
+      const bScore = (incontournableId && b.category_ids?.includes(incontournableId) ? 10 : 0) +
+                     (saisonId && b.category_ids?.includes(saisonId) ? 5 : 0)
       return bScore - aScore
     })
 
-    // Limiter selon la durée
-    const maxPlaces = preferences.duree === '3' ? 5 : preferences.duree === '5' ? 8 : 12
+    const maxPlaces = calculateActivitiesCount(preferences.jours, preferences.nuits)
     recommendedPlaces = recommendedPlaces.slice(0, maxPlaces)
 
-    // Festivals de la saison
-    const seasonalFestivals = festivalsData.filter(festival =>
-      festival.saison === preferences.saison
-    ).slice(0, 2)
+    const saisonIdForFestivals = getCategoryId(preferences.saison, 'Saisons')
+    const seasonalFestivals = saisonIdForFestivals ? festivalsData.filter(festival =>
+      festival.category_ids && festival.category_ids.includes(saisonIdForFestivals)
+    ).slice(0, 2) : []
 
     setGeneratedItinerary({
       places: recommendedPlaces,
       festivals: seasonalFestivals,
-      duree: preferences.duree,
+      jours: preferences.jours,
+      nuits: preferences.nuits,
       budget: preferences.budget
     })
     setStep(3)
@@ -116,14 +216,14 @@ const Itinerary = () => {
               <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${step >= 1 ? 'bg-red-600 text-white' : 'bg-gray-200'}`}>
                 1
               </div>
-              <span className="font-semibold hidden md:inline">Préférences</span>
+              <span className="font-semibold hidden md:inline">Détails</span>
             </div>
             <div className={`h-1 w-16 ${step >= 2 ? 'bg-red-600' : 'bg-gray-200'}`}></div>
             <div className={`flex items-center space-x-2 ${step >= 2 ? 'text-red-600' : 'text-gray-400'}`}>
               <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${step >= 2 ? 'bg-red-600 text-white' : 'bg-gray-200'}`}>
                 2
               </div>
-              <span className="font-semibold hidden md:inline">Détails</span>
+              <span className="font-semibold hidden md:inline">Centres d'intérêt</span>
             </div>
             <div className={`h-1 w-16 ${step >= 3 ? 'bg-red-600' : 'bg-gray-200'}`}></div>
             <div className={`flex items-center space-x-2 ${step >= 3 ? 'text-red-600' : 'text-gray-400'}`}>
@@ -135,13 +235,175 @@ const Itinerary = () => {
           </div>
         </div>
 
-        {/* Step 1: Préférences */}
+        {/* Step 1: Détails du voyage */}
         {step === 1 && (
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl shadow-md p-8 md:p-12">
               <h2 className="font-display font-bold text-3xl text-gray-900 mb-8 text-center">
+                Détails de votre voyage
+              </h2>
+
+              <div className="space-y-6">
+                <div>
+                  <label className="block font-semibold text-gray-900 mb-3">
+                    <Calendar className="w-5 h-5 inline mr-2" />
+                    Nombre de jours
+                  </label>
+                  <div className="grid grid-cols-7 gap-2">
+                    {['1', '2', '3', '4', '5', '6', '7'].map((jour) => (
+                      <button
+                        key={jour}
+                        onClick={() => setPreferences({ ...preferences, jours: jour, nuits: '' })}
+                        className={`p-3 rounded-lg border-2 font-semibold transition-all ${
+                          preferences.jours === jour
+                            ? 'border-red-600 bg-red-50 text-red-600'
+                            : 'border-gray-200 hover:border-red-300'
+                        }`}
+                      >
+                        {jour}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {preferences.jours && (
+                  <div>
+                    <div className="block font-semibold text-gray-900 mb-3">
+                      Nombre de nuits
+                    </div>
+                    <div className="grid grid-cols-auto gap-2">
+                      {(() => {
+                        const joursNum = Number.parseInt(preferences.jours)
+                        const minNuits = joursNum === 1 ? 0 : joursNum - 1
+                        const maxNuits = joursNum + 1
+                        const nuitsOptions = []
+                        for (let i = minNuits; i <= maxNuits; i++) {
+                          nuitsOptions.push(i.toString())
+                        }
+                        return nuitsOptions.map((nuit) => (
+                          <button
+                            key={nuit}
+                            onClick={() => setPreferences({ ...preferences, nuits: nuit })}
+                            className={`p-3 rounded-lg border-2 font-semibold transition-all ${
+                              preferences.nuits === nuit
+                                ? 'border-red-600 bg-red-50 text-red-600'
+                                : 'border-gray-200 hover:border-red-300'
+                            }`}
+                          >
+                            {nuit}
+                          </button>
+                        ))
+                      })()}
+                    </div>
+                    {preferences.nuits && (
+                      <p className="text-sm text-gray-600 mt-2">
+                        📍 Nombre d'activités suggérées : {calculateActivitiesCount(preferences.jours, preferences.nuits)}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                <div>
+                  <label className="block font-semibold text-gray-900 mb-3">
+                    <DollarSign className="w-5 h-5 inline mr-2" />
+                    Budget par jour
+                  </label>
+                  <div className="grid grid-cols-3 gap-4">
+                    {['Économique', 'Moyen', 'Confort'].map((budget) => (
+                      <button
+                        key={budget}
+                        onClick={() => setPreferences({ ...preferences, budget })}
+                        className={`p-4 rounded-lg border-2 font-semibold transition-all ${
+                          preferences.budget === budget
+                            ? 'border-red-600 bg-red-50 text-red-600'
+                            : 'border-gray-200 hover:border-red-300'
+                        }`}
+                      >
+                        {budget}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block font-semibold text-gray-900 mb-3">
+                    <Flower2 className="w-5 h-5 inline mr-2" />
+                    Saison de visite
+                  </label>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {['Printemps', 'Été', 'Automne', 'Hiver'].map((saison) => (
+                      <button
+                        key={saison}
+                        onClick={() => setPreferences({ ...preferences, saison })}
+                        className={`p-4 rounded-lg border-2 font-semibold transition-all ${
+                          preferences.saison === saison
+                            ? 'border-red-600 bg-red-50 text-red-600'
+                            : 'border-gray-200 hover:border-red-300'
+                        }`}
+                      >
+                        {saison}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block font-semibold text-gray-900 mb-3">
+                    <Mountain className="w-5 h-5 inline mr-2" />
+                    Niveau(x) d'accessibilité souhaité(s)
+                  </label>
+                  <div className="grid grid-cols-3 gap-4">
+                    {['Facile', 'Modéré', 'Difficile'].map((acc) => (
+                      <button
+                        key={acc}
+                        onClick={() => handleAccessibiliteClick(acc)}
+                        className={`p-4 rounded-lg border-2 font-semibold transition-all ${
+                          preferences.accessibilite.includes(acc)
+                            ? 'border-red-600 bg-red-50 text-red-600'
+                            : 'border-gray-200 hover:border-red-300'
+                        }`}
+                      >
+                        {acc}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center mt-8">
+                <button
+                  onClick={() => setStep(2)}
+                  disabled={!preferences.jours || !preferences.nuits || !preferences.budget || !preferences.saison}
+                  className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors"
+                >
+                  <span>Continuer</span>
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Step 2: Centres d'intérêt */}
+        {step === 2 && (
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-xl shadow-md p-8 md:p-12">
+              <h2 className="font-display font-bold text-3xl text-gray-900 mb-4 text-center">
                 Quels sont vos centres d'intérêt ?
               </h2>
+              {(() => {
+                const minInterets = getMinimumInterets(preferences.jours)
+                return minInterets > 0 ? (
+                  <p className="text-center text-gray-600 mb-8">
+                    Sélectionnez au moins <span className="font-bold text-red-600">{minInterets} centres d'intérêt</span> pour un séjour de {preferences.jours} jour{preferences.jours > 1 ? 's' : ''}
+                  </p>
+                ) : (
+                  <p className="text-center text-gray-600 mb-8">
+                    Sélectionnez un ou plusieurs centres d'intérêt
+                  </p>
+                )
+              })()}
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                 {interetsOptions.map((interet) => {
                   const Icon = interet.icon
@@ -165,122 +427,6 @@ const Itinerary = () => {
                 })}
               </div>
 
-              <div className="text-center">
-                <button
-                  onClick={() => setStep(2)}
-                  disabled={preferences.interets.length === 0}
-                  className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors"
-                >
-                  <span>Continuer</span>
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* Step 2: Détails */}
-        {step === 2 && (
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl shadow-md p-8 md:p-12">
-              <h2 className="font-display font-bold text-3xl text-gray-900 mb-8 text-center">
-                Détails de votre voyage
-              </h2>
-
-              <div className="space-y-6">
-                {/* Durée */}
-                <div>
-                  <label className="block font-semibold text-gray-900 mb-3">
-                    <Calendar className="w-5 h-5 inline mr-2" />
-                    Durée du séjour
-                  </label>
-                  <div className="grid grid-cols-3 gap-4">
-                    {['3', '5', '7'].map((duree) => (
-                      <button
-                        key={duree}
-                        onClick={() => setPreferences({ ...preferences, duree })}
-                        className={`p-4 rounded-lg border-2 font-semibold transition-all ${
-                          preferences.duree === duree
-                            ? 'border-red-600 bg-red-50 text-red-600'
-                            : 'border-gray-200 hover:border-red-300'
-                        }`}
-                      >
-                        {duree} jours
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Budget */}
-                <div>
-                  <label className="block font-semibold text-gray-900 mb-3">
-                    <DollarSign className="w-5 h-5 inline mr-2" />
-                    Budget par jour
-                  </label>
-                  <div className="grid grid-cols-3 gap-4">
-                    {['Économique', 'Moyen', 'Confort'].map((budget) => (
-                      <button
-                        key={budget}
-                        onClick={() => setPreferences({ ...preferences, budget })}
-                        className={`p-4 rounded-lg border-2 font-semibold transition-all ${
-                          preferences.budget === budget
-                            ? 'border-red-600 bg-red-50 text-red-600'
-                            : 'border-gray-200 hover:border-red-300'
-                        }`}
-                      >
-                        {budget}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Saison */}
-                <div>
-                  <label className="block font-semibold text-gray-900 mb-3">
-                    <Flower2 className="w-5 h-5 inline mr-2" />
-                    Saison de visite
-                  </label>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {['Printemps', 'Été', 'Automne', 'Hiver'].map((saison) => (
-                      <button
-                        key={saison}
-                        onClick={() => setPreferences({ ...preferences, saison })}
-                        className={`p-4 rounded-lg border-2 font-semibold transition-all ${
-                          preferences.saison === saison
-                            ? 'border-red-600 bg-red-50 text-red-600'
-                            : 'border-gray-200 hover:border-red-300'
-                        }`}
-                      >
-                        {saison}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Accessibilité */}
-                <div>
-                  <label className="block font-semibold text-gray-900 mb-3">
-                    <Mountain className="w-5 h-5 inline mr-2" />
-                    Niveau d'accessibilité souhaité
-                  </label>
-                  <div className="grid grid-cols-3 gap-4">
-                    {['Facile', 'Modéré', 'Difficile'].map((acc) => (
-                      <button
-                        key={acc}
-                        onClick={() => setPreferences({ ...preferences, accessibilite: acc })}
-                        className={`p-4 rounded-lg border-2 font-semibold transition-all ${
-                          preferences.accessibilite === acc
-                            ? 'border-red-600 bg-red-50 text-red-600'
-                            : 'border-gray-200 hover:border-red-300'
-                        }`}
-                      >
-                        {acc}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
               <div className="flex justify-between mt-8">
                 <button
                   onClick={() => setStep(1)}
@@ -290,7 +436,7 @@ const Itinerary = () => {
                 </button>
                 <button
                   onClick={generateItinerary}
-                  disabled={!preferences.duree || !preferences.budget || !preferences.saison}
+                  disabled={preferences.interets.length < getMinimumInterets(preferences.jours)}
                   className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-8 py-3 rounded-full font-semibold transition-colors"
                 >
                   <Sparkles className="w-5 h-5" />
@@ -310,7 +456,7 @@ const Itinerary = () => {
                   Votre Itinéraire Personnalisé
                 </h2>
                 <p className="text-gray-600 text-lg">
-                  {generatedItinerary.duree} jours à Ibaraki • Budget {generatedItinerary.budget}
+                  {generatedItinerary.jours} jour{generatedItinerary.jours > 1 ? 's' : ''} • {generatedItinerary.nuits} nuit{generatedItinerary.nuits > 1 ? 's' : ''} • Budget {generatedItinerary.budget}
                 </p>
               </div>
 
@@ -370,12 +516,12 @@ const Itinerary = () => {
                     setStep(1)
                     setGeneratedItinerary(null)
                     setPreferences({
-                      duree: '',
+                      jours: '',
+                      nuits: '',
                       budget: '',
                       interets: [],
                       saison: '',
-                      accessibilite: '',
-                      voyageurs: ''
+                      accessibilite: []
                     })
                   }}
                   className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"

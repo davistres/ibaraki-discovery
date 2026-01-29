@@ -6,9 +6,15 @@
     "description": "Parc spectaculaire célèbre pour ses champs de nemophila bleues au printemps et de kochia rouges en automne",
     "descriptionLongue": "Le Hitachi Seaside Park est l'un des parcs les plus spectaculaires du Japon, s'étendant sur 190 hectares. Il est mondialement connu pour ses floraisons saisonnières époustouflantes : les nemophila bleues (baby blue eyes) au printemps créent un océan de fleurs bleues, tandis que les kochia (buissons boule) deviennent rouge vif en automne. Le parc offre également des jardins de tulipes, de roses, de cosmos et bien d'autres variétés florales tout au long de l'année.",
     "imagePrincipale": "hitachi-seaside-park-kochia-ibaraki-1024x819.jpg",
-    "images": ["hitachi-seaside-park-kochia-ibaraki-1024x819.jpg", "places-to-visit-in-Ibaraki-1200x800.jpg"],
+    "images": [
+      "hitachi-seaside-park-kochia-ibaraki-1024x819.jpg",
+      "places-to-visit-in-Ibaraki-1200x800.jpg"
+    ],
     "adresse": "605-4 Mawatari, Hitachinaka, Ibaraki 312-0012",
-    "coordonnees": { "lat": 36.4042, "lng": 140.6006 },
+    "coordonnees": {
+      "lat": 36.4042,
+      "lng": 140.6006
+    },
     "horaires": "9h30-17h (varie selon saison)",
     "tarif": "450¥ adultes",
     "dureeVisite": "3-4 heures",
@@ -18,8 +24,22 @@
     "region_id": 4,
     "ville_id": 21,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [50, 55, 54, 56, 10, 11, 12, 100, 101, 70]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      55,
+      54,
+      56,
+      10,
+      11,
+      12,
+      100,
+      101,
+      70
+    ]
   },
   {
     "id": "kairaku-en",
@@ -28,9 +48,14 @@
     "description": "L'un des trois plus beaux jardins du Japon, célèbre pour ses 3000 pruniers.",
     "descriptionLongue": "Kairaku-en figure parmi les trois jardins paysagers les plus célèbres du Japon. Créé en 1842 par Tokugawa Nariaki, il est particulièrement renommé for ses quelque 3 000 pruniers de 100 variétés. Le festival des pruniers de Mito (Mito Ume Matsuri) y attire de nombreux visiteurs. Le jardin offre également des paysages avec des bambous, des cèdres et le bâtiment traditionnel Kobuntei.",
     "imagePrincipale": "b1789b66aea6b878a4fc2a939ae73708.jpg",
-    "images": ["b1789b66aea6b878a4fc2a939ae73708.jpg"],
+    "images": [
+      "b1789b66aea6b878a4fc2a939ae73708.jpg"
+    ],
     "adresse": "1 Chome Tokiwa-cho, Mito, Ibaraki 310-0033",
-    "coordonnees": { "lat": 36.3833, "lng": 140.4667 },
+    "coordonnees": {
+      "lat": 36.3833,
+      "lng": 140.4667
+    },
     "horaires": "Jardin: 6h-19h (fév-sep), 7h-18h (oct-fév). Kobuntei: 9h-17h.",
     "tarif": "Jardin: 300¥ (adulte), 150¥ (réduit). Kobuntei: ~200¥.",
     "dureeVisite": "2-3 heures",
@@ -40,8 +65,26 @@
     "region_id": 2,
     "ville_id": 20,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [51, 50, 56, 54, 10, 11, 12, 13, 100, 102, 70, 153, 155, 158]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      51,
+      50,
+      56,
+      54,
+      10,
+      11,
+      12,
+      13,
+      100,
+      102,
+      70,
+      153,
+      155,
+      158
+    ]
   },
   {
     "id": "mont-tsukuba",
@@ -50,9 +93,14 @@
     "description": "Montagne sacrée avec deux sommets, accessible par funiculaire et téléphérique.",
     "descriptionLongue": "Surnommé le 'Mont Violet', le Mont Tsukuba est l'une des '100 montagnes célèbres du Japon'. D'origine non volcanique, il est connu pour ses deux sommets, Nyotai-san (877m) et Nantai-san (871m), et abrite plus de 1000 espèces de plantes. Il offre des vues panoramiques sur la plaine du Kanto, jusqu'à Tokyo et le Mont Fuji.",
     "imagePrincipale": "d3a35b87aeb8bf1c00d85b7c26048d58.jpg",
-    "images": ["d3a35b87aeb8bf1c00d85b7c26048d58.jpg"],
+    "images": [
+      "d3a35b87aeb8bf1c00d85b7c26048d58.jpg"
+    ],
     "adresse": "Tsukuba, Tsukuba-shi, Ibaraki 300-4352",
-    "coordonnees": { "lat": 36.2256, "lng": 140.1064 },
+    "coordonnees": {
+      "lat": 36.2256,
+      "lng": 140.1064
+    },
     "horaires": "Montagne accessible 24/7. Funiculaire/téléphérique: ~9h-17h (variable).",
     "tarif": "Montagne: gratuit. Funiculaire/téléphérique: ~1100-1300¥ A/R.",
     "dureeVisite": "4-6 heures",
@@ -62,8 +110,24 @@
     "region_id": 2,
     "ville_id": 22,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [53, 50, 52, 54, 10, 11, 12, 13, 100, 103, 70, 65]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      53,
+      50,
+      52,
+      54,
+      10,
+      11,
+      12,
+      13,
+      100,
+      103,
+      70,
+      65
+    ]
   },
   {
     "id": "kashima-jingu",
@@ -72,9 +136,14 @@
     "description": "L'un des plus anciens et importants sanctuaires shinto de l'est du Japon, dédié au dieu des arts martiaux.",
     "descriptionLongue": "Le Kashima Jingu est l'un des sanctuaires shinto les plus anciens et les plus importants de l'est du Japon. Sa fondation remonterait, selon la légende, à 660 avant J.-C. Il est dédié à Takemikazuchi-no-Ōkami, une puissante divinité du tonnerre, du sabre et des arts martiaux. Le sanctuaire est le chef de file d'environ 600 sanctuaires Kashima à travers le pays. Il est situé au cœur d'une vaste forêt sacrée, créant une atmosphère de recueillement. Le complexe comprend de nombreux bâtiments impressionnants, une salle du trésor conservant une épée Trésor National, ainsi qu'un parc aux cerfs sacrés.",
     "imagePrincipale": "871c5e3d4cf4d49550af06e52108cfac_w.jpeg",
-    "images": ["871c5e3d4cf4d49550af06e52108cfac_w.jpeg"],
+    "images": [
+      "871c5e3d4cf4d49550af06e52108cfac_w.jpeg"
+    ],
     "adresse": "2306-1 Kyuchu, Kashima-shi, Ibaraki 314-0031.",
-    "coordonnees": { "lat": 35.9667, "lng": 140.6333 },
+    "coordonnees": {
+      "lat": 35.9667,
+      "lng": 140.6333
+    },
     "horaires": "Enceinte accessible 24h/24. Bureau et salle du trésor : généralement 8h30-16h30.",
     "tarif": "Entrée gratuite. Salle du trésor : environ 300 yens.",
     "dureeVisite": "1-2 heures",
@@ -84,8 +153,26 @@
     "region_id": 3,
     "ville_id": 23,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne", "Été", "Hiver"],
-    "category_ids": [51, 52, 57, 50, 10, 11, 12, 13, 100, 103, 102, 113]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne",
+      "Été",
+      "Hiver"
+    ],
+    "category_ids": [
+      51,
+      52,
+      57,
+      50,
+      10,
+      11,
+      12,
+      13,
+      100,
+      103,
+      102,
+      113
+    ]
   },
   {
     "id": "grand-bouddha-ushiku",
@@ -94,9 +181,14 @@
     "description": "L'un des plus hautes statues du monde (120m), entourée de jardins magnifiques.",
     "descriptionLongue": "Avec ses 120 mètres de hauteur, le Grand Bouddha d'Ushiku reste l'un des plus hautes statues du monde. Elle représente le Bouddha Amitabha. L'intérieur abrite un musée sur plusieurs niveaux, une plateforme d'observation à 85m, et des milliers de petites statues de Bouddha dorées. Le site comprend un jardin de style Jodo (Terre Pure) et un petit zoo.",
     "imagePrincipale": "sakuraco_ushiku-daibutsu.webp",
-    "images": ["sakuraco_ushiku-daibutsu.webp"],
+    "images": [
+      "sakuraco_ushiku-daibutsu.webp"
+    ],
     "adresse": "2083 Kuno-cho, Ushiku, Ibaraki 300-1288",
-    "coordonnees": { "lat": 35.9833, "lng": 140.2167 },
+    "coordonnees": {
+      "lat": 35.9833,
+      "lng": 140.2167
+    },
     "horaires": "9h30-17h (semaine, mar-sep), 9h30-16h30 (semaine, oct-fév). W-E & fériés: 9h30-17h30 (mar-sep).",
     "tarif": "Complet: ~800¥ (adulte), ~400¥ (enfant). Jardin seul: ~500¥ (adulte), ~300¥ (enfant).",
     "dureeVisite": "2-3 heures",
@@ -106,8 +198,24 @@
     "region_id": 3,
     "ville_id": 24,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Autumn"],
-    "category_ids": [51, 52, 54, 55, 10, 11, 12, 13, 100, 104, 61, 58]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Autumn"
+    ],
+    "category_ids": [
+      51,
+      52,
+      54,
+      55,
+      10,
+      11,
+      12,
+      13,
+      100,
+      104,
+      61,
+      58
+    ]
   },
   {
     "id": "chutes-fukuroda",
@@ -116,9 +224,14 @@
     "description": "Reconnues comme l'une des trois plus belles chutes d'eau du Japon, les chutes de Fukuroda offrent un spectacle impressionnant en toute saison. Elles mesurent 120 mètres de haut et 73 mètres de large, et l'eau s'écoule en quatre paliers distincts, ce qui leur vaut le surnom de 'Yodo-no-taki' (chutes aux quatre étages).",
     "descriptionLongue": "Reconnues comme l'une des trois plus belles chutes d'eau du Japon (avec Kegon-no-taki à Nikko et Nachi-no-taki à Wakayama), les chutes de Fukuroda offrent un spectacle impressionnant en toute saison. Elles mesurent 120 mètres de haut et 73 mètres de large, et l'eau s'écoule en quatre paliers distincts, ce qui leur vaut le surnom de 'Yodo-no-taki' (chutes aux quatre étages). En automne, les couleurs environnantes sont magnifiques. En hiver, les chutes peuvent geler partiellement ou totalement, créant un paysage féerique et offrant parfois la possibilité de pratiquer l'escalade sur glace. Un tunnel avec plusieurs plateformes d'observation, dont une accessible par ascenseur, permet d'admirer les chutes sous différents angles.",
     "imagePrincipale": "03-122199.jpeg",
-    "images": ["03-122199.jpeg"],
+    "images": [
+      "03-122199.jpeg"
+    ],
     "adresse": "3-19 Fukuroda, Daigo-machi, Kuji-gun, Ibaraki 319-3523",
-    "coordonnees": { "lat": 36.7667, "lng": 140.3667 },
+    "coordonnees": {
+      "lat": 36.7667,
+      "lng": 140.3667
+    },
     "horaires": "Mai-octobre : 8h00-18h00. Novembre-avril : 9h00-17h00.",
     "tarif": "Adultes environ 300 yens, enfants (collège et moins) environ 150 yens pour l'accès au tunnel et aux plateformes d'observation.",
     "dureeVisite": "1-2 heures",
@@ -128,8 +241,25 @@
     "region_id": 1,
     "ville_id": 25,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Automne", "Hiver"],
-    "category_ids": [50, 53, 54, 10, 11, 12, 13, 100, 106, 104, 73, 157, 65]
+    "meilleuresSaisons": [
+      "Automne",
+      "Hiver"
+    ],
+    "category_ids": [
+      50,
+      53,
+      54,
+      10,
+      11,
+      12,
+      13,
+      100,
+      106,
+      104,
+      73,
+      157,
+      65
+    ]
   },
   {
     "id": "kasama-inari",
@@ -138,9 +268,14 @@
     "description": "L'un des trois plus importants sanctuaires Inari du Japon, célèbre pour son festival des chrysanthèmes.",
     "descriptionLongue": "Le Kasama Inari Jinja est l'un des trois sanctuaires Inari les plus importants du Japon. Fondé en 651, il est dédié à Ukanomitama-no-kami, la divinité de la prospérité. Le sanctuaire attire des millions de visiteurs chaque année, en particulier pour le Hatsumōde (première visite de l'année). Son enceinte est vaste et comprend de magnifiques bâtiments, dont certains sont désignés Biens Culturels Importants du Japon.",
     "imagePrincipale": "a272faa7516ca8501b62cda7a5a0f887-560x384.jpg",
-    "images": ["a272faa7516ca8501b62cda7a5a0f887-560x384.jpg"],
+    "images": [
+      "a272faa7516ca8501b62cda7a5a0f887-560x384.jpg"
+    ],
     "adresse": "1 Kasama, Kasama-shi, Ibaraki 309-1611",
-    "coordonnees": { "lat": 36.3833, "lng": 140.2667 },
+    "coordonnees": {
+      "lat": 36.3833,
+      "lng": 140.2667
+    },
     "horaires": "Enceinte accessible 24/7. Bureau: 8h30-17h00.",
     "tarif": "Gratuit",
     "dureeVisite": "1-2 heures",
@@ -150,8 +285,26 @@
     "region_id": 2,
     "ville_id": 26,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Automne"],
-    "category_ids": [51, 52, 57, 58, 10, 11, 12, 13, 103, 102, 136, 70, 155, 158, 156]
+    "meilleuresSaisons": [
+      "Automne"
+    ],
+    "category_ids": [
+      51,
+      52,
+      57,
+      58,
+      10,
+      11,
+      12,
+      13,
+      103,
+      102,
+      136,
+      70,
+      155,
+      158,
+      156
+    ]
   },
   {
     "id": "oarai-isosaki",
@@ -160,9 +313,14 @@
     "description": "Sanctuaire shinto historique fondé en 856, célèbre pour son torii 'Kamiiso-no-Torii' sur un récif face à l'océan Pacifique, particulièrement photogénique au lever du soleil.",
     "descriptionLongue": "Fondé en 856, le sanctuaire Oarai Isosaki-jinja est un lieu de culte shinto historique dédié à Ōnamuchi-no-Mikoto et Sukunahikona-no-Mikoto, divinités associées à la guérison et à la bonne fortune. Il est particulièrement célèbre pour sa porte torii 'Kamiiso-no-Torii' (Porte sur le Rocher Divin), qui se dresse de manière spectaculaire sur un récif battu par les vagues de l'océan Pacifique. Ce site est très photogénique, surtout au lever du soleil lorsque les premiers rayons illuminent la porte et l'océan. Le sanctuaire principal, situé sur une colline boisée surplombant la mer, possède également une architecture impressionnante et une atmosphère sereine. Il est vénéré par les pêcheurs locaux pour des pêches fructueuses et une navigation sûre.",
     "imagePrincipale": "5bd66afb49109d73801bfa9cdaf42a27.jpg",
-    "images": ["5bd66afb49109d73801bfa9cdaf42a27.jpg"],
+    "images": [
+      "5bd66afb49109d73801bfa9cdaf42a27.jpg"
+    ],
     "adresse": "6890 Isohama-cho, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1301",
-    "coordonnees": { "lat": 36.3167, "lng": 140.5833 },
+    "coordonnees": {
+      "lat": 36.3167,
+      "lng": 140.5833
+    },
     "horaires": "L'accès à la porte Kamiiso-no-Torii est possible à toute heure. Le sanctuaire principal est généralement ouvert pendant la journée.",
     "tarif": "Gratuit",
     "dureeVisite": "1-2 heures",
@@ -172,8 +330,26 @@
     "region_id": 4,
     "ville_id": 27,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Été", "Automne", "Printemps"],
-    "category_ids": [51, 52, 54, 50, 10, 11, 12, 13, 101, 103, 105, 154, 148]
+    "meilleuresSaisons": [
+      "Été",
+      "Automne",
+      "Printemps"
+    ],
+    "category_ids": [
+      51,
+      52,
+      54,
+      50,
+      10,
+      11,
+      12,
+      13,
+      101,
+      103,
+      105,
+      154,
+      148
+    ]
   },
   {
     "id": "aqua-world-oarai",
@@ -182,9 +358,14 @@
     "description": "L'un des plus grands aquariums du Japon, réputé pour sa collection de plus de 50 espèces de requins.",
     "descriptionLongue": "L'un des plus grands aquariums du Japon, Aqua World Oarai abrite une impressionnante collection de vie marine, avec un accent particulier sur les espèces de l'océan Pacifique. Il est réputé pour son grand nombre d'espèces de requins (plus de 50), ce qui en fait l'un des meilleurs endroits au Japon pour observer ces créatures. L'aquarium propose également des expositions sur les loutres de mer, les manchots, les otaries, les poissons tropicaux, et un immense bassin 'Rencontre avec la mer' reproduisant l'écosystème local. Des spectacles d'otaries et de dauphins sont organisés.",
     "imagePrincipale": "image.jpg",
-    "images": ["image.jpg"],
+    "images": [
+      "image.jpg"
+    ],
     "adresse": "8252-3 Isohama-cho, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1301.",
-    "coordonnees": { "lat": 36.3333, "lng": 140.5833 },
+    "coordonnees": {
+      "lat": 36.3333,
+      "lng": 140.5833
+    },
     "horaires": "Généralement 9h00-17h00 (dernière admission 16h00). Fermé certains jours en décembre.",
     "tarif": "Adultes environ 2 300 yens, Étudiants (primaire et collège) environ 1 100 yens, Enfants (3 ans et plus) environ 400 yens.",
     "dureeVisite": "3-4 heures",
@@ -194,8 +375,26 @@
     "region_id": 4,
     "ville_id": 27,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Été", "Printemps", "Automne", "Hiver"],
-    "category_ids": [55, 61, 62, 10, 11, 12, 13, 106, 73, 112, 154, 148]
+    "meilleuresSaisons": [
+      "Été",
+      "Printemps",
+      "Automne",
+      "Hiver"
+    ],
+    "category_ids": [
+      55,
+      61,
+      62,
+      10,
+      11,
+      12,
+      13,
+      106,
+      73,
+      112,
+      154,
+      148
+    ]
   },
   {
     "id": "lac-kasumigaura",
@@ -204,9 +403,14 @@
     "description": "Le deuxième plus grand lac du Japon, offrant pistes cyclables, sports nautiques et des paysages aquatiques étendus.",
     "descriptionLongue": "Le Lac Kasumigaura est le deuxième plus grand lac d'eau douce du Japon, couvrant une superficie d'environ 168 km² (Nishiura, la partie principale). Si l'on inclut les lacs Kitaura et Sotonasakaura, qui lui sont connectés, la superficie totale du système lacustre atteint environ 220 km². Ce lac peu profond constitue un écosystème riche et varié. Il est une source importante d'eau pour l'agriculture et l'industrie, et un lieu de loisirs populaire. Les rives aménagées offrent des pistes cyclables, notamment la \"Tsukuba Kasumigaura Ring Ring Road\", un parcours d'environ 180 km. Le lac est également apprécié pour la pêche, les sports nautiques (voile, kayak), l'observation des oiseaux et les couchers de soleil. Des démonstrations de bateaux de pêche à voile traditionnels (hobikibune) ont lieu à des fins touristiques durant certaines périodes de l'année.",
     "imagePrincipale": "Ibaraki_t_id394_1.jpg",
-    "images": ["Ibaraki_t_id394_1.jpg"],
+    "images": [
+      "Ibaraki_t_id394_1.jpg"
+    ],
     "adresse": "S'étend sur plusieurs municipalités du sud-est d'Ibaraki, dont Tsuchiura, Kasumigaura, Namegata, Itako, Miho, Ami.",
-    "coordonnees": { "lat": 36.0333, "lng": 140.3833 },
+    "coordonnees": {
+      "lat": 36.0333,
+      "lng": 140.3833
+    },
     "horaires": "Accès libre.",
     "tarif": "Accès aux rives du lac gratuit. Locations de vélos, activités nautiques et croisières payantes.",
     "dureeVisite": "Demi-journée à journée complète",
@@ -216,8 +420,24 @@
     "region_id": 3,
     "ville_id": 28,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Autumn"],
-    "category_ids": [50, 59, 60, 54, 10, 11, 12, 63, 137, 138, 139, 116]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Autumn"
+    ],
+    "category_ids": [
+      50,
+      59,
+      60,
+      54,
+      10,
+      11,
+      12,
+      63,
+      137,
+      138,
+      139,
+      116
+    ]
   },
   {
     "id": "ecole-kodokan",
@@ -228,7 +448,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1-6-29 Sannomaru, Mito, Ibaraki 310-0011",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3578,
+      "lng": 140.4578
+    },
     "horaires": "9h00-17h00 (variable selon saison)",
     "tarif": "~400¥ (adultes), ~200¥ (réduit)",
     "dureeVisite": "1-2 heures",
@@ -239,7 +462,13 @@
     "ville_id": 20,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [51, 57, 102, 113, 61]
+    "category_ids": [
+      51,
+      57,
+      102,
+      113,
+      61
+    ]
   },
   {
     "id": "temple-jorinji",
@@ -250,7 +479,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1064-1 Senbacho, Mito, Ibaraki 310-0851",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3588,
+      "lng": 140.4588
+    },
     "horaires": "8h00-17h00 (généralement)",
     "tarif": "~300¥",
     "dureeVisite": "1 heure",
@@ -261,7 +493,13 @@
     "ville_id": 20,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [52, 51, 54, 104, 114]
+    "category_ids": [
+      52,
+      51,
+      54,
+      104,
+      114
+    ]
   },
   {
     "id": "musee-art-moderne-ibaraki",
@@ -272,7 +510,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "666-1 Senba-cho, Mito-shi, Ibaraki 310-0851",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.376,
+      "lng": 140.476
+    },
     "horaires": "9h30-17h00 (fermé les lundis)",
     "tarif": "~320¥ (collection permanente)",
     "dureeVisite": "2-3 heures",
@@ -283,7 +524,13 @@
     "ville_id": 20,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [51, 64, 112, 113, 106]
+    "category_ids": [
+      51,
+      64,
+      112,
+      113,
+      106
+    ]
   },
   {
     "id": "lac-senba",
@@ -294,7 +541,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Senbacho, Mito, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3701,
+      "lng": 140.4701
+    },
     "horaires": "Parc toujours ouvert",
     "tarif": "Accès libre (location de pédalos payante)",
     "dureeVisite": "1-3 heures",
@@ -305,7 +555,15 @@
     "ville_id": 20,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [50, 55, 62, 54, 63, 115, 116]
+    "category_ids": [
+      50,
+      55,
+      62,
+      54,
+      63,
+      115,
+      116
+    ]
   },
   {
     "id": "plage-ajigaura",
@@ -316,7 +574,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Ajigaura, Hitachinaka, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.4035,
+      "lng": 140.541
+    },
     "horaires": "Toujours ouverte (services de plage en été)",
     "tarif": "Accès gratuit",
     "dureeVisite": "2-4 heures",
@@ -326,8 +587,19 @@
     "region_id": 4,
     "ville_id": 21,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Été"],
-    "category_ids": [50, 55, 62, 118, 119, 11, 154, 148]
+    "meilleuresSaisons": [
+      "Été"
+    ],
+    "category_ids": [
+      50,
+      55,
+      62,
+      118,
+      119,
+      11,
+      154,
+      148
+    ]
   },
   {
     "id": "sanctuaire-tsukuba",
@@ -338,7 +610,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Tsukuba, Tsukuba-shi, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.0873,
+      "lng": 140.0873
+    },
     "horaires": "Toujours ouvert",
     "tarif": "Gratuit",
     "dureeVisite": "1-2 heures",
@@ -349,7 +624,15 @@
     "ville_id": 22,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [52, 51, 57, 53, 103, 102, 113]
+    "category_ids": [
+      52,
+      51,
+      57,
+      53,
+      103,
+      102,
+      113
+    ]
   },
   {
     "id": "chateau-oda",
@@ -360,7 +643,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Oda, Tsukuba-shi, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.0858,
+      "lng": 140.0858
+    },
     "horaires": "Toujours ouvert",
     "tarif": "Entrée libre",
     "dureeVisite": "1-2 heures",
@@ -370,8 +656,21 @@
     "region_id": 2,
     "ville_id": 22,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [57, 50, 55, 120, 121, 122, 70, 10, 12]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      57,
+      50,
+      55,
+      120,
+      121,
+      122,
+      70,
+      10,
+      12
+    ]
   },
   {
     "id": "temple-shutokuji",
@@ -382,7 +681,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Iwasaki, Tsukuba, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.0743,
+      "lng": 140.0743
+    },
     "horaires": "A vérifier sur place",
     "tarif": "Gratuit (probable)",
     "dureeVisite": "1 heure",
@@ -393,7 +695,13 @@
     "ville_id": 22,
     "accessibilite_id": 41,
     "meilleuresSaisons": [],
-    "category_ids": [52, 51, 62, 123, 124]
+    "category_ids": [
+      52,
+      51,
+      62,
+      123,
+      124
+    ]
   },
   {
     "id": "brasserie-inaba",
@@ -404,7 +712,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1485 Numata, Tsukuba, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.0901,
+      "lng": 140.0901
+    },
     "horaires": "Boutique: ~10h-17h. Réservation nécessaire pour visites.",
     "tarif": "Dégustation et visites payantes.",
     "dureeVisite": "1-2 heures",
@@ -415,7 +726,14 @@
     "ville_id": 22,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [65, 51, 58, 125, 126, 127]
+    "category_ids": [
+      65,
+      51,
+      58,
+      125,
+      126,
+      127
+    ]
   },
   {
     "id": "jaxa-tsukuba",
@@ -426,7 +744,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "2-1-1 Sengen, Tsukuba-shi, Ibaraki 305-8505",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.0847,
+      "lng": 140.0847
+    },
     "horaires": "A vérifier sur le site officiel",
     "tarif": "Gratuit (généralement)",
     "dureeVisite": "1-2 heures",
@@ -437,7 +758,13 @@
     "ville_id": 22,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [61, 55, 66, 112, 128]
+    "category_ids": [
+      61,
+      55,
+      66,
+      112,
+      128
+    ]
   },
   {
     "id": "tsukuba-expo-center",
@@ -448,7 +775,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "2-9 Azuma, Tsukuba-shi, Ibaraki 305-0031",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.0806,
+      "lng": 140.0806
+    },
     "horaires": "A vérifier sur le site officiel",
     "tarif": "Payant",
     "dureeVisite": "2-3 heures",
@@ -459,7 +789,14 @@
     "ville_id": 22,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [61, 55, 66, 112, 128, 130]
+    "category_ids": [
+      61,
+      55,
+      66,
+      112,
+      128,
+      130
+    ]
   },
   {
     "id": "science-square-tsukuba",
@@ -470,7 +807,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1-1-1 Higashi, Tsukuba-shi, Ibaraki 305-8561",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.0823,
+      "lng": 140.0823
+    },
     "horaires": "A vérifier sur le site officiel",
     "tarif": "Gratuit (généralement)",
     "dureeVisite": "1-2 heures",
@@ -481,7 +821,13 @@
     "ville_id": 22,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [61, 55, 66, 112, 129]
+    "category_ids": [
+      61,
+      55,
+      66,
+      112,
+      129
+    ]
   },
   {
     "id": "jardin-botanique-tsukuba",
@@ -492,7 +838,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "4-1-1 Amakubo, Tsukuba, Ibaraki 305-0005",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.0862,
+      "lng": 140.0862
+    },
     "horaires": "9h00-16h30 (fermé les lundis)",
     "tarif": "~320¥",
     "dureeVisite": "2-3 heures",
@@ -502,8 +851,21 @@
     "region_id": 2,
     "ville_id": 22,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Été", "Automne"],
-    "category_ids": [50, 56, 55, 61, 131, 10, 11, 12]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      56,
+      55,
+      61,
+      131,
+      10,
+      11,
+      12
+    ]
   },
   {
     "id": "village-nishiyama",
@@ -514,7 +876,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "District de Nishiyama, Kasama-shi, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3894,
+      "lng": 140.2728
+    },
     "horaires": "Les horaires des ateliers varient. A vérifier à l'avance.",
     "tarif": "Accès libre. Cours et achats payants (~2000-3000¥ pour une initiation).",
     "dureeVisite": "2-4 heures",
@@ -525,7 +890,16 @@
     "ville_id": 26,
     "accessibilite_id": 41,
     "meilleuresSaisons": [],
-    "category_ids": [58, 51, 53, 62, 132, 133, 134, 135]
+    "category_ids": [
+      58,
+      51,
+      53,
+      62,
+      132,
+      133,
+      134,
+      135
+    ]
   },
   {
     "id": "colline-arts-kasama",
@@ -536,7 +910,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3899,
+      "lng": 140.2733
+    },
     "horaires": "Parc ouvert en permanence. Musée et Craft Hills: 9h30-17h00 (fermé certains lundis).",
     "tarif": "Parc gratuit. Musée et ateliers payants.",
     "dureeVisite": "2-4 heures",
@@ -546,8 +923,24 @@
     "region_id": 2,
     "ville_id": 26,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [51, 64, 58, 56, 53, 132, 133, 134, 135, 112, 10, 12]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      51,
+      64,
+      58,
+      56,
+      53,
+      132,
+      133,
+      134,
+      135,
+      112,
+      10,
+      12
+    ]
   },
   {
     "id": "musee-ceramique-ibaraki",
@@ -558,7 +951,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3737,
+      "lng": 140.2571
+    },
     "horaires": "Généralement 9h30-17h00 (dernière admission 16h30). Fermé certains lundis et pendant les congés du Nouvel An.",
     "tarif": "Payant (~730¥ pour adultes pour les expositions permanentes).",
     "dureeVisite": "1-2 heures",
@@ -569,7 +965,15 @@
     "ville_id": 26,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [51, 64, 58, 112, 132, 133, 106]
+    "category_ids": [
+      51,
+      64,
+      58,
+      112,
+      132,
+      133,
+      106
+    ]
   },
   {
     "id": "parc-kasama-no-mori",
@@ -580,7 +984,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Kasama, Kasama-shi, Ibaraki 309-1621",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3801,
+      "lng": 140.2635
+    },
     "horaires": "Accès aux sentiers durant la journée. Installations spécifiques: 8h30-17h00.",
     "tarif": "Entrée libre. Parking payant possible (~500¥).",
     "dureeVisite": "1-3 heures",
@@ -590,8 +997,19 @@
     "region_id": 2,
     "ville_id": 26,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [50, 53, 62, 55, 10, 11, 12]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      53,
+      62,
+      55,
+      10,
+      11,
+      12
+    ]
   },
   {
     "id": "brasserie-sudo-honke",
@@ -602,7 +1020,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1-1-1 Obara, Kasama-shi, Ibaraki 309-1611",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3789,
+      "lng": 140.2623
+    },
     "horaires": "Boutique: 9h00-17h00 (fermé dimanches, jours fériés, congés Nouvel An). Visites sur réservation.",
     "tarif": "Visites-dégustations payantes (~1500-3000¥). Réservation indispensable.",
     "dureeVisite": "1-2 heures",
@@ -613,7 +1034,16 @@
     "ville_id": 26,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [65, 51, 58, 125, 126, 127, 107, 104]
+    "category_ids": [
+      65,
+      51,
+      58,
+      125,
+      126,
+      127,
+      107,
+      104
+    ]
   },
   {
     "id": "chutes-tsukimachi",
@@ -624,7 +1054,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Kawakami, Daigo-machi, Kuji-gun, Ibaraki 319-3506",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.766,
+      "lng": 140.366
+    },
     "horaires": "Accès libre en permanence.",
     "tarif": "Gratuit.",
     "dureeVisite": "1 heure",
@@ -634,8 +1067,19 @@
     "region_id": 1,
     "ville_id": 25,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Automne", "Été"],
-    "category_ids": [50, 54, 62, 104, 12, 11, 157]
+    "meilleuresSaisons": [
+      "Automne",
+      "Été"
+    ],
+    "category_ids": [
+      50,
+      54,
+      62,
+      104,
+      12,
+      11,
+      157
+    ]
   },
   {
     "id": "gorges-kuji-gawa",
@@ -646,7 +1090,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Zone s'étendant le long de la rivière Kuji, principalement dans Daigo-machi, Kuji-gun, Ibaraki.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.7648,
+      "lng": 140.3648
+    },
     "horaires": "Accès libre en permanence.",
     "tarif": "Accès généralement libre.",
     "dureeVisite": "2-5 heures",
@@ -656,8 +1103,19 @@
     "region_id": 1,
     "ville_id": 25,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Été", "Automne"],
-    "category_ids": [50, 53, 54, 119, 11, 12, 157]
+    "meilleuresSaisons": [
+      "Été",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      53,
+      54,
+      119,
+      11,
+      12,
+      157
+    ]
   },
   {
     "id": "vallee-mont-yamizo",
@@ -668,7 +1126,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Région du Mont Yamizo, Daigo-machi, Kuji-gun, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.7751,
+      "lng": 140.3751
+    },
     "horaires": "Accès libre.",
     "tarif": "Accès libre.",
     "dureeVisite": "4-7 heures",
@@ -678,8 +1139,25 @@
     "region_id": 1,
     "ville_id": 25,
     "accessibilite_id": 42,
-    "meilleuresSaisons": ["Printemps", "Été", "Automne"],
-    "category_ids": [50, 53, 54, 52, 10, 11, 12, 150, 151, 152, 141, 157]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      53,
+      54,
+      52,
+      10,
+      11,
+      12,
+      150,
+      151,
+      152,
+      141,
+      157
+    ]
   },
   {
     "id": "plage-hiraiso",
@@ -690,7 +1168,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Hiraiso Beach, Oarai-machi, HigashiIbaraki-gun, Ibaraki.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3102,
+      "lng": 140.5768
+    },
     "horaires": "Accès libre.",
     "tarif": "Accès gratuit.",
     "dureeVisite": "1-2 heures",
@@ -700,8 +1181,22 @@
     "region_id": 4,
     "ville_id": 27,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Été", "Printemps", "Automne"],
-    "category_ids": [50, 54, 62, 118, 105, 101, 11, 10, 12]
+    "meilleuresSaisons": [
+      "Été",
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      54,
+      62,
+      118,
+      105,
+      101,
+      11,
+      10,
+      12
+    ]
   },
   {
     "id": "oarai-marine-tower",
@@ -712,7 +1207,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "10 Minato Chuo, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1305.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3147,
+      "lng": 140.5813
+    },
     "horaires": "Mars-août : 9h00-21h00. Septembre-février : 9h00-18h00.",
     "tarif": "Adultes environ 340 yens, Enfants (primaire et collège) environ 170 yens.",
     "dureeVisite": "1 heure",
@@ -722,8 +1220,21 @@
     "region_id": 4,
     "ville_id": 27,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Été", "Automne", "Hiver"],
-    "category_ids": [54, 55, 62, 10, 11, 12, 13]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été",
+      "Automne",
+      "Hiver"
+    ],
+    "category_ids": [
+      54,
+      55,
+      62,
+      10,
+      11,
+      12,
+      13
+    ]
   },
   {
     "id": "ville-itako-canaux",
@@ -734,7 +1245,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Itako-shi, Ibaraki. (Le cœur de la zone des canaux se trouve autour du quartier d'Ayame et près du Parc des Iris Suigo Itako).",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 35.9425,
+      "lng": 140.5592
+    },
     "horaires": "Les promenades en bateau sont généralement disponibles pendant la journée. Le Parc des Iris est ouvert en permanence.",
     "tarif": "Accès à la ville gratuit. Promenades en bateau 'sappa-bune': 1 000 - 1 500 yens par adulte. Entrée au Parc des Iris: gratuite.",
     "dureeVisite": "2-4 heures",
@@ -744,8 +1258,21 @@
     "region_id": 3,
     "ville_id": 29,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Été"],
-    "category_ids": [50, 51, 54, 55, 10, 11, 102, 113, 100]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été"
+    ],
+    "category_ids": [
+      50,
+      51,
+      54,
+      55,
+      10,
+      11,
+      102,
+      113,
+      100
+    ]
   },
   {
     "id": "temple-sairenji-itako",
@@ -756,7 +1283,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1150 Ushibori, Itako-shi, Ibaraki 311-2424.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 35.9383,
+      "lng": 140.555
+    },
     "horaires": "L'accès à l'enceinte du temple est généralement gratuit. Les horaires de visite des bâtiments principaux peuvent être limités.",
     "tarif": "Accès à l'enceinte gratuit. Des frais pourraient s'appliquer pour certains bâtiments.",
     "dureeVisite": "1-2 heures",
@@ -766,8 +1296,20 @@
     "region_id": 3,
     "ville_id": 29,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [51, 52, 57, 54, 10, 12, 102, 113]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      51,
+      52,
+      57,
+      54,
+      10,
+      12,
+      102,
+      113
+    ]
   },
   {
     "id": "pont-ryujin",
@@ -778,7 +1320,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "2133-6 Keganocho, Hitachiota-shi, Ibaraki 313-0351.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.5423,
+      "lng": 140.5257
+    },
     "horaires": "Pont : Généralement 8h30-17h00. Le saut à l'élastique a ses propres horaires.",
     "tarif": "Traversée du pont : Adultes environ 320 yens, Enfants environ 210 yens. Saut à l'élastique : tarifs spécifiques élevés.",
     "dureeVisite": "1-3 heures",
@@ -788,8 +1333,22 @@
     "region_id": 1,
     "ville_id": 31,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [50, 53, 54, 63, 10, 12, 100, 101, 104, 157]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      53,
+      54,
+      63,
+      10,
+      12,
+      100,
+      101,
+      104,
+      157
+    ]
   },
   {
     "id": "nishiyamaso",
@@ -800,7 +1359,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1044 Nishiyamacho, Hitachiota-shi, Ibaraki 313-0007.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.5339,
+      "lng": 140.5173
+    },
     "horaires": "Généralement 9h00-16h00. Fermé certains jours.",
     "tarif": "Adultes environ 1 000 yens, Enfants environ 500 yens.",
     "dureeVisite": "1-2 heures",
@@ -810,8 +1372,20 @@
     "region_id": 1,
     "ville_id": 31,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [51, 57, 56, 10, 12, 102, 113, 157]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      51,
+      57,
+      56,
+      10,
+      12,
+      102,
+      113,
+      157
+    ]
   },
   {
     "id": "sanctuaire-oiwa",
@@ -822,7 +1396,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "728 Irishikencho, Hitachi-shi, Ibaraki 311-0402.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.5951,
+      "lng": 140.6451
+    },
     "horaires": "L'enceinte est généralement accessible en permanence. Le bureau du sanctuaire a des horaires limités (par exemple, 9h00-16h00).",
     "tarif": "Entrée gratuite.",
     "dureeVisite": "1-3 heures",
@@ -832,8 +1409,20 @@
     "region_id": 4,
     "ville_id": 32,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [50, 52, 53, 54, 10, 12, 103, 104]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      52,
+      53,
+      54,
+      10,
+      12,
+      103,
+      104
+    ]
   },
   {
     "id": "hitachi-civic-center-science-museum",
@@ -844,7 +1433,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1-1-1 Saiwai-cho, Hitachi-shi, Ibaraki 317-0073",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.6086,
+      "lng": 140.6586
+    },
     "horaires": "Généralement 9h00-17h00 (dernière admission 16h30). Fermé le dernier lundi de chaque mois et pendant les congés du Nouvel An.",
     "tarif": "Musée : Adultes environ 500 yens, Enfants environ 200 yens. Planétarium : Adultes environ 500 yens, Enfants environ 200 yens. Billets combinés possibles.",
     "dureeVisite": "2-4 heures",
@@ -854,8 +1446,25 @@
     "region_id": 4,
     "ville_id": 32,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Été", "Automne", "Hiver"],
-    "category_ids": [55, 61, 66, 112, 128, 130, 106, 10, 11, 12, 13]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été",
+      "Automne",
+      "Hiver"
+    ],
+    "category_ids": [
+      55,
+      61,
+      66,
+      112,
+      128,
+      130,
+      106,
+      10,
+      11,
+      12,
+      13
+    ]
   },
   {
     "id": "gorge-hananuki",
@@ -866,7 +1475,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Ono, Takahagi-shi, Ibaraki",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.7138,
+      "lng": 140.7138
+    },
     "horaires": "Accès libre en permanence.",
     "tarif": "Accès gratuit.",
     "dureeVisite": "2-4 heures",
@@ -876,8 +1488,17 @@
     "region_id": 4,
     "ville_id": 33,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Automne"],
-    "category_ids": [50, 53, 54, 12, 101, 104]
+    "meilleuresSaisons": [
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      53,
+      54,
+      12,
+      101,
+      104
+    ]
   },
   {
     "id": "plage-takado-kohama",
@@ -888,7 +1509,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Takado, Takahagi-shi, Ibaraki.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.7205,
+      "lng": 140.7205
+    },
     "horaires": "Accès libre en permanence.",
     "tarif": "Accès gratuit.",
     "dureeVisite": "1-3 heures",
@@ -898,8 +1522,20 @@
     "region_id": 4,
     "ville_id": 33,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Été", "Printemps", "Automne"],
-    "category_ids": [50, 54, 62, 118, 11, 10, 12]
+    "meilleuresSaisons": [
+      "Été",
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      54,
+      62,
+      118,
+      11,
+      10,
+      12
+    ]
   },
   {
     "id": "parc-floral-ibaraki",
@@ -910,7 +1546,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "200 Shimoaoyagi, Ishioka-shi, Ibaraki 315-0153.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.1925,
+      "lng": 140.2925
+    },
     "horaires": "Généralement 9h00-17h00 (dernière admission 16h30). Horaires étendus pour événements. Vérifier site officiel.",
     "tarif": "Varie selon saison (900-1500¥ adultes). Vérifier site officiel.",
     "dureeVisite": "2-4 heures",
@@ -920,8 +1559,24 @@
     "region_id": 2,
     "ville_id": 34,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Été", "Automne", "Hiver"],
-    "category_ids": [50, 56, 55, 54, 62, 10, 11, 12, 13, 100]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été",
+      "Automne",
+      "Hiver"
+    ],
+    "category_ids": [
+      50,
+      56,
+      55,
+      54,
+      62,
+      10,
+      11,
+      12,
+      13,
+      100
+    ]
   },
   {
     "id": "koga-ville-musee",
@@ -932,7 +1587,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "3-1 Gofukumachi, Koga-shi, Ibaraki 306-0033.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.1804,
+      "lng": 139.6971
+    },
     "horaires": "Musée: Généralement 9h00-17h00 (dernière admission 16h30). Fermé les lundis et jours fériés. Ville: Accès libre.",
     "tarif": "Ville: Gratuit. Musée: Adultes environ 200 yens.",
     "dureeVisite": "2-3 heures",
@@ -942,8 +1600,20 @@
     "region_id": 3,
     "ville_id": 30,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne"],
-    "category_ids": [51, 57, 64, 102, 113, 112, 10, 12]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne"
+    ],
+    "category_ids": [
+      51,
+      57,
+      64,
+      102,
+      113,
+      112,
+      10,
+      12
+    ]
   },
   {
     "id": "marais-watarase",
@@ -954,7 +1624,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Zone s'étendant sur les préfectures d'Ibaraki (ville de Koga), Tochigi, Saitama et Gunma.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.1931,
+      "lng": 139.7098
+    },
     "horaires": "Accès libre en permanence. Meilleures périodes pour l'observation des oiseaux: tôt le matin ou fin d'après-midi.",
     "tarif": "Entrée libre à la plupart des zones.",
     "dureeVisite": "Demi-journée à journée complète",
@@ -964,8 +1637,22 @@
     "region_id": 3,
     "ville_id": 30,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Automne", "Hiver"],
-    "category_ids": [50, 54, 53, 59, 62, 10, 12, 13, 104]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Automne",
+      "Hiver"
+    ],
+    "category_ids": [
+      50,
+      54,
+      53,
+      59,
+      62,
+      10,
+      12,
+      13,
+      104
+    ]
   },
   {
     "id": "cote-rocheuse-kitaiibaraki",
@@ -976,7 +1663,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "Le long du littoral de KitaIbaraki-shi, Ibaraki. Des sites notables incluent la côte d'Izura.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.7936,
+      "lng": 140.7436
+    },
     "horaires": "Accès libre (prudence près des falaises et en fonction des marées).",
     "tarif": "Accès gratuit.",
     "dureeVisite": "1-3 heures",
@@ -986,8 +1676,23 @@
     "region_id": 4,
     "ville_id": 35,
     "accessibilite_id": 41,
-    "meilleuresSaisons": ["Printemps", "Été", "Automne"],
-    "category_ids": [50, 54, 62, 10, 11, 12, 101, 104, 154, 148]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été",
+      "Automne"
+    ],
+    "category_ids": [
+      50,
+      54,
+      62,
+      10,
+      11,
+      12,
+      101,
+      104,
+      154,
+      148
+    ]
   },
   {
     "id": "yuki-tsumugi-yakata",
@@ -998,7 +1703,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "12-6 Motobuto, Yuki, Ibaraki 307-0001.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.2926,
+      "lng": 139.8759
+    },
     "horaires": "Généralement 9h30 à 17h00 (ou 17h30). Jours de fermeture variables (mardis et mercredis, Nouvel An). Vérifier site officiel.",
     "tarif": "Entrée payante (environ 800 yens adultes pour le musée). Ateliers et produits en supplément.",
     "dureeVisite": "2-4 heures",
@@ -1008,8 +1716,23 @@
     "region_id": 3,
     "ville_id": 36,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Été", "Automne", "Hiver"],
-    "category_ids": [51, 58, 57, 61, 102, 104, 106, 107, 112]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été",
+      "Automne",
+      "Hiver"
+    ],
+    "category_ids": [
+      51,
+      58,
+      57,
+      61,
+      102,
+      104,
+      106,
+      107,
+      112
+    ]
   },
   {
     "id": "temple-amabiki-kannon",
@@ -1020,7 +1743,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "1 Motogi, Sakuragawa-shi, Ibaraki 309-1231.",
-    "coordonnees": {}, 
+    "coordonnees": {
+      "lat": 36.3198,
+      "lng": 140.1031
+    },
     "horaires": "Généralement 8h00 - 17h00 (bureau du temple de 8h30 à 16h30). Ouvert toute l'année.",
     "tarif": "Entrée gratuite pour l'enceinte du temple. (Dons appréciés).",
     "dureeVisite": "1-3 heures",
@@ -1030,8 +1756,28 @@
     "region_id": 2,
     "ville_id": 37,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Printemps", "Été", "Automne"],
-    "category_ids": [51, 52, 56, 57, 54, 55, 62, 10, 11, 12, 70, 102, 103, 104, 113]
+    "meilleuresSaisons": [
+      "Printemps",
+      "Été",
+      "Automne"
+    ],
+    "category_ids": [
+      51,
+      52,
+      56,
+      57,
+      54,
+      55,
+      62,
+      10,
+      11,
+      12,
+      70,
+      102,
+      103,
+      104,
+      113
+    ]
   },
   {
     "id": "temple-choso-ji",
@@ -1042,7 +1788,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "711 Shimoamashiro, Kasumigaura-shi, Ibaraki 300-0134.",
-    "coordonnees": { "lat": 0, "lng": 0 },
+    "coordonnees": {
+      "lat": 36.0382,
+      "lng": 140.3882
+    },
     "horaires": "L'enceinte du temple est accessible pendant la journée (généralement de 9h00 à 17h00).",
     "tarif": "L'accès à l'enceinte du temple est généralement gratuit.",
     "dureeVisite": "1-2 heures",
@@ -1053,7 +1802,14 @@
     "ville_id": 38,
     "accessibilite_id": 40,
     "meilleuresSaisons": [],
-    "category_ids": [102, 103, 51, 57, 113, 140]
+    "category_ids": [
+      102,
+      103,
+      51,
+      57,
+      113,
+      140
+    ]
   },
   {
     "id": "sanctuaire-hoshino",
@@ -1064,7 +1820,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "600 Teno-chō, Tsuchiura-shi, Ibaraki 300-0831.",
-    "coordonnees": { "lat": 0, "lng": 0 },
+    "coordonnees": {
+      "lat": 36.0792,
+      "lng": 140.1959
+    },
     "horaires": "Accès libre à l'enceinte.",
     "tarif": "Entrée gratuite.",
     "dureeVisite": "1 heure",
@@ -1075,7 +1834,15 @@
     "ville_id": 28,
     "accessibilite_id": 41,
     "meilleuresSaisons": [],
-    "category_ids": [103, 51, 50, 104, 102, 113, 141]
+    "category_ids": [
+      103,
+      51,
+      50,
+      104,
+      102,
+      113,
+      141
+    ]
   },
   {
     "id": "lapoppo-namegata-farmers-village",
@@ -1086,7 +1853,10 @@
     "imagePrincipale": "",
     "images": [],
     "adresse": "183-2 Tamatsukuri, Namegata, Ibaraki 311-3512",
-    "coordonnees": { "lat": 35.9833, "lng": 140.4167 },
+    "coordonnees": {
+      "lat": 35.9833,
+      "lng": 140.4167
+    },
     "horaires": "Généralement 10h00-17h00 (fermé certains jours, vérifier site officiel).",
     "tarif": "Entrée gratuite. Activités, repas et achats payants.",
     "dureeVisite": "2-4 heures",
@@ -1096,7 +1866,19 @@
     "region_id": 3,
     "ville_id": 39,
     "accessibilite_id": 40,
-    "meilleuresSaisons": ["Été", "Automne"],
-    "category_ids": [65, 55, 61, 142, 143, 144, 11, 12]
+    "meilleuresSaisons": [
+      "Été",
+      "Automne"
+    ],
+    "category_ids": [
+      65,
+      55,
+      61,
+      142,
+      143,
+      144,
+      11,
+      12
+    ]
   }
 ]
