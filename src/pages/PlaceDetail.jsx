@@ -19,7 +19,7 @@ const PlaceDetail = () => {
     )
   }
 
-  const getImagePath = (imageName) => `/Photo/${imageName}`
+  const getImagePath = (imageName) => `${import.meta.env.BASE_URL}Photo/${imageName}`
 
   return (
     <div className="min-h-screen bg-gray-50">

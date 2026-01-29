@@ -3,7 +3,7 @@ import { MapPin, Clock, DollarSign, Star } from 'lucide-react'
 
 const PlaceCard = ({ place }) => {
   const getImagePath = (imageName) => {
-    return `/Photo/${imageName}`
+    return `${import.meta.env.BASE_URL}Photo/${imageName}`
   }
 
   return (

@@ -10,7 +10,7 @@ import DistanceDemo from './pages/DistanceDemo'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ibaraki-discovery">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

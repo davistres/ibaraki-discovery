@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Search, MapPin, Calendar, Sparkles, ArrowRight, Mountain, Waves, Flower2, UtensilsCrossed } from 'lucide-react'
 import PlaceCard from '../components/PlaceCard'
 import placesData from '../data/places.json'
 
 const Home = () => {
+  const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
   const [featuredPlaces, setFeaturedPlaces] = useState([])
 
   useEffect(() => {
     // Sélectionner les lieux incontournables
-    const featured = placesData.filter(place => 
+    const featured = placesData.filter(place =>
       place.tags?.includes('Incontournable')
     ).slice(0, 3)
     setFeaturedPlaces(featured)
@@ -18,8 +19,7 @@ const Home = () => {
 
   const handleSearch = (e) => {
     e.preventDefault()
-    // Rediriger vers la page découverte avec la recherche
-    window.location.href = `/decouverte?search=${encodeURIComponent(searchQuery)}`
+    navigate(`/decouverte?search=${encodeURIComponent(searchQuery)}`)
   }
 
   const categories = [
@@ -60,7 +60,7 @@ const Home = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/Photo/hitachi-seaside-park-kochia-ibaraki-1024x819.jpg"
+            src={`${import.meta.env.BASE_URL}Photo/hitachi-seaside-park-kochia-ibaraki-1024x819.jpg`}
             alt="Ibaraki"
             className="w-full h-full object-cover"
             onError={(e) => {
