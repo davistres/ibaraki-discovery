@@ -1,5 +1,6 @@
 {
   "name": "ibaraki-discovery",
+  "homepage": "https://davistres.github.io/ibaraki-discovery",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -9,6 +10,8 @@
     "dev:client": "vite",
     "dev:server": "nodemon server/server.js",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "setup:coordinates": "node scripts/completeCoordinates.js && node scripts/completeFestivalCoordinates.js",
     "setup:distances": "node scripts/calculateDistances.js",
@@ -33,6 +36,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.18",
     "concurrently": "^9.2.1",
+    "gh-pages": "^6.3.0",
     "nodemon": "^3.1.11",
     "postcss": "^8.4.35",
     "prisma": "^6.19.0",
