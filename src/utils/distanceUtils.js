@@ -1,16 +1,15 @@
-const API_BASE_URL = 'http://localhost:3001/api'
+import distancesData from '../data/distances.json'
 
 export async function getDistance(fromType, fromId, toType, toId) {
   try {
-    const response = await fetch(
-      `${API_BASE_URL}/distances/${fromType}/${fromId}/${toType}/${toId}`
+    const distance = distancesData.find(d =>
+      d.fromType === fromType &&
+      d.fromId === fromId &&
+      d.toType === toType &&
+      d.toId === toId
     )
-    
-    if (!response.ok) {
-      return null
-    }
-    
-    return await response.json()
+
+    return distance || null
   } catch (error) {
     console.error('Error fetching distance:', error)
     return null
@@ -19,15 +18,11 @@ export async function getDistance(fromType, fromId, toType, toId) {
 
 export async function getDistancesFrom(type, id) {
   try {
-    const response = await fetch(
-      `${API_BASE_URL}/distances/from/${type}/${id}`
-    )
-    
-    if (!response.ok) {
-      return []
-    }
-    
-    return await response.json()
+    const distances = distancesData
+      .filter(d => d.fromType === type && d.fromId === id)
+      .sort((a, b) => a.distanceKm - b.distanceKm)
+
+    return distances
   } catch (error) {
     console.error('Error fetching distances:', error)
     return []
@@ -36,16 +31,11 @@ export async function getDistancesFrom(type, id) {
 
 export async function getDistanceMatrix(locationIds) {
   try {
-    const idsParam = locationIds.join(',')
-    const response = await fetch(
-      `${API_BASE_URL}/distances/matrix?ids=${idsParam}`
+    const distances = distancesData.filter(d =>
+      locationIds.includes(d.fromId) && locationIds.includes(d.toId)
     )
-    
-    if (!response.ok) {
-      return []
-    }
-    
-    return await response.json()
+
+    return distances
   } catch (error) {
     console.error('Error fetching distance matrix:', error)
     return []
