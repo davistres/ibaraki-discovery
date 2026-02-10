@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Search, MapPin, Calendar, Sparkles, ArrowRight, Mountain, Waves, Flower2, UtensilsCrossed } from 'lucide-react'
+import { Search, MapPin, Calendar, Sparkles, ArrowRight, Mountain, Waves, Landmark, UtensilsCrossed } from 'lucide-react'
 import PlaceCard from '../components/PlaceCard'
 import placesData from '../data/places.json'
 
@@ -31,7 +31,7 @@ const Home = () => {
       link: '/decouverte?activite=Nature'
     },
     {
-      icon: Flower2,
+      icon: Landmark,
       title: 'Culture & Histoire',
       description: 'Sanctuaires, temples, musées et patrimoine',
       color: 'bg-purple-500',

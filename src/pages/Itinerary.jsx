@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Sparkles, Calendar, DollarSign, Mountain, Flower2, UtensilsCrossed, Camera, ArrowRight, Download, Share2, Waves, Palette, Bike, Baby } from 'lucide-react'
+import { Sparkles, Calendar, DollarSign, Mountain, Flower2, Landmark, UtensilsCrossed, Camera, ArrowRight, Download, Share2, Waves, Palette, Bike, Baby } from 'lucide-react'
 import placesData from '../data/places.json'
 import festivalsData from '../data/festivals.json'
 import categoriesData from '../data/categories.json'
@@ -50,7 +50,7 @@ const Itinerary = () => {
 
   const interetsOptions = [
     { id: 'nature', label: 'Nature & Aventure', icon: Mountain, activites: ['Nature', 'Randonnée', 'Cyclisme'] },
-    { id: 'culture', label: 'Culture & Histoire', icon: Flower2, activites: ['Culture', 'Spiritualité', 'Histoire'] },
+    { id: 'culture', label: 'Culture & Histoire', icon: Landmark, activites: ['Culture', 'Spiritualité', 'Histoire'] },
     { id: 'gastronomie', label: 'Gastronomie', icon: UtensilsCrossed, activites: ['Gastronomie', 'Ateliers culinaires'] },
     { id: 'photo', label: 'Photographie', icon: Camera, activites: ['Photo'] },
     { id: 'famille', label: 'Famille', icon: Baby, activites: ['Famille'] },
@@ -327,7 +327,7 @@ const Itinerary = () => {
 
                 <div>
                   <label className="block font-semibold text-gray-900 mb-3">
-                    <Flower2 className="w-5 h-5 inline mr-2" />
+                    <Calendar className="w-5 h-5 inline mr-2" />
                     Saison de visite
                   </label>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
