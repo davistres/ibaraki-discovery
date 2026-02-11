@@ -3,14 +3,15 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Search, MapPin, Calendar, Sparkles, ArrowRight, Mountain, Waves, Landmark, UtensilsCrossed } from 'lucide-react'
 import PlaceCard from '../components/PlaceCard'
 import placesData from '../data/places.json'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const Home = () => {
   const navigate = useNavigate()
+  const { t } = useTranslation()
   const [searchQuery, setSearchQuery] = useState('')
   const [featuredPlaces, setFeaturedPlaces] = useState([])
 
   useEffect(() => {
-    // Sélectionner les lieux incontournables
     const featured = placesData.filter(place =>
       place.tags?.includes('Incontournable')
     ).slice(0, 3)
@@ -25,29 +26,29 @@ const Home = () => {
   const categories = [
     {
       icon: Mountain,
-      title: 'Nature & Aventure',
-      description: 'Randonnées, parcs, plages et paysages spectaculaires',
+      title: t('home.natureTitle'),
+      description: t('home.natureDesc'),
       color: 'bg-green-500',
       link: '/decouverte?activite=Nature'
     },
     {
       icon: Landmark,
-      title: 'Culture & Histoire',
-      description: 'Sanctuaires, temples, musées et patrimoine',
+      title: t('home.cultureTitle'),
+      description: t('home.cultureDesc'),
       color: 'bg-purple-500',
       link: '/decouverte?activite=Culture'
     },
     {
       icon: UtensilsCrossed,
-      title: 'Gastronomie',
-      description: 'Spécialités locales, marchés et expériences culinaires',
+      title: t('home.gastronomyTitle'),
+      description: t('home.gastronomyDesc'),
       color: 'bg-orange-500',
       link: '/decouverte?activite=Gastronomie'
     },
     {
       icon: Waves,
-      title: 'Détente & Loisirs',
-      description: 'Onsen, aquarium, shopping et divertissements',
+      title: t('home.relaxTitle'),
+      description: t('home.relaxDesc'),
       color: 'bg-blue-500',
       link: '/decouverte?activite=Détente'
     }
@@ -73,20 +74,19 @@ const Home = () => {
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl mb-6 animate-fadeIn">
-            Découvrez Ibaraki
+            {t('home.heroTitle')}
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-100 animate-fadeIn">
-            Votre portail personnalisé pour une aventure japonaise authentique
+            {t('home.heroSubtitle')}
           </p>
 
-          {/* Search Bar */}
           <form onSubmit={handleSearch} className="max-w-2xl mx-auto mb-8 animate-fadeIn">
             <div className="relative">
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Rechercher un lieu, une activité, une ville..."
+                placeholder={t('home.searchPlaceholder')}
                 className="w-full px-6 py-4 pr-32 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-red-500/50 shadow-2xl"
               />
               <button
@@ -94,33 +94,32 @@ const Home = () => {
                 className="absolute right-2 top-1/2 -translate-y-1/2 bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold transition-colors flex items-center space-x-2"
               >
                 <Search className="w-5 h-5" />
-                <span>Rechercher</span>
+                <span>{t('home.search')}</span>
               </button>
             </div>
           </form>
 
-          {/* Quick Links */}
           <div className="flex flex-wrap justify-center gap-4 animate-fadeIn">
             <Link
               to="/decouverte"
               className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-6 py-3 rounded-full font-semibold transition-all flex items-center space-x-2 border border-white/30"
             >
               <MapPin className="w-5 h-5" />
-              <span>Explorer les lieux</span>
+              <span>{t('home.explorePlaces')}</span>
             </Link>
             <Link
               to="/festivals"
               className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-6 py-3 rounded-full font-semibold transition-all flex items-center space-x-2 border border-white/30"
             >
               <Calendar className="w-5 h-5" />
-              <span>Festivals & Événements</span>
+              <span>{t('home.festivalsEvents')}</span>
             </Link>
             <Link
               to="/itineraire"
               className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-all flex items-center space-x-2 shadow-lg"
             >
               <Sparkles className="w-5 h-5" />
-              <span>Créer mon itinéraire</span>
+              <span>{t('home.createItinerary')}</span>
             </Link>
           </div>
         </div>
@@ -131,10 +130,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-display font-bold text-4xl text-gray-900 mb-4">
-              Explorez par Catégorie
+              {t('home.categoryTitle')}
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Découvrez Ibaraki selon vos centres d'intérêt
+              {t('home.categorySubtitle')}
             </p>
           </div>
 
@@ -157,7 +156,7 @@ const Home = () => {
                     {category.description}
                   </p>
                   <div className="flex items-center text-red-600 font-semibold text-sm group-hover:translate-x-2 transition-transform">
-                    <span>Explorer</span>
+                    <span>{t('home.explore')}</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </div>
                 </Link>
@@ -172,10 +171,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-display font-bold text-4xl text-gray-900 mb-4">
-              Lieux Incontournables
+              {t('home.featuredTitle')}
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Les destinations phares d'Ibaraki à ne pas manquer
+              {t('home.featuredSubtitle')}
             </p>
           </div>
 
@@ -190,7 +189,7 @@ const Home = () => {
               to="/decouverte"
               className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors shadow-lg"
             >
-              <span>Voir tous les lieux</span>
+              <span>{t('home.viewAll')}</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
@@ -202,26 +201,23 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-display font-bold text-4xl text-gray-900 mb-6">
-              Pourquoi Visiter Ibaraki ?
+              {t('home.whyTitle')}
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-8">
-              Située à seulement 1h-1h30 de Tokyo, la préfecture d'Ibaraki offre une alternative 
-              authentique et paisible aux destinations touristiques surpeuplées. Découvrez des 
-              paysages naturels spectaculaires, un patrimoine culturel riche, une gastronomie 
-              unique et des expériences inoubliables loin des sentiers battus.
+              {t('home.whyText')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <div className="text-4xl font-bold text-red-600 mb-2">1h-1h30</div>
-                <p className="text-gray-600">Depuis Tokyo</p>
+                <p className="text-gray-600">{t('home.fromTokyo')}</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <div className="text-4xl font-bold text-red-600 mb-2">10+</div>
-                <p className="text-gray-600">Lieux incontournables</p>
+                <p className="text-gray-600">{t('home.mustSee')}</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <div className="text-4xl font-bold text-red-600 mb-2">8+</div>
-                <p className="text-gray-600">Festivals annuels</p>
+                <p className="text-gray-600">{t('home.annualFestivals')}</p>
               </div>
             </div>
           </div>

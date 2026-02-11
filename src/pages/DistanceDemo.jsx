@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react'
 import { MapPin, Clock, Route } from 'lucide-react'
 import placesData from '../data/places.json'
 import { getDistancesFrom, formatDistance, formatDuration } from '../utils/distanceUtils'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const DistanceDemo = () => {
+  const { t } = useTranslation()
   const [selectedPlace, setSelectedPlace] = useState(null)
   const [distances, setDistances] = useState([])
   const [loading, setLoading] = useState(false)
@@ -39,10 +41,10 @@ const DistanceDemo = () => {
         <div className="container mx-auto px-4 py-16 text-center">
           <Route className="w-16 h-16 mx-auto mb-4" />
           <h1 className="font-display font-bold text-5xl mb-4">
-            Démo : Système de Distances
+            {t('distanceDemo.title')}
           </h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Testez le calcul des distances et temps de trajet entre les lieux d'Ibaraki
+            {t('distanceDemo.subtitle')}
           </p>
         </div>
       </div>
@@ -51,7 +53,7 @@ const DistanceDemo = () => {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-xl shadow-md p-8 mb-8">
             <h2 className="font-display font-bold text-2xl text-gray-900 mb-6">
-              Sélectionnez un lieu de départ
+              {t('distanceDemo.selectDeparture')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {topPlaces.map((place) => (
@@ -74,13 +76,13 @@ const DistanceDemo = () => {
           {selectedPlace && (
             <div className="bg-white rounded-xl shadow-md p-8">
               <h2 className="font-display font-bold text-2xl text-gray-900 mb-6">
-                Distances depuis {selectedPlace.nom}
+                {t('distanceDemo.distancesFrom', { name: selectedPlace.nom })}
               </h2>
 
               {loading ? (
                 <div className="text-center py-12">
                   <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-                  <p className="text-gray-600 mt-4">Calcul des distances...</p>
+                  <p className="text-gray-600 mt-4">{t('distanceDemo.loading')}</p>
                 </div>
               ) : distances.length > 0 ? (
                 <div className="space-y-3">
@@ -114,7 +116,7 @@ const DistanceDemo = () => {
                 </div>
               ) : (
                 <p className="text-center text-gray-600 py-8">
-                  Aucune distance disponible
+                  {t('distanceDemo.noDistance')}
                 </p>
               )}
             </div>

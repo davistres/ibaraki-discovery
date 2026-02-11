@@ -2,8 +2,10 @@ import { useState, useMemo } from 'react'
 import { Calendar, MapPin, Sparkles, Music, Flower2, UtensilsCrossed, Flame } from 'lucide-react'
 import festivalsData from '../data/festivals.json'
 import categoriesData from '../data/categories.json'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const Festivals = () => {
+  const { t } = useTranslation()
   const [selectedSaison, setSelectedSaison] = useState('all')
   const [selectedType, setSelectedType] = useState('all')
 
@@ -86,10 +88,10 @@ const Festivals = () => {
             <Calendar className="w-16 h-16" />
           </div>
           <h1 className="font-display font-bold text-5xl mb-4">
-            Festivals & Événements
+            {t('festivals.title')}
           </h1>
           <p className="text-xl text-red-100 max-w-2xl mx-auto">
-            Découvrez les célébrations saisonnières et événements culturels d'Ibaraki tout au long de l'année
+            {t('festivals.subtitle')}
           </p>
         </div>
       </div>
@@ -100,7 +102,7 @@ const Festivals = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Saison Filter */}
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Filtrer par saison</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">{t('festivals.filterBySeason')}</h3>
               <div className="flex flex-wrap gap-2">
                 {filterOptions.saisons.map((saison) => (
                   <button
@@ -120,7 +122,7 @@ const Festivals = () => {
 
             {/* Type Filter */}
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Filtrer par type</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">{t('festivals.filterByType')}</h3>
               <div className="flex flex-wrap gap-2">
                 {filterOptions.types.map((type) => (
                   <button
@@ -143,7 +145,7 @@ const Festivals = () => {
         {/* Results Count */}
         <div className="mb-6">
           <p className="text-gray-600">
-            <span className="font-semibold text-gray-900">{festivalsForDisplay.length}</span> festival{festivalsForDisplay.length > 1 ? 's' : ''} trouvé{festivalsForDisplay.length > 1 ? 's' : ''}
+            <span className="font-semibold text-gray-900">{festivalsForDisplay.length}</span> {t('festivals.results', { count: festivalsForDisplay.length, plural: festivalsForDisplay.length > 1 ? 's' : '' })}
           </p>
         </div>
 
@@ -205,7 +207,7 @@ const Festivals = () => {
                     {/* Activités */}
                     {festival.activites && festival.activites.length > 0 && (
                       <div className="pt-4 border-t border-gray-100">
-                        <p className="text-xs font-semibold text-gray-500 mb-2">ACTIVITÉS</p>
+                        <p className="text-xs font-semibold text-gray-500 mb-2">{t('festivals.activities')}</p>
                         <ul className="space-y-1">
                           {festival.activites.slice(0, 3).map((activite, index) => (
                             <li key={index} className="text-sm text-gray-600 flex items-start">
@@ -239,10 +241,10 @@ const Festivals = () => {
           <div className="text-center py-16">
             <Calendar className="w-16 h-16 mx-auto text-gray-400 mb-4" />
             <h3 className="font-display font-bold text-2xl text-gray-900 mb-2">
-              Aucun festival trouvé
+              {t('festivals.noResults')}
             </h3>
             <p className="text-gray-600">
-              Essayez de modifier vos filtres
+              {t('festivals.noResultsHint')}
             </p>
           </div>
         )}
@@ -250,12 +252,10 @@ const Festivals = () => {
         {/* Info Section */}
         <div className="mt-16 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-8">
           <h2 className="font-display font-bold text-3xl text-gray-900 mb-4 text-center">
-            Planifiez votre visite
+            {t('festivals.planTitle')}
           </h2>
           <p className="text-gray-700 text-center max-w-3xl mx-auto mb-6">
-            Les festivals d'Ibaraki offrent une occasion unique de découvrir la culture locale, 
-            les traditions ancestrales et la beauté naturelle de la région. Chaque saison apporte 
-            son lot de célébrations colorées et d'expériences inoubliables.
+            {t('festivals.planText')}
           </p>
           <div className="text-center">
             <a
@@ -263,7 +263,7 @@ const Festivals = () => {
               className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition-colors"
             >
               <Sparkles className="w-5 h-5" />
-              <span>Créer mon itinéraire personnalisé</span>
+              <span>{t('festivals.createItinerary')}</span>
             </a>
           </div>
         </div>

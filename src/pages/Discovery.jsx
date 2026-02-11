@@ -4,8 +4,10 @@ import { Filter, X, Search, SlidersHorizontal } from 'lucide-react'
 import PlaceCard from '../components/PlaceCard'
 import placesData from '../data/places.json'
 import categoriesData from '../data/categories.json'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const Discovery = () => {
+  const { t } = useTranslation()
   const [searchParams] = useSearchParams()
   const [places] = useState(placesData)
   const [filteredPlaces, setFilteredPlaces] = useState(placesData)
@@ -152,20 +154,19 @@ const Discovery = () => {
       <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-8">
           <h1 className="font-display font-bold text-4xl text-gray-900 mb-4">
-            Découvrez Ibaraki
+            {t('discovery.title')}
           </h1>
           <p className="text-gray-600 text-lg mb-6">
-            Explorez {places.length} lieux exceptionnels à travers la préfecture
+            {t('discovery.subtitle', { count: places.length })}
           </p>
 
-          {/* Search Bar */}
           <div className="relative max-w-2xl">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Rechercher un lieu, une activité..."
+              placeholder={t('discovery.searchPlaceholder')}
               className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
             />
           </div>
@@ -182,7 +183,7 @@ const Discovery = () => {
               className="lg:hidden w-full mb-4 flex items-center justify-center space-x-2 bg-white border border-gray-300 rounded-lg px-4 py-3 font-semibold text-gray-700 hover:bg-gray-50"
             >
               <SlidersHorizontal className="w-5 h-5" />
-              <span>Filtres {activeFiltersCount > 0 && `(${activeFiltersCount})`}</span>
+              <span>{t('discovery.filters')} {activeFiltersCount > 0 && `(${activeFiltersCount})`}</span>
             </button>
 
             {/* Filters Panel */}
@@ -190,7 +191,7 @@ const Discovery = () => {
               <div className="flex items-center justify-between mb-6">
                 <h2 className="font-display font-bold text-xl text-gray-900 flex items-center space-x-2">
                   <Filter className="w-5 h-5" />
-                  <span>Filtres</span>
+                  <span>{t('discovery.filters')}</span>
                 </h2>
                 {activeFiltersCount > 0 && (
                   <button
@@ -198,41 +199,41 @@ const Discovery = () => {
                     className="text-sm text-red-600 hover:text-red-700 font-semibold flex items-center space-x-1"
                   >
                     <X className="w-4 h-4" />
-                    <span>Réinitialiser</span>
+                    <span>{t('discovery.reset')}</span>
                   </button>
                 )}
               </div>
 
               <FilterSection
-                title="Activités"
+                title={t('discovery.activities')}
                 options={filterOptions.activites}
                 selected={selectedActivites}
                 setSelected={setSelectedActivites}
               />
 
               <FilterSection
-                title="Régions"
+                title={t('discovery.regions')}
                 options={filterOptions.regions}
                 selected={selectedRegions}
                 setSelected={setSelectedRegions}
               />
 
               <FilterSection
-                title="Villes"
+                title={t('discovery.cities')}
                 options={filterOptions.villes}
                 selected={selectedVilles}
                 setSelected={setSelectedVilles}
               />
 
               <FilterSection
-                title="Saisons"
+                title={t('discovery.seasons')}
                 options={filterOptions.saisons}
                 selected={selectedSaisons}
                 setSelected={setSelectedSaisons}
               />
 
               <FilterSection
-                title="Accessibilité"
+                title={t('discovery.accessibility')}
                 options={filterOptions.accessibilites}
                 selected={selectedAccessibilite}
                 setSelected={setSelectedAccessibilite}
@@ -245,7 +246,7 @@ const Discovery = () => {
             {/* Results Header */}
             <div className="mb-6 flex items-center justify-between">
               <p className="text-gray-600">
-                <span className="font-semibold text-gray-900">{placesForDisplay.length}</span> résultat{placesForDisplay.length > 1 ? 's' : ''} trouvé{placesForDisplay.length > 1 ? 's' : ''}
+                <span className="font-semibold text-gray-900">{placesForDisplay.length}</span> {t('discovery.results', { count: placesForDisplay.length, plural: placesForDisplay.length > 1 ? 's' : '' })}
               </p>
             </div>
 
@@ -262,16 +263,16 @@ const Discovery = () => {
                   <Search className="w-16 h-16 mx-auto" />
                 </div>
                 <h3 className="font-display font-bold text-2xl text-gray-900 mb-2">
-                  Aucun résultat trouvé
+                  {t('discovery.noResults')}
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Essayez de modifier vos critères de recherche
+                  {t('discovery.noResultsHint')}
                 </p>
                 <button
                   onClick={resetFilters}
                   className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
                 >
-                  Réinitialiser les filtres
+                  {t('discovery.resetFilters')}
                 </button>
               </div>
             )}

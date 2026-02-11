@@ -3,6 +3,7 @@ import { Sparkles, Calendar, DollarSign, Mountain, Flower2, Landmark, UtensilsCr
 import placesData from '../data/places.json'
 import festivalsData from '../data/festivals.json'
 import categoriesData from '../data/categories.json'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const getCategoryId = (name, group) => {
   const category = categoriesData.find(cat => cat.nom === name && cat.group === group)
@@ -37,6 +38,7 @@ const calculateActivitiesCount = (jours, nuits) => {
 }
 
 const Itinerary = () => {
+  const { t } = useTranslation()
   const [step, setStep] = useState(1)
   const [preferences, setPreferences] = useState({
     jours: '',
@@ -49,15 +51,15 @@ const Itinerary = () => {
   const [generatedItinerary, setGeneratedItinerary] = useState(null)
 
   const interetsOptions = [
-    { id: 'nature', label: 'Nature & Aventure', icon: Mountain, activites: ['Nature', 'Randonnée', 'Cyclisme'] },
-    { id: 'culture', label: 'Culture & Histoire', icon: Landmark, activites: ['Culture', 'Spiritualité', 'Histoire'] },
-    { id: 'gastronomie', label: 'Gastronomie', icon: UtensilsCrossed, activites: ['Gastronomie', 'Ateliers culinaires'] },
-    { id: 'photo', label: 'Photographie', icon: Camera, activites: ['Photo'] },
-    { id: 'famille', label: 'Famille', icon: Baby, activites: ['Famille'] },
-    { id: 'detente', label: 'Détente & Bien-être', icon: Waves, activites: ['Détente'] },
-    { id: 'art', label: 'Art & Artisanat', icon: Palette, activites: ['Art', 'Artisanat'] },
-    { id: 'sport', label: 'Sport & Activités', icon: Bike, activites: ['Sport', 'Sports nautiques'] },
-    { id: 'jardins', label: 'Jardins & Parcs', icon: Flower2, activites: ['Jardins'] }
+    { id: 'nature', label: t('itinerary.nature'), icon: Mountain, activites: ['Nature', 'Randonnée', 'Cyclisme'] },
+    { id: 'culture', label: t('itinerary.culture'), icon: Landmark, activites: ['Culture', 'Spiritualité', 'Histoire'] },
+    { id: 'gastronomie', label: t('itinerary.gastronomy'), icon: UtensilsCrossed, activites: ['Gastronomie', 'Ateliers culinaires'] },
+    { id: 'photo', label: t('itinerary.photography'), icon: Camera, activites: ['Photo'] },
+    { id: 'famille', label: t('itinerary.family'), icon: Baby, activites: ['Famille'] },
+    { id: 'detente', label: t('itinerary.wellness'), icon: Waves, activites: ['Détente'] },
+    { id: 'art', label: t('itinerary.art'), icon: Palette, activites: ['Art', 'Artisanat'] },
+    { id: 'sport', label: t('itinerary.sports'), icon: Bike, activites: ['Sport', 'Sports nautiques'] },
+    { id: 'jardins', label: t('itinerary.gardens'), icon: Flower2, activites: ['Jardins'] }
   ]
 
   const toggleInteret = (interet) => {
@@ -200,10 +202,10 @@ const Itinerary = () => {
         <div className="container mx-auto px-4 py-16 text-center">
           <Sparkles className="w-16 h-16 mx-auto mb-4" />
           <h1 className="font-display font-bold text-5xl mb-4">
-            Créez Votre Itinéraire Personnalisé
+            {t('itinerary.title')}
           </h1>
           <p className="text-xl text-red-100 max-w-2xl mx-auto">
-            Répondez à quelques questions et nous créerons un itinéraire sur mesure pour votre aventure à Ibaraki
+            {t('itinerary.subtitle')}
           </p>
         </div>
       </div>
@@ -216,21 +218,21 @@ const Itinerary = () => {
               <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${step >= 1 ? 'bg-red-600 text-white' : 'bg-gray-200'}`}>
                 1
               </div>
-              <span className="font-semibold hidden md:inline">Détails</span>
+              <span className="font-semibold hidden md:inline">{t('itinerary.stepDetails')}</span>
             </div>
             <div className={`h-1 w-16 ${step >= 2 ? 'bg-red-600' : 'bg-gray-200'}`}></div>
             <div className={`flex items-center space-x-2 ${step >= 2 ? 'text-red-600' : 'text-gray-400'}`}>
               <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${step >= 2 ? 'bg-red-600 text-white' : 'bg-gray-200'}`}>
                 2
               </div>
-              <span className="font-semibold hidden md:inline">Centres d'intérêt</span>
+              <span className="font-semibold hidden md:inline">{t('itinerary.stepInterests')}</span>
             </div>
             <div className={`h-1 w-16 ${step >= 3 ? 'bg-red-600' : 'bg-gray-200'}`}></div>
             <div className={`flex items-center space-x-2 ${step >= 3 ? 'text-red-600' : 'text-gray-400'}`}>
               <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${step >= 3 ? 'bg-red-600 text-white' : 'bg-gray-200'}`}>
                 3
               </div>
-              <span className="font-semibold hidden md:inline">Itinéraire</span>
+              <span className="font-semibold hidden md:inline">{t('itinerary.stepItinerary')}</span>
             </div>
           </div>
         </div>
@@ -240,14 +242,14 @@ const Itinerary = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl shadow-md p-8 md:p-12">
               <h2 className="font-display font-bold text-3xl text-gray-900 mb-8 text-center">
-                Détails de votre voyage
+                {t('itinerary.tripDetails')}
               </h2>
 
               <div className="space-y-6">
                 <div>
                   <label className="block font-semibold text-gray-900 mb-3">
                     <Calendar className="w-5 h-5 inline mr-2" />
-                    Nombre de jours
+                    {t('itinerary.numberOfDays')}
                   </label>
                   <div className="grid grid-cols-7 gap-2">
                     {['1', '2', '3', '4', '5', '6', '7'].map((jour) => (
@@ -269,7 +271,7 @@ const Itinerary = () => {
                 {preferences.jours && (
                   <div>
                     <div className="block font-semibold text-gray-900 mb-3">
-                      Nombre de nuits
+                      {t('itinerary.numberOfNights')}
                     </div>
                     <div className="grid grid-cols-auto gap-2">
                       {(() => {
@@ -297,7 +299,7 @@ const Itinerary = () => {
                     </div>
                     {preferences.nuits && (
                       <p className="text-sm text-gray-600 mt-2">
-                        📍 Nombre d'activités suggérées : {calculateActivitiesCount(preferences.jours, preferences.nuits)}
+                        📍 {t('itinerary.suggestedActivities')} {calculateActivitiesCount(preferences.jours, preferences.nuits)}
                       </p>
                     )}
                   </div>
@@ -306,20 +308,24 @@ const Itinerary = () => {
                 <div>
                   <label className="block font-semibold text-gray-900 mb-3">
                     <DollarSign className="w-5 h-5 inline mr-2" />
-                    Budget par jour
+                    {t('itinerary.dailyBudget')}
                   </label>
                   <div className="grid grid-cols-3 gap-4">
-                    {['Économique', 'Moyen', 'Confort'].map((budget) => (
+                    {[
+                      { value: 'Économique', label: t('itinerary.economic') },
+                      { value: 'Moyen', label: t('itinerary.medium') },
+                      { value: 'Confort', label: t('itinerary.comfort') }
+                    ].map(({ value, label }) => (
                       <button
-                        key={budget}
-                        onClick={() => setPreferences({ ...preferences, budget })}
+                        key={value}
+                        onClick={() => setPreferences({ ...preferences, budget: value })}
                         className={`p-4 rounded-lg border-2 font-semibold transition-all ${
-                          preferences.budget === budget
+                          preferences.budget === value
                             ? 'border-red-600 bg-red-50 text-red-600'
                             : 'border-gray-200 hover:border-red-300'
                         }`}
                       >
-                        {budget}
+                        {label}
                       </button>
                     ))}
                   </div>
@@ -328,20 +334,25 @@ const Itinerary = () => {
                 <div>
                   <label className="block font-semibold text-gray-900 mb-3">
                     <Calendar className="w-5 h-5 inline mr-2" />
-                    Saison de visite
+                    {t('itinerary.visitSeason')}
                   </label>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {['Printemps', 'Été', 'Automne', 'Hiver'].map((saison) => (
+                    {[
+                      { value: 'Printemps', label: t('itinerary.spring') },
+                      { value: 'Été', label: t('itinerary.summer') },
+                      { value: 'Automne', label: t('itinerary.autumn') },
+                      { value: 'Hiver', label: t('itinerary.winter') }
+                    ].map(({ value, label }) => (
                       <button
-                        key={saison}
-                        onClick={() => setPreferences({ ...preferences, saison })}
+                        key={value}
+                        onClick={() => setPreferences({ ...preferences, saison: value })}
                         className={`p-4 rounded-lg border-2 font-semibold transition-all ${
-                          preferences.saison === saison
+                          preferences.saison === value
                             ? 'border-red-600 bg-red-50 text-red-600'
                             : 'border-gray-200 hover:border-red-300'
                         }`}
                       >
-                        {saison}
+                        {label}
                       </button>
                     ))}
                   </div>
@@ -350,20 +361,24 @@ const Itinerary = () => {
                 <div>
                   <label className="block font-semibold text-gray-900 mb-3">
                     <Mountain className="w-5 h-5 inline mr-2" />
-                    Niveau(x) d'accessibilité souhaité(s)
+                    {t('itinerary.accessibilityLevel')}
                   </label>
                   <div className="grid grid-cols-3 gap-4">
-                    {['Facile', 'Modéré', 'Difficile'].map((acc) => (
+                    {[
+                      { value: 'Facile', label: t('itinerary.easy') },
+                      { value: 'Modéré', label: t('itinerary.moderate') },
+                      { value: 'Difficile', label: t('itinerary.difficult') }
+                    ].map(({ value, label }) => (
                       <button
-                        key={acc}
-                        onClick={() => handleAccessibiliteClick(acc)}
+                        key={value}
+                        onClick={() => handleAccessibiliteClick(value)}
                         className={`p-4 rounded-lg border-2 font-semibold transition-all ${
-                          preferences.accessibilite.includes(acc)
+                          preferences.accessibilite.includes(value)
                             ? 'border-red-600 bg-red-50 text-red-600'
                             : 'border-gray-200 hover:border-red-300'
                         }`}
                       >
-                        {acc}
+                        {label}
                       </button>
                     ))}
                   </div>
@@ -376,7 +391,7 @@ const Itinerary = () => {
                   disabled={!preferences.jours || !preferences.nuits || !preferences.budget || !preferences.saison}
                   className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors"
                 >
-                  <span>Continuer</span>
+                  <span>{t('itinerary.continue')}</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -389,17 +404,17 @@ const Itinerary = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl shadow-md p-8 md:p-12">
               <h2 className="font-display font-bold text-3xl text-gray-900 mb-4 text-center">
-                Quels sont vos centres d'intérêt ?
+                {t('itinerary.interestsTitle')}
               </h2>
               {(() => {
                 const minInterets = getMinimumInterets(preferences.jours)
                 return minInterets > 0 ? (
                   <p className="text-center text-gray-600 mb-8">
-                    Sélectionnez au moins <span className="font-bold text-red-600">{minInterets} centres d'intérêt</span> pour un séjour de {preferences.jours} jour{preferences.jours > 1 ? 's' : ''}
+                    {t('itinerary.interestsMinimum', { count: minInterets, days: preferences.jours, plural: preferences.jours > 1 ? 's' : '' })}
                   </p>
                 ) : (
                   <p className="text-center text-gray-600 mb-8">
-                    Sélectionnez un ou plusieurs centres d'intérêt
+                    {t('itinerary.interestsSelect')}
                   </p>
                 )
               })()}
@@ -432,7 +447,7 @@ const Itinerary = () => {
                   onClick={() => setStep(1)}
                   className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:bg-gray-50 transition-colors"
                 >
-                  Retour
+                  {t('itinerary.back')}
                 </button>
                 <button
                   onClick={generateItinerary}
@@ -440,7 +455,7 @@ const Itinerary = () => {
                   className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-8 py-3 rounded-full font-semibold transition-colors"
                 >
                   <Sparkles className="w-5 h-5" />
-                  <span>Générer mon itinéraire</span>
+                  <span>{t('itinerary.generate')}</span>
                 </button>
               </div>
             </div>
@@ -453,17 +468,17 @@ const Itinerary = () => {
             <div className="bg-white rounded-xl shadow-md p-8 md:p-12 mb-8">
               <div className="text-center mb-8">
                 <h2 className="font-display font-bold text-4xl text-gray-900 mb-4">
-                  Votre Itinéraire Personnalisé
+                  {t('itinerary.resultTitle')}
                 </h2>
                 <p className="text-gray-600 text-lg">
-                  {generatedItinerary.jours} jour{generatedItinerary.jours > 1 ? 's' : ''} • {generatedItinerary.nuits} nuit{generatedItinerary.nuits > 1 ? 's' : ''} • Budget {generatedItinerary.budget}
+                  {generatedItinerary.jours} {generatedItinerary.jours > 1 ? t('itinerary.days') : t('itinerary.day')} • {generatedItinerary.nuits} {generatedItinerary.nuits > 1 ? t('itinerary.nights') : t('itinerary.night')} • {t('itinerary.budget')} {({ 'Économique': t('itinerary.economic'), 'Moyen': t('itinerary.medium'), 'Confort': t('itinerary.comfort') })[generatedItinerary.budget]}
                 </p>
               </div>
 
               {/* Lieux recommandés */}
               <div className="mb-8">
                 <h3 className="font-display font-bold text-2xl text-gray-900 mb-6">
-                  Lieux à visiter ({generatedItinerary.places.length})
+                  {t('itinerary.placesToVisit', { count: generatedItinerary.places.length })}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {generatedItinerary.places.map((place, index) => (
@@ -487,7 +502,7 @@ const Itinerary = () => {
               {generatedItinerary.festivals.length > 0 && (
                 <div className="mb-8">
                   <h3 className="font-display font-bold text-2xl text-gray-900 mb-6">
-                    Festivals pendant votre séjour
+                    {t('itinerary.festivalsTitle')}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {generatedItinerary.festivals.map((festival) => (
@@ -505,11 +520,11 @@ const Itinerary = () => {
               <div className="flex flex-wrap justify-center gap-4 pt-8 border-t border-gray-200">
                 <button className="inline-flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors">
                   <Download className="w-5 h-5" />
-                  <span>Télécharger PDF</span>
+                  <span>{t('itinerary.downloadPDF')}</span>
                 </button>
                 <button className="inline-flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors">
                   <Share2 className="w-5 h-5" />
-                  <span>Partager</span>
+                  <span>{t('itinerary.share')}</span>
                 </button>
                 <button
                   onClick={() => {
@@ -527,7 +542,7 @@ const Itinerary = () => {
                   className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
                 >
                   <Sparkles className="w-5 h-5" />
-                  <span>Créer un nouvel itinéraire</span>
+                  <span>{t('itinerary.newItinerary')}</span>
                 </button>
               </div>
             </div>

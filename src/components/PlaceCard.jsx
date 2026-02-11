@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Clock, DollarSign, Star } from 'lucide-react'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const PlaceCard = ({ place }) => {
+  const { t } = useTranslation()
   const getImagePath = (imageName) => {
     return `${import.meta.env.BASE_URL}Photo/${imageName}`
   }
@@ -88,7 +90,7 @@ const PlaceCard = ({ place }) => {
         {/* Accessibilité */}
         <div className="mt-4 pt-4 border-t border-gray-100">
           <div className="flex items-center justify-between">
-            <span className="text-xs text-gray-500">Accessibilité</span>
+            <span className="text-xs text-gray-500">{t('placeCard.accessibility')}</span>
             <span className={`text-xs font-semibold px-2 py-1 rounded ${
               place.accessibilite === 'Facile' 
                 ? 'bg-green-100 text-green-700'

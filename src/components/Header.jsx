@@ -1,17 +1,23 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Mountain } from 'lucide-react'
+import { Menu, X, Mountain, Globe } from 'lucide-react'
+import { useTranslation } from '../contexts/LanguageContext'
+
+const langLabels = { fr: 'FR', en: 'EN', ja: 'JA' }
+const langFlags = { fr: '🇫🇷', en: '🇬🇧', ja: '🇯🇵' }
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isLangOpen, setIsLangOpen] = useState(false)
   const location = useLocation()
+  const { t, language, setLanguage } = useTranslation()
 
   const navLinks = [
-    { path: '/', label: 'Accueil' },
-    { path: '/decouverte', label: 'Découverte' },
-    { path: '/festivals', label: 'Festivals' },
-    { path: '/itineraire', label: 'Mon Itinéraire' },
-    { path: '/a-propos', label: 'À Propos' },
+    { path: '/', label: t('header.home') },
+    { path: '/decouverte', label: t('header.discovery') },
+    { path: '/festivals', label: t('header.festivals') },
+    { path: '/itineraire', label: t('header.itinerary') },
+    { path: '/a-propos', label: t('header.about') },
   ]
 
   const isActive = (path) => location.pathname === path
@@ -20,18 +26,16 @@ const Header = () => {
     <header className="bg-white shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <Mountain className="w-8 h-8 text-red-600 group-hover:text-red-700 transition-colors" />
             <div className="flex flex-col">
               <span className="font-display font-bold text-xl text-gray-900">
                 IBARAKI DISCOVERY
               </span>
-              <span className="text-xs text-gray-500">Découvrez le Japon Authentique</span>
+              <span className="text-xs text-gray-500">{t('header.tagline')}</span>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
@@ -51,23 +55,69 @@ const Header = () => {
                 />
               </Link>
             ))}
+
+            <div className="relative">
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex items-center space-x-1 px-3 py-1.5 rounded-full border border-gray-200 hover:border-red-300 text-sm font-medium text-gray-600 hover:text-red-600 transition-all"
+              >
+                <Globe className="w-4 h-4" />
+                <span>{langFlags[language]} {langLabels[language]}</span>
+              </button>
+              {isLangOpen && (
+                <div className="absolute right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 py-1 min-w-[120px] z-50">
+                  {Object.keys(langLabels).map((lang) => (
+                    <button
+                      key={lang}
+                      onClick={() => { setLanguage(lang); setIsLangOpen(false) }}
+                      className={`w-full text-left px-4 py-2 text-sm hover:bg-red-50 transition-colors flex items-center space-x-2 ${language === lang ? 'text-red-600 font-semibold bg-red-50' : 'text-gray-700'}`}
+                    >
+                      <span>{langFlags[lang]}</span>
+                      <span>{langLabels[lang]}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? (
-              <X className="w-6 h-6 text-gray-700" />
-            ) : (
-              <Menu className="w-6 h-6 text-gray-700" />
-            )}
-          </button>
+          <div className="flex items-center space-x-2 lg:hidden">
+            <div className="relative">
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors text-sm font-medium text-gray-600"
+              >
+                {langFlags[language]}
+              </button>
+              {isLangOpen && (
+                <div className="absolute right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 py-1 min-w-[120px] z-50">
+                  {Object.keys(langLabels).map((lang) => (
+                    <button
+                      key={lang}
+                      onClick={() => { setLanguage(lang); setIsLangOpen(false) }}
+                      className={`w-full text-left px-4 py-2 text-sm hover:bg-red-50 transition-colors flex items-center space-x-2 ${language === lang ? 'text-red-600 font-semibold bg-red-50' : 'text-gray-700'}`}
+                    >
+                      <span>{langFlags[lang]}</span>
+                      <span>{langLabels[lang]}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6 text-gray-700" />
+              ) : (
+                <Menu className="w-6 h-6 text-gray-700" />
+              )}
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
             <div className="flex flex-col space-y-3">

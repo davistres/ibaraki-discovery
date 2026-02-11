@@ -1,8 +1,10 @@
 import { useParams, Link } from 'react-router-dom'
 import { MapPin, Clock, DollarSign, Calendar, Train, Globe, ExternalLink, ArrowLeft, Star, Share2 } from 'lucide-react'
 import placesData from '../data/places.json'
+import { useTranslation } from '../contexts/LanguageContext'
 
 const PlaceDetail = () => {
+  const { t } = useTranslation()
   const { id } = useParams()
   const place = placesData.find(p => p.id === id)
 
@@ -10,9 +12,9 @@ const PlaceDetail = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Lieu non trouvé</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('placeDetail.notFound')}</h1>
           <Link to="/decouverte" className="text-red-600 hover:text-red-700 font-semibold">
-            Retour à la découverte
+            {t('placeDetail.backToDiscovery')}
           </Link>
         </div>
       </div>
@@ -31,7 +33,7 @@ const PlaceDetail = () => {
             className="inline-flex items-center space-x-2 text-gray-600 hover:text-red-600 transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="font-semibold">Retour à la découverte</span>
+            <span className="font-semibold">{t('placeDetail.backToDiscovery')}</span>
           </Link>
         </div>
       </div>
@@ -76,7 +78,7 @@ const PlaceDetail = () => {
             {/* Description */}
             <div className="bg-white rounded-xl shadow-md p-8">
               <h2 className="font-display font-bold text-2xl text-gray-900 mb-4">
-                À propos
+                {t('placeDetail.about')}
               </h2>
               <p className="text-gray-700 leading-relaxed text-lg">
                 {place.descriptionLongue}
@@ -86,7 +88,7 @@ const PlaceDetail = () => {
             {/* Activités */}
             <div className="bg-white rounded-xl shadow-md p-8">
               <h2 className="font-display font-bold text-2xl text-gray-900 mb-4">
-                Activités
+                {t('placeDetail.activities')}
               </h2>
               <div className="flex flex-wrap gap-3">
                 {place.activites?.map((activite, index) => (
@@ -103,7 +105,7 @@ const PlaceDetail = () => {
             {/* Saisons */}
             <div className="bg-white rounded-xl shadow-md p-8">
               <h2 className="font-display font-bold text-2xl text-gray-900 mb-4">
-                Meilleures saisons
+                {t('placeDetail.bestSeasons')}
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {place.saisons?.map((saison, index) => (
@@ -125,7 +127,7 @@ const PlaceDetail = () => {
             {place.images && place.images.length > 1 && (
               <div className="bg-white rounded-xl shadow-md p-8">
                 <h2 className="font-display font-bold text-2xl text-gray-900 mb-4">
-                  Galerie
+                  {t('placeDetail.gallery')}
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {place.images.map((image, index) => (
@@ -149,14 +151,14 @@ const PlaceDetail = () => {
             {/* Infos Pratiques */}
             <div className="bg-white rounded-xl shadow-md p-6 sticky top-24">
               <h3 className="font-display font-bold text-xl text-gray-900 mb-6">
-                Informations Pratiques
+                {t('placeDetail.practicalInfo')}
               </h3>
 
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-gray-900">Localisation</p>
+                    <p className="font-semibold text-gray-900">{t('placeDetail.location')}</p>
                     <p className="text-gray-600 text-sm">{place.ville}, {place.region}</p>
                     <p className="text-gray-500 text-xs mt-1">{place.adresse}</p>
                   </div>
@@ -165,7 +167,7 @@ const PlaceDetail = () => {
                 <div className="flex items-start space-x-3">
                   <Clock className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-gray-900">Horaires</p>
+                    <p className="font-semibold text-gray-900">{t('placeDetail.hours')}</p>
                     <p className="text-gray-600 text-sm">{place.horaires}</p>
                   </div>
                 </div>
@@ -173,7 +175,7 @@ const PlaceDetail = () => {
                 <div className="flex items-start space-x-3">
                   <DollarSign className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-gray-900">Tarif</p>
+                    <p className="font-semibold text-gray-900">{t('placeDetail.price')}</p>
                     <p className="text-gray-600 text-sm">{place.tarif}</p>
                   </div>
                 </div>
@@ -181,7 +183,7 @@ const PlaceDetail = () => {
                 <div className="flex items-start space-x-3">
                   <Calendar className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-gray-900">Durée de visite</p>
+                    <p className="font-semibold text-gray-900">{t('placeDetail.visitDuration')}</p>
                     <p className="text-gray-600 text-sm">{place.dureeVisite}</p>
                   </div>
                 </div>
@@ -189,14 +191,14 @@ const PlaceDetail = () => {
                 <div className="flex items-start space-x-3">
                   <Train className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-gray-900">Accès</p>
+                    <p className="font-semibold text-gray-900">{t('placeDetail.access')}</p>
                     <p className="text-gray-600 text-sm">{place.acces}</p>
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-gray-200">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-semibold text-gray-900">Accessibilité</span>
+                    <span className="font-semibold text-gray-900">{t('placeDetail.accessibility')}</span>
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
                       place.accessibilite === 'Facile' 
                         ? 'bg-green-100 text-green-700'
@@ -220,7 +222,7 @@ const PlaceDetail = () => {
                     className="w-full flex items-center justify-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors"
                   >
                     <MapPin className="w-5 h-5" />
-                    <span>Voir sur Google Maps</span>
+                    <span>{t('placeDetail.viewOnMaps')}</span>
                   </a>
                 )}
                 {place.siteWeb && (
@@ -231,7 +233,7 @@ const PlaceDetail = () => {
                     className="w-full flex items-center justify-center space-x-2 bg-gray-100 hover:bg-gray-200 text-gray-900 px-4 py-3 rounded-lg font-semibold transition-colors"
                   >
                     <Globe className="w-5 h-5" />
-                    <span>Site officiel</span>
+                    <span>{t('placeDetail.officialSite')}</span>
                   </a>
                 )}
               </div>
