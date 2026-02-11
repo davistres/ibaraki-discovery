@@ -3,7 +3,7 @@ import { MapPin, Clock, DollarSign, Star } from 'lucide-react'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const PlaceCard = ({ place }) => {
-  const { t } = useTranslation()
+  const { t, td } = useTranslation()
   const getImagePath = (imageName) => {
     return `${import.meta.env.BASE_URL}Photo/${imageName}`
   }
@@ -30,7 +30,7 @@ const PlaceCard = ({ place }) => {
               key={index}
               className="px-2 py-1 bg-red-600 text-white text-xs font-semibold rounded-full"
             >
-              {tag}
+              {td(tag)}
             </span>
           ))}
         </div>
@@ -38,7 +38,7 @@ const PlaceCard = ({ place }) => {
         {place.meilleuresSaisons && place.meilleuresSaisons.length > 0 && (
           <div className="absolute top-3 right-3">
             <span className="px-2 py-1 bg-white/90 backdrop-blur-sm text-gray-800 text-xs font-medium rounded-full">
-              {place.meilleuresSaisons[0]}
+              {td(place.meilleuresSaisons[0])}
             </span>
           </div>
         )}
@@ -64,7 +64,7 @@ const PlaceCard = ({ place }) => {
               key={index}
               className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md"
             >
-              {activite}
+              {td(activite)}
             </span>
           ))}
         </div>
@@ -98,7 +98,7 @@ const PlaceCard = ({ place }) => {
                 ? 'bg-yellow-100 text-yellow-700'
                 : 'bg-red-100 text-red-700'
             }`}>
-              {place.accessibilite}
+              {td(place.accessibilite)}
             </span>
           </div>
         </div>

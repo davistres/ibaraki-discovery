@@ -5,7 +5,7 @@ import categoriesData from '../data/categories.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Festivals = () => {
-  const { t } = useTranslation()
+  const { t, td } = useTranslation()
   const [selectedSaison, setSelectedSaison] = useState('all')
   const [selectedType, setSelectedType] = useState('all')
 
@@ -114,7 +114,7 @@ const Festivals = () => {
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
-                    {saison.nom}
+                    {td(saison.nom)}
                   </button>
                 ))}
               </div>
@@ -134,7 +134,7 @@ const Festivals = () => {
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
-                    {type.nom}
+                    {td(type.nom)}
                   </button>
                 ))}
               </div>
@@ -176,7 +176,7 @@ const Festivals = () => {
                     </div>
                     <div className="absolute top-3 right-3">
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getSaisonColor(festival.saison)}`}>
-                        {festival.saison}
+                        {td(festival.saison)}
                       </span>
                     </div>
                   </div>
@@ -212,7 +212,7 @@ const Festivals = () => {
                           {festival.activites.slice(0, 3).map((activite, index) => (
                             <li key={index} className="text-sm text-gray-600 flex items-start">
                               <span className="text-red-500 mr-2">•</span>
-                              <span className="line-clamp-1">{activite}</span>
+                              <span className="line-clamp-1">{td(activite)}</span>
                             </li>
                           ))}
                         </ul>
@@ -227,7 +227,7 @@ const Festivals = () => {
                             key={index}
                             className="px-2 py-1 bg-red-50 text-red-600 text-xs font-medium rounded"
                           >
-                            {tag}
+                            {td(tag)}
                           </span>
                         ))}
                       </div>

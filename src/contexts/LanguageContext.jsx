@@ -41,8 +41,15 @@ export const LanguageProvider = ({ children }) => {
     return value
   }, [language])
 
+  const td = useCallback((frenchText) => {
+    if (!frenchText) return frenchText
+    const dataMap = translations[language]?.data
+    if (!dataMap) return frenchText
+    return dataMap[frenchText] || frenchText
+  }, [language])
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, td }}>
       {children}
     </LanguageContext.Provider>
   )

@@ -7,7 +7,7 @@ import categoriesData from '../data/categories.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Discovery = () => {
-  const { t } = useTranslation()
+  const { t, td } = useTranslation()
   const [searchParams] = useSearchParams()
   const [places] = useState(placesData)
   const [filteredPlaces, setFilteredPlaces] = useState(placesData)
@@ -119,7 +119,7 @@ const Discovery = () => {
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
-            {option.nom}
+            {td(option.nom)}
           </button>
         ))}
       </div>
@@ -142,8 +142,13 @@ const Discovery = () => {
         ville: categoryMap[place.ville_id]?.nom || '',
         region: categoryMap[place.region_id]?.nom || '',
         accessibilite: categoryMap[place.accessibilite_id]?.nom || '',
+        accessibiliteTranslated: td(categoryMap[place.accessibilite_id]?.nom || ''),
         activites: allCategories.filter(c => c.group === 'Activités').map(c => c.nom),
+        activitesTranslated: allCategories.filter(c => c.group === 'Activités').map(c => td(c.nom)),
         tags: allCategories.filter(c => c.group === 'Tags' || c.group === 'Types de festival').map(c => c.nom),
+        tagsTranslated: allCategories.filter(c => c.group === 'Tags' || c.group === 'Types de festival').map(c => td(c.nom)),
+        regionTranslated: td(categoryMap[place.region_id]?.nom || ''),
+        meilleuresSaisonsTranslated: place.meilleuresSaisons?.map(s => td(s)) || [],
       }
     })
   }, [filteredPlaces, categoryMap])

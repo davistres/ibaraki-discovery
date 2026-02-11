@@ -4,7 +4,7 @@ import placesData from '../data/places.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const PlaceDetail = () => {
-  const { t } = useTranslation()
+  const { t, td } = useTranslation()
   const { id } = useParams()
   const place = placesData.find(p => p.id === id)
 
@@ -59,7 +59,7 @@ const PlaceDetail = () => {
                   key={index}
                   className="px-3 py-1 bg-red-600 text-white text-sm font-semibold rounded-full"
                 >
-                  {tag}
+                  {td(tag)}
                 </span>
               ))}
             </div>
@@ -96,7 +96,7 @@ const PlaceDetail = () => {
                     key={index}
                     className="px-4 py-2 bg-red-50 text-red-700 rounded-lg font-medium"
                   >
-                    {activite}
+                    {td(activite)}
                   </span>
                 ))}
               </div>
@@ -117,7 +117,7 @@ const PlaceDetail = () => {
                         : 'bg-gray-100 text-gray-600'
                     }`}
                   >
-                    {saison}
+                    {td(saison)}
                   </div>
                 ))}
               </div>
@@ -206,7 +206,7 @@ const PlaceDetail = () => {
                         ? 'bg-yellow-100 text-yellow-700'
                         : 'bg-red-100 text-red-700'
                     }`}>
-                      {place.accessibilite}
+                      {td(place.accessibilite)}
                     </span>
                   </div>
                 </div>
