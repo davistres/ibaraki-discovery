@@ -38,7 +38,7 @@ const calculateActivitiesCount = (jours, nuits) => {
 }
 
 const Itinerary = () => {
-  const { t } = useTranslation()
+  const { t, td, language } = useTranslation()
   const [step, setStep] = useState(1)
   const [preferences, setPreferences] = useState({
     jours: '',
@@ -488,9 +488,9 @@ const Itinerary = () => {
                           {index + 1}
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900 mb-1">{place.nom}</h4>
-                          <p className="text-sm text-gray-600 mb-2">{place.ville}</p>
-                          <p className="text-xs text-gray-500">{place.dureeVisite}</p>
+                          <h4 className="font-semibold text-gray-900 mb-1">{language === 'ja' ? place.nomJaponais : place.nom}</h4>
+                          <p className="text-sm text-gray-600 mb-2">{td(place.ville)}</p>
+                          <p className="text-xs text-gray-500">{td(place.dureeVisite)}</p>
                         </div>
                       </div>
                     </div>
@@ -507,7 +507,7 @@ const Itinerary = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {generatedItinerary.festivals.map((festival) => (
                       <div key={festival.id} className="bg-red-50 border-2 border-red-200 rounded-xl p-6">
-                        <h4 className="font-semibold text-gray-900 mb-2">{festival.nom}</h4>
+                        <h4 className="font-semibold text-gray-900 mb-2">{language === 'ja' ? festival.nomJaponais : festival.nom}</h4>
                         <p className="text-sm text-gray-600 mb-2">{festival.periode}</p>
                         <p className="text-sm text-gray-700">{festival.description}</p>
                       </div>

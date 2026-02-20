@@ -3,7 +3,7 @@ import { MapPin, Clock, DollarSign, Star } from 'lucide-react'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const PlaceCard = ({ place }) => {
-  const { t, td } = useTranslation()
+  const { t, td, language } = useTranslation()
   const getImagePath = (imageName) => {
     return `${import.meta.env.BASE_URL}Photo/${imageName}`
   }
@@ -48,9 +48,11 @@ const PlaceCard = ({ place }) => {
       <div className="p-5">
         {/* Titre */}
         <h3 className="font-display font-bold text-xl text-gray-900 mb-1 group-hover:text-red-600 transition-colors">
-          {place.nom}
+          {language === 'ja' ? place.nomJaponais : place.nom}
         </h3>
-        <p className="text-sm text-gray-500 mb-3">{place.nomJaponais}</p>
+        {language !== 'ja' && (
+          <p className="text-sm text-gray-500 mb-3">{place.nomJaponais}</p>
+        )}
 
         {/* Description */}
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">
@@ -73,12 +75,12 @@ const PlaceCard = ({ place }) => {
         <div className="space-y-2 text-sm text-gray-600">
           <div className="flex items-center space-x-2">
             <MapPin className="w-4 h-4 text-red-500 flex-shrink-0" />
-            <span className="truncate">{place.ville}, {place.region}</span>
+            <span className="truncate">{td(place.ville)}, {td(place.region)}</span>
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Clock className="w-4 h-4 text-red-500 flex-shrink-0" />
-              <span>{place.dureeVisite}</span>
+              <span>{td(place.dureeVisite)}</span>
             </div>
             <div className="flex items-center space-x-2">
               <DollarSign className="w-4 h-4 text-red-500 flex-shrink-0" />

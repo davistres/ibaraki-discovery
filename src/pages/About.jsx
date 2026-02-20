@@ -179,8 +179,7 @@ const About = () => {
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">{t('about.addressLabel')}</h4>
                 <p className="text-gray-600 text-sm">
-                  Préfecture d'Ibaraki<br />
-                  Japon
+                  {t('footer.address')}
                 </p>
               </div>
 

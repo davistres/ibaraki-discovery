@@ -5,7 +5,7 @@ import categoriesData from '../data/categories.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Festivals = () => {
-  const { t, td } = useTranslation()
+  const { t, td, language } = useTranslation()
   const [selectedSaison, setSelectedSaison] = useState('all')
   const [selectedType, setSelectedType] = useState('all')
 
@@ -184,9 +184,11 @@ const Festivals = () => {
                   {/* Content */}
                   <div className="p-6">
                     <h3 className="font-display font-bold text-xl text-gray-900 mb-1">
-                      {festival.nom}
+                      {language === 'ja' ? festival.nomJaponais : festival.nom}
                     </h3>
-                    <p className="text-sm text-gray-500 mb-3">{festival.nomJaponais}</p>
+                    {language !== 'ja' && (
+                      <p className="text-sm text-gray-500 mb-3">{festival.nomJaponais}</p>
+                    )}
 
                     <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                       {festival.description}

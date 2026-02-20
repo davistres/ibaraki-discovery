@@ -4,7 +4,7 @@ import placesData from '../data/places.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const PlaceDetail = () => {
-  const { t, td } = useTranslation()
+  const { t, td, language } = useTranslation()
   const { id } = useParams()
   const place = placesData.find(p => p.id === id)
 
@@ -64,9 +64,11 @@ const PlaceDetail = () => {
               ))}
             </div>
             <h1 className="font-display font-bold text-4xl md:text-5xl mb-2">
-              {place.nom}
+              {language === 'ja' ? place.nomJaponais : place.nom}
             </h1>
-            <p className="text-xl text-gray-200">{place.nomJaponais}</p>
+            {language !== 'ja' && (
+              <p className="text-xl text-gray-200">{place.nomJaponais}</p>
+            )}
           </div>
         </div>
       </div>
