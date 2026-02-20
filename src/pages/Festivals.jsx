@@ -5,7 +5,7 @@ import categoriesData from '../data/categories.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Festivals = () => {
-  const { t, td, language } = useTranslation()
+  const { t, td, language, translateDescription, translateName } = useTranslation()
   const [selectedSaison, setSelectedSaison] = useState('all')
   const [selectedType, setSelectedType] = useState('all')
 
@@ -154,6 +154,7 @@ const Festivals = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {festivalsForDisplay.map((festival) => {
               const TypeIcon = getTypeIcon(festival.type)
+              const displayName = translateName(festival.id, festival.nom)
               return (
                 <div
                   key={festival.id}
@@ -184,25 +185,25 @@ const Festivals = () => {
                   {/* Content */}
                   <div className="p-6">
                     <h3 className="font-display font-bold text-xl text-gray-900 mb-1">
-                      {language === 'ja' ? festival.nomJaponais : festival.nom}
+                      {displayName}
                     </h3>
                     {language !== 'ja' && (
                       <p className="text-sm text-gray-500 mb-3">{festival.nomJaponais}</p>
                     )}
 
                     <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                      {festival.description}
+                      {translateDescription(festival.id, festival.description)}
                     </p>
 
                     {/* Info */}
                     <div className="space-y-2 mb-4">
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
                         <Calendar className="w-4 h-4 text-red-500 flex-shrink-0" />
-                        <span className="font-semibold">{festival.periode}</span>
+                        <span className="font-semibold">{td(festival.periode)}</span>
                       </div>
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
                         <MapPin className="w-4 h-4 text-red-500 flex-shrink-0" />
-                        <span className="truncate">{festival.ville}</span>
+                        <span className="truncate">{td(festival.ville)}</span>
                       </div>
                     </div>
 

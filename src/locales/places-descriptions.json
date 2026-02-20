@@ -1,0 +1,306 @@
+{
+  "places": {
+    "hitachi-seaside-park": {
+      "nom": { "en": "Hitachi Seaside Park", "ja": "国営ひたち海浜公園" },
+      "en": "Spectacular park famous for its blue nemophila fields in spring and red kochia in autumn",
+      "ja": "春の青いネモフィラと秋の真っ赤なコキアで知られる、国営ひたち海浜公園"
+    },
+    "kairaku-en": {
+      "nom": { "en": "Kairaku-en Garden", "ja": "偕楽園" },
+      "en": "One of Japan's three most beautiful gardens, famous for its 3,000 plum trees",
+      "ja": "日本三名園の一つで、3,000本の梅が咲き誇る水戸の偕楽園"
+    },
+    "mont-tsukuba": {
+      "nom": { "en": "Mount Tsukuba", "ja": "筑波山" },
+      "en": "Sacred mountain with two peaks, accessible by funicular and cable car",
+      "ja": "二つの山頂を持つ筑波山。ケーブルカーやロープウェイで気軽に登れる霊山"
+    },
+    "kashima-jingu": {
+      "nom": { "en": "Kashima Jingu Shrine", "ja": "鹿島神宮" },
+      "en": "One of the oldest and most important Shinto shrines in eastern Japan",
+      "ja": "東国三社の一つで、日本最古級の歴史を持つ由緒ある鹿島神宮"
+    },
+    "grand-bouddha-ushiku": {
+      "nom": { "en": "Ushiku Daibutsu (Great Buddha)", "ja": "牛久大仏" },
+      "en": "One of the tallest statues in the world (120m), surrounded by magnificent gardens",
+      "ja": "世界最大級 de 120m の高さを誇る牛久大仏。四季折々の花々に囲まれています"
+    },
+    "chutes-fukuroda": {
+      "nom": { "en": "Fukuroda Falls", "ja": "袋田の滝" },
+      "en": "Recognized as one of Japan's three most beautiful waterfalls, 120m high and 73m wide",
+      "ja": "日本三名瀑の一つに数えられる袋田の滝。高さ120m、幅73mのダイナミックな景観"
+    },
+    "kasama-inari": {
+      "nom": { "en": "Kasama Inari Shrine", "ja": "笠間稲荷神社" },
+      "en": "One of Japan's three most important Inari shrines",
+      "ja": "日本三大稲荷の一つに数えられる、五穀豊穣の神を祀る笠間稲荷神社"
+    },
+    "oarai-isosaki": {
+      "nom": { "en": "Oarai Isosaki Shrine", "ja": "大洗磯前神社" },
+      "en": "Historic Shinto shrine founded in 856, famous for its ocean-side torii gate",
+      "ja": "856年創建の歴史ある神社. 荒波の中に立つ「神磯の鳥居」は絶景スポット"
+    },
+    "aqua-world-oarai": {
+      "nom": { "en": "Aqua World Oarai Aquarium", "ja": "アクアワールド茨城県大洗水族館" },
+      "en": "One of Japan's largest aquariums, renowned for its shark collection",
+      "ja": "サメの飼育種類数日本一を誇る、国内最大級の水族館アクアワールド大洗"
+    },
+    "lac-kasumigaura": {
+      "nom": { "en": "Lake Kasumigaura", "ja": "霞ヶ浦" },
+      "en": "Japan's second-largest lake, perfect for cycling and water sports",
+      "ja": "日本第2位の広さを誇る霞ヶ浦。サイクリングや帆引き船、水上レジャーが人気"
+    },
+    "ecole-kodokan": {
+      "nom": { "en": "Kodokan School", "ja": "弘道館" },
+      "en": "Former largest samurai school from the Edo period",
+      "ja": "水戸藩の藩校として江戸時代に創設された、日本最大級の弘道館"
+    },
+    "temple-jorinji": {
+      "nom": { "en": "Jorinji Temple", "ja": "乗蓮寺" },
+      "en": "Buddhist temple with over 500 wooden arhat statues",
+      "ja": "500体以上の木造五百羅漢像が安置されていることで有名な乗蓮寺"
+    },
+    "musee-art-moderne-ibaraki": {
+      "nom": { "en": "The Museum of Modern Art, Ibaraki", "ja": "茨城県近代美術館" },
+      "en": "Prefectural museum dedicated to modern and contemporary art",
+      "ja": "千波湖のほとりに建つ、国内外の近現代美術を展示する茨城県近代美術館"
+    },
+    "lac-senba": {
+      "nom": { "en": "Lake Senba", "ja": "千波湖" },
+      "en": "Peaceful lake in the heart of Mito with swans and walking trails",
+      "ja": "水戸市民の憩いの場である千波湖。白鳥の姿やジョギングコースが人気"
+    },
+    "plage-ajigaura": {
+      "nom": { "en": "Ajigaura Beach", "ja": "阿字ヶ浦海岸" },
+      "en": "Long 1.5 km sandy beach popular for swimming in summer",
+      "ja": "1.5kmにわたる美しい砂浜が続く、夏に賑わう阿字ヶ浦海岸"
+    },
+    "sanctuaire-tsukuba": {
+      "nom": { "en": "Tsukubasan Shrine", "ja": "筑波山神社" },
+      "en": "Ancient Shinto shrine at the foot of Mount Tsukuba",
+      "ja": "筑波山を御神体として祀る、筑波山中腹に位置する由緒ある筑波山神社"
+    },
+    "chateau-oda": {
+      "nom": { "en": "Oda Castle Ruins", "ja": "小田城跡" },
+      "en": "Ruins of a medieval castle transformed into a historical park",
+      "ja": "国指定史跡である小田城跡。歴史公園として整備された中世の城郭遺構"
+    },
+    "temple-shutoku-ji": {
+      "nom": { "en": "Shutoku-ji Temple", "ja": "秀徳寺" },
+      "en": "Buddhist temple of the Sōtō Zen school founded in 1534",
+      "ja": "1534年に創建された曹洞宗の寺院。静寂に包まれた歴史ある佇まい"
+    },
+    "brasserie-inaba": {
+      "nom": { "en": "Inaba Sake Brewery", "ja": "稲葉酒造" },
+      "en": "Family-run artisanal sake brewery founded in 1867",
+      "ja": "1867年創業、筑波山の麓で伝統の酒造りを守り続ける稲葉酒造"
+    },
+    "jaxa-tsukuba": {
+      "nom": { "en": "JAXA Tsukuba Space Center", "ja": "JAXA筑波宇宙センター" },
+      "en": "Headquarters of JAXA with exhibits on rockets and space",
+      "ja": "JAXA筑波宇宙センター. ロケットや人工衛星の実物大展示が見学可能"
+    },
+    "tsukuba-expo-center": {
+      "nom": { "en": "Tsukuba Expo Center", "ja": "つくばエキスポセンター" },
+      "en": "Science center with one of the world's largest planetariums",
+      "ja": "世界最大級のプラネタリウムを備えた、科学の楽しさを体験できる展示施設"
+    },
+    "science-square-tsukuba": {
+      "nom": { "en": "Science Square Tsukuba", "ja": "サイエンス・スクエア つくば" },
+      "en": "Exhibition center presenting cutting-edge technologies",
+      "ja": "産総研（AIST）の最新技術や研究成果を分かりやすく紹介するショールーム"
+    },
+    "jardin-botanique-tsukuba": {
+      "nom": { "en": "Tsukuba Botanical Garden", "ja": "筑波実験植物園" },
+      "en": "Botanical garden with a wide variety of plants",
+      "ja": "国立科学博物館が運営する、多様な植物を研究・展示する筑波実験植物園"
+    },
+    "village-nishiyama": {
+      "nom": { "en": "Nishiyama Pottery Village", "ja": "西山地区" },
+      "en": "Bucolic pottery village perpetuating Kasama-yaki craft",
+      "ja": "笠間焼の伝統を受け継ぐ、のどかな雰囲気の芸術村。陶芸体験も可能"
+    },
+    "colline-arts-kasama": {
+      "nom": { "en": "Kasama Arts Hill", "ja": "笠間芸術の森公園" },
+      "en": "Vast park dedicated to culture and art with pottery workshops",
+      "ja": "広大な敷地に芸術作品が点在する笠間芸術の森公園"
+    },
+    "musee-ceramique-ibaraki": {
+      "nom": { "en": "Ibaraki Ceramic Art Museum", "ja": "茨城県陶芸美術館" },
+      "en": "Japan's first prefectural museum specialized in ceramic art",
+      "ja": "陶芸を専門とする日本初の県立美術館。笠間焼をはじめ世界の作品を展示"
+    },
+    "parc-kasama-no-mori": {
+      "nom": { "en": "Kasama Forest Park", "ja": "笠間芸術の森公園" },
+      "en": "Forest park with walking trails near Kasama Arts Hill",
+      "ja": "笠間芸術の森公園に隣接する、自然豊かな散策路が整備された森林公園"
+    },
+    "brasserie-sudo-honke": {
+      "nom": { "en": "Sudo Honke Sake Brewery", "ja": "須藤本家" },
+      "en": "Japan's oldest active sake brewery, founded in 1141",
+      "ja": "1141年創業、日本最古の歴史を誇る現役の酒蔵である須藤本家"
+    },
+    "chutes-tsukimachi": {
+      "nom": { "en": "Tsukimachi Falls", "ja": "月待の滝" },
+      "en": "Intimate waterfall where you can walk behind the water curtain",
+      "ja": "滝の裏側に回れることから「裏見の滝」として知られる月待の滝"
+    },
+    "gorges-kuji-gawa": {
+      "nom": { "en": "Kuji River Gorges", "ja": "久慈川渓谷" },
+      "en": "Picturesque gorges suitable for hiking and nature observation",
+      "ja": "久慈川の清流が生み出す美しい渓谷。カヌーやキャンプも楽しめる"
+    },
+    "vallee-mont-yamizo": {
+      "nom": { "en": "Mount Yamizo", "ja": "八溝山" },
+      "en": "Ibaraki's highest peak (1022m) with hiking trails",
+      "ja": "茨城県最高峰（1022m）の八溝山。ブナの原生林や名水巡りが楽しめる"
+    },
+    "plage-hiraiso": {
+      "nom": { "en": "Hiraiso Coast", "ja": "平磯海岸" },
+      "en": "Wild beach with torii gate on rock, famous for sunrises",
+      "ja": "岩場に立つ鳥居が印象的な平磯海岸。日の出の美しさで知られる穴場スポット"
+    },
+    "oarai-marine-tower": {
+      "nom": { "en": "Oarai Marine Tower", "ja": "大洗マリンタワー" },
+      "en": "60m observation tower with panoramic views",
+      "ja": "地上60mから太平洋や富士山まで見渡せる、大洗のシンボルタワー"
+    },
+    "ville-itako-canaux": {
+      "nom": { "en": "Itako Water City", "ja": "水郷潮来" },
+      "en": "Water city famous for canals and traditional boat rides",
+      "ja": "水郷の町として知られる潮来。十二橋めぐりやサッパ舟の遊覧が有名"
+    },
+    "temple-sairenji-itako": {
+      "nom": { "en": "Sairenji Temple (Itako)", "ja": "西連寺" },
+      "en": "Historical temple with five-story pagoda from Muromachi period",
+      "ja": "室町時代に建立された三重塔（国指定重要文化財）を持つ古刹・西連寺"
+    },
+    "pont-ryujin": {
+      "nom": { "en": "Ryujin Big Suspension Bridge", "ja": "竜神大吊橋" },
+      "en": "One of Japan's longest pedestrian suspension bridges (375m)",
+      "ja": "長さ375mを誇る竜神大吊橋. 四季折々のパノラマやバンジージャンプが人気"
+    },
+    "nishiyamaso": {
+      "nom": { "en": "Nishiyamaso (Seizansō)", "ja": "西山荘" },
+      "en": "Historical retreat of Tokugawa Mitsukuni (Mito Kōmon)",
+      "ja": "水戸黄門として知られる徳川光圀公が隠居生活を送った史跡・西山荘"
+    },
+    "sanctuaire-oiwa": {
+      "nom": { "en": "Oiwa Shrine", "ja": "御岩神社" },
+      "en": "Ancient power spot in a sacred cedar forest",
+      "ja": "188柱もの神々を祀る御岩神社. 強力なパワースポットとして知られる霊山"
+    },
+    "hitachi-civic-center-science-museum": {
+      "nom": { "en": "Hitachi Civic Center Science Museum", "ja": "日立シビックセンター科学館 サクリエ" },
+      "en": "Interactive science museum with large planetarium",
+      "ja": "遊びながら科学を学べる日立シビックセンター科学館. 球体のプラネタリウムが特徴"
+    },
+    "gorge-hananuki": {
+      "nom": { "en": "Hananuki Gorge", "ja": "花貫渓谷" },
+      "en": "Picturesque valley famous for autumn foliage",
+      "ja": "汐見滝吊り橋から眺める紅葉が絶景の花貫渓谷"
+    },
+    "plage-takado-kohama": {
+      "nom": { "en": "Takado Kohama Beach", "ja": "高戸小浜海岸" },
+      "en": "Quiet cove with natural rock formations",
+      "ja": "海食崖や奇岩が続く、静かで美しい景観が魅力の高戸小浜海岸"
+    },
+    "parc-floral-ibaraki": {
+      "nom": { "en": "Ibaraki Flower Park", "ja": "いばらきフラワーパーク" },
+      "en": "30-hectare botanical park with 900 rose varieties",
+      "ja": "世界のバラ900種が咲き誇るいばらきフラワーパーク. 五感で感じる体験型施設"
+    },
+    "koga-ville-musee": {
+      "nom": { "en": "Koga Historical Museum", "ja": "古河歴史博物館" },
+      "en": "Former Edo-period post town with history museum",
+      "ja": "江戸時代の面影を残す古河の街並みと、歴史文化を伝える古河歴史博物館"
+    },
+    "marais-watarase": {
+      "nom": { "en": "Watarase Marsh", "ja": "渡良瀬遊水地" },
+      "en": "Large wetland of ecological importance, Ramsar site",
+      "ja": "ラムサール条約登録湿地である渡良瀬遊水地. 広大な自然と野鳥の宝庫"
+    },
+    "cote-rocheuse-kitaiibaraki": {
+      "nom": { "en": "Izura Coast", "ja": "五浦海岸" },
+      "en": "Coastline with picturesque rock formations and cliffs",
+      "ja": "近代美術の聖地・五浦海岸. 六角堂と荒波が織りなす絵画のような景勝地"
+    },
+    "yuki-tsumugi-yakata": {
+      "nom": { "en": "Tsumugi no Yakata (Yuki-tsumugi Museum)", "ja": "つむぎの館" },
+      "en": "Center dedicated to UNESCO-listed silk weaving technique",
+      "ja": "ユネスコ無形文化遺産「結城紬」の伝統技術を紹介する施設. 染め織り体験も可能"
+    },
+    "temple-amabiki-kannon": {
+      "nom": { "en": "Amabiki Kannon Temple", "ja": "雨引観音 (雨引山楽法寺)" },
+      "en": "Buddhist temple famous for hydrangeas and free-roaming animals",
+      "ja": "安産祈願で知られる雨引観音. 初夏のアジサイや放し飼いの孔雀が人気"
+    },
+    "temple-choso-ji": {
+      "nom": { "en": "Choso-ji Temple", "ja": "長勝寺" },
+      "en": "Historical Tendai temple from 1185",
+      "ja": "1185年創建、源頼朝ゆかりの古刹・長勝寺. 重要文化財の銅鐘など歴史が深い"
+    },
+    "sanctuaire-hoshino": {
+      "nom": { "en": "Hoshino Shrine", "ja": "星宮神社" },
+      "en": "Small local shrine in a natural setting",
+      "ja": "豊かな自然の中にひっそりと佇む、地域の人々に愛される星宮神社"
+    },
+    "lapoppo-namegata-farmers-village": {
+      "nom": { "en": "Lapoppo Namegata Farmers Village", "ja": "らぽっぽなめがたファーマーズヴィレッジ" },
+      "en": "Agrotourism complex dedicated to sweet potatoes",
+      "ja": "さつまいもをテーマにした体験型農業テーマパーク. 廃校を利用したユニークな施設"
+    }
+  },
+  "festivals": {
+    "mito-plum-festival": {
+      "nom": { "en": "Mito Plum Festival (Ume Matsuri)", "ja": "水戸の梅まつり" },
+      "en": "One of Japan's largest plum festivals with 3,000 plum trees",
+      "ja": "3,000本の梅が咲き誇る、日本最大級の梅まつり「水戸の梅まつり」"
+    },
+    "itako-iris-festival": {
+      "nom": { "en": "Suigo Itako Iris Festival (Ayame Matsuri)", "ja": "水郷潮来あやめまつり" },
+      "en": "Festival celebrating over 1 million iris flowers from 500 varieties",
+      "ja": "500種100万株のあやめが咲き誇る「水郷潮来あやめまつり」。嫁入り舟も見所"
+    },
+    "rock-in-japan": {
+      "nom": { "en": "Rock in Japan Festival", "ja": "ロック・イン・ジャパン・フェスティバル" },
+      "en": "One of Japan's largest rock and J-Pop music festivals",
+      "ja": "日本最大級の野外ロックフェスティバル。国内トップアーティストが集結"
+    },
+    "oarai-anko-festival": {
+      "nom": { "en": "Oarai Anko (Monkfish) Festival", "ja": "大洗あんこう祭" },
+      "en": "Festival dedicated to monkfish (ankō), a local delicacy",
+      "ja": "冬の味覚「あんこう」を堪能する大洗の名物祭り。吊るし切りの実演も"
+    },
+    "kasama-chrysanthemum-festival": {
+      "nom": { "en": "Kasama Chrysanthemum Festival (Kiku Matsuri)", "ja": "笠間の菊まつり" },
+      "en": "One of Japan's oldest and largest chrysanthemum festivals",
+      "ja": "日本最古の菊まつり。色鮮やかな菊人形や数千鉢の菊が境内を彩る"
+    },
+    "tsuchiura-fireworks": {
+      "nom": { "en": "Tsuchiura National Fireworks Competition", "ja": "土浦全国花火競技大会" },
+      "en": "One of Japan's three major fireworks competitions",
+      "ja": "日本三大花火大会の一つ。全国の職人が技を競い合う芸術的な花火の競演"
+    },
+    "koga-peach-blossom-festival": {
+      "nom": { "en": "Koga Peach Blossom Festival (Hanamomo Matsuri)", "ja": "古河桃まつり" },
+      "en": "Festival celebrating peach blossoms with 1,500 trees",
+      "ja": "1,500本の花桃が公園をピンク色に染める「古河桃まつり」"
+    },
+    "tsukuba-festival": {
+      "nom": { "en": "Tsukuba Festival", "ja": "つくばまつり" },
+      "en": "Largest festival in Tsukuba with parades and fireworks",
+      "ja": "つくば市最大のお祭り。万博山車やねぶたのパレード、多くの屋台で賑わう"
+    },
+    "makabe-cherry-blossom-festival": {
+      "nom": { "en": "Makabe Cherry Blossom Festival", "ja": "真壁桜まつり" },
+      "en": "Cherry blossom celebration in historic district",
+      "ja": "歴史的な街並みが残る真壁地区で楽しむ、風情ある桜の祭典"
+    },
+    "kasama-lantern-illumination-festival": {
+      "nom": { "en": "Kasama Lantern Illumination Festival", "ja": "笠間の夜まつり" },
+      "en": "Lantern and autumn illumination festival",
+      "ja": "幻想的な提灯の明かりが秋の夜を彩る、笠間のライトアップイベント"
+    }
+  }
+}

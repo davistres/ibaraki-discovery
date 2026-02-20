@@ -1,12 +1,19 @@
 import { useParams, Link } from 'react-router-dom'
 import { MapPin, Clock, DollarSign, Calendar, Train, Globe, ExternalLink, ArrowLeft, Star, Share2 } from 'lucide-react'
 import placesData from '../data/places.json'
+import categoriesData from '../data/categories.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const PlaceDetail = () => {
-  const { t, td, language } = useTranslation()
+  const { t, td, language, translateDescription, translateName } = useTranslation()
   const { id } = useParams()
   const place = placesData.find(p => p.id === id)
+  
+  // Get category names for ville and region
+  const villeCategory = categoriesData.find(c => c.id === place?.ville_id)
+  const regionCategory = categoriesData.find(c => c.id === place?.region_id)
+  const displayVille = villeCategory ? td(villeCategory.nom) : place?.ville
+  const displayRegion = regionCategory ? td(regionCategory.nom) : place?.region
 
   if (!place) {
     return (
@@ -22,6 +29,10 @@ const PlaceDetail = () => {
   }
 
   const getImagePath = (imageName) => `${import.meta.env.BASE_URL}Photo/${imageName}`
+  
+  // Get translated name and description
+  const displayName = translateName(place.id, place.nom)
+  const displayDescription = translateDescription(place.id, place.descriptionLongue || place.description)
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -64,7 +75,7 @@ const PlaceDetail = () => {
               ))}
             </div>
             <h1 className="font-display font-bold text-4xl md:text-5xl mb-2">
-              {language === 'ja' ? place.nomJaponais : place.nom}
+              {displayName}
             </h1>
             {language !== 'ja' && (
               <p className="text-xl text-gray-200">{place.nomJaponais}</p>
@@ -83,7 +94,7 @@ const PlaceDetail = () => {
                 {t('placeDetail.about')}
               </h2>
               <p className="text-gray-700 leading-relaxed text-lg">
-                {place.descriptionLongue}
+                {displayDescription}
               </p>
             </div>
 
@@ -161,7 +172,7 @@ const PlaceDetail = () => {
                   <MapPin className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900">{t('placeDetail.location')}</p>
-                    <p className="text-gray-600 text-sm">{place.ville}, {place.region}</p>
+                    <p className="text-gray-600 text-sm">{displayVille}, {displayRegion}</p>
                     <p className="text-gray-500 text-xs mt-1">{place.adresse}</p>
                   </div>
                 </div>
@@ -170,7 +181,7 @@ const PlaceDetail = () => {
                   <Clock className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900">{t('placeDetail.hours')}</p>
-                    <p className="text-gray-600 text-sm">{place.horaires}</p>
+                    <p className="text-gray-600 text-sm">{td(place.horaires)}</p>
                   </div>
                 </div>
 
@@ -178,7 +189,7 @@ const PlaceDetail = () => {
                   <DollarSign className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900">{t('placeDetail.price')}</p>
-                    <p className="text-gray-600 text-sm">{place.tarif}</p>
+                    <p className="text-gray-600 text-sm">{td(place.tarif)}</p>
                   </div>
                 </div>
 
@@ -186,7 +197,7 @@ const PlaceDetail = () => {
                   <Calendar className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900">{t('placeDetail.visitDuration')}</p>
-                    <p className="text-gray-600 text-sm">{place.dureeVisite}</p>
+                    <p className="text-gray-600 text-sm">{td(place.dureeVisite)}</p>
                   </div>
                 </div>
 
@@ -194,7 +205,7 @@ const PlaceDetail = () => {
                   <Train className="w-5 h-5 text-red-600 flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900">{t('placeDetail.access')}</p>
-                    <p className="text-gray-600 text-sm">{place.acces}</p>
+                    <p className="text-gray-600 text-sm">{td(place.acces)}</p>
                   </div>
                 </div>
 

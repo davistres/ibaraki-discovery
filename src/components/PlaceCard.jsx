@@ -3,10 +3,14 @@ import { MapPin, Clock, DollarSign, Star } from 'lucide-react'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const PlaceCard = ({ place }) => {
-  const { t, td, language } = useTranslation()
+  const { t, td, language, translateDescription, translateName } = useTranslation()
   const getImagePath = (imageName) => {
     return `${import.meta.env.BASE_URL}Photo/${imageName}`
   }
+
+  // Get translated name and description
+  const displayName = translateName(place.id, place.nom)
+  const displayDescription = translateDescription(place.id, place.description)
 
   return (
     <Link
@@ -48,7 +52,7 @@ const PlaceCard = ({ place }) => {
       <div className="p-5">
         {/* Titre */}
         <h3 className="font-display font-bold text-xl text-gray-900 mb-1 group-hover:text-red-600 transition-colors">
-          {language === 'ja' ? place.nomJaponais : place.nom}
+          {displayName}
         </h3>
         {language !== 'ja' && (
           <p className="text-sm text-gray-500 mb-3">{place.nomJaponais}</p>
@@ -56,7 +60,7 @@ const PlaceCard = ({ place }) => {
 
         {/* Description */}
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-          {place.description}
+          {displayDescription}
         </p>
 
         {/* Activités */}
@@ -84,7 +88,7 @@ const PlaceCard = ({ place }) => {
             </div>
             <div className="flex items-center space-x-2">
               <DollarSign className="w-4 h-4 text-red-500 flex-shrink-0" />
-              <span className="font-semibold text-gray-900">{place.tarif}</span>
+              <span className="font-semibold text-gray-900">{td(place.tarif)}</span>
             </div>
           </div>
         </div>

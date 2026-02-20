@@ -6,7 +6,10 @@ import categoriesData from '../data/categories.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const getCategoryId = (name, group) => {
-  const category = categoriesData.find(cat => cat.nom === name && cat.group === group)
+  const category = categoriesData.find(cat => 
+    ((typeof cat.nom === 'object' ? cat.nom.fr : cat.nom) === name) && 
+    cat.group === group
+  )
   return category ? category.id : null
 }
 
@@ -38,7 +41,7 @@ const calculateActivitiesCount = (jours, nuits) => {
 }
 
 const Itinerary = () => {
-  const { t, td, language } = useTranslation()
+  const { t, td, language, translateDescription, translateName } = useTranslation()
   const [step, setStep] = useState(1)
   const [preferences, setPreferences] = useState({
     jours: '',
@@ -164,6 +167,32 @@ const Itinerary = () => {
       recommendedPlaces = recommendedPlaces.filter(place =>
         place.category_ids && selectedActiviteIds.some(id => place.category_ids.includes(id))
       )
+    }
+
+    // Sécurité : Si aucun lieu n'est trouvé avec tous les filtres, on élargit la recherche
+    // en ignorant les centres d'intérêt mais en gardant la saison et l'accessibilité
+    if (recommendedPlaces.length === 0) {
+      recommendedPlaces = [...placesData]
+      
+      if (preferences.saison) {
+        const saisonId = getCategoryId(preferences.saison, 'Saisons')
+        if (saisonId) {
+          recommendedPlaces = recommendedPlaces.filter(place =>
+            place.category_ids && place.category_ids.includes(saisonId)
+          )
+        }
+      }
+
+      if (preferences.accessibilite.length > 0) {
+        const accessibiliteIds = preferences.accessibilite.map(acc =>
+          getCategoryId(acc, 'Accessibilité')
+        ).filter(Boolean)
+        if (accessibiliteIds.length > 0) {
+          recommendedPlaces = recommendedPlaces.filter(place =>
+            accessibiliteIds.includes(place.accessibilite_id)
+          )
+        }
+      }
     }
 
     const incontournableId = getCategoryId('Incontournable', 'Tags')
@@ -488,7 +517,7 @@ const Itinerary = () => {
                           {index + 1}
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900 mb-1">{language === 'ja' ? place.nomJaponais : place.nom}</h4>
+                          <h4 className="font-semibold text-gray-900 mb-1">{translateName(place.id, place.nom)}</h4>
                           <p className="text-sm text-gray-600 mb-2">{td(place.ville)}</p>
                           <p className="text-xs text-gray-500">{td(place.dureeVisite)}</p>
                         </div>
@@ -507,9 +536,9 @@ const Itinerary = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {generatedItinerary.festivals.map((festival) => (
                       <div key={festival.id} className="bg-red-50 border-2 border-red-200 rounded-xl p-6">
-                        <h4 className="font-semibold text-gray-900 mb-2">{language === 'ja' ? festival.nomJaponais : festival.nom}</h4>
-                        <p className="text-sm text-gray-600 mb-2">{festival.periode}</p>
-                        <p className="text-sm text-gray-700">{festival.description}</p>
+                        <h4 className="font-semibold text-gray-900 mb-2">{translateName(festival.id, festival.nom)}</h4>
+                        <p className="text-sm text-gray-600 mb-2">{td(festival.periode)}</p>
+                        <p className="text-sm text-gray-700">{translateDescription(festival.id, festival.description)}</p>
                       </div>
                     ))}
                   </div>
