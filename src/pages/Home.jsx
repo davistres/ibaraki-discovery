@@ -2,21 +2,26 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Search, MapPin, Calendar, Sparkles, ArrowRight, Mountain, Waves, Landmark, UtensilsCrossed } from 'lucide-react'
 import PlaceCard from '../components/PlaceCard'
-import placesData from '../data/places.json'
+import { usePlaces } from '../hooks/usePlaces'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Home = () => {
   const navigate = useNavigate()
   const { t } = useTranslation()
   const [searchQuery, setSearchQuery] = useState('')
+  const { places, loading } = usePlaces()
   const [featuredPlaces, setFeaturedPlaces] = useState([])
 
   useEffect(() => {
-    const featured = placesData.filter(place =>
-      place.tags?.includes('Incontournable')
-    ).slice(0, 3)
+    // Filtre les lieux taggés 'Incontournable' via category_ids
+    // Les catégories Incontournable ont des IDs dans la plage Tags
+    const featured = places
+      .filter(place =>
+        place.categories?.some(c => c.nom === 'Incontournable' || c.nom_en === 'Must-see')
+      )
+      .slice(0, 3)
     setFeaturedPlaces(featured)
-  }, [])
+  }, [places])
 
   const handleSearch = (e) => {
     e.preventDefault()
@@ -208,15 +213,15 @@ const Home = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white rounded-xl p-6 shadow-md">
-                <div className="text-4xl font-bold text-red-600 mb-2">1h-1h30</div>
+                <div className="text-4xl font-bold text-red-600 mb-2">{t('home.fromTokyoValue')}</div>
                 <p className="text-gray-600">{t('home.fromTokyo')}</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
-                <div className="text-4xl font-bold text-red-600 mb-2">10+</div>
+                <div className="text-4xl font-bold text-red-600 mb-2">{t('home.mustSeeCount')}</div>
                 <p className="text-gray-600">{t('home.mustSee')}</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
-                <div className="text-4xl font-bold text-red-600 mb-2">8+</div>
+                <div className="text-4xl font-bold text-red-600 mb-2">{t('home.festivalsCount')}</div>
                 <p className="text-gray-600">{t('home.annualFestivals')}</p>
               </div>
             </div>

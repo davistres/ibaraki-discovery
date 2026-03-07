@@ -47,8 +47,11 @@
     "whyTitle": "なぜ茨城なのか？",
     "whyText": "東京からわずか1時間〜1時間半。茨城県は、混雑を避けて本物の日本を体験したい方に最適な場所です。壮大な自然、豊かな文化遺産、そして独自のグルメ。まだ見ぬ日本の魅力がここにあります。",
     "fromTokyo": "東京からすぐ",
+    "fromTokyoValue": "1〜1.5時間",
     "mustSee": "必見スポット",
-    "annualFestivals": "年間のお祭り"
+    "mustSeeCount": "10以上",
+    "annualFestivals": "年間のお祭り",
+    "festivalsCount": "8以上"
   },
   "discovery": {
     "title": "茨城を発見",
@@ -257,7 +260,6 @@
     "Enceinte accessible 24/7. Bureau: 8h30-17h00.": "境内：24時間. 社務所：8時30分〜17時。",
     "L'accès à la porte Kamiiso-no-Torii est possible à toute heure. Le sanctuaire principal est généralement ouvert pendant la journée.": "神磯の鳥居は常時見学可能. 本殿参拝は日中のみ。",
     "Généralement 9h00-17h00 (dernière admission 16h00). Fermé certains jours en décembre.": "通常9:00〜17:00. 12月に休館日あり。",
-    "Accès libre.": "自由。",
     "9h00-17h00 (variable selon saison)": "9:00〜17:00（季節変動あり）",
     "8h00-17h00 (généralement)": "8:00〜17:00（通常）",
     "9h30-17h00 (fermé les lundis)": "9:30〜17:00（月曜休館）",

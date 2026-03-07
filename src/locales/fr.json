@@ -47,8 +47,11 @@
     "whyTitle": "Pourquoi Visiter Ibaraki ?",
     "whyText": "Située à seulement 1h-1h30 de Tokyo, la préfecture d'Ibaraki offre une alternative authentique et paisible aux destinations touristiques surpeuplées. Découvrez des paysages naturels spectaculaires, un patrimoine culturel riche, une gastronomie unique et des expériences inoubliables loin des sentiers battus.",
     "fromTokyo": "Depuis Tokyo",
+    "fromTokyoValue": "1h - 1h30",
     "mustSee": "Lieux incontournables",
-    "annualFestivals": "Festivals annuels"
+    "mustSeeCount": "10+",
+    "annualFestivals": "Festivals annuels",
+    "festivalsCount": "8+"
   },
   "discovery": {
     "title": "Découvrez Ibaraki",
@@ -61,7 +64,7 @@
     "seasons": "Saisons",
     "accessibility": "Accessibilité",
     "reset": "Réinitialiser",
-    "results": "{count} résultat{plural} trouvé{plural}",
+    "results": "résultat{plural} trouvé{plural}",
     "noResults": "Aucun résultat trouvé",
     "noResultsHint": "Essayez de modifier vos critères de recherche",
     "resetFilters": "Réinitialiser les filtres"
@@ -71,7 +74,7 @@
     "subtitle": "Découvrez les célébrations saisonnières et événements culturels d'Ibaraki tout au long de l'année",
     "filterBySeason": "Filtrer par saison",
     "filterByType": "Filtrer par type",
-    "results": "{count} festival{plural} trouvé{plural}",
+    "results": "festival{plural} trouvé{plural}",
     "noResults": "Aucun festival trouvé",
     "noResultsHint": "Essayez de modifier vos filtres",
     "activities": "ACTIVITÉS",

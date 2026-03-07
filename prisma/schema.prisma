@@ -12,16 +12,18 @@ datasource db {
 
 // Model for all categories, tags, regions, etc.
 model Category {
-  id    Int     @id @default(autoincrement())
-  group String
-  nom   String
+  id     Int    @id @default(autoincrement())
+  group  String
+  nom    String
+  nom_en String @default("")
+  nom_ja String @default("")
 
   // One-to-many relations back to Place/Festival
-  placesAsRegion       Place[]    @relation("PlaceRegion")
-  placesAsVille        Place[]    @relation("PlaceVille")
+  placesAsRegion        Place[]    @relation("PlaceRegion")
+  placesAsVille         Place[]    @relation("PlaceVille")
   placesAsAccessibilite Place[]    @relation("PlaceAccessibilite")
-  festivalsAsRegion    Festival[] @relation("FestivalRegion")
-  festivalsAsVille     Festival[] @relation("FestivalVille")
+  festivalsAsRegion     Festival[] @relation("FestivalRegion")
+  festivalsAsVille      Festival[] @relation("FestivalVille")
 
   // Many-to-many relations back to Place/Festival
   places    Place[]
@@ -29,22 +31,42 @@ model Category {
 }
 
 model Place {
-  id                String  @id @unique
+  id     String @id @unique
+  // French (original)
   nom               String
   nomJaponais       String
   description       String
   descriptionLongue String
-  imagePrincipale   String
-  images            String
   adresse           String
-  lat               Float
-  lng               Float
+  acces             String
   horaires          String
   tarif             String
   dureeVisite       String
-  acces             String
-  siteWeb           String
-  googleMaps        String
+  // English translations
+  nom_en               String @default("")
+  description_en       String @default("")
+  descriptionLongue_en String @default("")
+  adresse_en           String @default("")
+  acces_en             String @default("")
+  horaires_en          String @default("")
+  tarif_en             String @default("")
+  dureeVisite_en       String @default("")
+  // Japanese translations
+  nom_ja               String @default("")
+  description_ja       String @default("")
+  descriptionLongue_ja String @default("")
+  adresse_ja           String @default("")
+  acces_ja             String @default("")
+  horaires_ja          String @default("")
+  tarif_ja             String @default("")
+  dureeVisite_ja       String @default("")
+
+  imagePrincipale String
+  images          String
+  lat             Float
+  lng             Float
+  siteWeb         String
+  googleMaps      String
 
   region    Category @relation("PlaceRegion", fields: [region_id], references: [id])
   region_id Int
@@ -62,7 +84,8 @@ model Place {
 }
 
 model Festival {
-  id          String @id @unique
+  id     String @id @unique
+  // French (original)
   nom         String
   nomJaponais String
   description String
@@ -73,6 +96,16 @@ model Festival {
   image       String
   lat         Float  @default(0)
   lng         Float  @default(0)
+  // English translations
+  nom_en         String @default("")
+  description_en String @default("")
+  lieu_en        String @default("")
+  periode_en     String @default("")
+  // Japanese translations
+  nom_ja         String @default("")
+  description_ja String @default("")
+  lieu_ja        String @default("")
+  periode_ja     String @default("")
 
   region    Category @relation("FestivalRegion", fields: [region_id], references: [id])
   region_id Int

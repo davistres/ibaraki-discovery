@@ -1,15 +1,15 @@
 import { useState, useMemo } from 'react'
 import { Calendar, MapPin, Sparkles, Music, Flower2, UtensilsCrossed, Flame } from 'lucide-react'
-import festivalsData from '../data/festivals.json'
 import categoriesData from '../data/categories.json'
+import { useFestivals } from '../hooks/useFestivals'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Festivals = () => {
-  const { t, td, language, translateDescription, translateName } = useTranslation()
+  const { t, td, language } = useTranslation()
+  const { festivals, loading } = useFestivals()
   const [selectedSaison, setSelectedSaison] = useState('all')
   const [selectedType, setSelectedType] = useState('all')
 
-  // Data processing using useMemo for performance
   const { categoryMap, filterOptions, festivalsForDisplay } = useMemo(() => {
     const catMap = categoriesData.reduce((acc, category) => {
       acc[category.id] = category
@@ -18,31 +18,34 @@ const Festivals = () => {
 
     const fOptions = {
       saisons: [{ id: 'all', nom: 'Toutes' }, ...categoriesData.filter(c => c.group === 'Saisons')],
-      types: [{ id: 'all', nom: 'Tous' }, ...categoriesData.filter(c => c.group === 'Types de festival' || c.nom === 'Culture')] // Inclure Culture
+      types: [{ id: 'all', nom: 'Tous' }, ...categoriesData.filter(c => c.group === 'Types de festival' || c.nom === 'Culture')]
     }
 
-    const filtered = festivalsData.filter(festival => {
-      const saisonMatch = selectedSaison === 'all' || festival.category_ids.includes(selectedSaison)
-      const typeMatch = selectedType === 'all' || festival.category_ids.includes(selectedType)
+    const filtered = festivals.filter(festival => {
+      // Les catégories viennent de l'API sous forme d'objets
+      const catIds = festival.categories?.map(c => c.id) || []
+      const saisonMatch = selectedSaison === 'all' || catIds.includes(selectedSaison)
+      const typeMatch = selectedType === 'all' || catIds.includes(selectedType)
       return saisonMatch && typeMatch
     })
 
     const displayFestivals = filtered.map(festival => {
-      const allCategories = festival.category_ids.map(id => catMap[id]).filter(Boolean)
-      const typeCat = allCategories.find(c => c.group === 'Types de festival' || c.nom === 'Culture')
-      const saisonCat = allCategories.find(c => c.group === 'Saisons')
+      const allCats = festival.categories || []
+      const typeCat = allCats.find(c => c.group === 'Types de festival' || c.nom === 'Culture')
+      const saisonCat = allCats.find(c => c.group === 'Saisons')
 
       return {
         ...festival,
-        ville: catMap[festival.ville_id]?.nom || '',
+        // ville déjà traduite par l'API
+        villeNom: festival.ville?.nom || '',
         type: typeCat?.nom || 'Culture',
         saison: saisonCat?.nom || '',
-        tags: allCategories.filter(c => c.group === 'Tags').map(c => c.nom)
+        tags: allCats.filter(c => c.group === 'Tags').map(c => c.nom)
       }
     })
 
     return { categoryMap: catMap, filterOptions: fOptions, festivalsForDisplay: displayFestivals }
-  }, [selectedSaison, selectedType])
+  }, [selectedSaison, selectedType, festivals])
 
 
   const getTypeIcon = (type) => {
@@ -79,6 +82,15 @@ const Festivals = () => {
 
   const getImagePath = (imageName) => `${import.meta.env.BASE_URL}Photo/${imageName}`
 
+  const parseArray = (data) => {
+    if (!data) return []
+    if (Array.isArray(data)) return data
+    if (typeof data === 'string') {
+      return data.split(',').map(item => item.trim()).filter(Boolean)
+    }
+    return []
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -108,11 +120,10 @@ const Festivals = () => {
                   <button
                     key={saison.id}
                     onClick={() => setSelectedSaison(saison.id)}
-                    className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                      selectedSaison === saison.id
+                    className={`px-4 py-2 rounded-lg font-medium transition-all ${selectedSaison === saison.id
                         ? 'bg-red-600 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
+                      }`}
                   >
                     {td(saison.nom)}
                   </button>
@@ -128,11 +139,10 @@ const Festivals = () => {
                   <button
                     key={type.id}
                     onClick={() => setSelectedType(type.id)}
-                    className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                      selectedType === type.id
+                    className={`px-4 py-2 rounded-lg font-medium transition-all ${selectedType === type.id
                         ? 'bg-red-600 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
+                      }`}
                   >
                     {td(type.nom)}
                   </button>
@@ -145,7 +155,7 @@ const Festivals = () => {
         {/* Results Count */}
         <div className="mb-6">
           <p className="text-gray-600">
-            <span className="font-semibold text-gray-900">{festivalsForDisplay.length}</span> {t('festivals.results', { count: festivalsForDisplay.length, plural: festivalsForDisplay.length > 1 ? 's' : '' })}
+            <span className="font-semibold text-gray-900">{festivalsForDisplay.length}</span> {t('festivals.results', { plural: festivalsForDisplay.length > 1 ? 's' : '' })}
           </p>
         </div>
 
@@ -154,7 +164,6 @@ const Festivals = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {festivalsForDisplay.map((festival) => {
               const TypeIcon = getTypeIcon(festival.type)
-              const displayName = translateName(festival.id, festival.nom)
               return (
                 <div
                   key={festival.id}
@@ -185,34 +194,34 @@ const Festivals = () => {
                   {/* Content */}
                   <div className="p-6">
                     <h3 className="font-display font-bold text-xl text-gray-900 mb-1">
-                      {displayName}
+                      {festival.nom}
                     </h3>
                     {language !== 'ja' && (
                       <p className="text-sm text-gray-500 mb-3">{festival.nomJaponais}</p>
                     )}
 
                     <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                      {translateDescription(festival.id, festival.description)}
+                      {festival.description}
                     </p>
 
                     {/* Info */}
                     <div className="space-y-2 mb-4">
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
                         <Calendar className="w-4 h-4 text-red-500 flex-shrink-0" />
-                        <span className="font-semibold">{td(festival.periode)}</span>
+                        <span className="font-semibold">{festival.periode}</span>
                       </div>
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
                         <MapPin className="w-4 h-4 text-red-500 flex-shrink-0" />
-                        <span className="truncate">{td(festival.ville)}</span>
+                        <span className="truncate">{festival.villeNom}</span>
                       </div>
                     </div>
 
                     {/* Activités */}
-                    {festival.activites && festival.activites.length > 0 && (
+                    {festival.activites && parseArray(festival.activites).length > 0 && (
                       <div className="pt-4 border-t border-gray-100">
                         <p className="text-xs font-semibold text-gray-500 mb-2">{t('festivals.activities')}</p>
                         <ul className="space-y-1">
-                          {festival.activites.slice(0, 3).map((activite, index) => (
+                          {parseArray(festival.activites).slice(0, 3).map((activite, index) => (
                             <li key={index} className="text-sm text-gray-600 flex items-start">
                               <span className="text-red-500 mr-2">•</span>
                               <span className="line-clamp-1">{td(activite)}</span>
@@ -223,9 +232,9 @@ const Festivals = () => {
                     )}
 
                     {/* Tags */}
-                    {festival.tags && festival.tags.length > 0 && (
+                    {festival.tags && parseArray(festival.tags).length > 0 && (
                       <div className="mt-4 flex flex-wrap gap-2">
-                        {festival.tags.map((tag, index) => (
+                        {parseArray(festival.tags).map((tag, index) => (
                           <span
                             key={index}
                             className="px-2 py-1 bg-red-50 text-red-600 text-xs font-medium rounded"

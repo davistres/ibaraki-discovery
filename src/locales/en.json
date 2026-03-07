@@ -47,8 +47,11 @@
     "whyTitle": "Why Visit Ibaraki?",
     "whyText": "Located just 1h-1h30 from Tokyo, Ibaraki Prefecture offers an authentic and peaceful alternative to overcrowded tourist destinations. Discover spectacular natural landscapes, rich cultural heritage, unique gastronomy and unforgettable experiences off the beaten path.",
     "fromTokyo": "From Tokyo",
+    "fromTokyoValue": "1h - 1h30",
     "mustSee": "Must-see places",
-    "annualFestivals": "Annual festivals"
+    "mustSeeCount": "10+",
+    "annualFestivals": "Annual festivals",
+    "festivalsCount": "8+"
   },
   "discovery": {
     "title": "Discover Ibaraki",
@@ -61,7 +64,7 @@
     "seasons": "Seasons",
     "accessibility": "Accessibility",
     "reset": "Reset",
-    "results": "{count} result{plural} found",
+    "results": "result{plural} found",
     "noResults": "No results found",
     "noResultsHint": "Try modifying your search criteria",
     "resetFilters": "Reset filters"
@@ -71,7 +74,7 @@
     "subtitle": "Discover the seasonal celebrations and cultural events of Ibaraki throughout the year",
     "filterBySeason": "Filter by season",
     "filterByType": "Filter by type",
-    "results": "{count} festival{plural} found",
+    "results": "festival{plural} found",
     "noResults": "No festivals found",
     "noResultsHint": "Try modifying your filters",
     "activities": "ACTIVITIES",
@@ -257,7 +260,6 @@
     "Enceinte accessible 24/7. Bureau: 8h30-17h00.": "Grounds open 24/7. Office: 8:30am-5:00pm.",
     "L'accès à la porte Kamiiso-no-Torii est possible à toute heure. Le sanctuaire principal est généralement ouvert pendant la journée.": "Kamiiso-no-Torii accessible 24/7. Main shrine open during the day.",
     "Généralement 9h00-17h00 (dernière admission 16h00). Fermé certains jours en décembre.": "Usually 9am-5pm. Closed some days in Dec.",
-    "Accès libre.": "Free access.",
     "9h00-17h00 (variable selon saison)": "9am-5pm (varies by season)",
     "8h00-17h00 (généralement)": "8am-5pm (usually)",
     "9h30-17h00 (fermé les lundis)": "9:30am-5pm (closed Mondays)",

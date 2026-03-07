@@ -2,15 +2,15 @@ import { useState, useEffect, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { Filter, X, Search, SlidersHorizontal } from 'lucide-react'
 import PlaceCard from '../components/PlaceCard'
-import placesData from '../data/places.json'
 import categoriesData from '../data/categories.json'
+import { usePlaces } from '../hooks/usePlaces'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Discovery = () => {
   const { t, td } = useTranslation()
   const [searchParams] = useSearchParams()
-  const [places] = useState(placesData)
-  const [filteredPlaces, setFilteredPlaces] = useState(placesData)
+  const { places, loading } = usePlaces()
+  const [filteredPlaces, setFilteredPlaces] = useState([])
   const [showFilters, setShowFilters] = useState(false)
 
   // Crée un lookup map pour les catégories pour un accès facile
@@ -38,34 +38,25 @@ const Discovery = () => {
   const [selectedSaisons, setSelectedSaisons] = useState([])
   const [selectedAccessibilite, setSelectedAccessibilite] = useState([])
 
-  // Appliquer les filtres
+  // Appliquer les filtres (les données API ont déjà les champs traduits)
   useEffect(() => {
     let filtered = [...places]
     const lowercasedQuery = searchQuery.toLowerCase()
 
-    // Recherche textuelle
     if (lowercasedQuery) {
       filtered = filtered.filter(place => {
-        // Recherche dans le nom et la description du lieu
         if (place.nom.toLowerCase().includes(lowercasedQuery) || place.description.toLowerCase().includes(lowercasedQuery)) {
           return true
         }
-        // Recherche dans le nom de la ville
-        const cityName = categoryMap[place.ville_id]?.nom.toLowerCase()
-        if (cityName && cityName.includes(lowercasedQuery)) {
-          return true
-        }
-        // Recherche dans les noms des catégories associées
-        return place.category_ids.some(catId =>
-          categoryMap[catId]?.nom.toLowerCase().includes(lowercasedQuery)
-        )
+        const cityName = (place.ville?.nom || '').toLowerCase()
+        if (cityName && cityName.includes(lowercasedQuery)) return true
+        return place.categories?.some(c => c.nom.toLowerCase().includes(lowercasedQuery))
       })
     }
 
-    // Filtres par sélection
     if (selectedActivites.length > 0) {
       filtered = filtered.filter(place =>
-        place.category_ids.some(id => selectedActivites.includes(id))
+        place.categories?.some(c => selectedActivites.includes(c.id))
       )
     }
     if (selectedRegions.length > 0) {
@@ -76,7 +67,7 @@ const Discovery = () => {
     }
     if (selectedSaisons.length > 0) {
       filtered = filtered.filter(place =>
-        place.category_ids.some(id => selectedSaisons.includes(id))
+        place.categories?.some(c => selectedSaisons.includes(c.id))
       )
     }
     if (selectedAccessibilite.length > 0) {
@@ -84,7 +75,7 @@ const Discovery = () => {
     }
 
     setFilteredPlaces(filtered)
-  }, [searchQuery, selectedActivites, selectedRegions, selectedVilles, selectedSaisons, selectedAccessibilite, places, categoryMap])
+  }, [searchQuery, selectedActivites, selectedRegions, selectedVilles, selectedSaisons, selectedAccessibilite, places])
 
   // Réinitialiser les filtres
   const resetFilters = () => {
@@ -113,11 +104,10 @@ const Discovery = () => {
           <button
             key={option.id}
             onClick={() => toggleFilter(option.id, selected, setSelected)}
-            className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-              selected.includes(option.id)
+            className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${selected.includes(option.id)
                 ? 'bg-red-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-            }`}
+              }`}
           >
             {td(option.nom)}
           </button>
@@ -133,25 +123,20 @@ const Discovery = () => {
     selectedSaisons.length +
     selectedAccessibilite.length
 
+  // Les données viennent déjà traduits depuis l'API
   const placesForDisplay = useMemo(() => {
-    return filteredPlaces.map(place => {
-      const allCategories = place.category_ids.map(id => categoryMap[id]).filter(Boolean)
-      
-      return {
-        ...place,
-        ville: categoryMap[place.ville_id]?.nom || '',
-        region: categoryMap[place.region_id]?.nom || '',
-        accessibilite: categoryMap[place.accessibilite_id]?.nom || '',
-        accessibiliteTranslated: td(categoryMap[place.accessibilite_id]?.nom || ''),
-        activites: allCategories.filter(c => c.group === 'Activités').map(c => c.nom),
-        activitesTranslated: allCategories.filter(c => c.group === 'Activités').map(c => td(c.nom)),
-        tags: allCategories.filter(c => c.group === 'Tags' || c.group === 'Types de festival').map(c => c.nom),
-        tagsTranslated: allCategories.filter(c => c.group === 'Tags' || c.group === 'Types de festival').map(c => td(c.nom)),
-        regionTranslated: td(categoryMap[place.region_id]?.nom || ''),
-        meilleuresSaisonsTranslated: place.meilleuresSaisons?.map(s => td(s)) || [],
-      }
-    })
-  }, [filteredPlaces, categoryMap])
+    return filteredPlaces.map(place => ({
+      ...place,
+      // Champs déjà traduits par l'API selon la langue
+      accessibiliteTranslated: place.accessibilite?.nom || '',
+      activites: place.categories?.filter(c => c.group === 'Activités').map(c => c.nom) || [],
+      activitesTranslated: place.categories?.filter(c => c.group === 'Activités').map(c => c.nom) || [],
+      tags: place.categories?.filter(c => c.group === 'Tags' || c.group === 'Types de festival').map(c => c.nom) || [],
+      tagsTranslated: place.categories?.filter(c => c.group === 'Tags' || c.group === 'Types de festival').map(c => c.nom) || [],
+      regionTranslated: place.region?.nom || '',
+      meilleuresSaisonsTranslated: place.meilleuresSaisons || [],
+    }))
+  }, [filteredPlaces])
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -251,7 +236,7 @@ const Discovery = () => {
             {/* Results Header */}
             <div className="mb-6 flex items-center justify-between">
               <p className="text-gray-600">
-                <span className="font-semibold text-gray-900">{placesForDisplay.length}</span> {t('discovery.results', { count: placesForDisplay.length, plural: placesForDisplay.length > 1 ? 's' : '' })}
+                <span className="font-semibold text-gray-900">{placesForDisplay.length}</span> {t('discovery.results', { plural: placesForDisplay.length > 1 ? 's' : '' })}
               </p>
             </div>
 
