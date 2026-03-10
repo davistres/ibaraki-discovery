@@ -12,10 +12,18 @@ async function main() {
   console.log('Start seeding...');
 
   // Clear database in an order that respects constraints
+  await prisma.distance.deleteMany({});
   await prisma.place.deleteMany({});
   await prisma.festival.deleteMany({});
   await prisma.category.deleteMany({});
   console.log('Database cleared.');
+
+  // Load translations
+  const placesTranslationsPath = path.join(__dirname, '..', 'src', 'locales', 'places-descriptions.json');
+  let placesTranslations = { places: {} };
+  if (fs.existsSync(placesTranslationsPath)) {
+    placesTranslations = JSON.parse(fs.readFileSync(placesTranslationsPath, 'utf-8'));
+  }
 
   // 1. Seed Categories
   const categoriesPath = path.join(__dirname, '..', 'src', 'data', 'categories.json');
@@ -23,12 +31,17 @@ async function main() {
   
   const categoryIdMap = new Map();
 
-  // Insert categories and map old IDs to new auto-incremented IDs
   for (const category of categoriesData) {
+    const nomFr = typeof category.nom === 'object' ? category.nom.fr : category.nom;
+    const nomEn = typeof category.nom === 'object' ? category.nom.en : '';
+    const nomJa = typeof category.nom === 'object' ? category.nom.ja : '';
+
     const createdCategory = await prisma.category.create({
       data: {
         group: category.group,
-        nom: category.nom,
+        nom: nomFr,
+        nom_en: nomEn,
+        nom_ja: nomJa,
       },
     });
     categoryIdMap.set(category.id, createdCategory.id);
@@ -44,6 +57,8 @@ async function main() {
         console.warn(`Skipping place with missing ID or invalid foreign key: ${place.nom}`);
         continue;
     }
+    
+    const trans = placesTranslations.places[place.id] || {};
     
     const connectCategories = place.category_ids
         .map(id => categoryIdMap.get(id))
@@ -68,6 +83,12 @@ async function main() {
         acces: place.acces || '',
         siteWeb: place.siteWeb || '',
         googleMaps: place.googleMaps || '',
+        // Translations from places-descriptions.json
+        nom_en: trans.nom?.en || '',
+        nom_ja: trans.nom?.ja || '',
+        description_en: trans.en || '',
+        description_ja: trans.ja || '',
+        // Foreign keys
         region_id: categoryIdMap.get(place.region_id),
         ville_id: categoryIdMap.get(place.ville_id),
         accessibilite_id: categoryIdMap.get(place.accessibilite_id),
@@ -114,6 +135,31 @@ async function main() {
     });
   }
   console.log(`${festivalsData.length} festivals seeded.`);
+
+  // 4. Seed Distances (if file exists)
+  const distancesPath = path.join(__dirname, '..', 'src', 'data', 'distances.json');
+  if (fs.existsSync(distancesPath)) {
+    const distancesData = JSON.parse(fs.readFileSync(distancesPath, 'utf-8'));
+    for (const d of distancesData) {
+      // Validate that the linked places/festivals exist to avoid foreign key errors
+      // (Simplified for now, assuming JSON is valid)
+      await prisma.distance.create({
+        data: {
+          fromType: d.fromType,
+          fromId: d.fromId,
+          toType: d.toType,
+          toId: d.toId,
+          distanceKm: d.distanceKm,
+          durationMinutes: d.durationMinutes,
+          placeFromId: d.fromType === 'place' ? d.fromId : null,
+          placeToId: d.toType === 'place' ? d.toId : null,
+          festivalFromId: d.fromType === 'festival' ? d.fromId : null,
+          festivalToId: d.toType === 'festival' ? d.toId : null,
+        }
+      });
+    }
+    console.log(`${distancesData.length} distances seeded.`);
+  }
 
   console.log('Seeding finished.');
 }

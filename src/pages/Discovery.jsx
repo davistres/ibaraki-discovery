@@ -22,17 +22,24 @@ const Discovery = () => {
   }, [])
 
   // Options de filtres générées depuis categories.json
-  const filterOptions = useMemo(() => ({
-    activites: categoriesData.filter(c => c.group === 'Activités'),
-    regions: categoriesData.filter(c => c.group === 'Régions'),
-    villes: categoriesData.filter(c => c.group === 'Villes'),
-    saisons: categoriesData.filter(c => c.group === 'Saisons'),
-    accessibilites: categoriesData.filter(c => c.group === 'Accessibilité')
-  }), [])
+  const filterOptions = useMemo(() => {
+    // Liste des IDs à masquer dans les filtres (Bus, Voiture, Aéroport, Office de tourisme)
+    const hiddenTagIds = [2032, 2033, 2035, 2039];
+    
+    return {
+      activites: categoriesData.filter(c => c.group === 'Activités'),
+      tags: categoriesData.filter(c => c.group === 'Tags' && !hiddenTagIds.includes(c.id)),
+      regions: categoriesData.filter(c => c.group === 'Régions'),
+      villes: categoriesData.filter(c => c.group === 'Villes'),
+      saisons: categoriesData.filter(c => c.group === 'Saisons'),
+      accessibilites: categoriesData.filter(c => c.group === 'Accessibilité')
+    };
+  }, [])
 
   // États des filtres (utilise les IDs)
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '')
   const [selectedActivites, setSelectedActivites] = useState([])
+  const [selectedTags, setSelectedTags] = useState([])
   const [selectedRegions, setSelectedRegions] = useState([])
   const [selectedVilles, setSelectedVilles] = useState([])
   const [selectedSaisons, setSelectedSaisons] = useState([])
@@ -59,6 +66,11 @@ const Discovery = () => {
         place.categories?.some(c => selectedActivites.includes(c.id))
       )
     }
+    if (selectedTags.length > 0) {
+      filtered = filtered.filter(place =>
+        place.categories?.some(c => selectedTags.includes(c.id))
+      )
+    }
     if (selectedRegions.length > 0) {
       filtered = filtered.filter(place => selectedRegions.includes(place.region_id))
     }
@@ -75,12 +87,13 @@ const Discovery = () => {
     }
 
     setFilteredPlaces(filtered)
-  }, [searchQuery, selectedActivites, selectedRegions, selectedVilles, selectedSaisons, selectedAccessibilite, places])
+  }, [searchQuery, selectedActivites, selectedTags, selectedRegions, selectedVilles, selectedSaisons, selectedAccessibilite, places])
 
   // Réinitialiser les filtres
   const resetFilters = () => {
     setSearchQuery('')
     setSelectedActivites([])
+    setSelectedTags([])
     setSelectedRegions([])
     setSelectedVilles([])
     setSelectedSaisons([])
@@ -118,6 +131,7 @@ const Discovery = () => {
 
   const activeFiltersCount =
     selectedActivites.length +
+    selectedTags.length +
     selectedRegions.length +
     selectedVilles.length +
     selectedSaisons.length +
@@ -199,6 +213,13 @@ const Discovery = () => {
                 options={filterOptions.activites}
                 selected={selectedActivites}
                 setSelected={setSelectedActivites}
+              />
+
+              <FilterSection
+                title={t('discovery.tags')}
+                options={filterOptions.tags}
+                selected={selectedTags}
+                setSelected={setSelectedTags}
               />
 
               <FilterSection
