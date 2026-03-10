@@ -24,8 +24,8 @@ const Discovery = () => {
   // Options de filtres générées depuis categories.json
   const filterOptions = useMemo(() => {
     // Liste des IDs à masquer dans les filtres (Bus, Voiture, Aéroport, Office de tourisme)
-    const hiddenTagIds = [2032, 2033, 2035, 2039];
-    
+    const hiddenTagIds = [1978, 1979, 1980, 1987, 2006, 2031, 2032, 2033, 2035, 2039];
+
     return {
       activites: categoriesData.filter(c => c.group === 'Activités'),
       tags: categoriesData.filter(c => c.group === 'Tags' && !hiddenTagIds.includes(c.id)),
@@ -118,8 +118,8 @@ const Discovery = () => {
             key={option.id}
             onClick={() => toggleFilter(option.id, selected, setSelected)}
             className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${selected.includes(option.id)
-                ? 'bg-red-600 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              ? 'bg-red-600 text-white'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
           >
             {td(option.nom)}
@@ -236,12 +236,12 @@ const Discovery = () => {
                 setSelected={setSelectedVilles}
               />
 
-              <FilterSection
+              {/*<FilterSection
                 title={t('discovery.seasons')}
                 options={filterOptions.saisons}
                 selected={selectedSaisons}
                 setSelected={setSelectedSaisons}
-              />
+              />*/}
 
               <FilterSection
                 title={t('discovery.accessibility')}
