@@ -2,19 +2,8 @@ import { createContext, useState, useContext, useCallback } from 'react'
 import fr from '../locales/fr.json'
 import en from '../locales/en.json'
 import ja from '../locales/ja.json'
-import placeDescriptions from '../locales/places-descriptions.json'
-import categoriesData from '../data/categories.json'
 
 const translations = { fr, en, ja }
-
-const categoryLookupMap = new Map()
-categoriesData.forEach((category) => {
-  if (typeof category.nom === 'object' && category.nom.fr) {
-    categoryLookupMap.set(category.nom.fr, category)
-  } else if (typeof category.nom === 'string') {
-    categoryLookupMap.set(category.nom, category)
-  }
-})
 
 const detectLanguage = () => {
   try {
@@ -40,6 +29,7 @@ export const LanguageProvider = ({ children }) => {
     } catch (e) {}
   }, [])
 
+  // Traduit les clés de l'interface utilisateur (menus, boutons, labels...)
   const t = useCallback((key, params) => {
     const keys = key.split('.')
     let value = translations[language]
@@ -60,63 +50,33 @@ export const LanguageProvider = ({ children }) => {
     return value
   }, [language])
 
+  // Traduit une valeur de donnée dynamique (ex: nom d'une catégorie)
+  // Les données viennent de l'API déjà traduites, donc cette fonction
+  // est utilisée comme fallback pour les cas où la donnée est un objet ou une chaîne brute.
   const td = useCallback((data) => {
     if (!data) return data
 
+    // Si c'est un objet avec la langue courante directement (ex: { fr: '...', en: '...' })
     if (typeof data === 'object') {
-      if (data[language]) {
-        return data[language]
-      }
-
-      if (typeof data.nom === 'string' && data.nom) {
-        return data.nom
-      }
-
+      if (data[language]) return data[language]
+      if (typeof data.nom === 'string' && data.nom) return data.nom
       if (data.nom && typeof data.nom === 'object') {
         return data.nom[language] || data.nom.fr || Object.values(data.nom).find(Boolean) || data
       }
     }
 
-    const category = categoryLookupMap.get(data)
-    if (category && typeof category.nom === 'object') {
-      return category.nom[language] || category.nom.fr
-    }
-
+    // Fallback : cherche dans la section "data" des fichiers de traduction UI
     const dataMap = translations[language]?.data
     if (dataMap && dataMap[data]) {
       return dataMap[data]
     }
 
+    // Retourne la chaîne telle quelle (déjà traduite par l'API normalement)
     return data
   }, [language])
 
-  const translateDescription = useCallback((placeId, fallbackDescription) => {
-    if (!placeId) return fallbackDescription
-    if (language === 'fr') return fallbackDescription
-
-    const placeTranslation = placeDescriptions.places?.[placeId]?.[language]
-    if (placeTranslation) return placeTranslation
-
-    const festivalTranslation = placeDescriptions.festivals?.[placeId]?.[language]
-    if (festivalTranslation) return festivalTranslation
-
-    return fallbackDescription
-  }, [language])
-
-  const translateName = useCallback((id, fallbackName) => {
-    if (!id || language === 'fr') return fallbackName
-
-    const placeName = placeDescriptions.places?.[id]?.nom?.[language]
-    if (placeName) return placeName
-
-    const festivalName = placeDescriptions.festivals?.[id]?.nom?.[language]
-    if (festivalName) return festivalName
-
-    return fallbackName
-  }, [language])
-
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, td, translateDescription, translateName }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, td }}>
       {children}
     </LanguageContext.Provider>
   )

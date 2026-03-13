@@ -2,30 +2,21 @@ import { useState, useEffect, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { Filter, X, Search, SlidersHorizontal } from 'lucide-react'
 import PlaceCard from '../components/PlaceCard'
-import categoriesData from '../data/categories.json'
 import { usePlaces } from '../hooks/usePlaces'
+import { useCategories } from '../hooks/useCategories'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Discovery = () => {
-  const { t, td } = useTranslation()
+  const { t } = useTranslation()
   const [searchParams] = useSearchParams()
+  const { categories: categoriesData } = useCategories()
   const { places, loading } = usePlaces()
   const [filteredPlaces, setFilteredPlaces] = useState([])
   const [showFilters, setShowFilters] = useState(false)
 
-  // Crée un lookup map pour les catégories pour un accès facile
-  const categoryMap = useMemo(() => {
-    return categoriesData.reduce((acc, category) => {
-      acc[category.id] = category
-      return acc
-    }, {})
-  }, [])
-
-  // Options de filtres générées depuis categories.json
+  // Options de filtres — chargées depuis l'API (déjà traduites)
   const filterOptions = useMemo(() => {
-    // Liste des IDs à masquer dans les filtres (Bus, Voiture, Aéroport, Office de tourisme)
     const hiddenTagIds = [1978, 1979, 1980, 1987, 2006, 2031, 2032, 2033, 2035, 2039];
-
     return {
       activites: categoriesData.filter(c => c.group === 'Activités'),
       tags: categoriesData.filter(c => c.group === 'Tags' && !hiddenTagIds.includes(c.id)),
@@ -34,7 +25,7 @@ const Discovery = () => {
       saisons: categoriesData.filter(c => c.group === 'Saisons'),
       accessibilites: categoriesData.filter(c => c.group === 'Accessibilité')
     };
-  }, [])
+  }, [categoriesData])
 
   // États des filtres (utilise les IDs)
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '')
@@ -122,7 +113,7 @@ const Discovery = () => {
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
           >
-            {td(option.nom)}
+            {option.nom}
           </button>
         ))}
       </div>
@@ -137,18 +128,14 @@ const Discovery = () => {
     selectedSaisons.length +
     selectedAccessibilite.length
 
-  // Les données viennent déjà traduits depuis l'API
+  // Les données viennent déjà traduites depuis l'API
   const placesForDisplay = useMemo(() => {
     return filteredPlaces.map(place => ({
       ...place,
-      // Champs déjà traduits par l'API selon la langue
       accessibiliteTranslated: place.accessibilite?.nom || '',
       activites: place.categories?.filter(c => c.group === 'Activités').map(c => c.nom) || [],
-      activitesTranslated: place.categories?.filter(c => c.group === 'Activités').map(c => c.nom) || [],
-      tags: place.categories?.filter(c => c.group === 'Tags' || c.group === 'Types de festival').map(c => c.nom) || [],
-      tagsTranslated: place.categories?.filter(c => c.group === 'Tags' || c.group === 'Types de festival').map(c => c.nom) || [],
+      tags: place.categories?.filter(c => c.group === 'Tags').map(c => c.nom) || [],
       regionTranslated: place.region?.nom || '',
-      meilleuresSaisonsTranslated: place.meilleuresSaisons || [],
     }))
   }, [filteredPlaces])
 

@@ -17,14 +17,15 @@ const getAccessibilityBadgeClass = (values) => {
 }
 
 const PlaceCard = ({ place }) => {
-  const { t, td, language, translateDescription, translateName } = useTranslation()
+  const { t, td, language } = useTranslation()
 
   const getImagePath = (imageName) => {
     return `${import.meta.env.BASE_URL}Photo/${imageName}`
   }
 
-  const displayName = translateName(place.id, place.nom)
-  const displayDescription = translateDescription(place.id, place.description)
+  // Les données viennent déjà traduites depuis l'API selon la langue active
+  const displayName = place.nom || ''
+  const displayDescription = place.description || ''
   const accessibilityLabel = td(place.accessibilite)
   const accessibilityValues = [
     place.accessibilite?.nom,

@@ -38,6 +38,8 @@ function localizeFestival(festival, lang) {
     description: festival[`description_${l}`] || festival.description,
     lieu: festival[`lieu_${l}`] || festival.lieu,
     periode: festival[`periode_${l}`] || festival.periode,
+    mois: festival[`mois_${l}`] || festival.mois,
+    activites: festival[`activites_${l}`] || festival.activites,
   };
 }
 
@@ -190,8 +192,8 @@ app.get('/api/festivals/:id', async (req, res) => {
 app.put('/api/festivals/:id/translations', async (req, res) => {
   try {
     const allowed = [
-      'nom_en', 'description_en', 'lieu_en', 'periode_en',
-      'nom_ja', 'description_ja', 'lieu_ja', 'periode_ja',
+      'nom_en', 'description_en', 'lieu_en', 'periode_en', 'mois_en', 'activites_en',
+      'nom_ja', 'description_ja', 'lieu_ja', 'periode_ja', 'mois_ja', 'activites_ja',
     ];
     const data = {};
     for (const key of allowed) {

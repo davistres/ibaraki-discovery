@@ -1,5 +1,171 @@
 [
   {
+    "id": "itako-iris-festival",
+    "nom": "Festival des Iris d'Itako",
+    "nomJaponais": "水郷潮来あやめまつり",
+    "description": "Ce festival célèbre la floraison de plus d'un million de plants d'iris (ayame) de 500 variétés, créant un tapis floral magnifique dans le cadre des canaux d'Itako. L'un des points forts est la reconstitution du \"Yomeiri-bune\", une procession de bateaux où des jeunes femmes en costume de mariée traditionnel naviguent sur les canaux. Des promenades en bateau sappa-bune sont également populaires.",
+    "lieu": "Parc des Iris de Suigo Itako (Ayame-en), Itako",
+    "periode": "Fin mai à fin juin",
+    "mois": [
+      "Mai",
+      "Juin"
+    ],
+    "activites": [
+      "Yomeiri-bune (bateaux de mariées)",
+      "Promenades en bateau sappa-bune",
+      "Spectacles"
+    ],
+    "image": "places-to-visit-in-Ibaraki-1200x800.jpg",
+    "ville_id": 1931,
+    "region_id": 1916,
+    "category_ids": [
+      1918,
+      1919,
+      1949,
+      1966,
+      1977,
+      2007,
+      2045
+    ],
+    "coordonnees": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "id": "kasama-chrysanthemum-festival",
+    "nom": "Festival des Chrysanthèmes de Kasama",
+    "nomJaponais": "笠間の菊まつり",
+    "description": "L'un des plus anciens et des plus grands festivals de chrysanthèmes du Japon. Des milliers de chrysanthèmes magnifiquement cultivés, dans des formes et des arrangements variés (y compris des poupées en chrysanthèmes – kiku ningyō), sont exposés dans l'enceinte du sanctuaire.",
+    "lieu": "Sanctuaire Kasama Inari, Kasama",
+    "periode": "Mi-octobre à fin novembre",
+    "mois": [
+      "Octobre",
+      "Novembre"
+    ],
+    "activites": [
+      "Exposition de chrysanthèmes",
+      "Poupées en chrysanthèmes (kiku ningyō)",
+      "Artisanat"
+    ],
+    "image": "a272faa7516ca8501b62cda7a5a0f887-560x384.jpg",
+    "ville_id": 1928,
+    "region_id": 1915,
+    "category_ids": [
+      1920,
+      1949,
+      1952,
+      1966,
+      1972,
+      1977,
+      2045
+    ],
+    "coordonnees": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "id": "kasama-lantern-illumination-festival",
+    "nom": "Festival des lanternes et illuminations d'automne de Kasama",
+    "nomJaponais": "笠間の夜まつり",
+    "description": "Des lanternes artisanales et des illuminations décorent les rues de Kasama, créant une atmosphère magique en soirée, souvent en lien avec le Festival des Chrysanthèmes. Des événements spécifiques peuvent inclure des ateliers, des spectacles et des stands de nourriture.",
+    "lieu": "Centre-ville de Kasama, notamment autour du Sanctuaire Kasama Inari",
+    "periode": "Automne (octobre-novembre)",
+    "mois": [
+      "Octobre",
+      "Novembre"
+    ],
+    "activites": [
+      "Illuminations",
+      "Lanternes artisanales",
+      "Ateliers",
+      "Spectacles",
+      "Stands de nourriture"
+    ],
+    "image": "kasama-lanterns.jpg",
+    "ville_id": 1928,
+    "region_id": 1915,
+    "category_ids": [
+      1921,
+      1952,
+      1969,
+      1971,
+      1980,
+      2045
+    ],
+    "coordonnees": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "id": "koga-peach-blossom-festival",
+    "nom": "Festival des Fleurs de Pêcher de Koga",
+    "nomJaponais": "古河桃まつり",
+    "description": "Koga Sōgō Kōen est célèbre pour ses magnifiques pêchers en fleurs (environ 1 500 arbres de plusieurs variétés), ce qui en fait l'un des meilleurs endroits pour le \"Hanamomo Matsuri\". C'est une célébration familiale de la floraison avec hanami (pique-nique sous les fleurs), stands de nourriture, et parfois des spectacles.",
+    "lieu": "Parc de Koga (Koga Sōgō Kōen), Koga",
+    "periode": "Mi-mars à début avril",
+    "mois": [
+      "Mars",
+      "Avril"
+    ],
+    "activites": [
+      "Hanami (pique-nique sous les fleurs)",
+      "Stands de nourriture",
+      "Spectacles"
+    ],
+    "image": "places-to-visit-in-Ibaraki-1200x800.jpg",
+    "ville_id": 1932,
+    "region_id": 1916,
+    "category_ids": [
+      55,
+      1918,
+      1921,
+      1966,
+      1977,
+      1981,
+      2045
+    ],
+    "coordonnees": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
+    "id": "makabe-cherry-blossom-festival",
+    "nom": "Fête des Cerisiers en Fleur de Makabe (Sakuragawa)",
+    "nomJaponais": "真壁桜まつり",
+    "description": "Célébration des cerisiers en fleur dans le quartier historique de Makabe, avec des illuminations nocturnes.",
+    "lieu": "Quartier historique de Makabe, Sakuragawa",
+    "periode": "Fin mars à début avril",
+    "mois": [
+      "Mars",
+      "Avril"
+    ],
+    "activites": [
+      "Hanami",
+      "Illuminations nocturnes",
+      "Promenades dans le quartier historique"
+    ],
+    "image": "makabe-sakura.jpg",
+    "ville_id": 1939,
+    "region_id": 1915,
+    "category_ids": [
+      1918,
+      1949,
+      1955,
+      1966,
+      1977,
+      1981,
+      2045
+    ],
+    "coordonnees": {
+      "lat": 0,
+      "lng": 0
+    }
+  },
+  {
     "id": "mito-plum-festival",
     "nom": "Festival des Pruniers de Mito",
     "nomJaponais": "水戸の梅まつり",
@@ -18,82 +184,22 @@
       "Stands de nourriture"
     ],
     "image": "b1789b66aea6b878a7fc2a939ae73708.jpg",
-    "ville_id": 20,
-    "region_id": 2,
+    "ville_id": 1922,
+    "region_id": 1915,
     "category_ids": [
-      1921,
       1918,
+      1921,
       1949,
+      1952,
       1966,
       1970,
       1977,
-      2023
+      2023,
+      2045
     ],
     "coordonnees": {
-      "lat": 36.3702,
-      "lng": 140.4702
-    }
-  },
-  {
-    "id": "itako-iris-festival",
-    "nom": "Festival des Iris d'Itako",
-    "nomJaponais": "水郷潮来あやめまつり",
-    "description": "Ce festival célèbre la floraison de plus d'un million de plants d'iris (ayame) de 500 variétés, créant un tapis floral magnifique dans le cadre des canaux d'Itako. L'un des points forts est la reconstitution du \"Yomeiri-bune\", une procession de bateaux où des jeunes femmes en costume de mariée traditionnel naviguent sur les canaux. Des promenades en bateau sappa-bune sont également populaires.",
-    "lieu": "Parc des Iris de Suigo Itako (Ayame-en), Itako",
-    "periode": "Fin mai à fin juin",
-    "mois": [
-      "Mai",
-      "Juin"
-    ],
-    "activites": [
-      "Yomeiri-bune (bateaux de mariées)",
-      "Promenades en bateau sappa-bune",
-      "Spectacles"
-    ],
-    "image": "places-to-visit-in-Ibaraki-1200x800.jpg",
-    "ville_id": 29,
-    "region_id": 3,
-    "category_ids": [
-      1918,
-      1919,
-      1949,
-      1966,
-      1977
-    ],
-    "coordonnees": {
-      "lat": 35.936,
-      "lng": 140.5527
-    }
-  },
-  {
-    "id": "rock-in-japan",
-    "nom": "Rock in Japan Festival",
-    "nomJaponais": "ロック・イン・ジャパン・フェスティバル",
-    "description": "L'un des plus grands festivals de musique rock et J-Pop en plein air du Japon, attirant de nombreux artistes japonais majeurs et des centaines de milliers de spectateurs.",
-    "lieu": "Hitachi Seaside Park, Hitachinaka (lieu variable, vérifier le lieu officiel chaque année)",
-    "periode": "Août (plusieurs jours/week-ends)",
-    "mois": [
-      "Août"
-    ],
-    "activites": [
-      "Concerts",
-      "Artistes japonais majeurs",
-      "Camping"
-    ],
-    "image": "hitachi-seaside-park-kochia-ibaraki-1024x819.jpg",
-    "ville_id": 21,
-    "region_id": 4,
-    "category_ids": [
-      1919,
-      1967,
-      1969,
-      1974,
-      1978,
-      1979
-    ],
-    "coordonnees": {
-      "lat": 36.3929,
-      "lng": 140.5304
+      "lat": 0,
+      "lng": 0
     }
   },
   {
@@ -116,50 +222,53 @@
       "Vente de produits locaux"
     ],
     "image": "5bd66afb49109d73801bfa9cdaf42a27.jpg",
-    "ville_id": 27,
-    "region_id": 4,
+    "ville_id": 1929,
+    "region_id": 1917,
     "category_ids": [
+      1918,
       1920,
       1921,
-      1918,
+      1963,
       1968,
       1977,
+      1996,
       2017
     ],
     "coordonnees": {
-      "lat": 36.3171,
-      "lng": 140.5837
+      "lat": 0,
+      "lng": 0
     }
   },
   {
-    "id": "kasama-chrysanthemum-festival",
-    "nom": "Festival des Chrysanthèmes de Kasama",
-    "nomJaponais": "笠間の菊まつり",
-    "description": "L'un des plus anciens et des plus grands festivals de chrysanthèmes du Japon. Des milliers de chrysanthèmes magnifiquement cultivés, dans des formes et des arrangements variés (y compris des poupées en chrysanthèmes – kiku ningyō), sont exposés dans l'enceinte du sanctuaire.",
-    "lieu": "Sanctuaire Kasama Inari, Kasama",
-    "periode": "Mi-octobre à fin novembre",
+    "id": "rock-in-japan",
+    "nom": "Rock in Japan Festival",
+    "nomJaponais": "ロック・イン・ジャパン・フェスティバル",
+    "description": "L'un des plus grands festivals de musique rock et J-Pop en plein air du Japon, attirant de nombreux artistes japonais majeurs et des centaines de milliers de spectateurs.",
+    "lieu": "Hitachi Seaside Park, Hitachinaka (lieu variable, vérifier le lieu officiel chaque année)",
+    "periode": "Août (plusieurs jours/week-ends)",
     "mois": [
-      "Octobre",
-      "Novembre"
+      "Août"
     ],
     "activites": [
-      "Exposition de chrysanthèmes",
-      "Poupées en chrysanthèmes (kiku ningyō)",
-      "Artisanat"
+      "Concerts",
+      "Artistes japonais majeurs",
+      "Camping"
     ],
-    "image": "a272faa7516ca8501b62cda7a5a0f887-560x384.jpg",
-    "ville_id": 26,
-    "region_id": 2,
+    "image": "hitachi-seaside-park-kochia-ibaraki-1024x819.jpg",
+    "ville_id": 1923,
+    "region_id": 1917,
     "category_ids": [
-      1920,
-      1949,
-      1966,
-      1977,
-      1972
+      1919,
+      1952,
+      1967,
+      1969,
+      1974,
+      1978,
+      1979
     ],
     "coordonnees": {
-      "lat": 36.3876,
-      "lng": 140.271
+      "lat": 0,
+      "lng": 0
     }
   },
   {
@@ -178,54 +287,23 @@
       "Stands de nourriture"
     ],
     "image": "Ibaraki_t_id394_1.jpg",
-    "ville_id": 28,
-    "region_id": 3,
+    "ville_id": 1930,
+    "region_id": 1916,
     "category_ids": [
       1920,
+      1952,
       1969,
       1970,
       1980
     ],
     "coordonnees": {
-      "lat": 36.0784,
-      "lng": 140.1951
-    }
-  },
-  {
-    "id": "koga-peach-blossom-festival",
-    "nom": "Festival des Fleurs de Pêcher de Koga",
-    "nomJaponais": "古河桃まつり",
-    "description": "Koga Sōgō Kōen est célèbre pour ses magnifiques pêchers en fleurs (environ 1 500 arbres de plusieurs variétés), ce qui en fait l'un des meilleurs endroits pour le \"Hanamomo Matsuri\". C'est une célébration familiale de la floraison avec hanami (pique-nique sous les fleurs), stands de nourriture, et parfois des spectacles.",
-    "lieu": "Parc de Koga (Koga Sōgō Kōen), Koga",
-    "periode": "Mi-mars à début avril",
-    "mois": [
-      "Mars",
-      "Avril"
-    ],
-    "activites": [
-      "Hanami (pique-nique sous les fleurs)",
-      "Stands de nourriture",
-      "Spectacles"
-    ],
-    "image": "places-to-visit-in-Ibaraki-1200x800.jpg",
-    "ville_id": 30,
-    "region_id": 3,
-    "category_ids": [
-      1918,
-      1921,
-      1966,
-      1977,
-      55,
-      1981
-    ],
-    "coordonnees": {
-      "lat": 36.1797,
-      "lng": 139.6964
+      "lat": 0,
+      "lng": 0
     }
   },
   {
     "id": "tsukuba-festival",
-    "nom": "Tsukuba Festival",
+    "nom": "Festival de Tsukuba",
     "nomJaponais": "つくばまつり",
     "description": "Le plus grand festival de Tsukuba, avec des parades (incluant des chars Nebuta), des spectacles de danse, des stands de nourriture, et des feux d'artifice.",
     "lieu": "Autour de la gare de Tsukuba et du centre-ville de Tsukuba",
@@ -240,82 +318,19 @@
       "Feux d'artifice"
     ],
     "image": "d3a35b87aeb8bf1c00d85b7c26048d58.jpg",
-    "ville_id": 22,
-    "region_id": 2,
+    "ville_id": 1924,
+    "region_id": 1915,
     "category_ids": [
+      55,
       1919,
       1969,
       1977,
-      55,
-      2025
+      2025,
+      2045
     ],
     "coordonnees": {
-      "lat": 36.0811,
-      "lng": 140.0811
-    }
-  },
-  {
-    "id": "makabe-cherry-blossom-festival",
-    "nom": "Fête des Cerisiers en Fleur de Makabe (Sakuragawa)",
-    "nomJaponais": "真壁桜まつり",
-    "description": "Célébration des cerisiers en fleur dans le quartier historique de Makabe, avec des illuminations nocturnes.",
-    "lieu": "Quartier historique de Makabe, Sakuragawa",
-    "periode": "Fin mars à début avril",
-    "mois": [
-      "Mars",
-      "Avril"
-    ],
-    "activites": [
-      "Hanami",
-      "Illuminations nocturnes",
-      "Promenades dans le quartier historique"
-    ],
-    "image": "makabe-sakura.jpg",
-    "ville_id": 37,
-    "region_id": 2,
-    "category_ids": [
-      1918,
-      1949,
-      1966,
-      1977,
-      1955,
-      1981
-    ],
-    "coordonnees": {
-      "lat": 36.3199,
-      "lng": 140.1032
-    }
-  },
-  {
-    "id": "kasama-lantern-illumination-festival",
-    "nom": "Festival des lanternes et illuminations d'automne de Kasama",
-    "nomJaponais": "笠間の夜まつり",
-    "description": "Des lanternes artisanales et des illuminations décorent les rues de Kasama, créant une atmosphère magique en soirée, souvent en lien avec le Festival des Chrysanthèmes. Des événements spécifiques peuvent inclure des ateliers, des spectacles et des stands de nourriture.",
-    "lieu": "Centre-ville de Kasama, notamment autour du Sanctuaire Kasama Inari",
-    "periode": "Automne (octobre-novembre)",
-    "mois": [
-      "Octobre",
-      "Novembre"
-    ],
-    "activites": [
-      "Illuminations",
-      "Lanternes artisanales",
-      "Ateliers",
-      "Spectacles",
-      "Stands de nourriture"
-    ],
-    "image": "kasama-lanterns.jpg",
-    "ville_id": 26,
-    "region_id": 2,
-    "category_ids": [
-      1921,
-      1969,
-      1980,
-      1971
-    ],
-    "coordonnees": {
-      "lat": 36.3796,
-      "lng": 140.263
+      "lat": 0,
+      "lng": 0
     }
   }
 ]

@@ -1,12 +1,13 @@
 import { useState, useMemo } from 'react'
 import { Calendar, MapPin, Sparkles, Music, Flower2, UtensilsCrossed, Flame } from 'lucide-react'
-import categoriesData from '../data/categories.json'
 import { useFestivals } from '../hooks/useFestivals'
+import { useCategories } from '../hooks/useCategories'
 import { useTranslation } from '../contexts/LanguageContext'
 
 const Festivals = () => {
   const { t, td, language } = useTranslation()
   const { festivals, loading } = useFestivals()
+  const { categories: categoriesData } = useCategories()
   const [selectedSaison, setSelectedSaison] = useState('all')
   const [selectedType, setSelectedType] = useState('all')
 

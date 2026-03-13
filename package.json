@@ -15,7 +15,8 @@
     "preview": "vite preview",
     "setup:coordinates": "node scripts/completeCoordinates.js && node scripts/completeFestivalCoordinates.js",
     "setup:distances": "node scripts/calculateDistances.js",
-    "setup:all": "npm run setup:coordinates && npm run setup:distances"
+    "setup:all": "npm run setup:coordinates && npm run setup:distances",
+    "db:sync": "node scripts/sync-db-to-json.cjs"
   },
   "prisma": {
     "seed": "node prisma/seed.js"

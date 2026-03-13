@@ -1,48 +1,37 @@
-import { useState } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import { Sparkles, Calendar, DollarSign, Mountain, Flower2, Landmark, UtensilsCrossed, Camera, ArrowRight, Download, Share2, Waves, Palette, Bike, Baby } from 'lucide-react'
 import placesData from '../data/places.json'
 import festivalsData from '../data/festivals.json'
+import { useCategories } from '../hooks/useCategories'
 import categoriesData from '../data/categories.json'
 import { useTranslation } from '../contexts/LanguageContext'
 
-const getCategoryId = (name, group) => {
-  const category = categoriesData.find(cat => 
-    ((typeof cat.nom === 'object' ? cat.nom.fr : cat.nom) === name) && 
-    cat.group === group
-  )
-  return category ? category.id : null
-}
-
-const getActivityCategoryIds = (activityNames) => {
-  return activityNames.map(name => getCategoryId(name, 'Activités')).filter(id => id !== null)
-}
-
-const getTagCategoryIds = (tagNames) => {
-  return tagNames.map(name => getCategoryId(name, 'Tags')).filter(id => id !== null)
-}
-
+// Calcul du nombre d'activités selon la règle:
+// - Jours complets (entre 2 nuits) = 5 activités chacun
+// - Jours partiels (arrivée / départ) = 3 activités chacun
 const calculateActivitiesCount = (jours, nuits) => {
   const joursNum = Number.parseInt(jours)
   const nuitsNum = Number.parseInt(nuits)
-
-  if (joursNum === 1 && nuitsNum === 2) {
-    return 5
-  }
-
-  if (joursNum === 1 && (nuitsNum === 0 || nuitsNum === 1)) {
-    return 3
-  }
-
-  if (joursNum === 2 && nuitsNum === 2) {
-    return 8
-  }
-
-  return joursNum * 5
+  const fullDays = Math.max(0, nuitsNum - 1)
+  const partialDays = Math.min(2, Math.max(0, joursNum - fullDays))
+  return fullDays * 5 + partialDays * 3
 }
 
 const Itinerary = () => {
-  const { t, td, language, translateDescription, translateName } = useTranslation()
+  const { t, td, language } = useTranslation()
+  const { categories: categoriesDB } = useCategories()
   const [step, setStep] = useState(1)
+
+  // getCategoryId cherche par nom FR dans categories.json (toujours stable)
+  const getCategoryId = useCallback((name, group) => {
+    const category = categoriesData.find(cat => cat.nom === name && cat.group === group)
+    return category ? category.id : null
+  }, [])
+
+  const getActivityCategoryIds = useCallback((activityNames) => {
+    return activityNames.map(name => getCategoryId(name, 'Activités')).filter(id => id !== null)
+  }, [getCategoryId])
+
   const [preferences, setPreferences] = useState({
     jours: '',
     nuits: '',
@@ -53,17 +42,18 @@ const Itinerary = () => {
   })
   const [generatedItinerary, setGeneratedItinerary] = useState(null)
 
-  const interetsOptions = [
-    { id: 'nature', label: t('itinerary.nature'), icon: Mountain, activites: ['Nature', 'Randonnée', 'Cyclisme'] },
-    { id: 'culture', label: t('itinerary.culture'), icon: Landmark, activites: ['Culture', 'Spiritualité', 'Histoire'] },
-    { id: 'gastronomie', label: t('itinerary.gastronomy'), icon: UtensilsCrossed, activites: ['Gastronomie', 'Ateliers culinaires'] },
-    { id: 'photo', label: t('itinerary.photography'), icon: Camera, activites: ['Photo'] },
-    { id: 'famille', label: t('itinerary.family'), icon: Baby, activites: ['Famille'] },
-    { id: 'detente', label: t('itinerary.wellness'), icon: Waves, activites: ['Détente'] },
-    { id: 'art', label: t('itinerary.art'), icon: Palette, activites: ['Art', 'Artisanat'] },
-    { id: 'sport', label: t('itinerary.sports'), icon: Bike, activites: ['Sport', 'Sports nautiques'] },
-    { id: 'jardins', label: t('itinerary.gardens'), icon: Flower2, activites: ['Jardins'] }
-  ]
+  const interetsOptions = useMemo(() => [
+    { id: 'nature',      label: t('itinerary.nature'),      icon: Mountain,        activites: ['Randonnée', 'Cyclisme / Vélo', 'Photo'] },
+    { id: 'culture',     label: t('itinerary.culture'),     icon: Landmark,        activites: ['Culture', 'Spiritualité', 'Histoire'] },
+    { id: 'gastronomie', label: t('itinerary.gastronomy'),  icon: UtensilsCrossed, activites: ['Ateliers culinaires', 'Dégustation'] },
+    { id: 'photo',       label: t('itinerary.photography'), icon: Camera,          activites: ['Photo', 'Randonnée'] },
+    { id: 'famille',     label: t('itinerary.family'),      icon: Baby,            activites: ['Balade', 'Aquarium', 'Cyclisme / Vélo'] },
+    { id: 'detente',     label: t('itinerary.wellness'),    icon: Waves,           activites: ['Détente', 'Balade', 'Jogging'] },
+    { id: 'art',         label: t('itinerary.art'),         icon: Palette,         activites: ['Cours', 'Ateliers culinaires', 'Dégustation'] },
+    { id: 'sport',       label: t('itinerary.sports'),      icon: Bike,            activites: ['Sport', 'Sports nautiques', 'Cyclisme / Vélo', 'Randonnée'] },
+    { id: 'jardins',     label: t('itinerary.gardens'),     icon: Flower2,         activites: ['Randonnée', 'Balade', 'Détente'] }
+  ], [t])
+
 
   const toggleInteret = (interet) => {
     if (preferences.interets.includes(interet)) {
@@ -136,27 +126,39 @@ const Itinerary = () => {
   const generateItinerary = () => {
     let recommendedPlaces = [...placesData]
 
+    // --- Filtre SAISON ---
+    // Utilise meilleuresSaisons (tableau de strings FR), plus fiable que category_ids
     if (preferences.saison) {
-      const saisonId = getCategoryId(preferences.saison, 'Saisons')
-      if (saisonId) {
-        recommendedPlaces = recommendedPlaces.filter(place =>
-          place.category_ids && place.category_ids.includes(saisonId)
-        )
+      const saisonFilter = recommendedPlaces.filter(place =>
+        place.meilleuresSaisons && place.meilleuresSaisons.includes(preferences.saison)
+      )
+      // On applique le filtre seulement s'il y a des résultats
+      if (saisonFilter.length > 0) {
+        recommendedPlaces = saisonFilter
       }
     }
 
+    // --- Filtre ACCESSIBILITÉ ---
+    // Mapping direct des noms FR vers les noms de la DB
     if (preferences.accessibilite.length > 0) {
-      const accessibiliteIds = preferences.accessibilite.map(acc =>
-        getCategoryId(acc, 'Accessibilité')
-      ).filter(Boolean)
+      const accessNomsFr = preferences.accessibilite // ['Facile', 'Modéré', 'Difficile']
+      const accessIds = accessNomsFr
+        .map(nom => getCategoryId(nom, 'Accessibilité'))
+        .filter(Boolean)
 
-      if (accessibiliteIds.length > 0) {
-        recommendedPlaces = recommendedPlaces.filter(place =>
-          accessibiliteIds.includes(place.accessibilite_id)
+      if (accessIds.length > 0) {
+        const accessFilter = recommendedPlaces.filter(place =>
+          accessIds.includes(place.accessibilite_id)
         )
+        // Applique le filtre seulement s'il y a des résultats 
+        if (accessFilter.length > 0) {
+          recommendedPlaces = accessFilter
+        }
       }
     }
 
+    // --- Filtre INTÉRÊTS ---
+    // Filtre par noms d'activités FR dans categories.json
     if (preferences.interets.length > 0) {
       const selectedActiviteNames = interetsOptions
         .filter(opt => preferences.interets.includes(opt.id))
@@ -164,55 +166,47 @@ const Itinerary = () => {
 
       const selectedActiviteIds = getActivityCategoryIds(selectedActiviteNames)
 
-      recommendedPlaces = recommendedPlaces.filter(place =>
-        place.category_ids && selectedActiviteIds.some(id => place.category_ids.includes(id))
-      )
-    }
-
-    // Sécurité : Si aucun lieu n'est trouvé avec tous les filtres, on élargit la recherche
-    // en ignorant les centres d'intérêt mais en gardant la saison et l'accessibilité
-    if (recommendedPlaces.length === 0) {
-      recommendedPlaces = [...placesData]
-      
-      if (preferences.saison) {
-        const saisonId = getCategoryId(preferences.saison, 'Saisons')
-        if (saisonId) {
-          recommendedPlaces = recommendedPlaces.filter(place =>
-            place.category_ids && place.category_ids.includes(saisonId)
-          )
-        }
-      }
-
-      if (preferences.accessibilite.length > 0) {
-        const accessibiliteIds = preferences.accessibilite.map(acc =>
-          getCategoryId(acc, 'Accessibilité')
-        ).filter(Boolean)
-        if (accessibiliteIds.length > 0) {
-          recommendedPlaces = recommendedPlaces.filter(place =>
-            accessibiliteIds.includes(place.accessibilite_id)
-          )
+      if (selectedActiviteIds.length > 0) {
+        const interetsFilter = recommendedPlaces.filter(place =>
+          place.category_ids && selectedActiviteIds.some(id => place.category_ids.includes(id))
+        )
+        // Si le filtre donne des résultats, l'applique - sinon on garde tout
+        if (interetsFilter.length > 0) {
+          recommendedPlaces = interetsFilter
         }
       }
     }
 
+    // Score par "Incontournable" (id 1970) et saison
     const incontournableId = getCategoryId('Incontournable', 'Tags')
-    const saisonId = getCategoryId(preferences.saison, 'Saisons')
-
     recommendedPlaces.sort((a, b) => {
-      const aScore = (incontournableId && a.category_ids?.includes(incontournableId) ? 10 : 0) +
-                     (saisonId && a.category_ids?.includes(saisonId) ? 5 : 0)
-      const bScore = (incontournableId && b.category_ids?.includes(incontournableId) ? 10 : 0) +
-                     (saisonId && b.category_ids?.includes(saisonId) ? 5 : 0)
+      const saisonA = preferences.saison && a.meilleuresSaisons?.includes(preferences.saison) ? 5 : 0
+      const saisonB = preferences.saison && b.meilleuresSaisons?.includes(preferences.saison) ? 5 : 0
+      const aScore = (incontournableId && a.category_ids?.includes(incontournableId) ? 10 : 0) + saisonA
+      const bScore = (incontournableId && b.category_ids?.includes(incontournableId) ? 10 : 0) + saisonB
       return bScore - aScore
     })
 
     const maxPlaces = calculateActivitiesCount(preferences.jours, preferences.nuits)
+
+    // Si on n'a pas assez de lieux, on complète avec des lieux de la saison non encore inclus
+    if (recommendedPlaces.length < maxPlaces) {
+      const currentIds = new Set(recommendedPlaces.map(p => p.id))
+      const saisonPool = preferences.saison
+        ? placesData.filter(p => p.meilleuresSaisons?.includes(preferences.saison) && !currentIds.has(p.id))
+        : placesData.filter(p => !currentIds.has(p.id))
+
+      const needed = maxPlaces - recommendedPlaces.length
+      recommendedPlaces = [...recommendedPlaces, ...saisonPool.slice(0, needed)]
+    }
+
     recommendedPlaces = recommendedPlaces.slice(0, maxPlaces)
 
+    // Festivals de la saison — filtre par catégorie de festival dans festivals.json
     const saisonIdForFestivals = getCategoryId(preferences.saison, 'Saisons')
-    const seasonalFestivals = saisonIdForFestivals ? festivalsData.filter(festival =>
-      festival.category_ids && festival.category_ids.includes(saisonIdForFestivals)
-    ).slice(0, 2) : []
+    const seasonalFestivals = saisonIdForFestivals
+      ? festivalsData.filter(f => f.category_ids && f.category_ids.includes(saisonIdForFestivals)).slice(0, 2)
+      : festivalsData.slice(0, 2) // fallback : premiers festivals
 
     setGeneratedItinerary({
       places: recommendedPlaces,
@@ -517,7 +511,7 @@ const Itinerary = () => {
                           {index + 1}
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-semibold text-gray-900 mb-1">{translateName(place.id, place.nom)}</h4>
+                          <h4 className="font-semibold text-gray-900 mb-1">{place.nom}</h4>
                           <p className="text-sm text-gray-600 mb-2">{td(place.ville)}</p>
                           <p className="text-xs text-gray-500">{td(place.dureeVisite)}</p>
                         </div>
@@ -536,9 +530,9 @@ const Itinerary = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {generatedItinerary.festivals.map((festival) => (
                       <div key={festival.id} className="bg-red-50 border-2 border-red-200 rounded-xl p-6">
-                        <h4 className="font-semibold text-gray-900 mb-2">{translateName(festival.id, festival.nom)}</h4>
+                        <h4 className="font-semibold text-gray-900 mb-2">{festival.nom}</h4>
                         <p className="text-sm text-gray-600 mb-2">{td(festival.periode)}</p>
-                        <p className="text-sm text-gray-700">{translateDescription(festival.id, festival.description)}</p>
+                        <p className="text-sm text-gray-700">{festival.description}</p>
                       </div>
                     ))}
                   </div>

@@ -2,661 +2,925 @@
   {
     "id": 55,
     "group": "Tags",
-    "nom": "Famille"
+    "nom": "Famille",
+    "nom_en": "Family",
+    "nom_ja": "ファミリー"
   },
   {
     "id": 1914,
     "group": "Régions",
-    "nom": "Nord"
+    "nom": "Nord",
+    "nom_en": "North",
+    "nom_ja": "北部"
   },
   {
     "id": 1915,
     "group": "Régions",
-    "nom": "Centre"
+    "nom": "Centre",
+    "nom_en": "Central",
+    "nom_ja": "中部"
   },
   {
     "id": 1916,
     "group": "Régions",
-    "nom": "Sud"
+    "nom": "Sud",
+    "nom_en": "South",
+    "nom_ja": "南部"
   },
   {
     "id": 1917,
     "group": "Régions",
-    "nom": "Côte"
+    "nom": "Côte",
+    "nom_en": "Coast",
+    "nom_ja": "沿岸"
   },
   {
     "id": 1918,
     "group": "Saisons",
-    "nom": "Printemps"
+    "nom": "Printemps",
+    "nom_en": "Spring",
+    "nom_ja": "春"
   },
   {
     "id": 1919,
     "group": "Saisons",
-    "nom": "Été"
+    "nom": "Été",
+    "nom_en": "Summer",
+    "nom_ja": "夏"
   },
   {
     "id": 1920,
     "group": "Saisons",
-    "nom": "Automne"
+    "nom": "Automne",
+    "nom_en": "Autumn",
+    "nom_ja": "秋"
   },
   {
     "id": 1921,
     "group": "Saisons",
-    "nom": "Hiver"
+    "nom": "Hiver",
+    "nom_en": "Winter",
+    "nom_ja": "冬"
   },
   {
     "id": 1922,
     "group": "Villes",
-    "nom": "Mito"
+    "nom": "Mito",
+    "nom_en": "Mito",
+    "nom_ja": "水戸"
   },
   {
     "id": 1923,
     "group": "Villes",
-    "nom": "Hitachinaka"
+    "nom": "Hitachinaka",
+    "nom_en": "Hitachinaka",
+    "nom_ja": "ひたちなか"
   },
   {
     "id": 1924,
     "group": "Villes",
-    "nom": "Tsukuba"
+    "nom": "Tsukuba",
+    "nom_en": "Tsukuba",
+    "nom_ja": "つくば"
   },
   {
     "id": 1925,
     "group": "Villes",
-    "nom": "Kashima"
+    "nom": "Kashima",
+    "nom_en": "Kashima",
+    "nom_ja": "鹿島"
   },
   {
     "id": 1926,
     "group": "Villes",
-    "nom": "Ushiku"
+    "nom": "Ushiku",
+    "nom_en": "Ushiku",
+    "nom_ja": "牛久"
   },
   {
     "id": 1927,
     "group": "Villes",
-    "nom": "Daigo"
+    "nom": "Daigo",
+    "nom_en": "Daigo",
+    "nom_ja": "大子"
   },
   {
     "id": 1928,
     "group": "Villes",
-    "nom": "Kasama"
+    "nom": "Kasama",
+    "nom_en": "Kasama",
+    "nom_ja": "笠間"
   },
   {
     "id": 1929,
     "group": "Villes",
-    "nom": "Oarai"
+    "nom": "Oarai",
+    "nom_en": "Oarai",
+    "nom_ja": "大洗"
   },
   {
     "id": 1930,
     "group": "Villes",
-    "nom": "Tsuchiura"
+    "nom": "Tsuchiura",
+    "nom_en": "Tsuchiura",
+    "nom_ja": "土浦"
   },
   {
     "id": 1931,
     "group": "Villes",
-    "nom": "Itako"
+    "nom": "Itako",
+    "nom_en": "Itako",
+    "nom_ja": "潮来"
   },
   {
     "id": 1932,
     "group": "Villes",
-    "nom": "Koga"
+    "nom": "Koga",
+    "nom_en": "Koga",
+    "nom_ja": "古河"
   },
   {
     "id": 1933,
     "group": "Villes",
-    "nom": "Hitachiota"
+    "nom": "Hitachiota",
+    "nom_en": "Hitachiota",
+    "nom_ja": "常陸太田"
   },
   {
     "id": 1934,
     "group": "Villes",
-    "nom": "Hitachi"
+    "nom": "Hitachi",
+    "nom_en": "Hitachi",
+    "nom_ja": "日立"
   },
   {
     "id": 1935,
     "group": "Villes",
-    "nom": "Takahagi"
+    "nom": "Takahagi",
+    "nom_en": "Takahagi",
+    "nom_ja": "高萩"
   },
   {
     "id": 1936,
     "group": "Villes",
-    "nom": "Ishioka"
+    "nom": "Ishioka",
+    "nom_en": "Ishioka",
+    "nom_ja": "石岡"
   },
   {
     "id": 1937,
     "group": "Villes",
-    "nom": "KitaIbaraki"
+    "nom": "KitaIbaraki",
+    "nom_en": "Kita Ibaraki",
+    "nom_ja": "北茨城"
   },
   {
     "id": 1938,
     "group": "Villes",
-    "nom": "Yuki"
+    "nom": "Yuki",
+    "nom_en": "Yuki",
+    "nom_ja": "結城"
   },
   {
     "id": 1939,
     "group": "Villes",
-    "nom": "Sakuragawa"
+    "nom": "Sakuragawa",
+    "nom_en": "Sakuragawa",
+    "nom_ja": "桜川"
   },
   {
     "id": 1940,
     "group": "Villes",
-    "nom": "Kasumigaura"
+    "nom": "Kasumigaura",
+    "nom_en": "Kasumigaura",
+    "nom_ja": "かすみがうら"
   },
   {
     "id": 1941,
     "group": "Villes",
-    "nom": "Namegata"
+    "nom": "Namegata",
+    "nom_en": "Namegata",
+    "nom_ja": "行方"
   },
   {
     "id": 1942,
     "group": "Villes",
-    "nom": "Hokota"
+    "nom": "Hokota",
+    "nom_en": "Hokota",
+    "nom_ja": "鉾田"
   },
   {
     "id": 1943,
     "group": "Villes",
-    "nom": "Ibaraki-machi"
+    "nom": "Ibaraki-machi",
+    "nom_en": "Ibaraki-machi",
+    "nom_ja": "茨城町"
   },
   {
     "id": 1944,
     "group": "Villes",
-    "nom": "Inashiki"
+    "nom": "Inashiki",
+    "nom_en": "Inashiki",
+    "nom_ja": "稲敷"
   },
   {
     "id": 1945,
     "group": "Accessibilité",
-    "nom": "Facile"
+    "nom": "Facile",
+    "nom_en": "Easy",
+    "nom_ja": "簡単"
   },
   {
     "id": 1946,
     "group": "Accessibilité",
-    "nom": "Modéré"
+    "nom": "Modéré",
+    "nom_en": "Moderate",
+    "nom_ja": "普通"
   },
   {
     "id": 1947,
     "group": "Accessibilité",
-    "nom": "Difficile"
+    "nom": "Difficile",
+    "nom_en": "Difficult",
+    "nom_ja": "上級"
   },
   {
     "id": 1948,
     "group": "Tags",
-    "nom": "Nature"
+    "nom": "Nature",
+    "nom_en": "Nature",
+    "nom_ja": "自然"
   },
   {
     "id": 1949,
     "group": "Tags",
-    "nom": "Culture"
+    "nom": "Culture",
+    "nom_en": "Culture",
+    "nom_ja": "文化"
   },
   {
     "id": 1950,
     "group": "Tags",
-    "nom": "Spiritualité"
+    "nom": "Spiritualité",
+    "nom_en": "Spirituality",
+    "nom_ja": "精神性"
   },
   {
     "id": 1951,
     "group": "Activités",
-    "nom": "Randonnée"
+    "nom": "Randonnée",
+    "nom_en": "Hiking",
+    "nom_ja": "ハイキング"
   },
   {
     "id": 1952,
     "group": "Activités",
-    "nom": "Photo"
+    "nom": "Photo",
+    "nom_en": "Photography",
+    "nom_ja": "写真"
   },
   {
     "id": 1954,
     "group": "Tags",
-    "nom": "Jardins"
+    "nom": "Jardins",
+    "nom_en": "Gardens",
+    "nom_ja": "庭園"
   },
   {
     "id": 1955,
     "group": "Tags",
-    "nom": "Histoire"
+    "nom": "Histoire",
+    "nom_en": "History",
+    "nom_ja": "歴史"
   },
   {
     "id": 1956,
     "group": "Tags",
-    "nom": "Artisanat"
+    "nom": "Artisanat",
+    "nom_en": "Crafts",
+    "nom_ja": "工芸"
   },
   {
     "id": 1957,
     "group": "Activités",
-    "nom": "Cyclisme / Vélo"
+    "nom": "Cyclisme / Vélo",
+    "nom_en": "Cycling",
+    "nom_ja": "サイクリング"
   },
   {
     "id": 1958,
     "group": "Activités",
-    "nom": "Sports nautiques"
+    "nom": "Sports nautiques",
+    "nom_en": "Water Sports",
+    "nom_ja": "ウォータースポーツ"
   },
   {
     "id": 1959,
     "group": "Tags",
-    "nom": "Éducation"
+    "nom": "Éducation",
+    "nom_en": "Education",
+    "nom_ja": "教育"
   },
   {
     "id": 1960,
     "group": "Activités",
-    "nom": "Détente"
+    "nom": "Détente",
+    "nom_en": "Relaxation",
+    "nom_ja": "リラクゼーション"
   },
   {
     "id": 1961,
     "group": "Activités",
-    "nom": "Sport"
+    "nom": "Sport",
+    "nom_en": "Sports",
+    "nom_ja": "スポーツ"
   },
   {
     "id": 1962,
     "group": "Tags",
-    "nom": "Art"
+    "nom": "Art",
+    "nom_en": "Art",
+    "nom_ja": "アート"
   },
   {
     "id": 1963,
     "group": "Tags",
-    "nom": "Gastronomie"
+    "nom": "Gastronomie",
+    "nom_en": "Gastronomy",
+    "nom_ja": "グルメ"
   },
   {
     "id": 1964,
     "group": "Tags",
-    "nom": "Science & Technologie"
+    "nom": "Science & Technologie",
+    "nom_en": "Science & Technology",
+    "nom_ja": "科学＆テクノロジー"
   },
   {
     "id": 1965,
     "group": "Activités",
-    "nom": "Ateliers culinaires"
+    "nom": "Ateliers culinaires",
+    "nom_en": "Cooking Workshops",
+    "nom_ja": "料理教室"
   },
   {
     "id": 1966,
     "group": "Types de festival",
-    "nom": "Floraison"
+    "nom": "Floraison",
+    "nom_en": "Blooming",
+    "nom_ja": "開花"
   },
   {
     "id": 1967,
     "group": "Types de festival",
-    "nom": "Musique"
+    "nom": "Musique",
+    "nom_en": "Music",
+    "nom_ja": "音楽"
   },
   {
     "id": 1968,
     "group": "Types de festival",
-    "nom": "Gastronomie"
+    "nom": "Gastronomie",
+    "nom_en": "Gastronomy",
+    "nom_ja": "グルメ"
   },
   {
     "id": 1969,
     "group": "Types de festival",
-    "nom": "Spectacle"
+    "nom": "Spectacle",
+    "nom_en": "Show",
+    "nom_ja": "ショー"
   },
   {
     "id": 1970,
     "group": "Tags",
-    "nom": "Incontournable"
+    "nom": "Incontournable",
+    "nom_en": "Must-See",
+    "nom_ja": "必見"
   },
   {
     "id": 1971,
     "group": "Tags",
-    "nom": "Instagram"
+    "nom": "Instagram",
+    "nom_en": "Instagram",
+    "nom_ja": "Instagram"
   },
   {
     "id": 1972,
     "group": "Tags",
-    "nom": "Patrimoine"
+    "nom": "Patrimoine",
+    "nom_en": "Heritage",
+    "nom_ja": "遺産"
   },
   {
     "id": 1974,
     "group": "Tags",
-    "nom": "Unique"
+    "nom": "Unique",
+    "nom_en": "Unique",
+    "nom_ja": "ユニーク"
   },
   {
     "id": 1975,
     "group": "Tags",
-    "nom": "Lever de soleil"
+    "nom": "Lever de soleil",
+    "nom_en": "Sunrise",
+    "nom_ja": "日の出"
   },
   {
     "id": 1976,
     "group": "Tags",
-    "nom": "Intérieur"
+    "nom": "Intérieur",
+    "nom_en": "Indoor",
+    "nom_ja": "屋内"
   },
   {
     "id": 1977,
     "group": "Tags",
-    "nom": "Tradition"
+    "nom": "Tradition",
+    "nom_en": "Tradition",
+    "nom_ja": "伝統"
   },
   {
     "id": 1978,
     "group": "Tags",
-    "nom": "Jeunesse"
+    "nom": "Jeunesse",
+    "nom_en": "Youth",
+    "nom_ja": "青少年"
   },
   {
     "id": 1979,
     "group": "Tags",
-    "nom": "International"
+    "nom": "International",
+    "nom_en": "International",
+    "nom_ja": "国際"
   },
   {
     "id": 1980,
     "group": "Tags",
-    "nom": "Nuit"
+    "nom": "Nuit",
+    "nom_en": "Night",
+    "nom_ja": "夜"
   },
   {
     "id": 1981,
     "group": "Tags",
-    "nom": "Hanami"
+    "nom": "Hanami",
+    "nom_en": "Hanami",
+    "nom_ja": "花見"
   },
   {
     "id": 1982,
     "group": "Tags",
-    "nom": "Musée"
+    "nom": "Musée",
+    "nom_en": "Museum",
+    "nom_ja": "博物館"
   },
   {
     "id": 1983,
     "group": "Tags",
-    "nom": "Architecture"
+    "nom": "Architecture",
+    "nom_en": "Architecture",
+    "nom_ja": "建築"
   },
   {
     "id": 1984,
     "group": "Tags",
-    "nom": "Contemplation"
+    "nom": "Contemplation",
+    "nom_en": "Contemplation",
+    "nom_ja": "瞑想"
   },
   {
     "id": 1985,
     "group": "Tags",
-    "nom": "Cygnes"
+    "nom": "Cygnes",
+    "nom_en": "Swans",
+    "nom_ja": "白鳥"
   },
   {
     "id": 1986,
     "group": "Tags",
-    "nom": "Coucher de soleil"
+    "nom": "Coucher de soleil",
+    "nom_en": "Sunset",
+    "nom_ja": "夕日"
   },
   {
     "id": 1987,
     "group": "Tags",
-    "nom": "Trois grands jardins"
+    "nom": "Trois grands jardins",
+    "nom_en": "Three Great Gardens",
+    "nom_ja": "日本三名園"
   },
   {
     "id": 1988,
     "group": "Tags",
-    "nom": "Plage"
+    "nom": "Plage",
+    "nom_en": "Beach",
+    "nom_ja": "ビーチ"
   },
   {
     "id": 1989,
     "group": "Activités",
-    "nom": "Baignade"
+    "nom": "Baignade",
+    "nom_en": "Swimming",
+    "nom_ja": "海水浴"
   },
   {
     "id": 1990,
     "group": "Tags",
-    "nom": "Ruines"
+    "nom": "Ruines",
+    "nom_en": "Ruins",
+    "nom_ja": "遺跡"
   },
   {
     "id": 1991,
     "group": "Tags",
-    "nom": "Château"
+    "nom": "Château",
+    "nom_en": "Castle",
+    "nom_ja": "城"
   },
   {
     "id": 1992,
     "group": "Tags",
-    "nom": "Parc historique"
+    "nom": "Parc historique",
+    "nom_en": "Historic Park",
+    "nom_ja": "歴史公園"
   },
   {
     "id": 1993,
     "group": "Tags",
-    "nom": "Temple Zen"
+    "nom": "Temple Zen",
+    "nom_en": "Zen Temple",
+    "nom_ja": "禅寺"
   },
   {
     "id": 1994,
     "group": "Activités",
-    "nom": "Méditation"
+    "nom": "Méditation",
+    "nom_en": "Meditation",
+    "nom_ja": "瞑想"
   },
   {
     "id": 1995,
     "group": "Tags",
-    "nom": "Saké"
+    "nom": "Saké",
+    "nom_en": "Sake",
+    "nom_ja": "日本酒"
   },
   {
     "id": 1996,
     "group": "Activités",
-    "nom": "Dégustation"
+    "nom": "Dégustation",
+    "nom_en": "Tasting",
+    "nom_ja": "試飲"
   },
   {
     "id": 1997,
     "group": "Tags",
-    "nom": "Boutique"
+    "nom": "Boutique",
+    "nom_en": "Shop",
+    "nom_ja": "ショップ"
   },
   {
     "id": 1998,
     "group": "Tags",
-    "nom": "Espace"
+    "nom": "Espace",
+    "nom_en": "Space",
+    "nom_ja": "宇宙"
   },
   {
     "id": 1999,
     "group": "Tags",
-    "nom": "Robotique"
+    "nom": "Robotique",
+    "nom_en": "Robotics",
+    "nom_ja": "ロボティクス"
   },
   {
     "id": 2000,
     "group": "Tags",
-    "nom": "Planétarium"
+    "nom": "Planétarium",
+    "nom_en": "Planetarium",
+    "nom_ja": "プラネタリウム"
   },
   {
     "id": 2001,
     "group": "Tags",
-    "nom": "Botanique"
+    "nom": "Botanique",
+    "nom_en": "Botanical",
+    "nom_ja": "植物"
   },
   {
     "id": 2002,
     "group": "Tags",
-    "nom": "Poterie"
+    "nom": "Poterie",
+    "nom_en": "Pottery",
+    "nom_ja": "陶芸"
   },
   {
     "id": 2003,
     "group": "Tags",
-    "nom": "Kasama-yaki"
+    "nom": "Kasama-yaki",
+    "nom_en": "Kasama-yaki",
+    "nom_ja": "笠間焼"
   },
   {
     "id": 2004,
     "group": "Tags",
-    "nom": "Village artisanal"
+    "nom": "Village artisanal",
+    "nom_en": "Craft Village",
+    "nom_ja": "工芸村"
   },
   {
     "id": 2005,
     "group": "Activités",
-    "nom": "Cours"
+    "nom": "Cours",
+    "nom_en": "Classes",
+    "nom_ja": "教室"
   },
   {
     "id": 2006,
     "group": "Tags",
-    "nom": "Trois grands sanctuaires Inari"
+    "nom": "Trois grands sanctuaires Inari",
+    "nom_en": "Three Great Inari Shrines",
+    "nom_ja": "日本三大稲荷"
   },
   {
     "id": 2007,
     "group": "Activités",
-    "nom": "Hobikibune"
+    "nom": "Hobikibune",
+    "nom_en": "Hobikibune",
+    "nom_ja": "帆引き船"
   },
   {
     "id": 2008,
     "group": "Activités",
-    "nom": "Observation d'oiseaux"
+    "nom": "Observation d'oiseaux",
+    "nom_en": "Bird Watching",
+    "nom_ja": "バードウォッチング"
   },
   {
     "id": 2009,
     "group": "Activités",
-    "nom": "Pêche"
+    "nom": "Pêche",
+    "nom_en": "Fishing",
+    "nom_ja": "釣り"
   },
   {
     "id": 2010,
     "group": "Tags",
-    "nom": "Temple"
+    "nom": "Temple",
+    "nom_en": "Temple",
+    "nom_ja": "寺院"
   },
   {
     "id": 2011,
     "group": "Tags",
-    "nom": "Sanctuaire"
+    "nom": "Sanctuaire",
+    "nom_en": "Shrine",
+    "nom_ja": "神社"
   },
   {
     "id": 2012,
     "group": "Tags",
-    "nom": "Agrotourisme"
+    "nom": "Agrotourisme",
+    "nom_en": "Agritourism",
+    "nom_ja": "農業体験"
   },
   {
     "id": 2013,
     "group": "Tags",
-    "nom": "Patate douce"
+    "nom": "Patate douce",
+    "nom_en": "Sweet Potato",
+    "nom_ja": "さつまいも"
   },
   {
     "id": 2014,
     "group": "Activités",
-    "nom": "Cueillette"
+    "nom": "Cueillette",
+    "nom_en": "Picking",
+    "nom_ja": "収穫体験"
   },
   {
     "id": 2015,
     "group": "Tags",
-    "nom": "Lac saumâtre"
+    "nom": "Lac saumâtre",
+    "nom_en": "Brackish Lake",
+    "nom_ja": "汽水湖"
   },
   {
     "id": 2016,
     "group": "Tags",
-    "nom": "Site Ramsar"
+    "nom": "Site Ramsar",
+    "nom_en": "Ramsar Site",
+    "nom_ja": "ラムサール条約登録地"
   },
   {
     "id": 2017,
     "group": "Tags",
-    "nom": "Villages de pêcheurs"
+    "nom": "Villages de pêcheurs",
+    "nom_en": "Fishing Villages",
+    "nom_ja": "漁村"
   },
   {
     "id": 2019,
     "group": "Tags",
-    "nom": "Côte sauvage"
+    "nom": "Côte sauvage",
+    "nom_en": "Wild Coast",
+    "nom_ja": "荒磯海岸"
   },
   {
     "id": 2020,
     "group": "Activités",
-    "nom": "Camping"
+    "nom": "Camping",
+    "nom_en": "Camping",
+    "nom_ja": "キャンプ"
   },
   {
     "id": 2021,
     "group": "Activités",
-    "nom": "Observation astronomique"
+    "nom": "Observation astronomique",
+    "nom_en": "Stargazing",
+    "nom_ja": "天体観測"
   },
   {
     "id": 2022,
     "group": "Tags",
-    "nom": "Source d'eau"
+    "nom": "Source d'eau",
+    "nom_en": "Water Spring",
+    "nom_ja": "水源"
   },
   {
     "id": 2023,
     "group": "Tags",
-    "nom": "Nattō"
+    "nom": "Nattō",
+    "nom_en": "Nattō",
+    "nom_ja": "納豆"
   },
   {
     "id": 2025,
     "group": "Tags",
-    "nom": "Boeuf de Hitachi"
+    "nom": "Boeuf de Hitachi",
+    "nom_en": "Hitachi Beef",
+    "nom_ja": "常陸牛"
   },
   {
     "id": 2026,
     "group": "Tags",
-    "nom": "Melons"
+    "nom": "Melons",
+    "nom_en": "Melons",
+    "nom_ja": "メロン"
   },
   {
     "id": 2027,
     "group": "Tags",
-    "nom": "Soba"
+    "nom": "Soba",
+    "nom_en": "Soba",
+    "nom_ja": "そば"
   },
   {
     "id": 2028,
     "group": "Tags",
-    "nom": "Kenchin-jiru"
+    "nom": "Kenchin-jiru",
+    "nom_en": "Kenchin-jiru",
+    "nom_ja": "けんちん汁"
   },
   {
     "id": 2029,
     "group": "Tags",
-    "nom": "Marché local"
+    "nom": "Marché local",
+    "nom_en": "Local Market",
+    "nom_ja": "地元の市場"
   },
   {
     "id": 2030,
     "group": "Tags",
-    "nom": "Restaurant de ferme"
+    "nom": "Restaurant de ferme",
+    "nom_en": "Farm Restaurant",
+    "nom_ja": "農家レストラン"
   },
   {
     "id": 2031,
     "group": "Tags",
-    "nom": "Train"
+    "nom": "Train",
+    "nom_en": "Train",
+    "nom_ja": "電車"
   },
   {
     "id": 2032,
     "group": "Tags",
-    "nom": "Bus"
+    "nom": "Bus",
+    "nom_en": "Bus",
+    "nom_ja": "バス"
   },
   {
     "id": 2033,
     "group": "Tags",
-    "nom": "Voiture"
+    "nom": "Voiture",
+    "nom_en": "Car",
+    "nom_ja": "車"
   },
   {
     "id": 2035,
     "group": "Tags",
-    "nom": "Aéroport"
+    "nom": "Aéroport",
+    "nom_en": "Airport",
+    "nom_ja": "空港"
   },
   {
     "id": 2036,
     "group": "Tags",
-    "nom": "Ryokan"
+    "nom": "Ryokan",
+    "nom_en": "Ryokan",
+    "nom_ja": "旅館"
   },
   {
     "id": 2037,
     "group": "Tags",
-    "nom": "Hôtel"
+    "nom": "Hôtel",
+    "nom_en": "Hotel",
+    "nom_ja": "ホテル"
   },
   {
     "id": 2038,
     "group": "Tags",
-    "nom": "Minshuku"
+    "nom": "Minshuku",
+    "nom_en": "Minshuku",
+    "nom_ja": "民宿"
   },
   {
     "id": 2039,
     "group": "Tags",
-    "nom": "Office de tourisme"
+    "nom": "Office de tourisme",
+    "nom_en": "Tourism Office",
+    "nom_ja": "観光案内所"
   },
   {
     "id": 2040,
     "group": "Tags",
-    "nom": "Animaux"
+    "nom": "Animaux",
+    "nom_en": "Animals",
+    "nom_ja": "動物"
   },
   {
     "id": 2043,
     "group": "Activités",
-    "nom": "Aquarium"
+    "nom": "Aquarium",
+    "nom_en": "Aquarium",
+    "nom_ja": "水族館"
   },
   {
     "id": 2044,
     "group": "Tags",
-    "nom": "Enfant"
+    "nom": "Enfant",
+    "nom_en": "Child",
+    "nom_ja": "子供"
   },
   {
     "id": 2045,
     "group": "Activités",
-    "nom": "Balade"
+    "nom": "Balade",
+    "nom_en": "Walk",
+    "nom_ja": "散策"
   },
   {
     "id": 2046,
     "group": "Activités",
-    "nom": "Jogging"
+    "nom": "Jogging",
+    "nom_en": "Jogging",
+    "nom_ja": "ジョギング"
   },
   {
     "id": 2047,
     "group": "Tags",
-    "nom": "Vue sur la ville"
+    "nom": "Vue sur la ville",
+    "nom_en": "City View",
+    "nom_ja": "都市の眺望"
   },
   {
     "id": 2048,
     "group": "Activités",
-    "nom": "Shopping"
+    "nom": "Shopping",
+    "nom_en": "Shopping",
+    "nom_ja": "ショッピング"
   },
   {
     "id": 2049,
     "group": "Activités",
-    "nom": "Saut à l'élastique"
+    "nom": "Saut à l'élastique",
+    "nom_en": "Bungee Jumping",
+    "nom_ja": "バンジージャンプ"
   },
   {
     "id": 2050,
     "group": "Tags",
-    "nom": "Insolite"
+    "nom": "Insolite",
+    "nom_en": "Unusual",
+    "nom_ja": "ユニーク"
   },
   {
     "id": 2051,
     "group": "Tags",
-    "nom": "Luxe"
+    "nom": "Luxe",
+    "nom_en": "Luxury",
+    "nom_ja": "ラグジュアリー"
   }
 ]

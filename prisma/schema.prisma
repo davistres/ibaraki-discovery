@@ -101,11 +101,15 @@ model Festival {
   description_en String @default("")
   lieu_en        String @default("")
   periode_en     String @default("")
+  mois_en        String @default("")
+  activites_en   String @default("")
   // Japanese translations
   nom_ja         String @default("")
   description_ja String @default("")
   lieu_ja        String @default("")
   periode_ja     String @default("")
+  mois_ja        String @default("")
+  activites_ja   String @default("")
 
   region    Category @relation("FestivalRegion", fields: [region_id], references: [id])
   region_id Int

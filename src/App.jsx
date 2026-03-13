@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './contexts/LanguageContext'
 import Layout from './components/Layout'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import Discovery from './pages/Discovery'
 import PlaceDetail from './pages/PlaceDetail'
@@ -13,6 +14,7 @@ function App() {
   return (
     <LanguageProvider>
       <Router basename="/ibaraki-discovery">
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
