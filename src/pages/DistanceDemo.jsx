@@ -5,7 +5,7 @@ import { getDistancesFrom, formatDistance, formatDuration } from '../utils/dista
 import { useTranslation } from '../contexts/LanguageContext'
 
 const DistanceDemo = () => {
-  const { t } = useTranslation()
+  const { t, td } = useTranslation()
   const [selectedPlace, setSelectedPlace] = useState(null)
   const [distances, setDistances] = useState([])
   const [loading, setLoading] = useState(false)
@@ -32,7 +32,7 @@ const DistanceDemo = () => {
 
   const getPlaceName = (placeId) => {
     const place = placesData.find(p => p.id === placeId)
-    return place ? place.nom : placeId
+    return place ? td(place) : placeId
   }
 
   return (
@@ -66,8 +66,8 @@ const DistanceDemo = () => {
                       : 'border-gray-200 hover:border-blue-300'
                   }`}
                 >
-                  <h3 className="font-semibold text-gray-900 mb-1">{place.nom}</h3>
-                  <p className="text-sm text-gray-600">{place.ville}</p>
+                  <h3 className="font-semibold text-gray-900 mb-1">{td(place)}</h3>
+                  <p className="text-sm text-gray-600">{td(place.ville)}</p>
                 </button>
               ))}
             </div>
@@ -76,7 +76,7 @@ const DistanceDemo = () => {
           {selectedPlace && (
             <div className="bg-white rounded-xl shadow-md p-8">
               <h2 className="font-display font-bold text-2xl text-gray-900 mb-6">
-                {t('distanceDemo.distancesFrom', { name: selectedPlace.nom })}
+                {t('distanceDemo.distancesFrom', { name: td(selectedPlace) })}
               </h2>
 
               {loading ? (

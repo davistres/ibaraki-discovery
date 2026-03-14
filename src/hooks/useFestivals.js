@@ -1,7 +1,28 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from '../contexts/LanguageContext';
+import festivalsData from '../data/festivals.json';
+import categoriesData from '../data/categories.json';
 
-const API_BASE = 'http://localhost:3001';
+// Helper pour localiser un festival
+function localizeFestival(festival, lang) {
+    if (lang === 'fr') return festival;
+
+    return {
+        ...festival,
+        nom: festival[`nom_${lang}`] || festival.nom,
+        description: festival[`description_${lang}`] || festival.description,
+        lieu: festival[`lieu_${lang}`] || festival.lieu,
+        periode: festival[`periode_${lang}`] || festival.periode,
+        mois: festival[`mois_${lang}`] || festival.mois,
+        activites: festival[`activites_${lang}`] || festival.activites,
+    };
+}
+
+// Helper pour localiser une catégorie
+function localizeCategory(cat, lang) {
+    if (!cat || lang === 'fr') return cat;
+    return { ...cat, nom: cat[`nom_${lang}`] || cat.nom };
+}
 
 export function useFestivals() {
     const { language } = useTranslation();
@@ -9,14 +30,26 @@ export function useFestivals() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const fetchFestivals = useCallback(async () => {
+    useEffect(() => {
         setLoading(true);
         setError(null);
         try {
-            const res = await fetch(`${API_BASE}/api/festivals?lang=${language}`);
-            if (!res.ok) throw new Error('Failed to fetch festivals');
-            const data = await res.json();
-            setFestivals(data);
+            const localized = festivalsData.map(f => {
+                const loc = localizeFestival(f, language);
+                
+                // Joindre les données de catégories, ville, région
+                const region = categoriesData.find(c => c.id === f.region_id);
+                const ville = categoriesData.find(c => c.id === f.ville_id);
+                const categories = (f.category_ids || []).map(cid => categoriesData.find(c => c.id === cid)).filter(Boolean);
+
+                return {
+                    ...loc,
+                    region: localizeCategory(region, language),
+                    ville: localizeCategory(ville, language),
+                    categories: categories.map(c => localizeCategory(c, language)),
+                };
+            });
+            setFestivals(localized);
         } catch (err) {
             console.error('useFestivals error:', err);
             setError(err.message);
@@ -25,9 +58,5 @@ export function useFestivals() {
         }
     }, [language]);
 
-    useEffect(() => {
-        fetchFestivals();
-    }, [fetchFestivals]);
-
-    return { festivals, loading, error, refetch: fetchFestivals };
+    return { festivals, loading, error, refetch: () => {} };
 }
