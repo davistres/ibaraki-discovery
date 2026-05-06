@@ -19,8 +19,8 @@
     "adresse_en": "8252-3 Isohama-cho, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1301.",
     "adresse_ja": "茨城県東茨城郡大洗町磯浜町8252-3 〒311-1301",
     "coordonnees": {
-      "lat": 36.3333,
-      "lng": 140.5833
+      "lat": 36.333347,
+      "lng": 140.593822
     },
     "horaires": "Généralement 9h00-17h00 (dernière admission 16h00). Fermé certains jours en décembre.",
     "horaires_en": "Generally 9:00 AM - 5:00 PM (last admission 4:00 PM). Closed on certain days in December.",
@@ -70,8 +70,8 @@
     "adresse_en": "1485 Numata, Tsukuba, Ibaraki",
     "adresse_ja": "茨城県つくば市沼田1485",
     "coordonnees": {
-      "lat": 36.0901,
-      "lng": 140.0901
+      "lat": 36.2067,
+      "lng": 140.0867
     },
     "horaires": "Boutique: ~10h-17h. Réservation nécessaire pour visites.",
     "horaires_en": "Shop: ~10 AM - 5 PM. Reservations required for tours.",
@@ -119,8 +119,8 @@
     "adresse_en": "1-1-1 Obara, Kasama-shi, Ibaraki 309-1611",
     "adresse_ja": "〒309-1611 茨城県かすみがうら市小原1-1-1",
     "coordonnees": {
-      "lat": 36.3789,
-      "lng": 140.2623
+      "lat": 36.3276,
+      "lng": 140.2458
     },
     "horaires": "Boutique: 9h00-17h00 (fermé dimanches, jours fériés, congés Nouvel An). Visites sur réservation.",
     "horaires_en": "Shop: 9:00 AM - 5:00 PM (closed Sundays, public holidays, New Year holidays). Tours by reservation.",
@@ -168,8 +168,8 @@
     "adresse_en": "Oda, Tsukuba-shi, Ibaraki",
     "adresse_ja": "茨城県つくば市小田",
     "coordonnees": {
-      "lat": 36.0858,
-      "lng": 140.0858
+      "lat": 36.15056,
+      "lng": 140.11089
     },
     "horaires": "Toujours ouvert",
     "horaires_en": "Always open",
@@ -219,8 +219,8 @@
     "adresse_en": "3-19 Fukuroda, Daigo-machi, Kuji-gun, Ibaraki 319-3523",
     "adresse_ja": "茨城県久慈郡大子町袋田3-19 〒319-3523",
     "coordonnees": {
-      "lat": 36.76524,
-      "lng": 140.40457
+      "lat": 36.76444,
+      "lng": 140.40764
     },
     "horaires": "Mai-octobre : 8h00-18h00. Novembre-avril : 9h00-17h00.",
     "horaires_en": "May-October: 8:00 AM - 6:00 PM. November-April: 9:00 AM - 5:00 PM.",
@@ -270,8 +270,8 @@
     "adresse_en": "Kawakami, Daigo-machi, Kuji-gun, Ibaraki 319-3506",
     "adresse_ja": "茨城県久慈郡大子町川上 〒319-3506",
     "coordonnees": {
-      "lat": 36.81051,
-      "lng": 140.37381
+      "lat": 36.7589,
+      "lng": 140.3665
     },
     "horaires": "Accès libre en permanence.",
     "horaires_en": "Access is always free.",
@@ -317,8 +317,8 @@
     "adresse_en": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_ja": "〒309-1611 茨城県かすみがうら市笠間2345",
     "coordonnees": {
-      "lat": 36.3899,
-      "lng": 140.2733
+      "lat": 36.3475,
+      "lng": 140.2745
     },
     "horaires": "Parc ouvert en permanence. Musée et Craft Hills: 9h30-17h00 (fermé certains lundis).",
     "horaires_en": "Park open at all times. Museum and Craft Hills: 9:30 AM - 5:00 PM (closed some Mondays).",
@@ -365,8 +365,8 @@
     "adresse_en": "Along the coastline of KitaIbaraki-shi, Ibaraki. Notable sites include the Izura coast.",
     "adresse_ja": "茨城県北茨城市の海岸沿い。五浦海岸などの注目すべき場所があります。",
     "coordonnees": {
-      "lat": 36.7936,
-      "lng": 140.7436
+      "lat": 36.8334,
+      "lng": 140.8034
     },
     "horaires": "Accès libre (prudence près des falaises et en fonction des marées).",
     "horaires_en": "Free access (exercise caution near cliffs and depending on tides).",
@@ -416,8 +416,8 @@
     "adresse_en": "1-6-29 Sannomaru, Mito, Ibaraki 310-0011",
     "adresse_ja": "茨城県水戸市三の丸1-6-29 〒310-0011",
     "coordonnees": {
-      "lat": 36.3578,
-      "lng": 140.4578
+      "lat": 36.37528,
+      "lng": 140.47694
     },
     "horaires": "9h00-17h00 (variable selon saison)",
     "horaires_en": "9:00 AM - 5:00 PM (varies by season)",
@@ -467,8 +467,8 @@
     "adresse_en": "2775-7 Kamigo, Kasama, Ibaraki 319-0201, Japan",
     "adresse_ja": "〒319-0201 茨城県笠間市上郷2775-7",
     "coordonnees": {
-      "lat": 36.2855,
-      "lng": 140.2815
+      "lat": 36.336,
+      "lng": 140.231
     },
     "horaires": "Check-in : 16h00-18h00 | Check-out : jusqu'à 11h00",
     "horaires_en": "Check-in: 4:00 PM - 6:00 PM | Check-out: until 11:00 AM",
@@ -523,8 +523,8 @@
     "adresse_en": "Ono, Takahagi-shi, Ibaraki",
     "adresse_ja": "茨城県高萩市小野",
     "coordonnees": {
-      "lat": 36.7138,
-      "lng": 140.7138
+      "lat": 36.7344,
+      "lng": 140.6176
     },
     "horaires": "Accès libre en permanence.",
     "horaires_en": "Access is always free.",
@@ -569,8 +569,8 @@
     "adresse_en": "Area extending along the Kuji River, mainly in Daigo-machi, Kuji-gun, Ibaraki.",
     "adresse_ja": "久慈川沿いに広がる地域、主に茨城県久慈郡大子町。",
     "coordonnees": {
-      "lat": 36.7648,
-      "lng": 140.3648
+      "lat": 36.7681,
+      "lng": 140.3552
     },
     "horaires": "Accès libre en permanence.",
     "horaires_en": "Access is always free.",
@@ -618,8 +618,8 @@
     "adresse_en": "2083 Kuno-cho, Ushiku, Ibaraki 300-1288",
     "adresse_ja": "茨城県牛久市久野町2083 〒300-1288",
     "coordonnees": {
-      "lat": 35.9833,
-      "lng": 140.2167
+      "lat": 35.9825,
+      "lng": 140.2203
     },
     "horaires": "9h30-17h (semaine, mar-sep), 9h30-16h30 (semaine, oct-fév). W-E & fériés: 9h30-17h30 (mar-sep).",
     "horaires_en": "9:30 AM - 5:00 PM (weekdays, Mar-Sep), 9:30 AM - 4:30 PM (weekdays, Oct-Feb). Weekends & holidays: 9:30 AM - 5:30 PM (Mar-Sep).",
@@ -671,8 +671,8 @@
     "adresse_en": "1-1-1 Saiwai-cho, Hitachi-shi, Ibaraki 317-0073",
     "adresse_ja": "〒317-0073 茨城県日立市幸町1-1-1",
     "coordonnees": {
-      "lat": 36.6086,
-      "lng": 140.6586
+      "lat": 36.59013,
+      "lng": 140.65963
     },
     "horaires": "Généralement 9h00-17h00 (dernière admission 16h30). Fermé le dernier lundi de chaque mois et pendant les congés du Nouvel An.",
     "horaires_en": "Generally 9:00 AM - 5:00 PM (last admission 4:30 PM). Closed on the last Monday of each month and during New Year holidays.",
@@ -722,8 +722,8 @@
     "adresse_en": "605-4 Mawatari, Hitachinaka, Ibaraki 312-0012",
     "adresse_ja": "茨城県ひたちなか市馬渡605-4 〒312-0012",
     "coordonnees": {
-      "lat": 36.4042,
-      "lng": 140.6006
+      "lat": 36.40055,
+      "lng": 140.59138
     },
     "horaires": "9h30-17h (varie selon saison)",
     "horaires_en": "9:30 AM - 5:00 PM (varies by season)",
@@ -776,8 +776,8 @@
     "adresse_en": "4-1-1 Amakubo, Tsukuba, Ibaraki 305-0005",
     "adresse_ja": "茨城県つくば市天久保4-1-1 〒305-0005",
     "coordonnees": {
-      "lat": 36.0862,
-      "lng": 140.0862
+      "lat": 36.096,
+      "lng": 140.108
     },
     "horaires": "9h00-16h30 (fermé les lundis)",
     "horaires_en": "9:00 AM - 4:30 PM (closed on Mondays)",
@@ -824,8 +824,8 @@
     "adresse_en": "Japan, 〒305-0047 Ibaraki, Tsukuba, Sengen, 2 Chome−１−1",
     "adresse_ja": "〒305-0047 茨城県つくば市千現2丁目1-1",
     "coordonnees": {
-      "lat": 36.0847,
-      "lng": 140.0847
+      "lat": 36.068,
+      "lng": 140.129
     },
     "horaires": "A vérifier sur le site officiel",
     "horaires_en": "To be confirmed on the official website",
@@ -875,8 +875,8 @@
     "adresse_en": "1 Chome Tokiwa-cho, Mito, Ibaraki 310-0033",
     "adresse_ja": "〒310-0033 茨城県水戸市常磐町1丁目",
     "coordonnees": {
-      "lat": 36.3833,
-      "lng": 140.4667
+      "lat": 36.3731,
+      "lng": 140.4561
     },
     "horaires": "Jardin: 6h-19h (fév-sep), 7h-18h (oct-fév). Kobuntei: 9h-17h.",
     "horaires_en": "Garden: 6:00 AM - 7:00 PM (Feb-Sep), 7:00 AM - 6:00 PM (Oct-Feb). Kobuntei: 9:00 AM - 5:00 PM.",
@@ -932,8 +932,8 @@
     "adresse_en": "1 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_ja": "〒309-1611 茨城県笠間市笠間1",
     "coordonnees": {
-      "lat": 36.38633,
-      "lng": 140.25421
+      "lat": 36.3863,
+      "lng": 140.2542
     },
     "horaires": "Enceinte accessible 24/7. Bureau: 8h30-17h00.",
     "horaires_en": "Shrine grounds accessible 24/7. Office: 8:30 AM - 5:00 PM.",
@@ -984,8 +984,8 @@
     "adresse_en": "2306-1 Kyuchu, Kashima-shi, Ibaraki 314-0031.",
     "adresse_ja": "〒314-0031 茨城県鹿嶋市宮中2306-1",
     "coordonnees": {
-      "lat": 35.9667,
-      "lng": 140.6333
+      "lat": 35.96889,
+      "lng": 140.63139
     },
     "horaires": "Enceinte accessible 24h/24. Bureau et salle du trésor : généralement 8h30-16h30.",
     "horaires_en": "Shrine grounds accessible 24/7. Office and treasure hall: generally 8:30 AM - 4:30 PM.",
@@ -1036,8 +1036,8 @@
     "adresse_en": "3-1 Gofukumachi, Koga-shi, Ibaraki 306-0033.",
     "adresse_ja": "〒306-0033 茨城県古河市呉服町3-1",
     "coordonnees": {
-      "lat": 36.1804,
-      "lng": 139.6971
+      "lat": 36.1912,
+      "lng": 139.7082
     },
     "horaires": "Musée: Généralement 9h00-17h00 (dernière admission 16h30). Fermé les lundis et jours fériés. Ville: Accès libre.",
     "horaires_en": "Museum: Generally 9:00 AM - 5:00 PM (last admission 4:30 PM). Closed on Mondays and public holidays. City: Free access.",
@@ -1136,8 +1136,8 @@
     "adresse_en": "Senbacho, Mito, Ibaraki",
     "adresse_ja": "茨城県水戸市泉町",
     "coordonnees": {
-      "lat": 36.3701,
-      "lng": 140.4701
+      "lat": 36.37,
+      "lng": 140.4597
     },
     "horaires": "Parc toujours ouvert",
     "horaires_en": "Park always open",
@@ -1190,8 +1190,8 @@
     "adresse_en": "183-2 Tamatsukuri, Namegata, Ibaraki 311-3512",
     "adresse_ja": "〒311-3512 茨城県行方市玉造甲183-2",
     "coordonnees": {
-      "lat": 35.9833,
-      "lng": 140.4167
+      "lat": 35.9897,
+      "lng": 140.5401
     },
     "horaires": "Généralement 10h00-17h00 (fermé certains jours, vérifier site officiel).",
     "horaires_en": "Generally 10:00 AM - 5:00 PM (closed on certain days, check official website).",
@@ -1241,8 +1241,8 @@
     "adresse_en": "Area extending across Ibaraki (Koga City), Tochigi, Saitama, and Gunma prefectures.",
     "adresse_ja": "茨城県（古河市）、栃木県、埼玉県、群馬県にまたがる地域。",
     "coordonnees": {
-      "lat": 36.1931,
-      "lng": 139.7098
+      "lat": 36.2333,
+      "lng": 139.6833
     },
     "horaires": "Accès libre en permanence. Meilleures périodes pour l'observation des oiseaux: tôt le matin ou fin d'après-midi.",
     "horaires_en": "Access is always free. Best times for bird watching: early morning or late afternoon.",
@@ -1289,8 +1289,8 @@
     "adresse_en": "Tsukuba, Tsukuba-shi, Ibaraki 300-4352",
     "adresse_ja": "〒300-4352 茨城県つくば市",
     "coordonnees": {
-      "lat": 36.2256,
-      "lng": 140.1064
+      "lat": 36.21368,
+      "lng": 140.10131
     },
     "horaires": "Montagne accessible 24/7. Funiculaire/téléphérique: ~9h-17h (variable).",
     "horaires_en": "Mountain accessible 24/7. Funicular/ropeway: ~9:00 AM - 5:00 PM (variable).",
@@ -1341,8 +1341,8 @@
     "adresse_en": "666-1 Senba-cho, Mito-shi, Ibaraki 310-0851",
     "adresse_ja": "〒310-0051 茨城県水戸市泉町666-1",
     "coordonnees": {
-      "lat": 36.376,
-      "lng": 140.476
+      "lat": 36.3678,
+      "lng": 140.4653
     },
     "horaires": "9h30-17h00 (fermé les lundis)",
     "horaires_en": "9:30 AM - 5:00 PM (closed on Mondays)",
@@ -1389,8 +1389,8 @@
     "adresse_en": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_ja": "〒309-1611 茨城県笠間市笠間2345",
     "coordonnees": {
-      "lat": 36.3737,
-      "lng": 140.2571
+      "lat": 36.3475,
+      "lng": 140.2745
     },
     "horaires": "Généralement 9h30-17h00 (dernière admission 16h30). Fermé certains lundis et pendant les congés du Nouvel An.",
     "horaires_en": "Generally 9:30 AM - 5:00 PM (last admission 4:30 PM). Closed on some Mondays and during New Year holidays.",
@@ -1437,8 +1437,8 @@
     "adresse_en": "590 Arajukucho, Hitachiota, Ibaraki 313-0007, Japan",
     "adresse_ja": "〒313-0007 茨城県常陸太田市荒宿町590",
     "coordonnees": {
-      "lat": 36.5339,
-      "lng": 140.5173
+      "lat": 36.54125,
+      "lng": 140.5063
     },
     "horaires": "Généralement 9h00-16h00. Fermé certains jours.",
     "horaires_en": "Generally 9:00 AM - 4:00 PM. Closed on certain days.",
@@ -1486,8 +1486,8 @@
     "adresse_en": "6890 Isohama-cho, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1301",
     "adresse_ja": "〒311-1301 茨城県東茨城郡大洗町磯浜町6890",
     "coordonnees": {
-      "lat": 36.3167,
-      "lng": 140.5833
+      "lat": 36.31574,
+      "lng": 140.58773
     },
     "horaires": "L'accès à la porte Kamiiso-no-Torii est possible à toute heure. Le sanctuaire principal est généralement ouvert pendant la journée.",
     "horaires_en": "Access to the Kamiiso-no-Torii gate is possible at any time. The main shrine is generally open during the day.",
@@ -1538,8 +1538,8 @@
     "adresse_en": "10 Minato Chuo, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1305.",
     "adresse_ja": "〒311-1305 茨城県東茨城郡大洗町港中央10",
     "coordonnees": {
-      "lat": 36.3147,
-      "lng": 140.5813
+      "lat": 36.3117,
+      "lng": 140.575
     },
     "horaires": "Mars-août : 9h00-21h00. Septembre-février : 9h00-18h00.",
     "horaires_en": "March-August: 9:00 AM - 9:00 PM. September-February: 9:00 AM - 6:00 PM.",
@@ -1586,8 +1586,8 @@
     "adresse_en": "200 Shimoaoyagi, Ishioka-shi, Ibaraki 315-0153.",
     "adresse_ja": "〒315-0153 茨城県石岡市下青柳200",
     "coordonnees": {
-      "lat": 36.1925,
-      "lng": 140.2925
+      "lat": 36.221,
+      "lng": 140.2235
     },
     "horaires": "Généralement 9h00-17h00 (dernière admission 16h30). Horaires étendus pour événements. Vérifier site officiel.",
     "horaires_en": "Generally 9:00 AM - 5:00 PM (last admission 4:30 PM). Extended hours for events. Check official website.",
@@ -1635,8 +1635,8 @@
     "adresse_en": "97C7+94, Kasama, Ibaraki 309-1611, Japan",
     "adresse_ja": "〒309-1611 茨城県かすみがうら市97C7+94, 日本",
     "coordonnees": {
-      "lat": 36.3768,
-      "lng": 140.2635
+      "lat": 36.376,
+      "lng": 140.274
     },
     "horaires": "Accès aux sentiers durant la journée. Installations spécifiques: 8h30-17h00.",
     "horaires_en": "Trail access during the day. Specific facilities: 8:30 AM - 5:00 PM.",
@@ -1680,8 +1680,8 @@
     "adresse_en": "Ajigaura, Hitachinaka, Ibaraki",
     "adresse_ja": "茨城県ひたちなか市阿字ヶ浦",
     "coordonnees": {
-      "lat": 36.4035,
-      "lng": 140.541
+      "lat": 36.383,
+      "lng": 140.615
     },
     "horaires": "Toujours ouverte (services de plage en été)",
     "horaires_en": "Always open (beach services in summer)",
@@ -1728,8 +1728,8 @@
     "adresse_en": "Hiraiso Beach, Oarai-machi, HigashiIbaraki-gun, Ibaraki.",
     "adresse_ja": "平磯海岸、大洗町、東茨城郡、茨城県。",
     "coordonnees": {
-      "lat": 36.3102,
-      "lng": 140.5768
+      "lat": 36.3535,
+      "lng": 140.6125
     },
     "horaires": "Accès libre.",
     "horaires_en": "Free access.",
@@ -1777,8 +1777,8 @@
     "adresse_en": "Takado, Takahagi-shi, Ibaraki.",
     "adresse_ja": "茨城県高萩市高戸",
     "coordonnees": {
-      "lat": 36.7205,
-      "lng": 140.7205
+      "lat": 36.7025,
+      "lng": 140.7258
     },
     "horaires": "Accès libre en permanence.",
     "horaires_en": "Access is always free.",
@@ -1823,8 +1823,8 @@
     "adresse_en": "2133-6 Keganocho, Hitachiota-shi, Ibaraki 313-0351.",
     "adresse_ja": "〒313-0351 茨城県常陸太田市下宮河原町2133-6",
     "coordonnees": {
-      "lat": 36.5423,
-      "lng": 140.5257
+      "lat": 36.6855,
+      "lng": 140.4645
     },
     "horaires": "Pont : Généralement 8h30-17h00. Le saut à l'élastique a ses propres horaires.",
     "horaires_en": "Bridge: Generally 8:30 AM - 5:00 PM. Bungee jumping has its own specific hours.",
@@ -1873,8 +1873,8 @@
     "adresse_en": "752 Irishikencho, Hitachi, Ibaraki 311-0402, Japan",
     "adresse_ja": "〒311-0402 茨城県日立市入四間町752",
     "coordonnees": {
-      "lat": 36.5951,
-      "lng": 140.6451
+      "lat": 36.6111,
+      "lng": 140.5847
     },
     "horaires": "L'enceinte est généralement accessible en permanence. Le bureau du sanctuaire a des horaires limités (par exemple, 9h00-16h00).",
     "horaires_en": "The shrine grounds are generally accessible at all times. The shrine office has limited hours (e.g., 9:00 AM - 4:00 PM).",
@@ -1920,8 +1920,8 @@
     "adresse_en": "Tsukuba, Tsukuba-shi, Ibaraki",
     "adresse_ja": "茨城県つくば市",
     "coordonnees": {
-      "lat": 36.0873,
-      "lng": 140.0873
+      "lat": 36.21368,
+      "lng": 140.10131
     },
     "horaires": "Toujours ouvert",
     "horaires_en": "Always open",
@@ -1966,8 +1966,8 @@
     "adresse_en": "1 Motogi, Sakuragawa-shi, Ibaraki 309-1231.",
     "adresse_ja": "〒309-1231 茨城県桜川市本木1",
     "coordonnees": {
-      "lat": 36.3198,
-      "lng": 140.1031
+      "lat": 36.33083,
+      "lng": 140.12083
     },
     "horaires": "Généralement 8h00 - 17h00 (bureau du temple de 8h30 à 16h30). Ouvert toute l'année.",
     "horaires_en": "Generally 8:00 AM - 5:00 PM (temple office 8:30 AM - 4:30 PM). Open year-round.",
@@ -2014,8 +2014,8 @@
     "adresse_en": "428 Itako, Itako-shi, Ibaraki-ken 311-2424, Japan",
     "adresse_ja": "〒311-2424 茨城県潮来市潮来428",
     "coordonnees": {
-      "lat": 36.0382,
-      "lng": 140.3882
+      "lat": 35.9388,
+      "lng": 140.5485
     },
     "horaires": "Enceinte en accès libre (Bureau Goshuin : 9h00-17h00)",
     "horaires_en": "Temple grounds open access (Goshuin office: 9:00 AM - 5:00 PM)",
@@ -2061,8 +2061,8 @@
     "adresse_en": "504 Sairenji, Namegata, Ibaraki 311-3514, Japan",
     "adresse_ja": "〒311-3514 茨城県行方市西連寺504",
     "coordonnees": {
-      "lat": 35.9383,
-      "lng": 140.555
+      "lat": 36.0742,
+      "lng": 140.4379
     },
     "horaires": "L'accès à l'enceinte du temple est généralement gratuit. Les horaires de visite des bâtiments principaux peuvent être limités.",
     "horaires_en": "Access to the temple grounds is generally free. Visiting hours for the main buildings may be limited.",
@@ -2109,8 +2109,8 @@
     "adresse_en": "Iwasaki, Tsukuba, Ibaraki",
     "adresse_ja": "茨城県つくば市岩崎",
     "coordonnees": {
-      "lat": 36.0743,
-      "lng": 140.0743
+      "lat": 36.1428,
+      "lng": 140.0935
     },
     "horaires": "A vérifier sur place",
     "horaires_en": "To be confirmed on-site",
@@ -2158,8 +2158,8 @@
     "adresse_en": "682 Motoyoshidacho, Mito-shi, Ibaraki-ken 310-0836",
     "adresse_ja": "〒310-0836 茨城県水戸市 元吉田町682",
     "coordonnees": {
-      "lat": 36.3545,
-      "lng": 140.4785
+      "lat": 36.35644,
+      "lng": 140.47797
     },
     "horaires": "Enceinte accessible 24h/24 (Bureau Goshuin : 9h00-17h00)",
     "horaires_en": "Temple grounds accessible 24/7 (Goshuin office: 9:00 AM - 5:00 PM)",
@@ -2209,8 +2209,8 @@
     "adresse_en": "3076-1 Edosaki, Inashiki, Ibaraki 300-0504",
     "adresse_ja": "〒300-0504 茨城県稲敷市江戸崎3076-1",
     "coordonnees": {
-      "lat": 35.95713,
-      "lng": 140.31905
+      "lat": 35.9698,
+      "lng": 140.3467
     },
     "horaires": "Accès libre en journée (~9h00-16h30 conseillé)",
     "horaires_en": "Free access during the day (~9:00 AM - 4:30 PM recommended)",
@@ -2260,8 +2260,8 @@
     "adresse_en": "2-9 Azuma, Tsukuba-shi, Ibaraki 305-0031",
     "adresse_ja": "〒305-0031 茨城県つくば市吾妻2-9",
     "coordonnees": {
-      "lat": 36.0806,
-      "lng": 140.0806
+      "lat": 36.0861,
+      "lng": 140.11
     },
     "horaires": "A vérifier sur le site officiel",
     "horaires_en": "To be confirmed on the official website",
@@ -2309,8 +2309,8 @@
     "adresse_en": "Mount Yamizo area, Daigo-machi, Kuji-gun, Ibaraki",
     "adresse_ja": "茨城県久慈郡大子町 八溝山地域",
     "coordonnees": {
-      "lat": 36.7751,
-      "lng": 140.3751
+      "lat": 36.9302,
+      "lng": 140.273
     },
     "horaires": "Accès libre.",
     "horaires_en": "Free access.",
@@ -2356,8 +2356,8 @@
     "adresse_en": "Gallery Road (Nishiyama District), Kasama-shi, Ibaraki",
     "adresse_ja": "茨城県笠間市西山地区 ギャラリーロード",
     "coordonnees": {
-      "lat": 36.36975,
-      "lng": 140.26117
+      "lat": 36.3697,
+      "lng": 140.2611
     },
     "horaires": "Les horaires des ateliers varient. A vérifier à l'avance.",
     "horaires_en": "Workshop hours vary. Please check in advance.",
@@ -2408,8 +2408,8 @@
     "adresse_en": "Itako-shi, Ibaraki. (The heart of the canal area is around the Ayame district and near the Suigo Itako Iris Park).",
     "adresse_ja": "潮来市、茨城県。（運河エリアの中心は、あやめ地区周辺と水郷潮来あやめ園の近くです）。",
     "coordonnees": {
-      "lat": 35.9425,
-      "lng": 140.5592
+      "lat": 35.9471,
+      "lng": 140.5553
     },
     "horaires": "Les promenades en bateau sont généralement disponibles pendant la journée. Le Parc des Iris est ouvert en permanence.",
     "horaires_en": "Boat rides are generally available during the day. The Iris Park is always open.",
@@ -2455,8 +2455,8 @@
     "adresse_en": "12-2 Yuki, Yuki-shi, Ibaraki 307-0001, Japan",
     "adresse_ja": "〒307-0001 茨城県結城市結城12-2",
     "coordonnees": {
-      "lat": 36.2926,
-      "lng": 139.8759
+      "lat": 36.305,
+      "lng": 139.876
     },
     "horaires": "10h00 - 16h00 (17h le week-end). Fermé les mardis et mercredis. Ateliers sur réservation (vérifier le site).",
     "horaires_en": "10:00 AM - 4:00 PM (5:00 PM on weekends). Closed Tuesdays and Wednesdays. Workshops require reservation (check website).",
@@ -2503,8 +2503,8 @@
     "adresse_en": "3178 Makabecho Shiio, Sakuragawa, Ibaraki 300-4414, Japan",
     "adresse_ja": "〒300-4414 茨城県桜川市真壁町椎尾3178",
     "coordonnees": {
-      "lat": 36.2625,
-      "lng": 140.0811
+      "lat": 36.2356,
+      "lng": 140.0766
     },
     "horaires": "Accès libre à l'enceinte.",
     "horaires_en": "Free access to the grounds.",
@@ -2552,8 +2552,8 @@
     "adresse_en": "2515 Yuki, Yuki-shi, Ibaraki 307-0001, Japan",
     "adresse_ja": "〒307-0001 茨城県結城市結城2515",
     "coordonnees": {
-      "lat": 36.3051,
-      "lng": 139.8785
+      "lat": 36.3054,
+      "lng": 139.8766
     },
     "horaires": "Généralement 10h00 - 16h00. Fermeture possible certains jours. Vérifiez le site officiel.",
     "horaires_en": "Generally 10:00 AM - 4:00 PM. Possible closures on certain days. Check official website.",

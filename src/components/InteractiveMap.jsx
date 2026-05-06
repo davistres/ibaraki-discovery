@@ -63,9 +63,30 @@ const InteractiveMap = () => {
     p => p.coordonnees && p.coordonnees.lat !== 0 && p.coordonnees.lng !== 0
   );
 
-  const validFestivals = festivals.filter(
-    f => f.coordonnees && f.coordonnees.lat !== 0 && f.coordonnees.lng !== 0
-  );
+  // Pour les festivals, s'ils n'ont pas de coordonnées exactes (0, 0),
+  // on utilise les coordonnées d'un lieu situé dans la même ville, avec un léger décalage
+  // pour éviter que les pins ne se superposent parfaitement.
+  const festivalsWithCoords = festivals.map((f, index) => {
+    if (f.coordonnees && f.coordonnees.lat !== 0 && f.coordonnees.lng !== 0) {
+      return f;
+    }
+    
+    const placeInCity = validPlaces.find(p => p.ville_id === f.ville_id);
+    if (placeInCity) {
+      // Décalage pour ne pas masquer le lieu existant ni les autres festivals
+      const offsetLat = 0.008 + (index % 4) * 0.003;
+      const offsetLng = 0.008 - (index % 3) * 0.003;
+      
+      return {
+        ...f,
+        coordonnees: {
+          lat: placeInCity.coordonnees.lat + offsetLat,
+          lng: placeInCity.coordonnees.lng + offsetLng
+        }
+      };
+    }
+    return null;
+  }).filter(Boolean);
 
   return (
     <div className="h-[700px] w-full rounded-xl overflow-hidden shadow-lg border border-gray-200 z-0 relative">
@@ -121,7 +142,7 @@ const InteractiveMap = () => {
           </Marker>
         ))}
 
-        {validFestivals.map(festival => (
+        {festivalsWithCoords.map(festival => (
           <Marker
             key={`festival-${festival.id}`}
             position={[festival.coordonnees.lat, festival.coordonnees.lng]}
