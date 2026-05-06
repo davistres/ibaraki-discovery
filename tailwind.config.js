@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        '5xl': ['3rem', { lineHeight: '1.2' }],
+      },
       colors: {
         primary: {
           50: '#fef2f2',
