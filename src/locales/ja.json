@@ -5,6 +5,7 @@
     "festivals": "お祭り",
     "itinerary": "旅程プラン",
     "about": "概要",
+    "map": "マップ",
     "tagline": "本物の日本を発見しよう"
   },
   "footer": {
@@ -196,6 +197,10 @@
     "distancesFrom": "{name} からの距離",
     "loading": "距離を計算中...",
     "noDistance": "距離情報がありません"
+  },
+  "mapPage": {
+    "title": "茨城インタラクティブマップ",
+    "subtitle": "地域のすべてのスポットとお祭りを視覚的に探索"
   },
   "data": {
     "Toutes": "すべて",

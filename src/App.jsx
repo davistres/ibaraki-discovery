@@ -8,6 +8,7 @@ import PlaceDetail from './pages/PlaceDetail'
 import Festivals from './pages/Festivals'
 import Itinerary from './pages/Itinerary'
 import About from './pages/About'
+import MapPage from './pages/MapPage'
 import DistanceDemo from './pages/DistanceDemo'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/decouverte" element={<Discovery />} />
             <Route path="/lieu/:id" element={<PlaceDetail />} />
+            <Route path="/carte" element={<MapPage />} />
             <Route path="/festivals" element={<Festivals />} />
             <Route path="/itineraire" element={<Itinerary />} />
             <Route path="/a-propos" element={<About />} />

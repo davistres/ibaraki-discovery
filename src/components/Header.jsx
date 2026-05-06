@@ -15,6 +15,7 @@ const Header = () => {
   const navLinks = [
     { path: '/', label: t('header.home') },
     { path: '/decouverte', label: t('header.discovery') },
+    { path: '/carte', label: t('header.map') },
     { path: '/festivals', label: t('header.festivals') },
     { path: '/itineraire', label: t('header.itinerary') },
     { path: '/a-propos', label: t('header.about') },

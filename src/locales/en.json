@@ -5,6 +5,7 @@
     "festivals": "Festivals",
     "itinerary": "My Itinerary",
     "about": "About",
+    "map": "Map",
     "tagline": "Discover Authentic Japan"
   },
   "footer": {
@@ -196,6 +197,10 @@
     "distancesFrom": "Distances from {name}",
     "loading": "Calculating distances...",
     "noDistance": "No distance available"
+  },
+  "mapPage": {
+    "title": "Ibaraki Interactive Map",
+    "subtitle": "Visually explore all places and festivals in the region"
   },
   "data": {
     "Toutes": "All",
