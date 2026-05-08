@@ -115,12 +115,12 @@
     "descriptionLongue_ja": "平安時代（1141年）創業の豊国は、現存する日本最古の酒蔵とされています。55世代以上にわたる家業の専門知識を受け継ぎ、高品質な職人技の酒の伝統を守り続けています。地元産の米と周辺の山々からの清らかな水を使用しています。特に原酒（加水調整していない酒）などの日本酒で有名です。",
     "imagePrincipale": "",
     "images": [],
-    "adresse": "1-1-1 Obara, Kasama-shi, Ibaraki 309-1611",
-    "adresse_en": "1-1-1 Obara, Kasama-shi, Ibaraki 309-1611",
-    "adresse_ja": "〒309-1611 茨城県かすみがうら市小原1-1-1",
+    "adresse": "2125 Obara, Kasama-shi, Ibaraki 309-1701",
+    "adresse_en": "2125 Obara, Kasama-shi, Ibaraki 309-1701",
+    "adresse_ja": "〒309-1701 茨城県笠間市小原2125",
     "coordonnees": {
-      "lat": 36.3276,
-      "lng": 140.2458
+      "lat": 36.36172,
+      "lng": 140.324601
     },
     "horaires": "Boutique: 9h00-17h00 (fermé dimanches, jours fériés, congés Nouvel An). Visites sur réservation.",
     "horaires_en": "Shop: 9:00 AM - 5:00 PM (closed Sundays, public holidays, New Year holidays). Tours by reservation.",
@@ -317,8 +317,8 @@
     "adresse_en": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_ja": "〒309-1611 茨城県かすみがうら市笠間2345",
     "coordonnees": {
-      "lat": 36.3475,
-      "lng": 140.2745
+      "lat": 36.3723,
+      "lng": 140.2631
     },
     "horaires": "Parc ouvert en permanence. Musée et Craft Hills: 9h30-17h00 (fermé certains lundis).",
     "horaires_en": "Park open at all times. Museum and Craft Hills: 9:30 AM - 5:00 PM (closed some Mondays).",
@@ -381,7 +381,7 @@
     "acces_en": "Accessible from JR Otsuko or Isohara stations. Local buses or taxis may be necessary for specific points like the Izura coast.",
     "acces_ja": "JR大津港駅または磯原駅からアクセス可能です。五浦海岸のような特定の場所へは、 local buses or taxis may be necessary.",
     "siteWeb": "https://www.pref.ibaraki.jp/bugai/koho/kenmin/download/izuurakaigan.html",
-    "googleMaps": "https://maps.google.com/?q=Izura+Kaigan",
+    "googleMaps": "https://www.google.com/maps/search/?api=1&query=36.8334,140.8034",
     "region_id": 1917,
     "ville_id": 1937,
     "accessibilite_id": 1946,
@@ -1032,12 +1032,12 @@
     "descriptionLongue_ja": "古河は江戸時代、日光街道の重要な宿場町でした。明治時代（1910年）の洋風建築を利用した古河歴史博物館では、宿場町および城下町としての役割に焦点を当て、古河の歴史と文化を紹介しています。展示品には、歴史文書、美術品、模型などがあります。博物館には別館（江戸時代の元たばこ問屋の旧邸）とオランダ風庭園も含まれています。市内には、寺社仏閣や伝統的な建物など、過去の面影が残っています。",
     "imagePrincipale": "",
     "images": [],
-    "adresse": "3-1 Gofukumachi, Koga-shi, Ibaraki 306-0033.",
-    "adresse_en": "3-1 Gofukumachi, Koga-shi, Ibaraki 306-0033.",
-    "adresse_ja": "〒306-0033 茨城県古河市呉服町3-1",
+    "adresse": "3-10-56 Chuomachi, Koga-shi, Ibaraki 306-0033.",
+    "adresse_en": "3-10-56 Chuomachi, Koga-shi, Ibaraki 306-0033.",
+    "adresse_ja": "〒306-0033 茨城県古河市中央町3-10-56",
     "coordonnees": {
-      "lat": 36.1912,
-      "lng": 139.7082
+      "lat": 36.1914,
+      "lng": 139.7012
     },
     "horaires": "Musée: Généralement 9h00-17h00 (dernière admission 16h30). Fermé les lundis et jours fériés. Ville: Accès libre.",
     "horaires_en": "Museum: Generally 9:00 AM - 5:00 PM (last admission 4:30 PM). Closed on Mondays and public holidays. City: Free access.",
@@ -1052,7 +1052,7 @@
     "acces_en": "Museum: Approximately a 15-20 minute walk from the West Exit of JR Koga Station.",
     "acces_ja": "博物館：JR古河駅西口より徒歩約15～20分。",
     "siteWeb": "https://www.city.ibaraki-koga.lg.jp/soshiki/rekihaku/top.html",
-    "googleMaps": "https://maps.google.com/?q=Koga+Rekishi+Hakubutsukan",
+    "googleMaps": "https://maps.google.com/?q=Koga+Historical+Museum+%E5%8F%A4%E6%B2%B3%E6%AD%B4%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8",
     "region_id": 1916,
     "ville_id": 1932,
     "accessibilite_id": 1945,
@@ -1186,12 +1186,12 @@
     "descriptionLongue_ja": "リニューアルされた旧小学校を拠点とする「ぽっぽ」は、サツマイモ（サツマイモ）を中心に据えたユニークなアグリツーリズム施設です。サツマイモの収穫体験ができる農場、サツマイモ料理を提供するレストラン、ベーカリー、菓子製造ワークショップ、お土産店があります。行方市の地元農産物を紹介する、家族向けのデスティネーションです。",
     "imagePrincipale": "",
     "images": [],
-    "adresse": "183-2 Tamatsukuri, Namegata, Ibaraki 311-3512",
-    "adresse_en": "183-2 Tamatsukuri, Namegata, Ibaraki 311-3512",
-    "adresse_ja": "〒311-3512 茨城県行方市玉造甲183-2",
+    "adresse": "1561 Uzaki, Namegata, Ibaraki 311-3880",
+    "adresse_en": "1561 Uzaki, Namegata, Ibaraki 311-3880",
+    "adresse_ja": "〒311-3880 茨城県行方市卯崎1561",
     "coordonnees": {
-      "lat": 35.9897,
-      "lng": 140.5401
+      "lat": 36.022443,
+      "lng": 140.546767
     },
     "horaires": "Généralement 10h00-17h00 (fermé certains jours, vérifier site officiel).",
     "horaires_en": "Generally 10:00 AM - 5:00 PM (closed on certain days, check official website).",
@@ -1389,8 +1389,8 @@
     "adresse_en": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_ja": "〒309-1611 茨城県笠間市笠間2345",
     "coordonnees": {
-      "lat": 36.3475,
-      "lng": 140.2745
+      "lat": 36.3723,
+      "lng": 140.2631
     },
     "horaires": "Généralement 9h30-17h00 (dernière admission 16h30). Fermé certains lundis et pendant les congés du Nouvel An.",
     "horaires_en": "Generally 9:30 AM - 5:00 PM (last admission 4:30 PM). Closed on some Mondays and during New Year holidays.",
@@ -1777,8 +1777,8 @@
     "adresse_en": "Takado, Takahagi-shi, Ibaraki.",
     "adresse_ja": "茨城県高萩市高戸",
     "coordonnees": {
-      "lat": 36.7025,
-      "lng": 140.7258
+      "lat": 36.7208189,
+      "lng": 140.7278389
     },
     "horaires": "Accès libre en permanence.",
     "horaires_en": "Access is always free.",
@@ -1793,7 +1793,7 @@
     "acces_en": "By car, accessible from the coastal roads of Takahagi. A taxi is the most direct option from JR Takahagi Station.",
     "acces_ja": "車の場合、高萩の海岸道路からアクセス可能です。JR高萩駅からはタクシーが最も直接的な選択肢です。",
     "siteWeb": "https://www.city.takahagi.ibaraki.jp/kankou/spot/sizen/page000015.html",
-    "googleMaps": "https://maps.google.com/?q=Takado+Kohama+Kaigan",
+    "googleMaps": "https://www.google.com/maps/search/?api=1&query=36.7208189,140.7278389",
     "region_id": 1917,
     "ville_id": 1935,
     "accessibilite_id": 1946,
@@ -2105,12 +2105,12 @@
     "descriptionLongue_ja": "1534年に開創された静勝寺は、曹洞宗の仏教寺院です。本尊は釈迦如来（歴史上の仏陀）です。寺院には、二体の涅槃仏像を含む文化財が収蔵されており、瞑想と静寂の場を提供しています。",
     "imagePrincipale": "",
     "images": [],
-    "adresse": "Iwasaki, Tsukuba, Ibaraki",
-    "adresse_en": "Iwasaki, Tsukuba, Ibaraki",
-    "adresse_ja": "茨城県つくば市岩崎",
+    "adresse": "1468 Shimoiwasaki, Tsukuba, Ibaraki 300-1273",
+    "adresse_en": "1468 Shimoiwasaki, Tsukuba, Ibaraki 300-1273",
+    "adresse_ja": "〒300-1273 茨城県つくば市下岩崎1468",
     "coordonnees": {
-      "lat": 36.1428,
-      "lng": 140.0935
+      "lat": 35.974778,
+      "lng": 140.106417
     },
     "horaires": "A vérifier sur place",
     "horaires_en": "To be confirmed on-site",
