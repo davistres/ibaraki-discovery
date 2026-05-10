@@ -186,23 +186,47 @@ const PlaceDetail = () => {
               </div>
             )}
 
-            {galleryImages.length > 1 && (
+            {galleryImages.length > 0 && (
               <div className="bg-white rounded-xl shadow-md p-8">
                 <h2 className="font-display font-bold text-2xl text-gray-900 mb-4">
                   {t('placeDetail.gallery')}
                 </h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {galleryImages.map((image, index) => (
-                    <img
-                      key={index}
-                      src={getImagePath(image)}
-                      alt={`${place.nom} ${index + 1}`}
-                      className="w-full h-48 object-cover rounded-lg hover:scale-105 transition-transform cursor-pointer"
-                      onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/400x300?text=Image'
-                      }}
-                    />
-                  ))}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {galleryImages.map((media, index) => {
+                    const mediaObj = typeof media === 'string' ? { type: 'image', url: media } : media;
+                    
+                    return (
+                      <div key={index} className="flex flex-col h-full">
+                        <div className="flex flex-col h-full">
+                          {mediaObj.type === 'video' ? (
+                            <div className="relative w-full h-64 rounded-lg overflow-hidden bg-black">
+                              <iframe
+                                src={mediaObj.url}
+                                title={`${place.nom} Video`}
+                                className="absolute inset-0 w-full h-full"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              ></iframe>
+                            </div>
+                          ) : (
+                            <img
+                              src={getImagePath(mediaObj.url)}
+                              alt={`${place.nom} ${index + 1}`}
+                              className="w-full h-64 object-cover rounded-lg hover:scale-[1.02] transition-transform cursor-pointer"
+                              onError={(e) => {
+                                e.target.src = 'https://via.placeholder.com/400x300?text=Image'
+                              }}
+                            />
+                          )}
+                          {mediaObj.attribution && (
+                            <div className="mt-2 text-xs text-gray-500 bg-gray-50 p-2 rounded border border-gray-100 break-words">
+                              {mediaObj.attribution}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
             )}

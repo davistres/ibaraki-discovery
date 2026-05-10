@@ -11,9 +11,23 @@
     "descriptionLongue": "L'un des plus grands aquariums du Japon, Aqua World Oarai abrite une impressionnante collection de vie marine, avec un accent particulier sur les espèces de l'océan Pacifique. Il est réputé pour son grand nombre d'espèces de requins (plus de 50), ce qui en fait l'un des meilleurs endroits au Japon pour observer ces créatures. L'aquarium propose également des expositions sur les loutres de mer, les manchots, les otaries, les poissons tropicaux, et un immense bassin 'Rencontre avec la mer' reproduisant l'écosystème local. Des spectacles d'otaries et de dauphins sont organisés.",
     "descriptionLongue_en": "One of Japan's largest aquariums, Aqua World Oarai houses an impressive collection of marine life, with a particular focus on Pacific Ocean species. It is renowned for its large number of shark species (over 50), making it one of the best places in Japan to observe these creatures. The aquarium also features exhibits on sea otters, penguins, seals, tropical fish, and a massive 'Encounter with the Sea' tank that replicates the local ecosystem. Sea lion and dolphin shows are held.",
     "descriptionLongue_ja": "日本最大級の水族館であるアクアワールド大洗は、太平洋の生き物を中心に、印象的な海洋生物のコレクションを収蔵しています。50種以上のサメが展示されており、日本でも有数のサメ観察スポットとなっています。また、ラッコ、ペンギン、アザラシ、熱帯魚の展示や、地元の生態系を再現した巨大な「海の出会い」水槽もあります。アシカやイルカのショーも開催されています。",
-    "imagePrincipale": "image.jpg",
+    "imagePrincipale": "Aqua World Aquarium d'Ibaraki2 CC.jpg",
     "images": [
-      "image.jpg"
+      {
+        "type": "image",
+        "url": "Aqua World Aquarium d'Ibaraki1 CC.jpg",
+        "attribution": "Jennie Kondo (Jennie Valdivieso Kondo - Grialte), CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Aqua World Aquarium d'Ibaraki2 CC.jpg",
+        "attribution": "Ryokou_man, Public domain, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Aqua World Aquarium d'Ibaraki3 CC.jpg",
+        "attribution": "Hamachidori, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons"
+      }
     ],
     "adresse": "8252-3 Isohama-cho, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1301.",
     "adresse_en": "8252-3 Isohama-cho, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1301.",
@@ -64,8 +78,14 @@
     "descriptionLongue": "Fondée en 1867, cette brasserie familiale utilise l'eau de source du Mont Tsukuba pour produire son saké. La brasserie est connue pour sa méthode artisanale et pour Nobuko Inaba, l'une des rares femmes maître-brasseur (tōji) au Japon. Des dégustations et visites sont possibles sur réservation.",
     "descriptionLongue_en": "Founded in 1867, this family brewery uses spring water from Mount Tsukuba to produce its sake. The brewery is known for its artisanal method and for Nobuko Inaba, one of the few female master brewers (tōji) in Japan. Tastings and tours are available by reservation.",
     "descriptionLongue_ja": "1867年創業のこの家族経営の酒蔵では、筑波山の湧水を使用して酒を製造しています。この蔵は、その職人技と、日本でも数少ない女性杜氏の一人である稲葉信子氏で知られています。試飲と見学は予約制で可能です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Brasserie de Saké Inaba CC.png",
+    "images": [
+      {
+        "type": "image",
+        "url": "Brasserie de Saké Inaba CC.png",
+        "attribution": "Photo provenant du site https://www.minanogawa.jp/"
+      }
+    ],
     "adresse": "1485 Numata, Tsukuba, Ibaraki",
     "adresse_en": "1485 Numata, Tsukuba, Ibaraki",
     "adresse_ja": "茨城県つくば市沼田1485",
@@ -113,8 +133,24 @@
     "descriptionLongue": "Fondée en 1141 (période Heian), Sudohonke est revendiquée comme la plus ancienne brasserie de saké encore en activité au Japon. Forte de plus de 55 générations d'expertise familiale, elle perpétue la tradition du saké artisanal de haute qualité. La brasserie utilise du riz local et de l'eau pure des montagnes environnantes. Elle est réputée pour ses sakés, notamment des types genshu (non dilués).",
     "descriptionLongue_en": "Founded in 1141 (Heian period), Sudohonke is claimed to be the oldest operating sake brewery in Japan. With over 55 generations of family expertise, it continues the tradition of high-quality craft sake. The brewery uses local rice and pure water from the surrounding mountains. It is renowned for its sakes, particularly genshu (undiluted) types.",
     "descriptionLongue_ja": "平安時代（1141年）創業の豊国は、現存する日本最古の酒蔵とされています。55世代以上にわたる家業の専門知識を受け継ぎ、高品質な職人技の酒の伝統を守り続けています。地元産の米と周辺の山々からの清らかな水を使用しています。特に原酒（加水調整していない酒）などの日本酒で有名です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Brasserie de Saké Sudohonke2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Brasserie de Saké Sudohonke2 CC.jpg",
+        "attribution": "Photo provenant du site http://www.sudohonke.co.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Brasserie de Saké Sudohonke3 CC.jpg",
+        "attribution": "Photo provenant du site http://www.sudohonke.co.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Brasserie de Saké Sudohonke CC.jpg",
+        "attribution": "Photo provenant du site http://www.sudohonke.co.jp/"
+      }
+    ],
     "adresse": "2125 Obara, Kasama-shi, Ibaraki 309-1701",
     "adresse_en": "2125 Obara, Kasama-shi, Ibaraki 309-1701",
     "adresse_ja": "〒309-1701 茨城県笠間市小原2125",
@@ -162,8 +198,24 @@
     "descriptionLongue": "Les ruines du château d'Oda sont un site historique national. Construit vers 1185, il fut la résidence du clan Oda. Bien que seules les fondations, douves et terrassements subsistent, le site a été aménagé en parc historique. Il est particulièrement beau au printemps avec ses cerisiers et en automne avec ses ginkgos.",
     "descriptionLongue_en": "The ruins of Oda Castle are a National Historic Site. Built around 1185, it was the residence of the Oda clan. Although only the foundations, moats, and earthworks remain, the site has been developed into a historical park. It is particularly beautiful in spring with its cherry blossoms and in autumn with its ginkgo trees.",
     "descriptionLongue_ja": "旧小田城跡は国の史跡です。1185年頃に築城され、小田氏の居城でした。現在は、堀や土塁などの遺構が残るのみですが、歴史公園として整備されています。春の桜、秋の銀杏が特に美しい場所です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Château d'Oda3 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Château d'Oda2 CC.gif",
+        "attribution": "筑波町史編纂専門委員会, Copyrighted free use, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Château d'Oda3 CC.jpg",
+        "attribution": "Toshihiro Matsui, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Château d'Oda CC.jpg",
+        "attribution": "小池 隆, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "Oda, Tsukuba-shi, Ibaraki",
     "adresse_en": "Oda, Tsukuba-shi, Ibaraki",
     "adresse_ja": "茨城県つくば市小田",
@@ -211,9 +263,23 @@
     "descriptionLongue": "Reconnues comme l'une des trois plus belles chutes d'eau du Japon (avec Kegon-no-taki à Nikko et Nachi-no-taki à Wakayama), les chutes de Fukuroda offrent un spectacle impressionnant en toute saison. Elles mesurent 120 mètres de haut et 73 mètres de large, et l'eau s'écoule en quatre paliers distincts, ce qui leur vaut le surnom de 'Yodo-no-taki' (chutes aux quatre étages). En automne, les couleurs environnantes sont magnifiques. En hiver, les chutes peuvent geler partiellement ou totalement, créant un paysage féerique et offrant parfois la possibilité de pratiquer l'escalade sur glace. Un tunnel avec plusieurs plateformes d'observation, dont une accessible par ascenseur, permet d'admirer les chutes sous différents angles.",
     "descriptionLongue_en": "Recognized as one of Japan's three most beautiful waterfalls (along with Kegon-no-taki in Nikko and Nachi-no-taki in Wakayama), Fukuroda Falls offers an impressive spectacle in all seasons. They measure 120 meters high and 73 meters wide, with the water flowing over four distinct tiers, earning them the nickname 'Yodo-no-taki' (four-tiered falls). In autumn, the surrounding colors are magnificent. In winter, the falls can freeze partially or completely, creating a magical landscape and sometimes offering opportunities for ice climbing. A tunnel with several observation platforms, one accessible by elevator, allows you to admire the falls from different angles.",
     "descriptionLongue_ja": "日本三名瀑（日光の華厳ノ滝、和歌山の那智ノ滝と並ぶ）の一つとして知られる袋田の滝は、年間を通じて印象的な景観を提供します。高さ120メートル、幅73メートルで、水が4つの段を流れることから「四度の滝」とも呼ばれます。秋には周辺の紅葉が美しく、冬には滝が部分的に、あるいは完全に凍結し、幻想的な風景を作り出し、時にはアイスクライミングの機会も提供します。複数の展望台があるトンネル（エレベーターでアクセス可能なものも含む）からは、さまざまな角度から滝を眺めることができます。",
-    "imagePrincipale": "03-122199.jpeg",
+    "imagePrincipale": "Chutes de Fukuroda3 CC.jpg",
     "images": [
-      "03-122199.jpeg"
+      {
+        "type": "image",
+        "url": "Chutes de Fukuroda2 CC.jpg",
+        "attribution": "Photo provenant du site https://www.daigo-kanko.jp/fukuroda-falls.html"
+      },
+      {
+        "type": "image",
+        "url": "Chutes de Fukuroda3 CC.jpg",
+        "attribution": "Photo provenant du site https://www.daigo-kanko.jp/fukuroda-falls.html"
+      },
+      {
+        "type": "image",
+        "url": "Chutes de Fukuroda.jpg",
+        "attribution": null
+      }
     ],
     "adresse": "3-19 Fukuroda, Daigo-machi, Kuji-gun, Ibaraki 319-3523",
     "adresse_en": "3-19 Fukuroda, Daigo-machi, Kuji-gun, Ibaraki 319-3523",
@@ -264,8 +330,24 @@
     "descriptionLongue": "Plus petites et intimes que les chutes de Fukuroda (environ 17 mètres de haut et 12 mètres de large), les chutes de Tsukimachi offrent une expérience particulière : on peut passer derrière le rideau d'eau (sauf par fort débit), ce qui leur vaut le surnom d''Urami-no-taki' (chutes que l'on voit de dos). Elles sont entourées d'une nature luxuriante, particulièrement belle pendant la saison des érables en automne.",
     "descriptionLongue_en": "Smaller and more intimate than Fukuroda Falls (about 17 meters high and 12 meters wide), Tsukimachi Falls offers a unique experience: you can walk behind the curtain of water (except during heavy flow), earning them the nickname 'Urami-no-taki' (falls viewed from behind). They are surrounded by lush nature, particularly beautiful during the autumn maple season.",
     "descriptionLongue_ja": "袋田の滝よりも小規模で親しみやすい（高さ約17メートル、幅約12メートル）月待の滝は、特別な体験を提供します。水しぶきのカーテンの後ろを歩くことができ（増水時を除く）、「裏見の滝」という別名があります。周囲は豊かな自然に囲まれ、特に秋の紅葉シーズンには美しさが増します。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Chutes d'eau de Tsukimachi1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Chutes d'eau de Tsukimachi1 CC.jpg",
+        "attribution": "t.kunikuni, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Chutes d'eau de Tsukimachi2 CC.jpg",
+        "attribution": "t.kunikuni, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Chutes d'eau de Tsukimachi3 CC.jpg",
+        "attribution": "Σ64, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "Kawakami, Daigo-machi, Kuji-gun, Ibaraki 319-3506",
     "adresse_en": "Kawakami, Daigo-machi, Kuji-gun, Ibaraki 319-3506",
     "adresse_ja": "茨城県久慈郡大子町川上 〒319-3506",
@@ -311,8 +393,24 @@
     "descriptionLongue": "Ce vaste parc public d'environ 52 hectares est dédié à la culture et à l'art, avec un accent particulier sur la poterie Kasama-yaki. Il comprend le Musée d'Art - Céramique d'Ibaraki, des espaces d'exposition en plein air avec des sculptures, des sentiers de promenade, et 'Craft Hills Kasama' qui abrite des galeries d'exposition-vente de poteries, des ateliers interactifs où les visiteurs peuvent s'essayer à la poterie, et un café.",
     "descriptionLongue_en": "This vast public park of approximately 52 hectares is dedicated to culture and art, with a particular focus on Kasama-yaki pottery. It includes the Ibaraki Ceramic Art Museum, outdoor exhibition spaces with sculptures, walking trails, and 'Craft Hills Kasama' which houses exhibition-sale galleries for pottery, interactive workshops where visitors can try their hand at pottery, and a cafe.",
     "descriptionLongue_ja": "約52ヘクタールに及ぶ広大なこの公園は、文化と芸術、特に笠間焼に焦点を当てた場所です。茨城県陶芸美術館、彫刻のある野外展示スペース、遊歩道、そして陶芸の展示販売ギャラリーや、訪問者が陶芸を体験できるワークショップ、カフェなどを備えた「クラフトヒルズかすみがうら」があります。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Colline des arts de Kasama2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Colline des arts de Kasama2 CC.jpg",
+        "attribution": "Photo provenant du site https://mindtrip.ai/attraction/kasama-ibaraki/kasama-geijutsu-no-mori-park-kasama-art-forest-park/at-3JxTyLdL"
+      },
+      {
+        "type": "image",
+        "url": "Colline des arts de Kasama3 CC.jpg",
+        "attribution": "Photo provenant du site https://ibaraki-en.mytabi.net/kasama-art-forest-park.php"
+      },
+      {
+        "type": "image",
+        "url": "Colline des arts de Kasama CC.webp",
+        "attribution": "Photo provenant du site https://japantravel.navitime.com/en/area/jp/spot/02301-2900596/"
+      }
+    ],
     "adresse": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_en": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_ja": "〒309-1611 茨城県かすみがうら市笠間2345",
@@ -359,8 +457,24 @@
     "descriptionLongue": "La côte de KitaIbaraki est caractérisée par des formations rocheuses pittoresques, des falaises et des petites criques sculptées par l'océan Pacifique. La côte d'Izura est particulièrement célèbre pour ses paysages qui ont inspiré des artistes japonais, notamment Okakura Tenshin et les peintres de l'Institut des Beaux-Arts du Japon. Le pavillon Rokkakudo, perché sur un rocher, est un symbole de cette côte. La région offre des vues côtières spectaculaires et des possibilités de promenades le long des sentiers côtiers. Idéal pour la photographie de paysages marins et l'observation d'oiseaux marins.",
     "descriptionLongue_en": "The KitaIbaraki coast is characterized by picturesque rock formations, cliffs, and small coves sculpted by the Pacific Ocean. The Izura coast is particularly famous for its landscapes that inspired Japanese artists, notably Okakura Tenshin and painters from the Japan Art Institute. The Rokkakudo pavilion, perched on a rock, is a symbol of this coast. The region offers spectacular coastal views and opportunities for walks along coastal paths. Ideal for seascape photography and observing seabirds.",
     "descriptionLongue_ja": "北茨城の海岸は、太平洋によって形成された絵のように美しい岩石の形成、断崖、そして小さな入り江が特徴です。特に、岡倉天心や日本美術院の画家たちをはじめとする日本の芸術家たちにインスピレーションを与えた風景で有名なのが、五浦海岸です。岩の上に建つ六角堂は、この海岸のシンボルです。この地域は、壮大な海岸線の眺めと、海岸沿いの小道を散策する機会を提供します。海の風景写真や海鳥の観察に理想的です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Côte rocheuse de KitaIbaraki CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Côte rocheuse de KitaIbaraki2 CC.jpg",
+        "attribution": "taro gen, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Côte rocheuse de KitaIbaraki3 CC.jpg",
+        "attribution": "On-chan, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Côte rocheuse de KitaIbaraki CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "Le long du littoral de KitaIbaraki-shi, Ibaraki. Des sites notables incluent la côte d'Izura.",
     "adresse_en": "Along the coastline of KitaIbaraki-shi, Ibaraki. Notable sites include the Izura coast.",
     "adresse_ja": "茨城県北茨城市の海岸沿い。五浦海岸などの注目すべき場所があります。",
@@ -410,8 +524,24 @@
     "descriptionLongue": "Fondée en 1841 par Tokugawa Nariaki, l'école Kodokan était la plus grande école du domaine (han) de l'époque d'Edo. Elle servait à l'éducation des samouraïs et de leurs enfants dans divers domaines, allant des arts martiaux à la littérature et aux sciences. Le complexe architectural traditionnel est remarquablement préservé.",
     "descriptionLongue_en": "Founded in 1841 by Tokugawa Nariaki, Kodokan was the largest school in the Edo period domain (han). It served for the education of samurai and their children in various fields, ranging from martial arts to literature and sciences. The traditional architectural complex is remarkably well-preserved.",
     "descriptionLongue_ja": "1841年に徳川斉昭によって設立された弘道館は、江戸時代において最大の藩校でした。武道から文学、科学に至るまで、様々な分野で武士とその子供たちの教育の場となりました。伝統的な建築群は驚くほど良好に保存されています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "École Kodokan2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "École Kodokan1 CC.jpg",
+        "attribution": "Miyuki Meinaka, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "École Kodokan2 CC.jpg",
+        "attribution": "Asturio Cantabrio, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "École Kodokan3 CC.jpg",
+        "attribution": "Yoho11, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "1-6-29 Sannomaru, Mito, Ibaraki 310-0011",
     "adresse_en": "1-6-29 Sannomaru, Mito, Ibaraki 310-0011",
     "adresse_ja": "茨城県水戸市三の丸1-6-29 〒310-0011",
@@ -461,8 +591,34 @@
     "descriptionLongue": "Situé près du sommet du mont Atago dans la ville de Kasama, Etowa Kasama propose une expérience de plein air haut de gamme, combinant l'immersion en forêt avec le confort d'un hôtel de luxe. Les hébergements, décorés par la marque ACTUS, incluent des tentes élégantes et des cabanes panoramiques avec terrasses. L'expérience est axée sur la convivialité : bar en plein air sous les étoiles, feux de camp pour griller des guimauves, et dîners BBQ mettant à l'honneur le bœuf de Hitachi. C'est un lieu idéal pour vivre le Japon sauvage sans sacrifier son confort.",
     "descriptionLongue_en": "Located near the summit of Mount Atago in Kasama City, Etowa Kasama offers a high- end outdoor experience, combining forest immersion with the comfort of a luxury hotel. Accommodations, decorated by the ACTUS brand, include stylish tents and panoramic cabins with terraces. The experience focuses on conviviality: an open-air bar under the stars, campfires for toasting marshmallows, and BBQ dinners featuring Hitachi beef. It's an ideal place to experience wild Japan without sacrificing comfort.",
     "descriptionLongue_ja": "笠間市愛宕山の山頂近くに位置するETOWA KASAMA は、森への没入感と高級ホテルの快適さを兼ね備えた、ハイエンドなアウトドア体験を提供します。ACTUSブランドが装飾した宿泊施設には、スタイリッシュなテントやテラス付きのパノラマキャビンがあります。体験は、星空の下のオープンエアバー、マシュマロを焼くためのキャンプファイヤー、常陸牛をフィーチャーしたBBQディナーなど、親しみやすさを重視しています。快適さを犠牲にすることなく、日本の自然を体験するのに理想的な場所です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "ETOWA KASAMA2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "ETOWA KASAMA2 CC.jpg",
+        "attribution": "Image provenant de ce site https://en.resort-glamping.com/accommodation/etowa-kasama/"
+      },
+      {
+        "type": "image",
+        "url": "ETOWA KASAMA3 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.jalan.net/en/japan_hotels_ryokan/pension-minshuku-lodge/Ibaraki_pension-minshuku-lodge/Mito_Kasama_pension-minshuku-lodge/Kasama_pension-minshuku-lodge/a_forest_resort_close_to_the_sky_-_etowa_kasama/"
+      },
+      {
+        "type": "image",
+        "url": "ETOWA KASAMA4 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.jalan.net/en/japan_hotels_ryokan/pension-minshuku-lodge/Ibaraki_pension-minshuku-lodge/Mito_Kasama_pension-minshuku-lodge/Kasama_pension-minshuku-lodge/a_forest_resort_close_to_the_sky_-_etowa_kasama/"
+      },
+      {
+        "type": "image",
+        "url": "ETOWA KASAMA5 CC.jpg",
+        "attribution": "Image provenant de ce site https://visit.ibarakiguide.jp/en/accommodation/23754/"
+      },
+      {
+        "type": "image",
+        "url": "ETOWA KASAMA CC.jpg",
+        "attribution": "Image provenant de ce site https://visit.ibarakiguide.jp/en/accommodation/23754/"
+      }
+    ],
     "adresse": "2775-7 Kamigo, Kasama, Ibaraki 319-0201, Japon (〒319-0201 茨城県笠間市上郷2775-7)",
     "adresse_en": "2775-7 Kamigo, Kasama, Ibaraki 319-0201, Japan",
     "adresse_ja": "〒319-0201 茨城県笠間市上郷2775-7",
@@ -517,8 +673,29 @@
     "descriptionLongue": "La Gorge de Hananuki est une vallée pittoresque particulièrement célèbre pour ses paysages automnaux, généralement de mi à fin novembre, lorsque les érables et autres arbres feuillus se parent de couleurs vives. Un élément emblématique de la gorge est le pont suspendu Shiomi Takiabashi, un pont en bois d'environ 60 mètres de long qui enjambe la rivière et s'intègre à la canopée, offrant des vues sur les feuillages. Les formations rocheuses et la végétation luxuriante créent un décor naturel. Des sentiers de randonnée permettent d'explorer la gorge, où l'on peut trouver des cascades comme Fudōnotaki et Kotaki.",
     "descriptionLongue_en": "Hananuki Gorge is a picturesque valley particularly famous for its autumn landscapes, generally from mid to late November, when maple and other deciduous trees turn vibrant colors. An iconic feature of the gorge is the Shiomi Takiabashi suspension bridge, a wooden bridge about 60 meters long that spans the river and integrates with the canopy, offering views of the foliage. Rock formations and lush vegetation create a natural setting. Hiking trails allow exploration of the gorge, where waterfalls like Fudōnotaki and Kotaki can be found.",
     "descriptionLongue_ja": "花貫渓谷（はなぬきけいこく）は、特に秋の景観で有名な風光明媚な谷です。通常11月中旬から下旬にかけて、モミジなどの落葉樹が鮮やかな色に染まります。渓谷の象徴的な存在は、約60メートルの木造の吊り橋である塩見滝（しおみだき）橋で、川を跨ぎ、木々の葉と一体化して、紅葉の眺めを提供します。岩石の形成と豊かな植生が自然の景観を作り出しています。ハイキングコースでは渓谷を探索でき、不動滝や小滝などの滝を見つけることができます。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Gorge de Hananuki2.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Gorge de Hananuki1.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Gorge de Hananuki2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Gorge de Hananuki3.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Gorge de Hananuki CC.jpg",
+        "attribution": "Raita Futo from Tokyo, Japan, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "Ono, Takahagi-shi, Ibaraki",
     "adresse_en": "Ono, Takahagi-shi, Ibaraki",
     "adresse_ja": "茨城県高萩市小野",
@@ -563,8 +740,34 @@
     "descriptionLongue": "La région d'Okukuji, traversée par la rivière Kuji, offre des paysages de gorges pittoresques. Ces gorges, sculptées par l'érosion, présentent des formations rocheuses, des eaux claires et une végétation abondante. C'est une zone propice à la randonnée, à l'observation de la nature et à la photographie. En été, certaines zones permettent de se rafraîchir au bord de l'eau.",
     "descriptionLongue_en": "The Okukuji region, traversed by the Kuji River, offers picturesque gorge landscapes. These gorges, carved by erosion, feature rock formations, clear waters, and abundant vegetation. It's an area suitable for hiking, nature observation, and photography. In summer, some areas allow for refreshing dips by the water.",
     "descriptionLongue_ja": "久慈川が流れる奥久慈地域は、絵のように美しい渓谷の風景を提供しています。浸食によって形成されたこれらの渓谷は、岩石の形成、澄んだ水、そして豊かな植生が特徴です。ハイキング、自然観察、写真撮影に適したエリアです。夏には、一部のエリアで水辺で涼むことができます。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Gorges de la rivière Kuji (Okukuji) CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Gorges de la rivière Kuji2 CC.jpg",
+        "attribution": "Photo provenant du site https://www.daigo-kanko.jp/spot-0005.html"
+      },
+      {
+        "type": "image",
+        "url": "Gorges de la rivière Kuji3 CC.jpg",
+        "attribution": "Photo provenant du site https://www.daigo-kanko.jp/spot-0005.html"
+      },
+      {
+        "type": "image",
+        "url": "Gorges de la rivière Kuji (Okukuji)1 CC.webp",
+        "attribution": "Image provenant de ce site https://weathernews.jp/koyo/spot/24009/"
+      },
+      {
+        "type": "image",
+        "url": "Gorges de la rivière Kuji (Okukuji)2 CC.jpg",
+        "attribution": "Image provenant de ce site https://tabi.jtb.or.jp/res/030042-"
+      },
+      {
+        "type": "image",
+        "url": "Gorges de la rivière Kuji (Okukuji) CC.jpg",
+        "attribution": "Image provenant de ce site https://www.asoview.com/spot/K0808/"
+      }
+    ],
     "adresse": "Zone s'étendant le long de la rivière Kuji, principalement dans Daigo-machi, Kuji-gun, Ibaraki.",
     "adresse_en": "Area extending along the Kuji River, mainly in Daigo-machi, Kuji-gun, Ibaraki.",
     "adresse_ja": "久慈川沿いに広がる地域、主に茨城県久慈郡大子町。",
@@ -610,9 +813,33 @@
     "descriptionLongue": "Avec ses 120 mètres de hauteur, le Grand Bouddha d'Ushiku reste l'un des plus hautes statues du monde. Elle représente le Bouddha Amitabha. L'intérieur abrite un musée sur plusieurs niveaux, une plateforme d'observation à 85m, et des milliers de petites statues de Bouddha dorées. Le site comprend un jardin de style Jodo (Terre Pure) et un petit zoo.",
     "descriptionLongue_en": "With a height of 120 meters, the Ushiku Daibutsu remains one of the tallest statues in the world. It represents the Buddha Amitabha. The interior houses a multi-level museum, an observation deck at 85m, and thousands of small golden Buddha statues. The site includes a Jodo (Pure Land) style garden and a small zoo.",
     "descriptionLongue_ja": "高さ120メートルを誇る牛久大仏は、世界で最も高い仏像の一つです。阿弥陀如来を表しています。内部には、多層階の博物館、85メートルの展望台、そして何千体もの小さな黄金の仏像があります。敷地内には浄土式庭園と小さな動物園もあります。",
-    "imagePrincipale": "sakuraco_ushiku-daibutsu.webp",
+    "imagePrincipale": "Grand Bouddha d'Ushiku5.jpg",
     "images": [
-      "sakuraco_ushiku-daibutsu.webp"
+      {
+        "type": "image",
+        "url": "Grand Bouddha d'Ushiku1.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Grand Bouddha d'Ushiku2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Grand Bouddha d'Ushiku3.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Grand Bouddha d'Ushiku4.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Grand Bouddha d'Ushiku5.jpg",
+        "attribution": null
+      }
     ],
     "adresse": "2083 Kuno-cho, Ushiku, Ibaraki 300-1288",
     "adresse_en": "2083 Kuno-cho, Ushiku, Ibaraki 300-1288",
@@ -665,8 +892,44 @@
     "descriptionLongue": "Le musée des sciences du centre civique Hitachi SAKURIE, rénové et rouvert en 2023, est un musée scientifique interactif visant à rendre la science amusante et accessible, en particulier aux enfants. Il propose une variété d'expositions pratiques sur les principes physiques, les sciences de la Terre et de l'Espace, les technologies et innovations, ainsi que des illusions d'optique. Le complexe abrite également un planétarium moderne (Tenkyu Gekijo) proposant des projections du ciel étoilé et des programmes sur l'astronomie.",
     "descriptionLongue_en": "The Hitachi Civic Center SAKURIE Science Museum, renovated and reopened in 2023, is an interactive science museum aiming to make science fun and accessible, especially for children. It features a variety of hands-on exhibits on physical principles, Earth and Space sciences, technologies and innovations, as well as optical illusions. The complex also houses a modern planetarium (Tenkyu Gekijo) offering stargazing projections and astronomy programs.",
     "descriptionLongue_ja": "2023年に改修・再オープンした日立シビックセンター SA kurie科学館は、特に子供たちにとって科学を楽しく身近なものにすることを目指した、体験型の科学博物館です。物理法則、地球・宇宙科学、技術革新に関する多様な体験型展示や、だまし絵などを紹介しています。この施設には、星空の投影や天文学プログラムを提供する近代的なプラネタリウム（天球劇場）も併設されています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Musée des sciences du centre civique2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Musée des sciences du centre civique2 CC.jpg",
+        "attribution": "Asturio Cantabrio, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Musée des sciences du centre civique3 CC.jpg",
+        "attribution": "Miisan1112, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Musée des sciences du centre civique4 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.tanseisha.co.jp/en/works/detail/hitachi-civic-center-museum-of-science-sacrea"
+      },
+      {
+        "type": "image",
+        "url": "Musée des sciences du centre civique5 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.tanseisha.co.jp/en/works/detail/hitachi-civic-center-museum-of-science-sacrea"
+      },
+      {
+        "type": "image",
+        "url": "Musée des sciences du centre civique6 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.tanseisha.co.jp/en/works/detail/hitachi-civic-center-museum-of-science-sacrea"
+      },
+      {
+        "type": "image",
+        "url": "Musée des sciences du centre civique7 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.tanseisha.co.jp/en/works/detail/hitachi-civic-center-museum-of-science-sacrea"
+      },
+      {
+        "type": "image",
+        "url": "Musée des sciences du centre civique CC.jpg",
+        "attribution": "Miisan1112, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "1-1-1 Saiwai-cho, Hitachi-shi, Ibaraki 317-0073",
     "adresse_en": "1-1-1 Saiwai-cho, Hitachi-shi, Ibaraki 317-0073",
     "adresse_ja": "〒317-0073 茨城県日立市幸町1-1-1",
@@ -714,9 +977,28 @@
     "descriptionLongue": "Le Hitachi Seaside Park est l'un des parcs les plus spectaculaires du Japon, s'étendant sur 190 hectares. Il est mondialement connu pour ses floraisons saisonnières époustouflantes : les nemophila bleues (baby blue eyes) au printemps créent un océan de fleurs bleues, tandis que les kochia (buissons boule) deviennent rouge vif en automne. Le parc offre également des jardins de tulipes, de roses, de cosmos et bien d'autres variétés florales tout au long de l'année.",
     "descriptionLongue_en": "Hitachi Seaside Park is one of Japan's most spectacular parks, spanning 190 hectares. It is world-renowned for its stunning seasonal blooms: the blue nemophila (baby blue eyes) in spring create an ocean of blue flowers, while the kochia (bushy plants) turn bright red in autumn. The park also offers gardens of tulips, roses, cosmos, and many other floral varieties throughout the year.",
     "descriptionLongue_ja": "日立海浜公園は、190ヘクタールに広がる日本で最も壮観な公園の一つです。春には青いネモフィラ（ベイビーブルーアイズ） が青い花の海を作り出し、秋にはコキア（丸い低木）が鮮やかな赤に変わるなど、その息をのむような季節ごとの花々で世界的に有名です。公園には、一年を通してチューリップ、バラ、コスモスなど、さまざまな花々が咲く庭園もあります。",
-    "imagePrincipale": "hitachi-seaside-park-kochia-ibaraki-1024x819.jpg",
+    "imagePrincipale": "Hitachi Seaside Park.jpg",
     "images": [
-      "hitachi-seaside-park-kochia-ibaraki-1024x819.jpg"
+      {
+        "type": "image",
+        "url": "Hitachi Seaside Park3.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Hitachi Seaside Park4.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Hitachi Seaside Park 2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Hitachi Seaside Park.jpg",
+        "attribution": null
+      }
     ],
     "adresse": "605-4 Mawatari, Hitachinaka, Ibaraki 312-0012",
     "adresse_en": "605-4 Mawatari, Hitachinaka, Ibaraki 312-0012",
@@ -770,8 +1052,24 @@
     "descriptionLongue": "Faisant partie du Musée National de la Nature et des Sciences, ce jardin botanique présente une grande variété de plantes du Japon et du monde, organisées en différentes sections thématiques.",
     "descriptionLongue_en": "Part of the National Museum of Nature and Science, this botanical garden showcases a wide variety of plants from Japan and around the world, organized into different thematic sections.",
     "descriptionLongue_ja": "国立科学博物館附属のこの植物園は、日本および世界の多様な植物を、異なるテーマ別のセクションに分けて展示しています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Jardin Botanique de Tsukuba3 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Jardin Botanique de Tsukuba2 CC.jpg",
+        "attribution": "TANAKA Juuyoh (田中十洋), CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Jardin Botanique de Tsukuba3 CC.jpg",
+        "attribution": "TANAKA Juuyoh (田中十洋), CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Jardin Botanique de Tsukuba CC.jpg",
+        "attribution": "Kestrel, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "4-1-1 Amakubo, Tsukuba, Ibaraki 305-0005",
     "adresse_en": "4-1-1 Amakubo, Tsukuba, Ibaraki 305-0005",
     "adresse_ja": "茨城県つくば市天久保4-1-1 〒305-0005",
@@ -818,8 +1116,24 @@
     "descriptionLongue": "Le JAXA Tsukuba Space Center ('Space Dome') est le cœur de l'agence spatiale japonaise (l'équivalent de la NASA au Japon). Le 'Space Dome' est le hall d'exposition officiel situé directement sur leur complexe de recherche. Son thème est 100% centré sur l'espace. On y voit de véritables modèles de satellites, une reproduction grandeur nature du module expérimental japonais Kibo (qui est rattaché à la Station Spatiale Internationale), et une vraie fusée H-II de 50 mètres de long exposée à l'extérieur.",
     "descriptionLongue_en": "The JAXA Tsukuba Space Center ('Space Dome') is the heart of the Japanese space agency (Japan's equivalent of NASA). The 'Space Dome' is the official exhibition hall located directly on their research complex. Its theme is 100% focused on space. Visitors can see actual satellite models, a full-scale replica of the Japanese experimental module Kibo (attached to the International Space Station), and a real 50-meter-long H-II rocket displayed outside.",
     "descriptionLongue_ja": "JAXA筑波宇宙センター（「スペースドーム」）は、日本の宇宙機関（日本のNASA に相当）の中心です。「スペースドーム」は、研究施設内に直接位置する公式展示館です。テーマは宇宙に100% 特化しています。実際の衛星モデル、日本の実験棟「きぼう」（国際宇宙ステーションに連結）の実物大模型、そして屋外に展示されている全長50メートルの実物H-IIロケットを見ることができます。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Centre Spatial de Tsukuba (JAXA)1.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Centre Spatial de Tsukuba (JAXA)1.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Centre Spatial de Tsukuba (JAXA)2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Centre Spatial de Tsukuba (JAXA)3.jpg",
+        "attribution": null
+      }
+    ],
     "adresse": "Japon, 〒305-0047 Ibaraki, Tsukuba, Sengen, 2 Chome−１−1",
     "adresse_en": "Japan, 〒305-0047 Ibaraki, Tsukuba, Sengen, 2 Chome−１−1",
     "adresse_ja": "〒305-0047 茨城県つくば市千現2丁目1-1",
@@ -867,9 +1181,23 @@
     "descriptionLongue": "Kairaku-en figure parmi les trois jardins paysagers les plus célèbres du Japon. Créé en 1842 par Tokugawa Nariaki, il est particulièrement renommé for ses quelque 3 000 pruniers de 100 variétés. Le festival des pruniers de Mito (Mito Ume Matsuri) y attire de nombreux visiteurs. Le jardin offre également des paysages avec des bambous, des cèdres et le bâtiment traditionnel Kobuntei.",
     "descriptionLongue_en": "Kairaku-en is counted among Japan's three most famous landscape gardens. Created in 1842 by Tokugawa Nariaki, it is particularly renowned for its approximately 3,000 plum trees of 100 varieties. The Mito Plum Blossom Festival (Mito Ume Matsuri) attracts many visitors here. The garden also features landscapes with bamboo, cedars, and the traditional Kobuntei building.",
     "descriptionLongue_ja": "偕楽園は、日本三名園の一つに数えられます。1842年に徳川斉昭によって造園され、約3000本の多種多様な梅の木で特に有名です。水戸の梅まつり（水戸梅まつり）には多くの観光客が訪れます。園内には竹や杉の景色、そして伝統的な好文亭もあります。",
-    "imagePrincipale": "b1789b66aea6b878a4fc2a939ae73708.jpg",
+    "imagePrincipale": "Jardin Kairaku-en2.jpg",
     "images": [
-      "b1789b66aea6b878a4fc2a939ae73708.jpg"
+      {
+        "type": "image",
+        "url": "Jardin Kairaku-en2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Jardin Kairaku-en3.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Jardin Kairaku-en.jpg",
+        "attribution": null
+      }
     ],
     "adresse": "1 Chome Tokiwa-cho, Mito, Ibaraki 310-0033",
     "adresse_en": "1 Chome Tokiwa-cho, Mito, Ibaraki 310-0033",
@@ -924,9 +1252,23 @@
     "descriptionLongue": "Le Kasama Inari Jinja est l'un des trois sanctuaires Inari les plus importants du Japon. Fondé en 651, il est dédié à Ukanomitama-no-kami, la divinité de la prospérité. Le sanctuaire attire des millions de visiteurs chaque année, en particulier pour le Hatsumōde (première visite de l'année). Son enceinte est vaste et comprend de magnifiques bâtiments, dont certains sont désignés Biens Culturels Importants du Japon.",
     "descriptionLongue_en": "Kasama Inari Jinja is one of the three most important Inari shrines in Japan. Founded in 651, it is dedicated to Ukanomitama-no-kami, the deity of prosperity. The shrine attracts millions of visitors each year, especially for Hatsumōde (the first visit of the year). Its grounds are vast and include magnificent buildings, some of which are designated as Important Cultural Properties of Japan.",
     "descriptionLongue_ja": "笠間稲荷神社は、日本三大稲荷の一つです。651年に創建され、五穀豊穣の神である宇迦之御魂大神（うかのみたまのおおかみ）を祀っています。毎年、特に初詣（年のはじめの参拝）には数百万人の参拝者が訪れます。境内は広大で、多くの壮麗な建物があり、その中には日本の重要文化財に指定されているものもあります。",
-    "imagePrincipale": "a272faa7516ca8501b62cda7a5a0f887-560x384.jpg",
+    "imagePrincipale": "Sanctuaire Kasama Inari1 CC.jpg",
     "images": [
-      "a272faa7516ca8501b62cda7a5a0f887-560x384.jpg"
+      {
+        "type": "image",
+        "url": "Sanctuaire Kasama Inari1 CC.jpg",
+        "attribution": "Σ64, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire Kasama Inari2 CC.jpg",
+        "attribution": "Σ64, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire Kasama Inari3 CC.jpg",
+        "attribution": "Σ64, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+      }
     ],
     "adresse": "1 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_en": "1 Kasama, Kasama-shi, Ibaraki 309-1611",
@@ -976,9 +1318,23 @@
     "descriptionLongue": "Le Kashima Jingu est l'un des sanctuaires shinto les plus anciens et les plus importants de l'est du Japon. Sa fondation remonterait, selon la légende, à 660 avant J.-C. Il est dédié à Takemikazuchi-no-Ōkami, une puissante divinité du tonnerre, du sabre et des arts martiaux. Le sanctuaire est le chef de file d'environ 600 sanctuaires Kashima à travers le pays. Il est situé au cœur d'une vaste forêt sacrée, créant une atmosphère de recueillement. Le complexe comprend de nombreux bâtiments impressionnants, une salle du trésor conservant une épée Trésor National, ainsi qu'un parc aux cerfs sacrés.",
     "descriptionLongue_en": "Kashima Jingu is one of the oldest and most important Shinto shrines in eastern Japan. Legend has it that its foundation dates back to 660 BC. It is dedicated to Takemikazuchi- no-Ōkami, a powerful deity of thunder, swords, and martial arts. The shrine is the head of approximately 600 Kashima shrines across the country. It is located in the heart of a vast sacred forest, creating an atmosphere of reverence. The complex includes many impressive buildings, a treasure hall housing a National Treasure sword, and a park with sacred deer.",
     "descriptionLongue_ja": "鹿島神宮は、日本東部における最も古く、最も重要な神社のひとつです。伝説によれば、その創建は紀元前660年に遡るとされています。雷、剣、武道の強力な神であるタケミカヅチノオオカミを祀っています。この神社は、全国に約600ある鹿島神社の総本宮です。広大な聖なる森の中心に位置し、敬虔な雰囲気を醸し出しています。境内には多くの印象的な建物、国宝の剣が収められた宝物殿、そして神聖な鹿がいる公園などがあります。",
-    "imagePrincipale": "871c5e3d4cf4d49550af06e52108cfac_w.jpeg",
+    "imagePrincipale": "Sanctuaire Kashima Jingu1.jpg",
     "images": [
-      "871c5e3d4cf4d49550af06e52108cfac_w.jpeg"
+      {
+        "type": "image",
+        "url": "Sanctuaire Kashima Jingu1.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire Kashima Jingu2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire Kashima Jingu3.jpg",
+        "attribution": null
+      }
     ],
     "adresse": "2306-1 Kyuchu, Kashima-shi, Ibaraki 314-0031.",
     "adresse_en": "2306-1 Kyuchu, Kashima-shi, Ibaraki 314-0031.",
@@ -1030,8 +1386,54 @@
     "descriptionLongue": "Koga était une importante ville-étape (shukuba-machi) sur la route Nikkō Kaidō durant l'époque d'Edo. Le Musée d'histoire de Koga, installé dans un bâtiment de style occidental de l'ère Meiji (1910), présente l'histoire et la culture de Koga, avec un accent sur son rôle de ville-étape et de ville fortifiée. Les expositions comprennent des documents historiques, des objets d'art et des maquettes. Le musée comprend également une annexe (une ancienne résidence de marchand de tabac de l'époque Edo) et un jardin de style hollandais. La ville conserve des éléments de ce passé, avec des temples, des sanctuaires et des édifices traditionnels.",
     "descriptionLongue_en": "Koga was an important post town (shukuba-machi) on the Nikkō Kaidō road during the Edo period. The Koga History Museum, housed in a Western-style building from the Meiji era (1910), presents the history and culture of Koga, with an emphasis on its role as a post town and fortified city. Exhibits include historical documents, art objects, and models. The museum also includes an annex (a former Edo-period tobacco merchant's residence) and a Dutch-style garden. The city preserves elements of this past, with temples, shrines, and traditional buildings.",
     "descriptionLongue_ja": "古河は江戸時代、日光街道の重要な宿場町でした。明治時代（1910年）の洋風建築を利用した古河歴史博物館では、宿場町および城下町としての役割に焦点を当て、古河の歴史と文化を紹介しています。展示品には、歴史文書、美術品、模型などがあります。博物館には別館（江戸時代の元たばこ問屋の旧邸）とオランダ風庭園も含まれています。市内には、寺社仏閣や伝統的な建物など、過去の面影が残っています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Ville de Koga et son patrimoine1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine1 CC.jpg",
+        "attribution": "水だらけのプール, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine1.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine2 CC.jpg",
+        "attribution": "京浜にけ, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine3 CC.jpg",
+        "attribution": "京浜にけ, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine4 CC.jpg",
+        "attribution": "Hide-sp, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine6 CC.jpg",
+        "attribution": "Hide-sp, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine7 CC.jpg",
+        "attribution": "掬茶, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville de Koga et son patrimoine.jpg",
+        "attribution": null
+      }
+    ],
     "adresse": "3-10-56 Chuomachi, Koga-shi, Ibaraki 306-0033.",
     "adresse_en": "3-10-56 Chuomachi, Koga-shi, Ibaraki 306-0033.",
     "adresse_ja": "〒306-0033 茨城県古河市中央町3-10-56",
@@ -1077,9 +1479,23 @@
     "descriptionLongue": "Le Lac Kasumigaura est le deuxième plus grand lac d'eau douce du Japon, couvrant une superficie d'environ 168 km² (Nishiura, la partie principale). Si l'on inclut les lacs Kitaura et Sotonasakaura, qui lui sont connectés, la superficie totale du système lacustre atteint environ 220 km². Ce lac peu profond constitue un écosystème riche et varié. Il est une source importante d'eau pour l'agriculture et l'industrie, et un lieu de loisirs populaire. Les rives aménagées offrent des pistes cyclables, notamment la \"Tsukuba Kasumigaura Ring Ring Road\", un parcours d'environ 180 km. Le lac est également apprécié pour la pêche, les sports nautiques (voile, kayak), l'observation des oiseaux et les couchers de soleil. Des démonstrations de bateaux de pêche à voile traditionnels (hobikibune) ont lieu à des fins touristiques durant certaines périodes de l'année.",
     "descriptionLongue_en": "Lake Kasumigaura is Japan's second-largest freshwater lake, covering an area of approximately 168 km² (Nishiura, the main part). If you include Kitaura and Sotonasakaura lakes, which are connected to it, the total area of the lake system reaches about 220 km². This shallow lake forms a rich and diverse ecosystem. It is an important source of water for agriculture and industry, and a popular recreational spot. The developed shores offer cycling paths, notably the \"Tsukuba Kasumigaura Ring Ring Road,\" a route of about 180 km. The lake is also appreciated for fishing, water sports (sailing, kayaking), bird watching, and sunsets. Demonstrations of traditional sail- powered fishing boats (hobikibune) are held for tourism during certain periods of the year.",
     "descriptionLongue_ja": "霞ヶ浦は、日本で2番目に大きい淡水湖で、約168km² （西浦、主要部）を占めます。接続されている北浦や外浪逆浦を含めると、湖沼系の総面積は約220km²に達します。この浅い湖は、豊かで多様な生態系を形成しています。農業や工業用水の重要な水源であり、人気のレクリエーションスポットでもあります。整備された湖岸にはサイクリングロードがあり、特に「つくば霞ヶ浦りんりんロード」（約180km ）が有名です。釣り、ウォータースポーツ（セーリング、カヤック）、バードウォッチング、夕日も楽しめます。伝統的な帆引き漁船（ほびきぶね）のデモンストレーションが、年間を通じて観光目的で開催されることもあります。",
-    "imagePrincipale": "Ibaraki_t_id394_1.jpg",
+    "imagePrincipale": "Lac Kasumigaura1 CC.jpg",
     "images": [
-      "Ibaraki_t_id394_1.jpg"
+      {
+        "type": "image",
+        "url": "Lac Kasumigaura1 CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Lac Kasumigaura2 CC.jpg",
+        "attribution": "くろふね, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Lac Kasumigaura3 CC.jpg",
+        "attribution": "NJM4580, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
     ],
     "adresse": "S'étend sur plusieurs municipalités du sud-est d'Ibaraki, dont Tsuchiura, Kasumigaura, Namegata, Itako, Miho, Ami.",
     "adresse_en": "Extends across several municipalities in southeastern Ibaraki, including Tsuchiura, Kasumigaura, Namegata, Itako, Miho, Ami.",
@@ -1130,8 +1546,29 @@
     "descriptionLongue": "Ce lac paisible au cœur de Mito est connu pour sa population de cygnes, notamment des cygnes noirs. Le tour du lac (environ 3 km) est populaire pour la marche, le jogging et le vélo, offrant de belles vues sur la ville. Il est possible de louer des pédalos en forme de cygne.",
     "descriptionLongue_en": "This peaceful lake in the heart of Mito is known for its population of swans, including black swans. The circuit around the lake (approximately 3 km) is popular for walking, jogging, and cycling, offering beautiful city views. It is possible to rent swan-shaped pedal boats.",
     "descriptionLongue_ja": "水戸の中心部にあるこの静かな湖は、黒鳥を含む白鳥の生息地として知られています。湖一周（約3km ）は、散歩、ジョギング、サイクリングに人気があり、街の美しい景色を楽しめます。白鳥の形をしたペダルボートをレンタルすることもできます。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Lac Senba1.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Lac Senba1.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Lac Senba2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Lac Senba3.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Lac Senba4.jpg",
+        "attribution": null
+      }
+    ],
     "adresse": "Senbacho, Mito, Ibaraki",
     "adresse_en": "Senbacho, Mito, Ibaraki",
     "adresse_ja": "茨城県水戸市泉町",
@@ -1184,8 +1621,29 @@
     "descriptionLongue": "Situé dans une ancienne école primaire rénovée, le Lapoppo Namegata Farmers Village est un complexe agrotouristique unique axé sur la patate douce (satsumaimo). Il propose une ferme où l'on peut participer à la récolte de patates douces, un restaurant servant des plats à base de patate douce, une boulangerie, des ateliers de fabrication de confiseries, et une boutique de souvenirs. C'est une destination familiale qui met en valeur les produits agricoles locaux de Namegata.",
     "descriptionLongue_en": "Located in a renovated former elementary school, Lapoppo Namegata Farmers Village is a unique agro-tourism complex focused on sweet potatoes (satsumaimo). It offers a farm where visitors can participate in sweet potato harvesting, a restaurant serving swee t potato-based dishes, a bakery, confectionery-making workshops, and a souvenir shop. It is a family-friendly destination that highlights Namegata's local agricultural products.",
     "descriptionLongue_ja": "リニューアルされた旧小学校を拠点とする「ぽっぽ」は、サツマイモ（サツマイモ）を中心に据えたユニークなアグリツーリズム施設です。サツマイモの収穫体験ができる農場、サツマイモ料理を提供するレストラン、ベーカリー、菓子製造ワークショップ、お土産店があります。行方市の地元農産物を紹介する、家族向けのデスティネーションです。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Village des agriculteurs de Lapoppo Namegata1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Village des agriculteurs de Lapoppo Namegata1 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.namegata-fv.jp/EN/"
+      },
+      {
+        "type": "image",
+        "url": "Village des agriculteurs de Lapoppo Namegata2 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.namegata-fv.jp/EN/"
+      },
+      {
+        "type": "image",
+        "url": "Village des agriculteurs de Lapoppo Namegata3 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.namegata-fv.jp/EN/"
+      },
+      {
+        "type": "image",
+        "url": "Village des agriculteurs de Lapoppo Namegata CC.jpg",
+        "attribution": "Image provenant de ce site https://www.namegata-fv.jp/EN/"
+      }
+    ],
     "adresse": "1561 Uzaki, Namegata, Ibaraki 311-3880",
     "adresse_en": "1561 Uzaki, Namegata, Ibaraki 311-3880",
     "adresse_ja": "〒311-3880 茨城県行方市卯崎1561",
@@ -1235,8 +1693,34 @@
     "descriptionLongue": "Le Watarase Yūsuichi est l'un des plus grands bassins de rétention d'eau et zones humides artificielles du Japon. C'est une vaste zone naturelle d'importance écologique, abritant une biodiversité remarquable, notamment de nombreuses espèces d'oiseaux (plus de 260 recensées). C'est un site d'hivernage vital pour les oiseaux migrateurs et un lieu de reproduction pour d'autres. Des sentiers, des routes et des observatoires permettent d'explorer la zone. Le site est également apprécié pour la randonnée, le vélo, et la photographie de nature. Une grande partie du site est inscrite à la Convention de Ramsar. Le lac Yanaka, l'un des trois réservoirs du site, a une forme de cœur distinctive vue d'en haut.",
     "descriptionLongue_en": "Watarase Yūsuichi is one of the largest water retention basins and artificial wetlands in Japan. It is a vast natural area of ecological importance, home to remarkable biodiversity, including many bird species (over 260 recorded). It is a vital wintering site for migratory birds and a breeding ground for others. Trails, roads, and observation points allow for exploration of the area. The site is also popular for hiking, cycling, and nature photography. A large part of the site is registered under the Ramsar Convention. Lake Yanaka, one of the three reservoirs in the site, has a distinctive heart shape when viewed from above.",
     "descriptionLongue_ja": "渡良瀬遊水地は、日本最大級の遊水地であり人工湿地です。生態学的に重要な広大な自然区域であり、多くの鳥類（260種以上が記録されている）を含む顕著な生物多様性の宝庫です。渡り鳥の重要な越冬地であり、他の鳥類の繁殖地でもあります。遊歩道、道路、展望台があり、この地域を探索できます。また、ハイキング、サイクリング、自然写真にも人気があります。この区域の大部分はラムサール条約に登録されています。この区域の3つの貯水池の一つである谷中湖は、上空から見ると特徴的なハート型をしています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Marais de Watarase1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Marais de Watarase1 CC.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Marais de Watarase2 CC.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Marais de Watarase3 CC.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Marais de Watarase CC.jpg",
+        "attribution": null
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/LsZTNne9rac",
+        "attribution": "Vidéo YouTube"
+      }
+    ],
     "adresse": "Zone s'étendant sur les préfectures d'Ibaraki (ville de Koga), Tochigi, Saitama et Gunma.",
     "adresse_en": "Area extending across Ibaraki (Koga City), Tochigi, Saitama, and Gunma prefectures.",
     "adresse_ja": "茨城県（古河市）、栃木県、埼玉県、群馬県にまたがる地域。",
@@ -1281,9 +1765,28 @@
     "descriptionLongue": "Surnommé le 'Mont Violet', le Mont Tsukuba est l'une des '100 montagnes célèbres du Japon'. Mariant harmonieusement nature préservée et mythes ancestraux, il offre un condensé de culture japonaise et de randonnée avec des vues à couper le souffle. D'origine non volcanique, il est connu pour ses deux sommets, Nyotai-san (877m) et Nantai-san (871m), et abrite plus de 1000 espèces de plantes. Il offre des vues panoramiques sur la plaine du Kanto, jusqu'à Tokyo et le Mont Fuji.",
     "descriptionLongue_en": "Nicknamed the 'Violet Mountain,' Mount Tsukuba is one of Japan's '100 Famous Mountains.' Harmoniously blending preserved nature with ancient myths, it offers a condensed experience of Japanese culture and hiking with breathtaking views. Of non- volcanic origin, it is known for its two peaks, Nyotai-san (877m) and Nantai-san (871m), and is home to over 1000 plant species. It provides panoramic views of the Kanto plain, extending to Tokyo and Mount Fuji.",
     "descriptionLongue_ja": "「紫峰」の愛称で親しまれる筑波山は、「日本百名山」の一つです。豊かな自然と古くからの神話が調和し、息をのむような景色と共に、日本文化とハイキングの魅力を凝縮して体験できます。火山性ではない山で、女体山（877m）と男体山（871m ）の二つの峰で知られ、1000種以上の植物が生息しています。関東平野のパノラマビューが広がり、東京や富士山まで見渡せます。",
-    "imagePrincipale": "d3a35b87aeb8bf1c00d85b7c26048d58.jpg",
+    "imagePrincipale": "Mont Tsukuba Creative CC.jpg",
     "images": [
-      "d3a35b87aeb8bf1c00d85b7c26048d58.jpg"
+      {
+        "type": "image",
+        "url": "Mont Tsukuba Creative CC.jpg",
+        "attribution": "Klaasjeoranje, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Mont Tsukuba1.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Mont Tsukuba2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Mont Tsukuba4.jpg",
+        "attribution": null
+      }
     ],
     "adresse": "Tsukuba, Tsukuba-shi, Ibaraki 300-4352",
     "adresse_en": "Tsukuba, Tsukuba-shi, Ibaraki 300-4352",
@@ -1335,8 +1838,19 @@
     "descriptionLongue": "Ce musée préfectoral est dédié à l'art moderne et contemporain. Ses collections mettent en lumière des artistes liés à Ibaraki (comme Yokoyama Taikan), l'art moderne japonais, et des œuvres d'artistes occidentaux (Monet, Renoir, Picasso). Le bâtiment a été conçu par l'architecte Yoshino Taniguchi.",
     "descriptionLongue_en": "This prefectural museum is dedicated to modern and contemporary art. Its collections highlight artists connected to Ibaraki (like Yokoyama Taikan), Japanese modern art, and works by Western artists (Monet, Renoir, Picasso). The building was designed by architect Yoshino Taniguchi.",
     "descriptionLongue_ja": "この県立美術館は、近代美術と現代美術に特化しています。コレクションには、茨城ゆかりの芸術家（横山大観など）、日本の近代美術、そして西洋美術の作品（モネ、ルノワール、ピカソ）が展示されています。建物は谷口吉生氏によって設計されました。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Musée d'art moderne d'Ibaraki2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Musée d'art moderne d'Ibaraki2 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.modernart.museum.ibk.ed.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Musée d'art moderne d'Ibaraki.jpg",
+        "attribution": null
+      }
+    ],
     "adresse": "666-1 Senba-cho, Mito-shi, Ibaraki 310-0851",
     "adresse_en": "666-1 Senba-cho, Mito-shi, Ibaraki 310-0851",
     "adresse_ja": "〒310-0051 茨城県水戸市泉町666-1",
@@ -1383,8 +1897,24 @@
     "descriptionLongue": "Ce musée est le premier musée préfectoral de l'est du Japon spécialisé dans l'art de la céramique. Ses collections comprennent la poterie Kasama-yaki (histoire et créations contemporaines), la poterie Mashiko-yaki, des œuvres de maîtres céramistes japonais reconnus comme Trésors Nationaux Vivants, et de la céramique japonaise contemporaine et internationale. Il est situé au sein du 'Kasama Geijutsu no Mori Park'.",
     "descriptionLongue_en": "This museum is the first prefectural museum in eastern Japan specializing in ceramic art. Its collections include Kasama-yaki pottery (history and contemporary creations), Mashiko-yaki pottery, works by renowned Japanese master ceramists recognized as Living National Treasures, and contemporary and international Japanese ceramics. It is located within the 'Kasama Geijutsu no Mori Park'.",
     "descriptionLongue_ja": "この美術館は、東日本で初めて陶芸を専門とする県立美術館です。コレクションには、笠間焼（歴史と現代作品）、益子焼、人間国宝に認定された著名な日本の陶芸作家の作品、そして現代および国際的な日本の陶磁器が含まれています。笠間芸術の森公園内に位置しています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Musée d'Art Céramique d'Ibaraki2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Musée d'Art Céramique d'Ibaraki2 CC.jpg",
+        "attribution": "Photo provenant du site https://www.tougei.museum.ibk.ed.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Musée d'Art Céramique d'Ibaraki3 CC.jpg",
+        "attribution": "Photo provenant du site https://www.tougei.museum.ibk.ed.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Musée d'Art Céramique d'Ibaraki.jpg",
+        "attribution": null
+      }
+    ],
     "adresse": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_en": "2345 Kasama, Kasama-shi, Ibaraki 309-1611",
     "adresse_ja": "〒309-1611 茨城県笠間市笠間2345",
@@ -1431,8 +1961,24 @@
     "descriptionLongue": "Nishiyamaso (également connu sous le nom de Seizansō) est un site historique national, célèbre pour avoir été la résidence de retraite de Tokugawa Mitsukuni (1628-1701), le deuxième seigneur du domaine de Mito. Connu populairement sous le nom de Mito Kōmon, c'est ici, dans ce cadre paisible et d'une relative simplicité, qu'il a dirigé une partie importante de la compilation de la 'Dai Nihon Shi' (Grande Histoire du Japon), une œuvre historique monumentale. Le site préservé, avec ses bâtiments d'époque et ses jardins, offre un aperçu de la vie d'un daimyō érudit retiré.",
     "descriptionLongue_en": "Nishiyamaso (also known as Seizansō) is a National Historic Site, famous for being the retirement residence of Tokugawa Mitsukuni (1628-1701), the second lord of the Mito domain. Popularly known as Mito Kōmon, it was here, in this peaceful and relatively simple setting, that he directed a significant part of the compilation of the 'Dai Nihon Shi' (Great History of Japan), a monumental historical work. The preserved site, with its period buildings and gardens, offers a glimpse into the life of a retired, scholarly daimyo.",
     "descriptionLongue_ja": "西山荘（せいざんそう）としても知られる西山荘は、水戸藩の第2代藩主である徳川光圀（1628～1701年）の隠居所として有名な国の史跡です。一般に水戸黄門として知られる彼は、この平和で比較的シンプルな環境で、歴史的著作である「大日本史」の編纂に重要な役割を果たしました。保存状態の良い敷地には、当時の建物と庭園があり、隠遁した学識ある大名の生活を垣間見ることができます。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Nishiyamaso (Seizansō)1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Nishiyamaso (Seizansō)1 CC.jpg",
+        "attribution": "Image provenant de ce site http://www.tokugawa.gr.jp/seizanso/"
+      },
+      {
+        "type": "image",
+        "url": "Nishiyamaso (Seizansō)2 CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Nishiyamaso (Seizansō) CC.jpg",
+        "attribution": "Image provenant de ce site http://www.tokugawa.gr.jp/seizanso/"
+      }
+    ],
     "adresse": "590 Arajukucho, Hitachiota, Ibaraki 313-0007, Japon",
     "adresse_en": "590 Arajukucho, Hitachiota, Ibaraki 313-0007, Japan",
     "adresse_ja": "〒313-0007 茨城県常陸太田市荒宿町590",
@@ -1478,9 +2024,23 @@
     "descriptionLongue": "Fondé en 856, le sanctuaire Oarai Isosaki-jinja est un lieu de culte shinto historique dédié à Ōnamuchi-no-Mikoto et Sukunahikona-no-Mikoto, divinités associées à la guérison et à la bonne fortune. Il est particulièrement célèbre pour sa porte torii 'Kamiiso-no-Torii' (Porte sur le Rocher Divin), qui se dresse de manière spectaculaire sur un récif battu par les vagues de l'océan Pacifique. Ce site est très photogénique, surtout au lever du soleil lorsque les premiers rayons illuminent la porte et l'océan. Le sanctuaire principal, situé sur une colline boisée surplombant la mer, possède également une architecture impressionnante et une atmosphère sereine. Il est vénéré par les pêcheurs locaux pour des pêches fructueuses et une navigation sûre.",
     "descriptionLongue_en": "Founded in 856, Oarai Isosaki-jinja is a historic Shinto worship site dedicated to Ōnamuchi-no-Mikoto and Sukunahikona-no-Mikoto, deities associated with healing and good fortune. It is particularly famous for its 'Kamiiso-no-Torii' (Torii Gate on the Divine Rock), which stands dramatically on a reef battered by the waves of the Pacific Ocean. This spot is highly photogenic, especially at sunrise when the first rays illuminate the gate and the ocean. The main shrine, located on a wooded hill overlooking the sea, also features impressive architecture and a serene atmosphere. It is revered by local fishermen for bountiful catches and safe navigation.",
     "descriptionLongue_ja": "856年に創建された大洗磯前神社（おおあらいいそさきじんじゃ）は、癒しと幸運の神であるオオナムチノミコトとスクナヒコナノミコトを祀る歴史的な神道信仰の場です。特に、太平洋の波に洗われる岩礁の上にドラマチックにそびえ立つ「神磯の鳥居」で有名です。この場所は、特に日の出の光が鳥居と海を照らす際には、非常に写真映えします。海を見下ろす木々の生い茂る丘の上に位置する本殿も、印象的な建築と穏やかな雰囲気を持っています。地元漁師からは、豊漁と航海安全の神として崇敬されています。",
-    "imagePrincipale": "5bd66afb49109d73801bfa9cdaf42a27.jpg",
+    "imagePrincipale": "Sanctuaire Oarai Isosaki1.jpg",
     "images": [
-      "5bd66afb49109d73801bfa9cdaf42a27.jpg"
+      {
+        "type": "image",
+        "url": "Sanctuaire Oarai Isosaki1.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire Oarai Isosaki2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire Oarai Isosaki3.jpg",
+        "attribution": null
+      }
     ],
     "adresse": "6890 Isohama-cho, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1301",
     "adresse_en": "6890 Isohama-cho, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1301",
@@ -1532,8 +2092,24 @@
     "descriptionLongue": "Cette tour d'observation de 60 mètres de haut offre une vue panoramique à 360 degrees sur la ville d'Oarai, le port, l'océan Pacifique, et par temps clair, le Mont Tsukuba et même le Mont Fuji. Elle abrite également un café et une boutique de souvenirs.",
     "descriptionLongue_en": "This 60-meter-high observation tower offers a 360-degree panoramic view of Oarai town, the port, the Pacific Ocean, and on clear days, Mount Tsukuba and even Mount Fuji. It also houses a cafe and a souvenir shop.",
     "descriptionLongue_ja": "この高さ60メートルの展望タワーからは、大洗の街、港、太平洋、そして晴れた日には筑波山や富士山までも360度のパノラマビューが楽しめます。カフェやお土産店も併設されています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Tour marine d'Oarai2  CC.webp",
+    "images": [
+      {
+        "type": "image",
+        "url": "Tour marine d'Oarai2  CC.webp",
+        "attribution": "CC"
+      },
+      {
+        "type": "image",
+        "url": "Tour marine d'Oarai3  CC.jpg",
+        "attribution": "CC"
+      },
+      {
+        "type": "image",
+        "url": "Tour marine d'Oarai.jpg",
+        "attribution": null
+      }
+    ],
     "adresse": "10 Minato Chuo, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1305.",
     "adresse_en": "10 Minato Chuo, Oarai-machi, HigashiIbaraki-gun, Ibaraki 311-1305.",
     "adresse_ja": "〒311-1305 茨城県東茨城郡大洗町港中央10",
@@ -1580,8 +2156,34 @@
     "descriptionLongue": "Ce vaste parc botanique d'environ 30 hectares présente une collection impressionnante de fleurs saisonnières dans un cadre paysager. Il est particulièrement renommé pour sa roseraie, qui abrite environ 900 variétés de roses du monde entier (plus de 30 000 plants), ce qui en fait l'une des plus importantes de la région du Kanto. Chaque saison révèle de nouveaux tableaux floraux, des tulipes printanières aux parterres colorés d'été et d'automne, jusqu'aux illuminations hivernales. Le parc comprend également une serre, et propose des ateliers et des expériences. Un restaurant avec vue sur les jardins permet de se restaurer. Le parc a été rénové et a rouvert en 2021 avec de nouvelles attractions et une approche axée sur l'expérience sensorielle ('Feel').",
     "descriptionLongue_en": "This vast botanical park of approximately 30 hectares features an impressive collection of seasonal flowers in a landscaped setting. It is particularly renowned for its rose garden, which houses about 900 varieties of roses from around the world (over 30,000 plants), making it one of the largest in the Kanto region. Each season reveals new floral displays, from spring tulips to colorful summer and autumn beds, and winter illuminations. The park also includes a greenhouse and offers workshops and experiences. A restaurant with garden views is available for dining. The park was renovated and reopened in 2021 with new attractions and an approach focused on sensory experience ('Feel').",
     "descriptionLongue_ja": "約30ヘクタールの広大な植物公園で、景観に配慮された環境の中に、季節ごとの花々が印象的に植えられています。特にバラ園で有名で、世界中から約900品種（3万株以上）のバラが栽培されており、関東地方でも有数の規模を誇ります。春のチューリップから夏のカラフルな花壇、秋の紅葉、そして冬のイルミネーションまで、四季折々に新しい花の景色が広がります。公園内には温室もあり、ワークショップや体験プログラムも提供されています。庭園を望むレストランで食事を楽しむこともできます。公園は2021年に改修され、新しいアトラクションと五感で体験する「Feel」を重視したアプローチで再オープンしました。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Ibaraki Flower Park1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Ibaraki Flower Park1 CC.jpg",
+        "attribution": "Strangesnow, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ibaraki Flower Park2 CC.jpg",
+        "attribution": "Strangesnow, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ibaraki Flower Park3 CC.jpg",
+        "attribution": "Strangesnow, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ibaraki Flower Park4 CC.jpg",
+        "attribution": "Strangesnow, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ibaraki Flower Park CC.jpg",
+        "attribution": "Coptic Light, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "200 Shimoaoyagi, Ishioka-shi, Ibaraki 315-0153.",
     "adresse_en": "200 Shimoaoyagi, Ishioka-shi, Ibaraki 315-0153.",
     "adresse_ja": "〒315-0153 茨城県石岡市下青柳200",
@@ -1629,8 +2231,24 @@
     "descriptionLongue": "Ce parc forestier offre un espace de verdure pour les amoureux de la nature. Des sentiers permettent de se promener à travers bois et bambouseraies, offrant un cadre agréable pour la marche et la détente. Il est situé à proximité de la Colline des Arts de Kasama.",
     "descriptionLongue_en": "This forest park offers a green space for nature lovers. Trails allow for walks through woods and bamboo groves, providing a pleasant setting for hiking and relaxation. It is located near Kasama Arts Hills.",
     "descriptionLongue_ja": "この森林公園は、自然愛好家にとって緑豊かな空間を提供します。木々や竹林の中を散策できる遊歩道があり、ハイキングやリラクゼーションに最適な環境です。かすみがうら芸術の丘公園の近くに位置しています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Parc Kasama no Mori2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Parc Kasama no Mori2 CC.jpg",
+        "attribution": "Photo provenant du site https://visit.ibarakiguide.jp/en/sightseeing/22306/"
+      },
+      {
+        "type": "image",
+        "url": "Parc Kasama no Mori3 CC.jpg",
+        "attribution": "Photo provenant du site https://en.my10.jp/spot/kairakuen-garden.php"
+      },
+      {
+        "type": "image",
+        "url": "Parc Kasama no Mori CC.webp",
+        "attribution": "Photo provenant du site https://japantravel.navitime.com/en/area/jp/spot/02301-2900596/"
+      }
+    ],
     "adresse": "97C7+94, Kasama, Ibaraki 309-1611, Japon",
     "adresse_en": "97C7+94, Kasama, Ibaraki 309-1611, Japan",
     "adresse_ja": "〒309-1611 茨城県かすみがうら市97C7+94, 日本",
@@ -1674,8 +2292,24 @@
     "descriptionLongue": "C'est l'une des plages les plus populaires d'Ibaraki, s'étendant sur 1,5 km. Elle est facilement accessible en train ou en voiture et se trouve à proximité du Parc Hitachi Seaside. C'est une plage adaptée à la baignade et au tourisme.",
     "descriptionLongue_en": "This is one of Ibaraki's most popular beaches, stretching for 1.5 km. It is easily accessible by train or car and is located near Hitachi Seaside Park. It is a beach suitable for swimming and tourism.",
     "descriptionLongue_ja": "この海岸は、1.5kmにわたって広がる茨城県で最も人気のある海岸の一つです。電車や車で簡単にアクセスでき、国営ひたち海浜公園の近くに位置しています。海水浴や観光に適したビーチです。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Plage d'Ajigaura2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Plage d'Ajigaura1 CC.jpg",
+        "attribution": "Σ64, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Plage d'Ajigaura2 CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Plage d'Ajigaura3 CC.jpg",
+        "attribution": "くろふね, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "Ajigaura, Hitachinaka, Ibaraki",
     "adresse_en": "Ajigaura, Hitachinaka, Ibaraki",
     "adresse_ja": "茨城県ひたちなか市阿字ヶ浦",
@@ -1722,8 +2356,24 @@
     "descriptionLongue": "Située sur la côte Pacifique, cette portion du littoral d'Ibaraki regroupe quatre ambiances distinctes. Le port de pêche de Nakaminato est l'effervescence gourmande de la zone avec son célèbre marché aux poissons. La Plage de Hiraiso, avec la baleine flottante 'Daichan', offre des eaux calmes idéales pour les familles. Adjacent, le Hiraiso Seaside Park permet la détente au grand air. Enfin, le promontoire rocheux de Kantōjo, désigné par Tokugawa Nariaki, offre un spectacle dramatique des vagues se brisant sur les rochers, idéal pour la photographie.",
     "descriptionLongue_en": "Located on the Pacific coast, this section of Ibaraki's coastline combines four distinct atmospheres. The Nakaminato fishing port is the gourmet hub of the area with its famous fish market. Hiraiso Beach, with the floating whale 'Daichan,' offers calm waters ideal for families. Adjacent, Hiraiso Seaside Park allows for outdoor relaxation. Finally, the rocky promontory of Kantōjo, designated by Tokugawa Nariaki, offers a dramatic spectacle of waves crashing against the rocks, ideal for photography.",
     "descriptionLongue_ja": "太平洋沿岸に位置するこの茨城の海岸線は、4つの異なる雰囲気を組み合わせています。那珂湊漁港は、有名な魚市場があり、この地域のグルメの中心地です。平磯海岸は、浮遊するクジラ「だいちゃん」と共に、家族連れに最適な穏やかな海を提供しています。隣接する平磯海浜公園では、屋外でのリラクゼーションが楽しめます。最後に、徳川斉昭が指定した関東浄（かんとうじょう）の岩礁は、岩に打ち寄せる波の劇的な光景を提供し、写真撮影に理想的です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Côte de Hitachinaka-Hiraiso2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Côte de Hitachinaka-Hiraiso2 CC.jpg",
+        "attribution": "Photo provenant du site https://www.ibarakiguide.jp/spot.php?code=1137&mode=detail"
+      },
+      {
+        "type": "image",
+        "url": "Côte de Hitachinaka-Hiraiso3 CC.webp",
+        "attribution": "Photo provenant du site https://hitachinaka-sa.com/playspot/beach"
+      },
+      {
+        "type": "image",
+        "url": "Côte de Hitachinaka-Hiraiso CC.jpg",
+        "attribution": "T.Ito, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "Hiraiso Beach, Oarai-machi, HigashiIbaraki-gun, Ibaraki.",
     "adresse_en": "Hiraiso Beach, Oarai-machi, HigashiIbaraki-gun, Ibaraki.",
     "adresse_ja": "平磯海岸、大洗町、東茨城郡、茨城県。",
@@ -1771,8 +2421,39 @@
     "descriptionLongue": "Nichée le long de la côte de Takahagi, la Plage de Takado Kohama est une petite crique qui offre un cadre de beauté naturelle et une atmosphère de tranquillité. Ses formations rocheuses sculptées par les vagues et son sable contribuent à son charme. C'est un endroit idéal pour une escapade paisible, la détente, les promenades et la photographie de paysages marins. Elle est généralement moins fréquentée que les plages principales.",
     "descriptionLongue_en": "Nestled along the coast of Takahagi, Takado Kohama Beach is a small cove offering a setting of natural beauty and a tranquil atmosphere. Its wave-sculpted rock formations and sand contribute to its charm. It is an ideal place for a peaceful getaway, relaxation, walks, and seascape photography. It is generally less crowded than the main beaches.",
     "descriptionLongue_ja": "高萩の海岸沿いにひっそりと佇む高戸小浜海岸（たかどこはまかいがん）は、自然の美しさと静かな雰囲気を提供する小さな入り江です。波によって削られた岩石の形成と砂浜が、その魅力を添えています。静かな休暇、リラクゼーション、散歩、そして海の風景写真撮影に理想的な場所です。通常、主要なビーチよりも人の少ない場所です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Plage de Takado Kohama1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Plage de Takado Kohama1 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.ibarakiguide.jp/spot.php?mode=detail&code=296"
+      },
+      {
+        "type": "image",
+        "url": "Plage de Takado Kohama2 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.ibarakiguide.jp/spot.php?mode=detail&code=296"
+      },
+      {
+        "type": "image",
+        "url": "Plage de Takado Kohama3 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.ibarakiguide.jp/spot.php?mode=detail&code=296"
+      },
+      {
+        "type": "image",
+        "url": "Plage de Takado Kohama4 CC.webp",
+        "attribution": "Image provenant de ce site https://www.vr-ibaraki.jp/news2/20240727-takahagicity-takado-takahama-coast-reporting.html"
+      },
+      {
+        "type": "image",
+        "url": "Plage de Takado Kohama CC.jpg",
+        "attribution": "Image provenant de ce site https://www.ibarakiguide.jp/spot.php?mode=detail&code=296"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/_FUE7ix9UVw",
+        "attribution": "Vidéo YouTube"
+      }
+    ],
     "adresse": "Takado, Takahagi-shi, Ibaraki.",
     "adresse_en": "Takado, Takahagi-shi, Ibaraki.",
     "adresse_ja": "茨城県高萩市高戸",
@@ -1817,8 +2498,29 @@
     "descriptionLongue": "Enjambant le lac formé par le barrage de Ryujin au cœur de la vallée, le Pont Suspendu de Ryujin est l'un des plus longs ponts suspendus piétonniers du Japon continental, avec une longueur de 375 mètres. Il est suspendu à 100 mètres au-dessus de la surface de l'eau, offrant des vues vertigineuses sur les gorges profondes et le lac. La vallée de Ryujin est une gorge en forme de V, profonde et spectaculaire, creusée par la rivière Ryujin, particulièrement réputée pour ses paysages saisissants au printemps et en automne. Le site est également connu pour le 'Ryujin Gorge Koinobori Festival' et pour des activités de saut à l'élastique.",
     "descriptionLongue_en": "Spanning the lake formed by the Ryujin Dam in the heart of the valley, the Ryujin Suspension Bridge is one of the longest pedestrian suspension bridges on mainland Japan, with a length of 375 meters. It is suspended 100 meters above the water's surface, offering dizzying views of the deep gorges and the lake. Ryujin Gorge is a V- shaped, deep, and spectacular gorge carved by the Ryujin River, particularly renowned for its striking landscapes in spring and autumn. The site is also known for the 'Ryujin Gorge Koinobori Festival' and for bungee jumping activities.",
     "descriptionLongue_ja": "谷の中心部にある竜神ダムによって形成された湖にかかる竜神大吊橋は、全長375メートルの日本本土で最も長い歩行者用吊り橋の一つです。水面から100メートルの高さに架かっており、深い渓谷と湖のめまいがするような眺めを提供します。竜神峡は、竜神川によって削られたV字型の深く壮観な渓谷で、特に春と秋の印象的な風景で有名です。この場所は、「竜神峡こいのぼりフェスティバル」やバンジージャンプのアクティビティでも知られています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Pont suspendu de Ryujin et vallée de Ryujin2 CC.webp",
+    "images": [
+      {
+        "type": "image",
+        "url": "Pont suspendu de Ryujin et vallée de Ryujin2 CC.webp",
+        "attribution": "Photo provenant du site https://www.klook.com/fr/activity/132009-hanaguri-gorge-ryujin-suspension-bridge-one-day-tour-from-tokyo/"
+      },
+      {
+        "type": "image",
+        "url": "Pont suspendu de Ryujin et vallée de Ryujin3 CC.jpg",
+        "attribution": "Photo provenant du site https://my10.jp/assets_c/2025/02/ryujin-suspension-bridge-04-thumb-800xauto-21505.jpg"
+      },
+      {
+        "type": "image",
+        "url": "Pont suspendu de Ryujin et vallée de Ryujin4.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Pont suspendu de Ryujin et vallée de Ryujin CC.jpg",
+        "attribution": "Yamaguchi Yoshiaki from Japan, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "2133-6 Keganocho, Hitachiota-shi, Ibaraki 313-0351.",
     "adresse_en": "2133-6 Keganocho, Hitachiota-shi, Ibaraki 313-0351.",
     "adresse_ja": "〒313-0351 茨城県常陸太田市下宮河原町2133-6",
@@ -1867,8 +2569,24 @@
     "descriptionLongue": "Nichée dans une forêt sacrée de cèdres centenaires au pied du Mont Oiwa, le sanctuaire Oiwa est un lieu de culte ancien et mystique, considéré comme un important 'power spot' (lieu d'énergie spirituelle) de la région. La tradition veut que de nombreuses divinités shinto et bouddhistes y soient vénérées. L'atmosphère recueillie et la majesté des arbres, dont un 'Sanbon Sugi' (cèdre à trois troncs) désigné monument naturel de la préfecture, en font un site pour ceux qui cherchent à se connecter avec la nature et la spiritualité japonaise. Le complexe du sanctuaire s'étend sur le flanc de la montagne avec divers petits autels et des sentiers de randonnée menant vers le sommet du Mont Oiwa.",
     "descriptionLongue_en": "Nestled in a sacred forest of centuries-old cedars at the foot of Mount Oiwa, Oiwa Shrine is an ancient and mystical place of worship, considered an important 'power spot' (spiritual energy site) in the region. Tradition holds that many Shinto and Buddhist deities are worshipped here. The reverent atmosphere and the majesty of the trees, including a 'Sanbon Sugi' (three-trunked cedar) designated as a natural monument of the prefecture, make it a site for those seeking to connect with nature and Japanese spirituality. The shrine complex extends up the mountainside with various small altars and hiking trails leading to the summit of Mount Oiwa.",
     "descriptionLongue_ja": "樹齢数百年の杉が茂る聖なる森、大岩山の麓にひっそりと佇む大岩神社は、古く神秘的な信仰の場であり、この地域における重要な「パワースポット」とされています。多くの神道と仏教の神々が祀られているという伝承があります。敬虔な雰囲気と、県の天然記念物に指定されている「三本杉」をはじめとする巨木は、自然や日本の精神性に触れたい人々にとって訪れるべき場所です。神社の境内は山腹に広がり、様々な小さな祠や大岩山頂上へ続くハイキングコースがあります。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Sanctuaire Oiwa2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Sanctuaire Oiwa2 CC.jpg",
+        "attribution": "Taisuke.Kasuya, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire Oiwa3 CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire Oiwa CC.jpg",
+        "attribution": "Taisuke.Kasuya, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "752 Irishikencho, Hitachi, Ibaraki 311-0402, Japon",
     "adresse_en": "752 Irishikencho, Hitachi, Ibaraki 311-0402, Japan",
     "adresse_ja": "〒311-0402 茨城県日立市入四間町752",
@@ -1914,8 +2632,24 @@
     "descriptionLongue": "Ce sanctuaire shinto ancien, avec une histoire de plus de 3000 ans, est dédié aux divinités du Mont Tsukuba, Izanagi-no-Mikoto et Izanami-no-Mikoto. Il est donc vénéré pour les bonnes relations, le mariage et la fertilité. Le complexe comprend plusieurs bâtiments impressionnants et constitue le point de départ de nombreux sentiers de randonnée.",
     "descriptionLongue_en": "This ancient Shinto shrine, with a history of over 3,000 years, is dedicated to the deities of Mount Tsukuba, Izanagi-no-Mikoto and Izanami-no-Mikoto. It is therefore revered for good relationships, marriage, and fertility. The complex includes several impressive buildings and is the starting point for many hiking trails.",
     "descriptionLongue_ja": "3000年以上の歴史を持つこの古社は、筑波山大神であるイザナギノミコトとイザナミノミコトを祀っています。そのため、良縁、結婚、安産にご利益があるとされています。境内にはいくつかの印象的な建物があり、多くのハイキングコースの出発点となっています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Sanctuaire de Tsukuba2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Sanctuaire de Tsukuba2 CC.jpg",
+        "attribution": "Raita Futo from Tokyo, Japan, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire de Tsukuba3 CC.jpg",
+        "attribution": "Raita Futo from Tokyo, Japan, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Sanctuaire de Tsukuba.jpg",
+        "attribution": null
+      }
+    ],
     "adresse": "Tsukuba, Tsukuba-shi, Ibaraki",
     "adresse_en": "Tsukuba, Tsukuba-shi, Ibaraki",
     "adresse_ja": "茨城県つくば市",
@@ -1960,8 +2694,24 @@
     "descriptionLongue": "Officiellement appelé Amabikisan Rakuho-ji, ce temple bouddhiste de l'école Shingon, branche Buzan, aurait été fondé en 587. Il est dédié à la Kannon Bosatsu (déesse de la miséricorde) et est particulièrement vénéré pour la protection lors de l'accouchement, l'éducation des enfants et comme porte-bonheur. Le temple est renommé pour la beauté de son enceinte tout au long de l'année, avec des floraisons de cerisiers, pivoines, azalées, et surtout ses célèbres hortensias (ajisai). De nombreux bâtiments du temple sont désignés Biens Culturels Tangibles de la préfecture, et il abrite une statue de Kannon en bois classée Bien Culturel Important National. Des paons, canards, chèvres et poulets se promènent librement dans le domaine, ajoutant au charme du lieu. Le temple est célèbre pour son Festival des Hortensias (Ajisai Matsuri), généralement de début juin à mi-juillet, avec environ 5 000 plants d'hortensias de 100 variétés.",
     "descriptionLongue_en": "Officially called Amabikisan Rakuho-ji, this Shingon Buddhist temple, Buzan branch, is said to have been founded in 587. It is dedicated to Kannon Bosatsu (goddess of mercy) and is particularly revered for protection during childbirth, child-rearing, and as a bringer of good luck. The temple is renowned for the beauty of its grounds throughout the year, with blooms of cherry blossoms, peonies, azaleas, and especially its famous hydrangeas (ajisai). Many temple buildings are designated Tangible Cultural Properties of the prefecture, and it houses a wooden Kannon statue classified as a National Important Cultural Property. Peacocks, ducks, goats, and chickens roam freely on the grounds, adding to the charm of the place. The temple is famous for its Hydrangea Festival (Ajisai Matsuri), generally from early June to mid-July, featuring about 5,000 hydrangea plants of 100 varieties.",
     "descriptionLongue_ja": "正式名称「あびきさん らくほうじ」であるこの真言宗豊山派の仏教寺院は、587年に創建されたと伝えられています。観音菩薩（慈悲の女神）を祀り、特に安産、育児、そして幸運をもたらすものとして崇敬されています。この寺院は、一年を通じて境内の美しさで有名で、桜、牡丹、ツツジ、そして特に有名なアジサイ（あじさい）が咲き誇ります。多くの寺院建築が県の有形文化財に指定されており、国の重要文化財に指定されている木造観音菩薩像を所蔵しています。クジャク、アヒル、ヤギ、ニワトリが境内に自由に歩き回り、この場所の魅力を添えています。この寺院は、通常6月初旬から7月中旬にかけて開催される「あじさいまつり」で有名で、100品種約5,000株のアジサイが咲き誇ります。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Temple Amabiki Kannon CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Temple Amabiki Kannon2 CC.jpg",
+        "attribution": "Σ64, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Amabiki Kannon3 CC.jpg",
+        "attribution": "Σ64, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Amabiki Kannon CC.jpg",
+        "attribution": "Σ64, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "1 Motogi, Sakuragawa-shi, Ibaraki 309-1231.",
     "adresse_en": "1 Motogi, Sakuragawa-shi, Ibaraki 309-1231.",
     "adresse_ja": "〒309-1231 茨城県桜川市本木1",
@@ -2008,8 +2758,24 @@
     "descriptionLongue": "Le temple Chōshō-ji a été fondé en 1185 par Minamoto no Yoritomo, juste avant qu'il ne s'installe à Kamakura, afin de prier pour la longévité de sa fortune militaire. Appartenant à l'école Rinzai (bouddhisme zen), le temple a traversé les siècles et a été largement restauré à l'époque d'Edo sous le patronage de Tokugawa Mitsukuni (le seigneur de Mito). Son hall principal (Butsuden), avec son toit de chaume d'influence architecturale chinoise, est un chef-d'œuvre. On y trouve également une monumentale cloche en bronze datant de 1330 (classée Bien Culturel Important National) ainsi qu'une stèle gravée d'un poème du célèbre haïkiste Matsuo Bashō, qui a visité la région.",
     "descriptionLongue_en": "Chōshō -ji Temple was founded in 1185 by Minamoto no Yoritomo, just before he settled in Kamakura, to pray for the longevity of his military fortune. Belonging to the Rinzai school (Zen Buddhism), the temple has endured through the centuries and was largely restored during the Edo period under the patronage of Tokugawa Mitsukuni (the lord of Mito). Its main hall (Butsuden), with its thatched roof of Chinese architectural influence, is a masterpiece. It also houses a monumental bronze bell dating from 1330 (classified as a National Important Cultural Property) and a stele engraved with a poem by the famous haiku poet Matsuo Bashō, who visited the region.",
     "descriptionLongue_ja": "長勝寺は、源頼朝が鎌倉に定住する直前の1185年に、武運長久を祈願するために創建されました。臨済宗（禅宗）に属するこの寺院は、数世紀を経て、水戸藩主徳川光圀の支援を受けて江戸時代に広く修復されました。中国建築の影響を受けた茅葺き屋根を持つ本堂（仏殿）は傑作です。また、1330年製の巨大な青銅製の鐘（国の重要文化財）や、この地域を訪れた有名な俳人松尾芭蕉の詩が刻まれた石碑も所蔵しています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Temple Chosho-ji CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Temple Chosho-ji CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Chosho-ji1 CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Chosho-ji2 CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "428 Itako, Itako-shi, Ibaraki-ken 311-2424, Japon (〒311-2424 茨城県潮来市潮来428)",
     "adresse_en": "428 Itako, Itako-shi, Ibaraki-ken 311-2424, Japan",
     "adresse_ja": "〒311-2424 茨城県潮来市潮来428",
@@ -2055,8 +2821,29 @@
     "descriptionLongue": "Le temple Sairenji aurait des origines remontant à l'époque de Nara (VIIIe siècle) selon la tradition. Il est particulièrement réputé pour sa pagode à cinq étages (Gojunoto) qui date de la période Muromachi (reconstruite au début du XVIe siècle) et qui est l'une des plus anciennes de la région du Kanto, désignée Bien Culturel Important du Japon. Cette structure en bois témoigne du savoir-faire des charpentiers de l'époque. Le temple lui-même est un lieu de culte actif avec une atmosphère paisible.",
     "descriptionLongue_en": "Sairenji Temple is said to have origins dating back to the Nara period (8th century) according to tradition. It is particularly renowned for its five-story pagoda (Gojunoto), which dates from the Muromachi period (rebuilt in the early 16th century) and is one of the oldest in the Kanto region, designated an Important Cultural Property of Japan. This wooden structure testifies to the craftsmanship of the carpenters of the time. The temple itself is an active place of worship with a peaceful atmosphere.",
     "descriptionLongue_ja": "西連寺は、伝承によれば奈良時代（8世紀）に起源を持つとされています。特に室町時代（16世紀初頭に再建）に建てられた五重塔（五重塔）で有名で、関東地方で最も古いものの一つであり、日本の重要文化財に指定されています。この木造建築は、当時の木工職人の技術を物語っています。寺院自体も、穏やかな雰囲気を持ち、活発な信仰の場となっています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Temple Sairenji2.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Temple Sairenji2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Temple Sairenji3.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Temple Sairenji.jpg",
+        "attribution": null
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/gwNOg9jSD4M",
+        "attribution": "Vidéo YouTube"
+      }
+    ],
     "adresse": "504 Sairenji, Namegata, Ibaraki 311-3514, Japon",
     "adresse_en": "504 Sairenji, Namegata, Ibaraki 311-3514, Japan",
     "adresse_ja": "〒311-3514 茨城県行方市西連寺504",
@@ -2103,8 +2890,24 @@
     "descriptionLongue": "Fondé en 1534, le Shutoku-ji est un temple bouddhiste de l'école Sōtō du Zen. Le Bouddha principal vénéré est Shaka Nyorai (le Bouddha historique). Le temple abrite des trésors culturels, dont deux statues de Bouddha couché, et offre un lieu de méditation et de sérénité.",
     "descriptionLongue_en": "Founded in 1534, Shutoku-ji is a Buddhist temple of the Sōtō Zen school. The main Buddha enshrined is Shaka Nyorai (the historical Buddha). The temple houses cultural treasures, including two reclining Buddha statues, and offers a place for meditation and serenity.",
     "descriptionLongue_ja": "1534年に開創された静勝寺は、曹洞宗の仏教寺院です。本尊は釈迦如来（歴史上の仏陀）です。寺院には、二体の涅槃仏像を含む文化財が収蔵されており、瞑想と静寂の場を提供しています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Temple Shutoku-ji3 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Temple Shutoku-ji2 CC.jpg",
+        "attribution": "Asturio Cantabrio, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Shutoku-ji3 CC.jpg",
+        "attribution": "Asturio Cantabrio, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Shutoku-ji CC.jpg",
+        "attribution": "Asturio Cantabrio, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "1468 Shimoiwasaki, Tsukuba, Ibaraki 300-1273",
     "adresse_en": "1468 Shimoiwasaki, Tsukuba, Ibaraki 300-1273",
     "adresse_ja": "〒300-1273 茨城県つくば市下岩崎1468",
@@ -2152,8 +2955,24 @@
     "descriptionLongue": "Le Yakuō-in est un temple historique dont la fondation remonte au début de l'époque Heian (autour du 9e siècle), sur ordre de l'empereur Kanmu. À l'époque d'Edo, il est devenu un lieu de culte profondément respecté par la famille Tokugawa de Mito, notamment par Tokugawa Mitsukuni. Son architecture est époustouflante pour les amateurs de sanctuaires traditionnels : son Hondō (salle principale) est classé Bien Culturel Important du Japon, et son impressionnante porte Niōmon (protégée par les statues des gardiens Niō) ainsi que sa statue principale du bouddha de la médecine (Yakushi Nyorai) sont des Biens Culturels de la préfecture. Le temple est peu touristique, ce qui offre une expérience mystique et silencieuse au milieu d'une belle végétation.",
     "descriptionLongue_en": "Yakuō-in is a historic temple founded in the early Heian period (around the 9th century) by order of Emperor Kanmu. During the Edo period, it became a deeply respected place of worship by the Tokugawa family of Mito, particularly by Tokugawa Mitsukuni. Its architecture is breathtaking for lovers of traditional shrines: its Hondō (main hall) is classified as an Important Cultural Property of Japan, and its impressive Niōmon gate (protected by statues of Niō guardians) and its main statue of the Medicine Buddha (Yakushi Nyorai) are Prefectural Cultural Assets. The temple is not very touristy, offering a mystical and silent experience amidst beautiful vegetation.",
     "descriptionLongue_ja": "薬王院は、平安時代初期（9世紀頃）、桓武天皇の命により創建されたとされる歴史的な寺院です。江戸時代には、水戸の徳川家、特に徳川光圀によって深く尊敬される信仰の場となりました。その建築は、伝統的な寺院愛好家にとって息をのむほどです。本堂（主要な部屋）は日本の重要文化財に指定されており、印象的な仁王門（仁王像の守護者によって保護されている）と薬師如来の主像は、県文化財です。この寺院は観光客が少なく、美しい緑の中で神秘的で静かな体験を提供しています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Le Temple Yakuō-in CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Le Temple Yakuō-in1 CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Le Temple Yakuō-in2 CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Le Temple Yakuō-in CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "682 Motoyoshidacho, Mito-shi, Ibaraki-ken 310-0836, Japon (〒310-0836 茨城県水戸市元吉田町682)",
     "adresse_en": "682 Motoyoshidacho, Mito-shi, Ibaraki-ken 310-0836",
     "adresse_ja": "〒310-0836 茨城県水戸市 元吉田町682",
@@ -2203,8 +3022,19 @@
     "descriptionLongue": "Fondé en 1352 par Ashikaga Takauji (le premier shogun de l'époque Muromachi), le temple Zuishoin est un lieu rempli d'histoire. À l'entrée, vous remarquerez un pont en pierre et un étang datant de l'époque du château d'Edosaki. Mais son véritable trésor se trouve sur la colline située juste derrière le bâtiment principal (qui a été reconstruit après le séisme de 2011). En grimpant dans la bambouseraie, vous tomberez nez à nez avec les \"Gohyaku Rakan\" : environ 500 statues de pierre (493 pour être exact) représentant les disciples du Bouddha, sculptées entre 1780 et 1804. Chaque visage est unique, et la légende locale veut que l'on y trouve toujours le visage d'un proche. La vue depuis cette colline au crépuscule est d'ailleurs classée parmi les \"Huit vues d'Edosaki\".",
     "descriptionLongue_en": "Founded in 1352 by Ashikaga Takauji (the first shogun of the Muromachi period), Zuishoin Temple is a place steeped in history. At the entrance, you'll notice a stone bridge and a pond dating back to the time of Edosaki Castle. But its true treasure lies on the hill just behind the main building (which was rebuilt after the 2011 earthquake). Climbing through the bamboo grove, you'll come face to face with the \"Gohyaku Rakan\": approximately 500 stone statues (493 to be exact) representing the disciples of Buddha, carved between 1780 and 1804. Each face is unique, and local legend says you can always find the face of a loved one among them. The view from this hill at dusk is also classified among the \"Eight Views of Edosaki.\"",
     "descriptionLongue_ja": "室町幕府初代将軍である足利尊氏（1352年）によって創建された瑞祥院は、歴史に満ちた場所です。入り口には、江戸崎城時代の石橋と池があります。しかし、真の宝は本堂（2011年の地震後に再建）のすぐ裏手にある丘の上にあります。竹林を登ると、「五百羅漢」（正確には493体）に遭遇します。これは、1780年から1804年にかけて彫刻された、仏陀の弟子たちを表す約500体の石像です。それぞれの顔はユニークで、地元の伝説によれば、そこには常に親しい人の顔が見つかると言われています。また、この丘からの夕暮れの眺めは、「江戸崎八景」の一つに数えられています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Temple Zuishoin CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Temple Zuishoin1 CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Zuishoin CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "3076-1 Edosaki, Inashiki, Ibaraki 300-0504",
     "adresse_en": "3076-1 Edosaki, Inashiki, Ibaraki 300-0504",
     "adresse_ja": "〒300-0504 茨城県稲敷市江戸崎3076-1",
@@ -2254,8 +3084,24 @@
     "descriptionLongue": "Le Tsukuba EXPO Center est un musée scientifique généraliste et familial. Construit pour l'Exposition internationale de la science de 1985 (Expo '85), il propose des expositions interactives sur l'espace, l'énergie et l'environnement, où l'on peut toucher et expérimenter divers principes physiques ou technologiques. Le centre est surtout célèbre pour abriter l'un des plus grands planétariums au monde, ainsi qu'une fusée H-II grandeur nature exposée à l'extérieur.",
     "descriptionLongue_en": "The Tsukuba EXPO Center is a general science museum for families. Built for the 1985 International Science Exposition (Expo '85), it features interactive exhibits on space, energy, and the environment, where visitors can touch and experiment with various physical or technological principles. The center is most famous for housing one of the world's largest planetariums, as well as a full-scale H-II rocket displayed outside.",
     "descriptionLongue_ja": "つくばエキスポセンターは、家族向けの総合科学博物館です。1985年の国際科学技術博覧会（科学万博）のために建設され、宇宙、エネルギー、環境に関するインタラクティブな展示があり、様々な物理的・技術的原理に触れて体験することができます。このセンターは、世界最大級のプラネタリウムと、屋外に展示された実物大のH-IIロケットで最も有名です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Tsukuba Expo Center2.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Tsukuba Expo Center2.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Tsukuba Expo Center3.jpg",
+        "attribution": null
+      },
+      {
+        "type": "image",
+        "url": "Tsukuba Expo Center.jpg",
+        "attribution": null
+      }
+    ],
     "adresse": "2-9 Azuma, Tsukuba-shi, Ibaraki 305-0031",
     "adresse_en": "2-9 Azuma, Tsukuba-shi, Ibaraki 305-0031",
     "adresse_ja": "〒305-0031 茨城県つくば市吾妻2-9",
@@ -2303,8 +3149,29 @@
     "descriptionLongue": "Le Mont Yamizo (八溝山 - Yamizo-san), avec ses 1022 mètres, est le plus haut sommet de la préfecture d'Ibaraki et se situe à la frontière des préfectures d'Ibaraki, Fukushima et Tochigi. Cette zone montagneuse et forestière préservée est caractérisée par des forêts denses, des cours d'eau clairs et des sentiers de randonnée qui attirent les amoureux de la nature. Le Mont Yamizo offre plusieurs sentiers de randonnée balisés menant à son sommet, où se trouve le Sanctuaire Yamizo (Yamizo-san Suwa Shrine). Les sentiers traversent des forêts de hêtres et de sapins, et offrent des vues panoramiques sur les régions environnantes par temps clair. Des sites naturels notables le long des sentiers incluent la source 'Yamizo Hachidai Ryūōjin Suigen' (八溝八大竜王神水源), considérée comme l'une des 100 meilleures eaux du Japon (Meisui Hyakusen), et des cascades comme celles de la Vallée Secrète de Yamizo (Yamizo Keikoku), qui est accessible par des sentiers depuis le pied de la montagne. Les forêts denses de cette région abritent une faune variée typique des montagnes du Japon (oiseaux, petits mammifères, insectes) et une flore riche, changeant au fil des saisons. Des aires de camping peuvent exister dans la région de Daigo, offrant une base pour explorer les montagnes. La région se prête également à la photographie de nature et à la recherche de tranquillité. En raison de l'éloignement des grandes agglomérations, la pollution lumineuse est réduite, offrant de bonnes conditions pour l'observation astronomique pour ceux qui campent ou séjournent dans des hébergements isolés. Les sentiers de randonnée permettent d'observer les formations rocheuses locales, typiques des massifs montagneux non volcaniques. Les randonnées dans cette région nécessitent une bonne condition physique, un équipement approprié (chaussures de marche, vêtements adaptés à la météo, eau, nourriture). Il est crucial de vérifier l'état des sentiers et les conditions météorologiques. Le réseau mobile peut être limité dans certaines zones reculées. Respectez l'environnement et ne laissez aucune trace.",
     "descriptionLongue_en": "Mount Yamizo (八溝山 - Yamizo-san), at 1022 meters, is the highest peak in Ibaraki Prefecture and lies on the border of Ibaraki, Fukushima, and Tochigi prefectures. This preserved mountainous and forested area is characterized by dense forests, clear streams, and hiking trails that attract nature lovers. Mount Yamizo offers several marked hiking trails leading to its summit, where the Yamizo Shrine (Yamizo-san Suima Shrine) is located. The trails pass through beech and fir forests, offering panoramic views of the surrounding regions on clear days. Notable natural sites along the trails include the spring 'Yamizo Hachidai Ryūōjin Suigen' (八溝八大竜王神水源), considered one of Japan's Top 100 Waters (Meisui Hyakusen), and waterfalls such as those in the Yamizo Secret Valley (Yamizo Keikoku), which is accessible by trails from the foot of the mountain. The dense forests of this region are home to diverse fauna typical of Japan's mountains (birds, small mammals, insects) and rich flora, changing with the seasons. Camping sites may be available in the Daigo area, offering a base for exploring the mountains. The region is also suitable for nature photography and seeking tranquility. Due to its remoteness from major urban centers, light pollution is reduced, offering good conditions for astronomical observation for those camping or staying in isolated accommodations. The hiking trails allow for observation of local rock formations, typical of non-volcanic mountain ranges. Hiking in this region requires good physical condition, appropriate equipment (hiking boots, weather-appropriate clothing, water, food). It is crucial to check trail conditions and weather forecasts. Mobile network coverage may be limited in some remote areas. Respect the environment and leave no trace.",
     "descriptionLongue_ja": "標高1022メートルの八溝山（八溝山）は、茨城県で最も高い山で、茨城県、福島県、栃木県の県境に位置しています。この手つかずの山岳森林地帯は、鬱蒼とした森、清らかな渓流、そして自然愛好家を惹きつけるハイキングコースが特徴です。八溝山には山頂に至るいくつかの整備されたハイキングコースがあり、山頂には八溝神社（八溝山諏訪神社）があります。コースはブナやモミの森を抜け、晴れた日には周囲の地域を一望できるパノラマビューが楽しめます。コース沿いの著名な自然景観としては、「日本の名水百選」の一つとされる「八溝八大竜王神水源」や、山麓からの遊歩道でアクセス可能な「八溝渓谷」の滝などがあります。この地域の鬱蒼とした森林は、日本の山岳地帯に典型的な多様な野生生物（鳥類、小動物、昆虫）と、季節ごとに変化する豊かな植物相の生息地となっています。大子町周辺にはキャンプ場があり、山々の探索の拠点となります。この地域は、自然写真や静寂を求める人々にも適しています。大都市から離れているため光害が少なく、キャンプや人里離れた宿泊施設に滞在する人々にとっては、天体観測に適した条件を提供します。ハイキングコースでは、火山性でない山脈に典型的な地元の岩石の形成を観察できます。この地域でのハイキングには、良好な体力、適切な装備（ハイキングシューズ、気候に適した服装、水、食料）が必要です。コースの状況や気象条件を確認することが不可欠です。一部の遠隔地域では、携帯電話のネットワークが限られている場合があります。環境を尊重し、足跡を残さないようにしてください。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Vallée et Mont Yamizo1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Vallée et Mont Yamizo1 CC.jpg",
+        "attribution": "ブルーノ・プラス, CC BY 4.0, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Vallée et Mont Yamizo2 CC.jpg",
+        "attribution": "ブルーノ・プラス, CC BY 4.0, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Vallée et Mont Yamizo3 CC.jpg",
+        "attribution": "tak1701d, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Vallée et Mont Yamizo4 CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "Région du Mont Yamizo, Daigo-machi, Kuji-gun, Ibaraki",
     "adresse_en": "Mount Yamizo area, Daigo-machi, Kuji-gun, Ibaraki",
     "adresse_ja": "茨城県久慈郡大子町 八溝山地域",
@@ -2350,8 +3217,19 @@
     "descriptionLongue": "Niché dans les collines de Kasama, le district de Nishiyama abrite des ateliers de potiers qui perpétuent l'artisanat de la poterie Kasama-yaki. Plusieurs ateliers peuvent ouvrir leurs portes pour des démonstrations, des expositions-ventes et parfois des cours de poterie. C'est un lieu pour découvrir l'authenticité de cet art et rencontrer les artisans.",
     "descriptionLongue_en": "Nestled in the hills of Kasama, the Nishiyama district is home to pottery workshops that perpetuate the craft of Kasama-yaki pottery. Several workshops may open their doors for demonstrations, sales exhibitions, and sometimes pottery classes. It's a place to discover the authenticity of this art and meet the artisans.",
     "descriptionLongue_ja": "笠間の丘陵地帯に位置する西山地区には、笠間焼の伝統を受け継ぐ陶芸工房が集まっています。いくつかの工房では、デモンストレーション、展示販売、そして陶芸教室を開催しており、訪れることができます。この地は、この芸術の真髄を発見し、職人たちと出会う場所です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Village de potiers de Nishiyama CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Village de potiers de Nishiyama2 CC.jpg",
+        "attribution": "Photo provenant du site https://kilalakan.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Village de potiers de Nishiyama CC.jpg",
+        "attribution": "Photo provenant du site http://butaikasama.com/photo/"
+      }
+    ],
     "adresse": "Gallery Road (District de Nishiyama), Kasama-shi, Ibaraki",
     "adresse_en": "Gallery Road (Nishiyama District), Kasama-shi, Ibaraki",
     "adresse_ja": "茨城県笠間市西山地区 ギャラリーロード",
@@ -2402,8 +3280,24 @@
     "descriptionLongue": "Surnommée la 'Ville d'Eau (Suigo)' et parfois comparée à une 'Petite Venise', Itako est célèbre pour son réseau pittoresque de canaux et rivières, héritage de l'époque où le transport fluvial était vital. La ville offre une expérience avec des promenades en bateau traditionnel 'sappa-bune' (petites embarcations), naviguant le long des maisons traditionnelles. Itako est particulièrement renommée pour son Festival des Iris (Suigo Itako Ayame Matsuri) qui se tient de fin mai à fin juin au Parc des Iris de Suigo Itako (Suigo Itako Ayame-en), où plus d'un million de plants d'iris de nombreuses variétés fleurissent. Durant ce festival, des événements spéciaux sont organisés, comme des démonstrations de 'Yomeiri-bune' (bateau de la mariée), reconstituant une coutume locale où les jeunes mariées rejoignaient leur nouvelle famille en bateau.",
     "descriptionLongue_en": "Nicknamed the 'Water Town (Suigo)' and sometimes compared to 'Little Venice,' Itako is famous for its picturesque network of canals and rivers, a legacy from the era when river transport was vital. The town offers an experience with traditional 'sappa-bune' boat rides (small vessels), navigating along traditional houses. Itako is particularly renowned for its Iris Festival (Suigo Itako Ayame Matsuri), held from late May to late June at the Suigo Itako Iris Park (Suigo Itako Ayame-en), where over a million iris plants of many varieties bloom. During this festival, special events are organized, such as 'Yomeiri- bune' (Bride's Boat) demonstrations, recreating a local custom where newlyweds joined their new families by boat.",
     "descriptionLongue_ja": "「水郷」と呼ばれ、「小さなヴェネツィア」とも比較されることもある潮来は、かつて水運が重要であった時代の遺産である、絵のように美しい運河と川のネットワークで有名です。この街では、伝統的な「さっぱ船」（小舟）での遊覧体験ができ、昔ながらの家並みに沿って航行します。潮来は特に、5月下旬から6月下旬にかけて開催される「水郷潮来あやめまつり」で有名です。水郷潮来あやめ園では、100万株以上の多様な品種のあやめが咲き誇ります。この祭り期間中、「嫁入り舟」のデモンストレーションのような特別なイベントが開催され、新婚の女性が船で新しい家族のもとに嫁ぐという地元の慣習を再現します。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Ville d'Itako et ses canaux2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Ville d'Itako et ses canaux2 CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville d'Itako et ses canaux3 CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Ville d'Itako et ses canaux CC.jpg",
+        "attribution": "Σ64, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "Itako-shi, Ibaraki. (Le cœur de la zone des canaux se trouve autour du quartier d'Ayame et près du Parc des Iris Suigo Itako).",
     "adresse_en": "Itako-shi, Ibaraki. (The heart of the canal area is around the Ayame district and near the Suigo Itako Iris Park).",
     "adresse_ja": "潮来市、茨城県。（運河エリアの中心は、あやめ地区周辺と水郷潮来あやめ園の近くです）。",
@@ -2449,8 +3343,34 @@
     "descriptionLongue": "Le Tsumugi no Yakata est avant tout un vaste complexe muséal et culturel dédié à l'histoire et à la fabrication du Yuki-tsumugi (technique de tissage de la soie classée à l'UNESCO). Le site abrite le musée des archives historiques (Teori), des maisons traditionnelles reconstituées, et de très belles boutiques. S'il est possible d'y faire des ateliers pratiques (tissage, teinture végétale), ceux-ci nécessitent souvent une réservation à l'avance. C'est l'endroit parfait pour une immersion complète dans l'histoire de cet artisanat avant d'éventuellement participer à un atelier.",
     "descriptionLongue_en": "Tsumugi no Yakata is primarily a vast museum and cultural complex dedicated to the history and manufacture of Yuki-tsumugi (a UNESCO-listed silk weaving technique). The site houses the historical archives museum (Teori), reconstructed traditional houses, and beautiful shops. While it is possible to do hands-on workshops (weaving, vegetable dyeing), these often require advance reservation. It's the perfect place for a complete immersion into the history of this craft before possibly participating in a workshop.",
     "descriptionLongue_ja": "つむぎの館は、主に結城紬（ユネスコ無形文化遺産）の歴史と製造に捧げられた広大な博物館・文化複合施設です。敷地内には歴史資料館「手織里」、移築された古民家、そして美しいショップがあります。機織りや草木染めなどの体験ワークショップも可能ですが、これらは事前の予約が必要な場合が多いです。ワークショップに参加する前に、この工芸品の歴史に完全に浸るのに最適な場所です。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Tissage de Yuki-tsumugi1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Tissage de Yuki-tsumugi1 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.yukitumugi.co.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Tissage de Yuki-tsumugi2 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.yukitumugi.co.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Tissage de Yuki-tsumugi3 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.yukitumugi.co.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Tissage de Yuki-tsumugi4 CC.jpg",
+        "attribution": "Image provenant de ce site https://www.yukitumugi.co.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Tissage de Yuki-tsumugi CC.jpg",
+        "attribution": "Image provenant de ce site https://www.yukitumugi.co.jp/"
+      }
+    ],
     "adresse": "12-2 Yuki, Yuki-shi, Ibaraki 307-0001, Japon",
     "adresse_en": "12-2 Yuki, Yuki-shi, Ibaraki 307-0001, Japan",
     "adresse_ja": "〒307-0001 茨城県結城市結城12-2",
@@ -2497,8 +3417,24 @@
     "descriptionLongue": "Le temple Shiiosan Yakuō-in, situé à Sakuragawa, a été fondé en 782 et possède une histoire de plus de 1200 ans. Il est célèbre pour sa magnifique pagode à trois étages, désignée Bien Culturel de la préfecture, et pour sa porte Niōmon. Le domaine du temple est recouvert d'une forêt de vieux chênes castanéifoliés (Sudajii), vieux de 300 à 500 ans, un spectacle naturel impressionnant classé monument naturel. À l'intérieur du bâtiment principal (Hondō), on peut admirer au plafond la peinture d'un immense dragon réalisée à l'époque d'Edo par Kano Ikushin, surnommé le 'Dragon jouant la nuit' en raison des légendes locales. C'est également un lieu vénéré de longue date pour la guérison des maladies.",
     "descriptionLongue_en": "Shiiosan Yakuō-in Temple, located in Sakuragawa, was founded in 782 and boasts a history of over 1,200 years. It is famous for its beautiful three-story pagoda, designated a Prefectural Cultural Property, and its Niōmon gate. The temple grounds are covered by a forest of old Sudajii (Castanopsis sieboldii) trees, aged 300 to 500 years, an impressive natural sight classified as a natural monument. Inside the main hall (Hondō), visitors can admire a massive dragon painting on the ceiling by Kano Ikushin from the Edo period, nicknamed the 'Night-playing Dragon' due to local legends. It has also long been revered as a sacred place for healing illnesses.",
     "descriptionLongue_ja": "桜川市にある椎尾山薬王院は、782年に創建され、1200年以上の歴史を誇ります。県指定文化財の美しい三重塔や仁王門で有名です。境内は樹齢300～500年と言われるスダジイ（椎の木）の巨木群に覆われており、天然記念物に指定されている圧巻の自然景観です。本堂の天井には、江戸時代に狩野育信によって描かれた巨大な龍の絵があり、地元の伝説から「夜遊び竜」と呼ばれています。また、古くから病気平癒の霊場として信仰を集めています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Temple Shiiosan Yakuō-in2 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Temple Shiiosan Yakuō-in1 CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Shiiosan Yakuō-in2 CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      },
+      {
+        "type": "image",
+        "url": "Temple Shiiosan Yakuō-in CC.jpg",
+        "attribution": "小石川人晃, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+      }
+    ],
     "adresse": "3178 Makabecho Shiio, Sakuragawa, Ibaraki 300-4414, Japon",
     "adresse_en": "3178 Makabecho Shiio, Sakuragawa, Ibaraki 300-4414, Japan",
     "adresse_ja": "〒300-4414 茨城県桜川市真壁町椎尾3178",
@@ -2546,8 +3482,29 @@
     "descriptionLongue": "Tsumugi no Sato est un studio d'artisanat et une installation culturelle situés dans la ville de Yuki. Contrairement aux musées classiques, cet espace se concentre principalement sur l'expérience pratique. Les visiteurs peuvent s'essayer au tissage traditionnel sur d'authentiques métiers à tisser manuels pour créer des sous-verres ou des châles, sous la supervision d'artisans. Le centre propose également des ateliers de teinture à l'indigo (Aizome) utilisant des plantes cultivées au Japon. C'est l'endroit idéal pour s'immerger dans la création de la soie Yuki-tsumugi (classée à l'UNESCO) et repartir avec sa propre création originale. Le personnel est habitué à accueillir des visiteurs internationaux.",
     "descriptionLongue_en": "Tsumugi no Sato is an artisan studio and cultural facility located in Yuki City. Unlike classic museums, this space focuses primarily on hands-on experience. Visitors can try traditional weaving on authentic manual looms to create coasters or shawls under the supervision of artisans. The center also offers indigo dyeing (Aizome) workshops using plants grown in Japan. It is the perfect place to immerse oneself in the creation of Yuki-tsumugi silk (UNESCO-listed) and leave with your own original creation. The staff is accustomed to welcoming international visitors.",
     "descriptionLongue_ja": "紬の里は、結城市にある工房兼文化施設です。伝統的な博物館とは異なり、この施設は主に実践的な体験に焦点を当てています。訪問者は、職人の指導の下、本格的な手織り機で伝統的な機織りを体験し、コースターやショールなどを作ることができます。また、日本国内で栽培された藍を使用した藍染め体験のワークショップも開催しています。ユネスコ無形文化遺産である結城紬の制作に没頭し、自分だけのオリジナル作品を持ち帰るのに最適な場所です。外国人観光客の受け入れにも慣れています。",
-    "imagePrincipale": "",
-    "images": [],
+    "imagePrincipale": "Ateliers Tsumugi no Sato1 CC.jpg",
+    "images": [
+      {
+        "type": "image",
+        "url": "Ateliers Tsumugi no Sato1 CC.jpg",
+        "attribution": "Image provenant de ce site http://www.tsumugi.co.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Ateliers Tsumugi no Sato2 CC.jpg",
+        "attribution": "Image provenant de ce site http://www.tsumugi.co.jp/"
+      },
+      {
+        "type": "image",
+        "url": "Ateliers Tsumugi no Sato CC.jpg",
+        "attribution": "Image provenant de ce site http://www.tsumugi.co.jp/"
+      },
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/5hS4idPumY0",
+        "attribution": "Vidéo YouTube"
+      }
+    ],
     "adresse": "2515 Yuki, Yuki-shi, Ibaraki 307-0001, Japon",
     "adresse_en": "2515 Yuki, Yuki-shi, Ibaraki 307-0001, Japan",
     "adresse_ja": "〒307-0001 茨城県結城市結城2515",
